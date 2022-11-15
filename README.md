@@ -1,12 +1,11 @@
 <!-- Header -->
 <h1 align="center">
-  <strong>Hi there <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" height="25px" width="25px">, I'm Jorge Alarcón </strong>
-  <img src="https://i.imgur.com/GvYhbHq.png" alt="draw" width="60" style="border-radius: 50%">
+  <strong>Hi there <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" height="25px" width="25px">, I'm Jorge Alarcón </strong><img src="https://i.imgur.com/GvYhbHq.png" alt="draw" width="60" style="border-radius: 50%">
 </h1>
 <!-- End -->
 <!-- Social Media Links -->
 <div id="social-badges" align="center">
-  <a href="www.linkedin.com/in/jorgeav527">
+  <a href="https://www.linkedin.com/in/jorgeav527">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
   </a>
   <a href="https://www.youtube.com/channel/UCM0iDBNz_jSvap50m1yboyQ">
@@ -134,8 +133,8 @@
 <!-- Statistics -->
 <h2 align="center">🏆 Some statistics</h2>
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=jorgeav527"/>
   <img src="https://github-readme-stats.vercel.app/api?username=jorgeav527&show_icons=true"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=jorgeav527"/>
 </div>
 <!-- End -->
 <br />
