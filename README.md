@@ -1,9 +1,10 @@
 <!-- Header -->
-<h1 align="center"><b>Hi there <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" height="25px" width="25px">, I'm Jorge Alarcón <img src="https://i.imgur.com/GvYhbHq.png" alt="draw" width="60" style="border-radius: 50%">
+<h1 align="center">
+  <strong>Hi there <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" height="25px" width="25px">, I'm Jorge Alarcón </strong>
+  <img src="https://i.imgur.com/GvYhbHq.png" alt="draw" width="60" style="border-radius: 50%">
 </h1>
 <!-- End -->
 <!-- Social Media Links -->
-<br />
 <div id="social-badges" align="center">
   <a href="www.linkedin.com/in/jorgeav527">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
@@ -18,14 +19,13 @@
 <!-- End -->
 <!-- Intro -->
 <h2 align="center">
-  A Civil Engineer 😄 who loves to solve problems related to Web development, Data Science and Machine Learning 🔥
+  A Civil Engineer 🧑‍💻 who loves to solve problems related to Web development, Data Science and Machine Learning 🔥
 </h2>
 <!-- End -->
 <br />
-<hr>
-<br />
 <!-- Web Development Tools -->
-<h3 align="center">🛠️ First and foremost, I have been using <strong style="color:MediumSeaGreen;" font-weight: bold;>Linux</strong> for over 4 years so I have some experience with:</h3>
+<h3 align="center">🛠️ First and foremost, I have been using <strong style="color:red;">Linux </strong>for 4+ years, so I have some experience with:
+</h3>
 <p align="center">  
   <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
   <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain-wordmark.svg" />
@@ -39,7 +39,7 @@
 <!-- End -->
 <br />
 <!-- Web Development Tools -->
-<h3 align="center">🛠️ When I face <b style="color:MediumSeaGreen;">Web Development,</b> I prefer to use these tecnologies:</h3>
+<h3 align="center">🛠️ When I face <strong style="color:red;">Web Development,</strong> I prefer to use these tecnologies:</h3>
 <p align="center">
   <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />          
   <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
@@ -62,7 +62,7 @@
 <!-- End -->
 <br />
 <!-- DS and ML -->
-<h3 align="center">🛠️ When I'm working on,<strong style="color:MediumSeaGreen;"> Data Science</strong> or trying some<strong style="color:MediumSeaGreen;">Machine Learning</strong> models:</h3>
+<h3 align="center">🛠️ When I'm working on,<strong style="color:red;"> Data Science</strong> or trying some <strong style="color:red;">Machine Learning</strong> models:</h3>
 <p align="center">
   <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" />
   <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg" />
@@ -72,17 +72,17 @@
   <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"/>
   <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"/>
   <img height=50 src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Cassandra_logo.svg"/>
-  <img height=50 src="https://www.vectorlogo.zone/logos/neo4j/neo4j-ar21.svg"/>
-  <img height=50 src="https://www.vectorlogo.zone/logos/apache_hadoop/apache_hadoop-ar21.svg"/>  
+  <img height=50 src="https://www.vectorlogo.zone/logos/neo4j/neo4j-icon.svg"/>
+  <img height=50 src="https://www.vectorlogo.zone/logos/apache_hadoop/apache_hadoop-icon.svg"/>  
   <img height=50 src="https://www.vectorlogo.zone/logos/apache_spark/apache_spark-ar21.svg" />
   <img height=50 src="https://upload.wikimedia.org/wikipedia/commons/d/de/AirflowLogo.png"/>
-  <img height=50 src="https://upload.vectorlogo.zone/logos/streamlitio/images/1548df31-a8e4-409b-a034-f2ddaa80670a.svg"/>
+  <img height=50 src="https://raw.githubusercontent.com/gilbarbara/logos/9c6e5e9ef3c297da414a4809ae9f0f56a6384e91/logos/streamlit.svg"/>
   <img height=50 src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg"/>
 </p>
 <!-- End -->
 <br />
 <!-- Background -->
-<h3 align="center">🛠️ Thanks to my <strong style="color:MediumSeaGreen;"> Background</strong>, I have worked with the following technologies:</h3>
+<h3 align="center">🛠️ Thanks to my <strong style="color:red;"> Background</strong>, I used to work with:</h3>
 <p align="center">
   <img height=50 src="https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg" />
   <img height=50 src="https://upload.wikimedia.org/wikipedia/commons/9/98/Microsoft_Project_%282019%E2%80%93present%29.svg" />
@@ -96,11 +96,8 @@
 </p>
 <!-- End -->
 <br />
-<hr>
-<br />
 <!-- Projects -->
 <h2 align="center">💻 My favorite projects</h2>
-
 <p align="center">
   <img width="400" src="https://raw.githubusercontent.com/the-collab-lab/tcl-19-smart-shopping-list/main/public/Thumbnail.png" />
   <img width="400" src="https://raw.githubusercontent.com/the-collab-lab/tcl-19-smart-shopping-list/main/public/Thumbnail.png" />
@@ -133,29 +130,27 @@
     <img align="" src="https://github-readme-stats.vercel.app/api/pin/?username=YuriDevAT&repo=tcl-19-smart-shopping-list&theme=tokyonight" />
   </a>
 </p>
-
-<br />
-<hr>
 <br />
 <!-- Statistics -->
-<h2 align="center">🏆 Some Statistics</h2>
+<h2 align="center">🏆 Some statistics</h2>
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs?username=jorgeav527"/>
   <img src="https://github-readme-stats.vercel.app/api?username=jorgeav527&show_icons=true"/>
 </div>
 <!-- End -->
 <br />
-<hr>
-<br />
-<h2>💡 This page is make with</h2>
+<h2>💡 This is my personal webpage, which is under construction 🚀</h2>
+<img src="https://img.shields.io/badge/Cookiecutter-D4AA00?style=for-the-badge&logo=Cookiecutter&logoColor=white" />
+<img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" />
+<img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=green" />
+<img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
+<img src="" />
 
-[![Built with Cookiecutter Django](https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg?logo=cookiecutter)](https://github.com/cookiecutter/cookiecutter-django/)
-[![Black code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
-[![Black code linter](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+<h2>License: MIT</h2>
 
-
-License: MIT
-
-[iconos entre otras cosas](https://www.vectorlogo.zone/)
-[icons](https://devicon.dev/)
-[https://www.sitepoint.com/github-profile-readme/](https://www.sitepoint.com/github-profile-readme/)
+### + Info
+- [Badges4-README.md-Profile](https://github.com/alexandresanlim/Badges4-README.md-Profile.git)
+- [awesome-github-profile-readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme.git)
+- [Vectorlogo](https://www.vectorlogo.zone/)
+- [Devicon](https://devicon.dev/)
+- [Emoji](https://gitmoji.dev/)
