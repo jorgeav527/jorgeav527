@@ -97,38 +97,25 @@
 <br />
 <!-- Projects -->
 <h2 align="center">💻 My favorite projects</h2>
-<p align="center">
-  <img width="400" src="https://raw.githubusercontent.com/the-collab-lab/tcl-19-smart-shopping-list/main/public/Thumbnail.png" />
-  <img width="400" src="https://raw.githubusercontent.com/the-collab-lab/tcl-19-smart-shopping-list/main/public/Thumbnail.png" />
-  <a href="https://github.com/YuriDevAT/sos-animals">
-    <img align="" src="https://github-readme-stats.vercel.app/api/pin/?username=YuriDevAT&repo=sos-animals&theme=tokyonight" />
-  </a>
-  <a href="https://github.com/YuriDevAT/tcl-19-smart-shopping-list">
-    <img align="" src="https://github-readme-stats.vercel.app/api/pin/?username=YuriDevAT&repo=tcl-19-smart-shopping-list&theme=tokyonight" />
-  </a>
-</p>
-<br />
-<p align="center">
-  <img width="400" src="https://raw.githubusercontent.com/the-collab-lab/tcl-19-smart-shopping-list/main/public/Thumbnail.png" />
-  <img width="400" src="https://raw.githubusercontent.com/the-collab-lab/tcl-19-smart-shopping-list/main/public/Thumbnail.png" />
-  <a href="https://github.com/YuriDevAT/sos-animals">
-    <img align="" src="https://github-readme-stats.vercel.app/api/pin/?username=YuriDevAT&repo=sos-animals&theme=tokyonight" />
-  </a>
-  <a href="https://github.com/YuriDevAT/tcl-19-smart-shopping-list">
-    <img align="" src="https://github-readme-stats.vercel.app/api/pin/?username=YuriDevAT&repo=tcl-19-smart-shopping-list&theme=tokyonight" />
-  </a>
-</p>
-<br />
-<p align="center">
-  <img width="400" src="https://raw.githubusercontent.com/the-collab-lab/tcl-19-smart-shopping-list/main/public/Thumbnail.png" />
-  <img width="400" src="https://raw.githubusercontent.com/the-collab-lab/tcl-19-smart-shopping-list/main/public/Thumbnail.png" />
-  <a href="https://github.com/YuriDevAT/sos-animals">
-    <img align="" src="https://github-readme-stats.vercel.app/api/pin/?username=YuriDevAT&repo=sos-animals&theme=tokyonight" />
-  </a>
-  <a href="https://github.com/YuriDevAT/tcl-19-smart-shopping-list">
-    <img align="" src="https://github-readme-stats.vercel.app/api/pin/?username=YuriDevAT&repo=tcl-19-smart-shopping-list&theme=tokyonight" />
-  </a>
-</p>
+<table>
+  <tr>
+    <td width="400"><img src="https://i.imgur.com/9nERKAE.png"></td>
+    <td width="400"></td>
+  </tr>
+  <tr>
+    <td>
+      <p>What it does? 💡 It's a Web Application for Testing Services at a Civil Engineering Laboratory. Why did you build this project? 💡 It will be used not only to put together the business's logistics but also to automate in real-time the logic behind some of the most used lab tests in the civil engineering career.</p>
+      <p>What was my motivation? 💡 This is built on top of my thesis project, so I'll implement some new UX/UI features and make an upgrade to the project architecture. I will create a package for extending and scaling the implemented tests, this will be updated and maintained on a different repo. What did you learn? 💡 The focus of this project is to create a Data-WareHouse to extract and create some nice Dashboards to give some insides about the characteristics of the tests and business financials.</p>
+      <p align="center">
+        <a href="https://github.com/jorgeav527/rpg_labs_repo.git">
+          <img src="https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge"/>
+        </a>
+      </p>      
+    </td>
+    <td>
+    </td>
+  </tr>
+</table>
 <br />
 <!-- Statistics -->
 <h2 align="center">🏆 Some statistics</h2>
@@ -148,9 +135,9 @@
 
 <h2>License: MIT</h2>
 
-### + Info
-- [Badges4-README.md-Profile](https://github.com/alexandresanlim/Badges4-README.md-Profile.git)
-- [awesome-github-profile-readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme.git)
+### +Info
+- [Badges4 Profile](https://github.com/alexandresanlim/Badges4-README.md-Profile.git)
+- [Awesome github profile readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme.git)
 - [Vectorlogo](https://www.vectorlogo.zone/)
 - [Devicon](https://devicon.dev/)
 - [Emoji](https://gitmoji.dev/)
