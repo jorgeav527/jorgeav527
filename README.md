@@ -130,12 +130,12 @@
 <table>
   <tr>
     <td width="400"><img src="https://i.imgur.com/JYDaGyT.png" alt="ML Datathon"></td>
-    <td width="400"><img src="" alt="blank"></td>
+    <td width="400"></td>
   </tr>
   <tr>
     <td>
-      <p align="justify"><strong>What it does?</strong> 💡 <strong>Why did you build this project?</strong> 💡 </p>
-      <p align="justify"><strong>What was my motivation?</strong> 💡 <strong>What did you learn?</strong> 💡 </p>
+      <p align="justify"><strong>What it does?</strong> 💡 Apply either supervised or unsupervised ML models. <strong>Why did you build this project?</strong> 💡 To perform initial investigations on different and interesting datasets (EDAs) from Kaggle to discover patterns. Then test hypotheses or check assumptions by using graphical representation.</p>
+      <p align="justify"><strong>What was my motivation?</strong> 💡 Learning ML opens up a world of opportunities to create cutting-edge applications in a variety of fields and, on the other hand, advance my career to the next level. <strong>What did you learn?</strong> 💡 Develop self-learning computer systems by combining algorithms and statistical models.</p>
       <p align="center">
         <a href="https://github.com/jorgeav527/Datathon.git">
           <img src="https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge"/>
@@ -143,13 +143,6 @@
       </p>      
     </td>
     <td>
-      <p align="justify"><strong>What it does?</strong> 💡 <strong>Why did you build this project?</strong> 💡 </p>
-      <p align="justify"><strong>What was my motivation?</strong> 💡 <strong>What did you learn?</strong> 💡 </p>
-      <p align="center">
-        <a href="#">
-          <img src="https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge"/>
-        </a>
-      </p>      
     </td>
   </tr>
 </table>
