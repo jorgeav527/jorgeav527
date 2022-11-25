@@ -1,0 +1,8 @@
+<h3 class="my-3 font-weight-bold">{{ language|upper }}</h3>
+<ul class="list-unstyled">
+    {% for key, value in lang_dict.items %}
+    <li>
+        <span class="text-primary">{{ key|title }}: </span><span class="text-dark">{{ value }}.</span>
+    </li>
+    {% endfor %}
+</ul>

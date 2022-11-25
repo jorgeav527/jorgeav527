@@ -15,7 +15,8 @@ urlpatterns = [
     # User management
     path("users/", include("jorgeav527.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
-    # Your stuff: custom urls includes go here
+    # Custom urls
+    path("cvmaker/", include("jorgeav527.cvmaker.urls", namespace="cvmaker")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 

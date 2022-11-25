@@ -1,0 +1,27 @@
+{% extends "base_pdf.html" %}
+{% block content %}
+<div class="row">
+    {% include "cvmaker/header.html" %}
+    <table class="table">
+        <colgroup>
+            <col span="1" style="width: 60%;">
+            <col span="1" style="width: 40%;">
+        </colgroup>
+        <tr>
+            <td>
+                {% include "cvmaker/project.html" %}
+                {% include "cvmaker/work.html" %}
+                {% include "cvmaker/featured.html" %}
+            </td>
+            <td>
+                {% include "cvmaker/about.html" %}
+                {% include "cvmaker/education.html" %}
+                {% include "cvmaker/language.html" %}
+                {% include "cvmaker/skill.html" %}
+                {% include "cvmaker/volunteer.html" %}
+            </td>
+        </tr>
+    </table>
+
+</div>
+{% endblock %}

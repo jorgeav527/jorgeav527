@@ -1,0 +1,54 @@
+@page {
+    size: "A4";
+    margin: 2cm 2cm 2cm 2cm;
+}
+
+body {
+    width: 100% !important;
+    height: 100%;
+    background: #fff;
+    color: black;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+}
+
+.dpPanelSx {
+    flex: 1;
+}
+
+.dpPanelDx {
+    flex: 1;
+}
+
+img {
+    width: 150px;
+}
+
+ul,
+li {
+    padding-left: 0.6em;
+    margin-right: 0.7em;
+    padding-bottom: 0.4em;
+}
+
+header,
+footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+header {
+    /* subtract @page margin */
+    top: 5cm;
+    height: 5cm
+}
+
+footer {
+    /* subtract @page margin */
+    bottom: -0.5cm;
+    height: 0.5cm;
+}

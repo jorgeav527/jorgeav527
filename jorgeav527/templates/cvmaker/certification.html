@@ -1,0 +1,11 @@
+<h3 class="mb-3 font-weight-bold">{{ education|upper }}</h3>
+{% for key, value in exp_list.items %}
+<h5 class="card-title">{{ proff|title }} CIP {{ cip }}</h5>
+<h5 class="card-subtitle text-primary">{{ university }}</h5>
+<small class="text-muted text-wrap mr-4">
+    <i class="bi bi-calendar3"></i> {{ uni_start }}-{{ uni_end }}
+</small>
+<small class="text-muted text-wrap">
+    <i class="bi bi-geo-alt-fill"></i> {{ uni_location }}
+</small>
+{% endfor %}

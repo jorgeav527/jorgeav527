@@ -75,6 +75,7 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "jorgeav527.users",
+    "jorgeav527.cvmaker"
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps

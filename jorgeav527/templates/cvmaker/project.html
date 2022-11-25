@@ -1,0 +1,18 @@
+<h3 class="mb-3 font-weight-bold">{{ project|upper }}</h3>
+{% for key, value in project_dict.items %}
+<h5 class="card-title">{{ value.title }}</h5>
+<h5 class="card-subtitle text-primary font-weight-bold">{{ key }}</h5>
+<small class="text-muted text-wrap mr-4">
+    <i class="bi bi-calendar3"></i> {{ value.start }}-{{ value.end }}
+</small>
+<a href="{{ value.link }}" class="text-muted text-wrap" style="text-decoration:none">
+    <i class="bi bi-github"></i> <small>{{ value.link }}</small>
+</a>
+{% for i in value.techstack %}
+<div>
+    <strong>Tech Stack: </strong>
+    <p class="text-justify" style="line-height: 1.35em;">{{ i }}</p>
+    {% endfor %}
+    <hr>
+</div>
+{% endfor %}

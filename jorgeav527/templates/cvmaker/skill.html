@@ -1,0 +1,7 @@
+<h3 class="mb-3 font-weight-bold">{{ skill|upper }}</h3>
+{% for key, value in skill_dict.items %}
+<h5 class="card-title my-3">{{ key|title }}</h5>
+{% for i in value %}
+<h5 class="d-inline"><span class="badge badge-primary mb-1">{{ i }}</span></h5>
+{% endfor %}
+{% endfor %}

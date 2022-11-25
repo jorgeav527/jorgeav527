@@ -1,0 +1,26 @@
+{% load static %}
+
+<div class="col-9">
+    <h2 class="font-weight-bold">{{ name|upper }}</h2>
+    <p class="text-primary text-monospace">{{ proff|upper }} > {{ self_thought|upper }} > {{ bootcamp|upper }}</p>
+    <div class="row mt-3">
+        <p>
+            <a href="https://wa.me/51973635864" class="btn btn-outline-primary btn-sm mt-1 mr-2">
+                <i class="bi bi-telephone"></i> {{ phone }}
+            </a>
+            <a href="mailto:jorgeav527@gmail.com" class="btn btn-outline-primary btn-sm mt-1 mr-2">
+                <i class="bi bi-envelope-check"></i> {{ gmail }}
+            </a>
+            <a href="https://github.com/jorgeav527" class="btn btn-outline-primary btn-sm mt-1 mr-2">
+                <i class="bi bi-github"></i> {{ github }}
+            </a>
+            <a href="https://www.linkedin.com/in/jorgeav527/?locale=en_US"
+                class="btn btn-outline-primary btn-sm mt-1 mr-2">
+                <i class="bi bi-linkedin"></i> {{ linkedin }}
+            </a>
+        </p>
+    </div>
+</div>
+<div class="col-3">
+    <img class="rounded-circle" src="{% static 'images/jorge_alarcon_foto.jpg' alt='foto' %}">
+</div>
