@@ -31,12 +31,12 @@ def english_pdf_view(request):
     ABOUT = "about me"
     PROJECT = "projects"
     ABOUT_DESCRIPTION = [
-        "I'm a Civil Engineer with a focus on Data Science and strong fundamentals in Web Development, a C1 advanced level of English, and international experience in Brazil.",
-        "Since 2018, I have been gradually getting into the tech world. I worked as a freelancer using programming languages, databases, and web development environments to automate processes in the field of civil engineering.",
-        "Actually, I extract, analyze, and model information using the principles of Data Science and Machine Learning. I design viable and scalable architectures for data flow using Airflow. I orchestrate different cloud services on Linode and generate insights through data visualization tools such as PowerBI or Streamlit.",
+        "I'm a Civil Engineer with a focus on Data Science and solid foundations in Web Development, a C1 advanced level of English, and international experience in Brazil.",
+        "Since 2018, I've been gradually immersing myself in the world of technology. I worked as a freelancer using programming languages, databases, and web development environments to automate processes in the field of civil engineering.",
+        "Actually, I extract, analyze, and model data using Data Science and Machine Learning principles. I build viable and scalable data flow architectures with Airflow. I orchestrate various cloud services on the Linode platform and generate insights using data visualization tools such as PowerBI or Streamlit.",
     ]
     VOL_ORGANIZATION = "AIESEC en Colombia"
-    VOL_DESCRIPTION = "9000xBogota is an initiative of AIESEC to show the citizens of Bogotá that young people of different nationalities can feel empathy and respect for the city that becomes their home for a short time, providing social awareness and information about the importance of global warming."
+    VOL_DESCRIPTION = "9000xBogota is an AIESEC initiative that demonstrates to the citizens of Bogotá that young people of various nationalities can feel empathy and respect for the city that becomes their temporary home, while also raising social awareness and providing information about the importance of global warming."
     VOL_NAME = "Universidad de los Andes, Colombia: 7000xBogotá"
     VOL_START = "Dec 2010"
     VOL_END = "Mar 2011"
@@ -87,13 +87,13 @@ def english_pdf_view(request):
             ],
         },
         "EPIC Labs - Professional Thesis Degree": {
-            "title": "Automation and Systematization of the Civil Engineering Laboratory",
+            "title": "Thesis: Civil Engineering Laboratory Automation and Systematization",
             "location": "Arequipa, Arequipa, Perú",
             "link": "https://github.com/jorgeav527/epiclabs.git",
             "start": "Dec 2019",
             "end": "Dec 2020",
             "techstack": [
-                "OS Linux, Git & GitHub, HTML, CSS-Bootstrap, Django, Matplotlib & Bokeh, WeasyPrint, PostgreSQL, PythonAnywhere."
+                "OS Linux, Git & GitHub, HTML, CSS-Bootstrap, Django, Matplotlib & Bokeh, WeasyPrint, SQLite, PythonAnywhere."
             ],
         },
     }
@@ -105,9 +105,9 @@ def english_pdf_view(request):
             "start": "Dec 2021",
             "end": "Mar 2022",
             "responsibilities": [
-                'In the FIRST MODULE "QUOTES" the web application has the feature to register customers and make quotes for the tests required. Then, for the tests that were performed, create a service order and a settlement sheet.',
-                "I had planned and performed the analysis of information, designed, developed, and deployed a web tool that meets the requirements and needs of the laboratory.",
-                "I had built a Docker virtual space that was mounted on an EC2 instance on AWS servers, with RDS for the backup and restore of the relational database and using S3 for the images and PDF reports.",
+                'The web application in the FIRST MODULE "QUOTES" has the ability to register customers and generate quotes for the required tests. Create a service order and a settlement sheet for the tests that were performed.',
+                "I had planned and performed the analysis of information, designed, developed, and deployed a web application tool that meets the requirements and needs of the laboratory.",
+                "I had built a Docker virtual space that was mounted on an EC2 instance running on AWS servers, using RDS for relational database backup and restore, and S3 bucket store for images and PDF reports.",
             ],
         },
         "Municipalidad Distrital de Majes": {
@@ -254,7 +254,7 @@ def spanish_pdf_view(request):
     ABOUT_DESCRIPTION = [
         "Ingeniero Civil con foco en Ciencia de Datos y profundo conocimiento en Desarrollo Web, con un nivel de inglés C1 Avanzado y con experiencia internacional en Brasil.",
         "Desde 2018 me introduje gradualmente en el mundo de la tecnología, trabajé como freelance usando lenguajes de programación, bases de datos y entornos virtuales para automatizar procesos en el campo de la ingeniería civil.",
-        "Actualmente, extraigo, analizo y modelo información usando los principios del Data Science y Machine Learning. Diseño arquitecturas viables y escalables para el flujo de los datos. Orquesto diferentes servicios en la nube y genero información valiosa a través de herramientas de visualización como PowerBI o Streamlit.",
+        "Actualmente, extraigo, analizo y modelo información usando los principios del Data Science y Machine Learning. Diseño arquitecturas viables y escalables para el flujo de los datos con Airflow. Orquesto diferentes servicios en la nube y genero información valiosa a través de herramientas de visualización como PowerBI o Streamlit.",
     ]
     VOL_ORGANIZATION = "AIESEC en Colombia"
     VOL_DESCRIPTION = "9000xBogota una iniciativa de AIESEC para mostrar a los ciudadanos de Bogotá, que jóvenes de diferentes nacionalidades pueden sentir empatía y respeto por la ciudad que brevemente los acoge, ofreciendo conciencia social e información de la importancia del calentamiento global."
@@ -314,7 +314,7 @@ def spanish_pdf_view(request):
             "start": "Dec 2019",
             "end": "Dec 2020",
             "techstack": [
-                "OS Linux, Git & GitHub, HTML, CSS-Bootstrap, Django, Matplotlib & Bokeh, WeasyPrint, PostgreSQL, PythonAnywhere."
+                "OS Linux, Git & GitHub, HTML, CSS-Bootstrap, Django, Matplotlib & Bokeh, WeasyPrint, SQLite, PythonAnywhere."
             ],
         },
     }
@@ -467,7 +467,7 @@ def portuguese_pdf_view(request):
     PROFF = "engenheiro civil"
     EDUCATION = "formação"
     LANGUAGE = "idiomas"
-    SKILL = "Habilidades"
+    SKILL = "competências"
     FEATURED = "em destaque"
     VOLUNTER = "voluntariado"
     ABOUT = "sobre"
@@ -535,7 +535,7 @@ def portuguese_pdf_view(request):
             "start": "Dec 2019",
             "end": "Dec 2020",
             "techstack": [
-                "OS Linux, Git & GitHub, HTML, CSS-Bootstrap, Django, Matplotlib & Bokeh, WeasyPrint, PostgreSQL, PythonAnywhere."
+                "OS Linux, Git & GitHub, HTML, CSS-Bootstrap, Django, Matplotlib & Bokeh, WeasyPrint, SQLite, PythonAnywhere."
             ],
         },
     }
@@ -548,8 +548,8 @@ def portuguese_pdf_view(request):
             "end": "Mar 2022",
             "responsibilities": [
                 'No primer MÓDULO "ORÇAMENTO" o aplicativo tem a capacidade de cadastrar clientes e fazer cotações para o testes necessários para então gerar uma ordem de serviço e uma folha de liquidação dos testes realizados.',
-                "Análisis de información, diseño, desarrollo y despliegue de una herramienta web que se ajuste a los requerimientos del laboratorio.",
-                "Creación de un espacio virtual con Docker, montado en una instancia EC2 en los servidores de AWS, RDS para la base de datos relacional Backup & Restore y S3 para las imágenes y reportes en PDF.",
+                "Análise de informações, desenho, desenvolvimento e implantação de uma ferramenta web que atende aos requisitos do laboratório.",
+                "Criação de um espaço virtual com Docker, montado em instância EC2 em servidores AWS, RDS pelo banco de dados relacional Backup & Restore e S3 bucket pelas imagens e orcamentos em PDF.",
             ],
         },
         "Prefeitura Provincial de Majes": {
@@ -559,10 +559,10 @@ def portuguese_pdf_view(request):
             "start": "May 2021",
             "end": "Nov 2021",
             "responsibilities": [
-                "Asistencia en la elaboración y revisión de liquidaciones técnico financiera de proyectos de inversión pública e IOARR, Conforme a la directiva de Liquidación de la Ley de Contrataciones del Estado.",
-                "Tramite de las modificaciones en ejecución de obra Formato 8A de adicionales, deductivos y ampliaciones de plazo de las Inversiones de la Municipalidad.",
-                "Revisión de las valorizaciones mensuales de obras.",
-                "Seguimiento y actualización de las obras en las plataformas del Invierte.pe Formato 12B.",
+                "Assessoria na preparação e revisão de liquidações técnicas financeiras de projetos de investimento público e IOARR, de acordo com a diretiva de Liquidação da Lei de Aprovisionamento do Estado.",
+                "Processamento de modificações na execução da obra Formato 8A de adicionais, dedutivos e prorrogativos de prazo dos Investimentos da Prefeitura.",
+                "Revisão das avaliações mensais das obras.",
+                "Acompanhamento e atualização das obras nas plataformas de Invierte.pe Formato 12B.",
             ],
         },
         "Juares Arquitectos & Ingenieros SAC": {
@@ -572,9 +572,9 @@ def portuguese_pdf_view(request):
             "start": "Nov 2018",
             "end": "Nov 2019",
             "responsibilities": [
-                "Soporte profesional en el área técnica estructural en edificaciones y muros de contención.",
-                "Control detallado y eficiente de las tareas diarias, semanales y mensuales de obra a través de la herramienta MS Project.",
-                "Elaboración de las valorizaciones mensuales de obra, automatizado en Excel.",
+                "Soporte profissional na área técnica estrutural em edifícios e muros de contenção.",
+                "Controle detalhado e eficiente das tarefas diárias, semanais e mensais através da ferramenta MS Project.",
+                "Elaboração de avaliações do trabalho mensais, automatizadas em Excel.",
             ],
         },
         "FourC Bilingual Academy": {
@@ -584,9 +584,9 @@ def portuguese_pdf_view(request):
             "start": "Jun 2016",
             "end": "Dec 2017",
             "responsibilities": [
-                "Soporte profesional para la solución de vicios estructurales con pronósticos y soluciones múltiples.",
-                "Control detallado y eﬁciente de las tareas diarias, semanales y mensuales del personal de mantenimiento, a través de la herramienta MS Project.",
-                "Reducí en 30% el consumo de agua potable y en 11% el consumo de energía eléctrica mensual.",
+                "Suporte profissional para a solução de defeitos estruturais com opções em previsões e soluções.",
+                "Controle detalhado e eficiente das tarefas diárias, semanais e mensais do pessoal de manutenção, através da ferramenta MS Project.",
+                "Reduzi o consumo de água potável em 30% e o consumo mensal de eletricidade em 11%.",
             ],
         },
     }

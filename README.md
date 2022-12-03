@@ -107,7 +107,7 @@
       <p align="justify"><strong>What it does?</strong> 💡 A web application tool to automate and systematize trials at the Civil Engineering Laboratory. <strong>Why did you build this project?</strong> 💡 This was my thesis project for my professional degree.</p>
       <p align="justify"><strong>What was my motivation?</strong> 💡 This project was conceived in collaboration with my thesis tutor (Phd. Alejandro Hidalgo). He was enchage for the labs and I had learned a web development tools. <strong>What did you learn?</strong> 💡 Process identification and characterization, information analysis, system design, and programming the logic behind the primary chosen trials, how to create a basic user guide, how to generate results in web view and PDF, hands on HTML & CSS & JavaScript, use of Django as the main framework, SQLite data base, get some basic statistics on the frequency of some trials. Use PythonAnywhere servers to deploy the web applications.</p>
       <p align="center">
-        <a href="https://github.com/jorgeav527/life-expectancy.git">
+        <a href="https://github.com/jorgeav527/epiclabs.git">
           <img src="https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge"/>
         </a>
         <a href="https://youtu.be/DVeMYywfXPg">
