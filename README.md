@@ -99,10 +99,22 @@
 <h2 align="center">💻 My favorite projects</h2>
 <table>
   <tr>
+    <td width="400"><img src="https://i.imgur.com/ji0btye.png" alt="EPIC Labs"></td>
     <td width="400"><img src="https://i.imgur.com/9nERKAE.png" alt="Civil Labs App"></td>
-    <td width="400"><img src="https://i.imgur.com/5PxDz2P.png" alt="Life Expectancy"></td>
   </tr>
   <tr>
+    <td>
+      <p align="justify"><strong>What it does?</strong> 💡 A web application tool to automate and systematize trials at the Civil Engineering Laboratory. <strong>Why did you build this project?</strong> 💡 This was my thesis project for my professional degree.</p>
+      <p align="justify"><strong>What was my motivation?</strong> 💡 This project was conceived in collaboration with my thesis tutor (Phd. Alejandro Hidalgo). He was enchage for the labs and I had learned a web development tools. <strong>What did you learn?</strong> 💡 Process identification and characterization, information analysis, system design, and programming the logic behind the primary chosen trials, how to create a basic user guide, how to generate results in web view and PDF, hands on HTML & CSS & JavaScript, use of Django as the main framework, SQLite data base, get some basic statistics on the frequency of some trials. Use PythonAnywhere servers to deploy the web applications.</p>
+      <p align="center">
+        <a href="https://github.com/jorgeav527/life-expectancy.git">
+          <img src="https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge"/>
+        </a>
+        <a href="https://youtu.be/DVeMYywfXPg">
+          <img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="Youtube Badge"/>
+        </a>
+      </p>      
+    </td>
     <td>
       <p align="justify"><strong>What it does?</strong> 💡 It's a Web Application for Testing Services at a Civil Engineering Laboratory. <strong>Why did you build this project?</strong> 💡 It will be used not only to put together the business's logistics but also to automate in real-time the logic behind some of the most used lab tests in the civil engineering career.</p>
       <p align="justify"><strong>What was my motivation?</strong> 💡 This is built on top of my thesis project, so I'll implement some new UX/UI features and make an upgrade to the project architecture. I will create a package for extending and scaling the implemented tests, this will be updated and maintained on a different repo. <strong>What did you learn?</strong> 💡 The focus of this project is to create a Data-WareHouse to extract and create some nice Dashboards to give some insides about the characteristics of the tests and business financials.</p>
@@ -112,9 +124,18 @@
         </a>
       </p>      
     </td>
+  </tr>
+</table>
+<br />
+<table>
+  <tr>
+    <td width="400"><img src="https://i.imgur.com/5PxDz2P.png" alt="Life Expectancy"></td>
+    <td width="400"><img src="https://i.imgur.com/JYDaGyT.png" alt="ML Datathon"></td>
+  </tr>
+  <tr>
     <td>
-      <p align="justify"><strong>What it does?</strong> 💡 In order to generate insights about Life Expectancy, we designed a pipeline to create a data warehouse from the ETL, using the World Bank, the World Health Organization, and the United Nations APIs. With this clean information, we generated stunning dashboards and predictions based on machine learning models. <strong>Why did you build this project?</strong> 💡 This is the final project for Henry's Data Science Bootcamp.</p>
-      <p align="justify"><strong>What was my motivation?</strong> 💡 Reduce the gap by three years between developed and underdeveloped countries in the next 10 years!<strong>What did you learn?</strong> 💡 Agile methodologies (SCRUM) and a GitHub flow to collaborate as a team. The pipeline was built using the architectures of "ETL with Airflow running as a web service," "Data Analytics with simple Notebooks," "Data Lake and Data Warehouse as a Service in Linode Cloud" "Interactive Dashboards using PoweBI and Streamlit for ML predictions," and "Docker for development and production environments."</p>
+      <p align="justify"><strong>What it does?</strong> 💡 To generate insights about Life Expectancy, we created a pipeline from the ETL to create a data warehouse using APIs from the World Bank, World Health Organization, and United Nations. With this clean data, we created stunning dashboards and predictions based on machine learning models. <strong>Why did you build this project?</strong> 💡 This is the final project for Henry's Data Science Bootcamp.</p>
+      <p align="justify"><strong>What was my motivation?</strong> 💡 Reduce the gap by three years between developed and underdeveloped countries in the next 10 years! <strong>What did you learn?</strong> 💡 Agile methodologies (SCRUM) and a GitHub flow to collaborate as a team. The pipeline was built using the architectures of "ETL with Airflow running as a web service," "Data Analytics with simple Notebooks," "Data Lake and Data Warehouse as a Service in Linode Cloud" "Interactive Dashboards using PoweBI and Streamlit for ML predictions," and "Docker for development and production environments".</p>
       <p align="center">
         <a href="https://github.com/jorgeav527/life-expectancy.git">
           <img src="https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge"/>
@@ -124,15 +145,6 @@
         </a>
       </p>      
     </td>
-  </tr>
-</table>
-<br />
-<table>
-  <tr>
-    <td width="400"><img src="https://i.imgur.com/JYDaGyT.png" alt="ML Datathon"></td>
-    <td width="400"></td>
-  </tr>
-  <tr>
     <td>
       <p align="justify"><strong>What it does?</strong> 💡 Apply either supervised or unsupervised ML models. <strong>Why did you build this project?</strong> 💡 To perform initial investigations on different and interesting datasets (EDAs) from Kaggle to discover patterns. Then test hypotheses or check assumptions by using graphical representation.</p>
       <p align="justify"><strong>What was my motivation?</strong> 💡 Learning ML opens up a world of opportunities to create cutting-edge applications in a variety of fields and, on the other hand, advance my career to the next level. <strong>What did you learn?</strong> 💡 Develop self-learning computer systems by combining algorithms and statistical models.</p>
@@ -141,8 +153,6 @@
           <img src="https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge"/>
         </a>
       </p>      
-    </td>
-    <td>
     </td>
   </tr>
 </table>
@@ -163,11 +173,12 @@
   <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" />
 </p>
 
-<h2>License: MIT</h2>
-
-### +Info
+## + Info
 - [Badges4 Profile](https://github.com/alexandresanlim/Badges4-README.md-Profile.git)
 - [Awesome github profile readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme.git)
 - [Vectorlogo](https://www.vectorlogo.zone/)
 - [Devicon](https://devicon.dev/)
 - [Emoji](https://gitmoji.dev/)
+
+
+## *License: MIT*
