@@ -99,8 +99,16 @@
 <h2 align="center">💻 My favorite projects</h2>
 <table>
   <tr>
-    <td width="400"><img src="https://i.imgur.com/ji0btye.png" alt="EPIC Labs"></td>
-    <td width="400"><img src="https://i.imgur.com/9nERKAE.png" alt="Civil Labs App"></td>
+    <td width="400">
+      <a href="https://github.com/jorgeav527/epiclabs.git">
+        <img src="https://i.imgur.com/ji0btye.png" alt="EPIC Labs">
+      </a>
+    </td>
+    <td width="400">
+      <a href="https://github.com/jorgeav527/rpg_labs_repo.git">
+        <img src="https://i.imgur.com/9nERKAE.png" alt="Civil Labs App">
+      </a>
+    </td>
   </tr>
   <tr>
     <td>
@@ -129,8 +137,16 @@
 <br />
 <table>
   <tr>
-    <td width="400"><img src="https://i.imgur.com/5PxDz2P.png" alt="Life Expectancy"></td>
-    <td width="400"><img src="https://i.imgur.com/JYDaGyT.png" alt="ML Datathon"></td>
+    <td width="400">
+      <a href="https://github.com/jorgeav527/life-expectancy.git">
+        <img src="https://i.imgur.com/5PxDz2P.png" alt="Life Expectancy">
+      </a>
+    </td>
+    <td width="400">
+      <a href="https://github.com/jorgeav527/Datathon.git">
+        <img src="https://i.imgur.com/JYDaGyT.png" alt="ML Datathon">
+      </a>
+    </td>
   </tr>
   <tr>
     <td>
@@ -146,8 +162,8 @@
       </p>      
     </td>
     <td>
-      <p align="justify"><strong>What it does?</strong> 💡 Apply either supervised or unsupervised ML models. <strong>Why did you build this project?</strong> 💡 To perform initial investigations on different and interesting datasets (EDAs) from Kaggle to discover patterns. Then test hypotheses or check assumptions by using graphical representation.</p>
-      <p align="justify"><strong>What was my motivation?</strong> 💡 Learning ML opens up a world of opportunities to create cutting-edge applications in a variety of fields and, on the other hand, advance my career to the next level. <strong>What did you learn?</strong> 💡 Develop self-learning computer systems by combining algorithms and statistical models.</p>
+      <p align="justify"><strong>What it does?</strong> 💡 AIt's a resume from Machine Learning Specialization Course from Stanford, the Jovian Course Machine Learning with Scikit-Learn: Zero to GBMs and the Deep Learning with PyTorch: Zero to GANs. <strong>Why did you build this project?</strong> 💡  It was partly a bootcamp project to achieve the highest possible score in the E-commerce dataset. But I'll use it as a kaggle notebook repository. </p>
+      <p align="justify"><strong>What was my motivation?</strong> 💡 I know Python very well, but I'd like to have a solid foundation in supervise and unsupervise learning. On the other hand, it is a good starting point for Deep Learning and AI. <strong>What did you learn?</strong> 💡 Libraries such as Pandas, Scikit-Learn, and PyTorch; Machine Learning supervised learning, unsupervised learning, recommender systems, and reinforcement learning. Best practices for Jupyter notebooks. However, the gem of this repo is practical advice for using learning algorithms.</p>
       <p align="center">
         <a href="https://github.com/jorgeav527/Datathon.git">
           <img src="https://img.shields.io/badge/GitHub-black?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Badge"/>
