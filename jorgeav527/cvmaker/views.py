@@ -31,9 +31,9 @@ def english_pdf_view(request):
     ABOUT = "about me"
     PROJECT = "projects"
     ABOUT_DESCRIPTION = [
-        "I'm a Civil Engineer with a focus on Data Science and solid foundations in Web Development, a C1 advanced level of English, and international experience in Brazil.",
+        "Civil Engineer with strong fundamentals in Web Development and focus on Data Science, a C1 advanced level of English, and international experience in Brazil.",
         "Since 2018, I've been gradually immersing myself in the world of technology. I worked as a freelancer using programming languages, databases, and web development environments to automate processes in the field of civil engineering.",
-        "Actually, I extract, analyze, and model data using Data Science and Machine Learning principles. I build viable and scalable data flow architectures with Airflow. I orchestrate various cloud services on the Linode platform and generate insights using data visualization tools such as PowerBI or Streamlit.",
+        "Actually, I extract, analyze, and model data using Data Science and Machine Learning principles. I build viable and scalable data flow architectures. I orchestrate various cloud services and generate insights using data visualization tools such as PowerBI or Streamlit.",
     ]
     VOL_ORGANIZATION = "AIESEC en Colombia"
     VOL_DESCRIPTION = "9000xBogota is an AIESEC initiative that demonstrates to the citizens of Bogotá that young people of various nationalities can feel empathy and respect for the city that becomes their temporary home, while also raising social awareness and providing information about the importance of global warming."
@@ -59,24 +59,6 @@ def english_pdf_view(request):
         }
     }
     PROJECT_DICT = {
-        "Machine Learning Specialization": {
-            "title": "Datathon - Applying ML Modeling",
-            "link": "https://github.com/jorgeav527/Datathon.git",
-            "start": "Sep 2022",
-            "end": "Present",
-            "techstack": [
-                "Jupyter (Numpy & Pandas & Scikit-Learn & Plotly).",
-            ],
-        },
-        "Final project for Henry's Data Science Bootcamp": {
-            "title": "Life Expectancy - ETL & EDA & ML",
-            "link": "https://github.com/jorgeav527/life-expectancy.git",
-            "start": "Sep 2022",
-            "end": "Oct 2022",
-            "techstack": [
-                "OS Linux, Git & GitHub & Git LFS, Jupyter (Numpy & Pandas & Scikit-Learn, Matplotlib), Heroku, MongoDB, ElephantSQL, FastAPI, Streamlit, Apache Airflow, Docker, Linode (EC2 & RDS & S3)."
-            ],
-        },
         "RPG Labs - Grupo RPG SAC": {
             "title": "Web Application for Testing Services at a Civil Engineering Soils Laboratory",
             "link": "https://github.com/jorgeav527/rpg_labs_repo.git",
@@ -96,7 +78,26 @@ def english_pdf_view(request):
                 "OS Linux, Git & GitHub, HTML, CSS-Bootstrap, Django, Matplotlib & Bokeh, WeasyPrint, SQLite, PythonAnywhere."
             ],
         },
+        "Final project for Henry's Data Science Bootcamp": {
+            "title": "Life Expectancy - ETL & EDA & ML",
+            "link": "https://github.com/jorgeav527/life-expectancy.git",
+            "start": "Sep 2022",
+            "end": "Oct 2022",
+            "techstack": [
+                "OS Linux, Git & GitHub & Git LFS, Jupyter (Numpy & Pandas & Scikit-Learn, Matplotlib), Heroku, MongoDB, ElephantSQL, FastAPI, Streamlit, Apache Airflow, Docker, Linode (EC2 & RDS & S3)."
+            ],
+        },
+        "Machine Learning Specialization": {
+            "title": "Datathon - Applying ML Modeling",
+            "link": "https://github.com/jorgeav527/Datathon.git",
+            "start": "Sep 2022",
+            "end": "Present",
+            "techstack": [
+                "Jupyter (Numpy & Pandas & Scikit-Learn & Plotly).",
+            ],
+        },
     }
+
     EXP_DICT = {
         "Grupo RPG SAC": {
             "title": 'Civil Engineer "Soils Laboratory IT Automation"',
@@ -105,9 +106,9 @@ def english_pdf_view(request):
             "start": "Dec 2021",
             "end": "Mar 2022",
             "responsibilities": [
-                'The web application in the FIRST MODULE "QUOTES" has the ability to register customers and generate quotes for the required tests. Create a service order and a settlement sheet for the tests that were performed.',
-                "I had planned and performed the analysis of information, designed, developed, and deployed a web application tool that meets the requirements and needs of the laboratory.",
-                "I had built a Docker virtual space that was mounted on an EC2 instance running on AWS servers, using RDS for relational database backup and restore, and S3 bucket store for images and PDF reports.",
+                "I had built a Docker virtual space using Django, HTMX and Postgres that was mounted on an EC2 instance on AWS servers, with RDS for the backup and restore of the relational database and using S3 for the images and PDF reports.",
+                "I had planned and performed the analysis of information, designed, developed, and deployed a web tool that meets the requirements and needs of the laboratory.",
+                'In the FIRST MODULE "QUOTES" the web application has the feature to register customers and make quotes for the tests required. Then, for the tests that were performed, create a service order and a settlement sheet.',
             ],
         },
         "Municipalidad Distrital de Majes": {
@@ -149,6 +150,23 @@ def english_pdf_view(request):
         },
     }
     SKILL_DICT = {
+        "Full Stack Development": [
+            "OS Linux",
+            "Bash",
+            "Vuejs",
+            "Node",
+            "Django & DRF",
+            "Flask",
+            "HTMX",
+            "FastAPI",
+            "Git & GitHub",
+            "Jupyter Notebook",
+            "PostgreSQL & MySQL",
+            "Redis",
+            "Docker",
+            "AWS (EC2 & RDS & S3)",
+            "Linode",
+        ],
         "data science": [
             "JupyterLab",
             "Numpy",
@@ -165,22 +183,6 @@ def english_pdf_view(request):
             "Docker",
             "Streamlit",
             "PowerBI",
-        ],
-        "Full Stack Development": [
-            "OS Linux",
-            "Bash",
-            "Vuejs",
-            "Node",
-            "Django",
-            "Flask",
-            "HTMX",
-            "FastAPIiii",
-            "Git & GitHub",
-            "Jupyter Notebook",
-            "PostgreSQL & MySQL",
-            "Docker",
-            "AWS (EC2 & RDS & S3)",
-            "Linode",
         ],
         "Civil Background": [
             "Excel",
@@ -252,9 +254,9 @@ def spanish_pdf_view(request):
     ABOUT = "acerca de"
     PROJECT = "proyectos"
     ABOUT_DESCRIPTION = [
-        "Ingeniero Civil con foco en Ciencia de Datos y profundo conocimiento en Desarrollo Web, con un nivel de inglés C1 Avanzado y con experiencia internacional en Brasil.",
+        "Ingeniero Civil con una base sólida en Web Development y con enfoque en Data Science, un nivel de ingles C1 Advanced y con experiencia internacional en Brasil.",
         "Desde 2018 me introduje gradualmente en el mundo de la tecnología, trabajé como freelance usando lenguajes de programación, bases de datos y entornos virtuales para automatizar procesos en el campo de la ingeniería civil.",
-        "Actualmente, extraigo, analizo y modelo información usando los principios del Data Science y Machine Learning. Diseño arquitecturas viables y escalables para el flujo de los datos con Airflow. Orquesto diferentes servicios en la nube y genero información valiosa a través de herramientas de visualización como PowerBI o Streamlit.",
+        "Actualmente, extraigo, analizo y modelo información usando los principios del Data Science y Machine Learning. Diseño arquitecturas viables y escalables para el flujo de los datos. Orquesto diferentes servicios en la nube y genero información valiosa a través de herramientas de visualización como PowerBI o Streamlit.",
     ]
     VOL_ORGANIZATION = "AIESEC en Colombia"
     VOL_DESCRIPTION = "9000xBogota una iniciativa de AIESEC para mostrar a los ciudadanos de Bogotá, que jóvenes de diferentes nacionalidades pueden sentir empatía y respeto por la ciudad que brevemente los acoge, ofreciendo conciencia social e información de la importancia del calentamiento global."
@@ -280,24 +282,6 @@ def spanish_pdf_view(request):
         }
     }
     PROJECT_DICT = {
-        "Especialización en Machine Learning": {
-            "title": "Datathon - Aplicación de modelos en ML",
-            "link": "https://github.com/jorgeav527/Datathon.git",
-            "start": "Sep 2022",
-            "end": "Present",
-            "techstack": [
-                "Jupyter (Numpy & Pandas & Scikit-Learn & Plotly).",
-            ],
-        },
-        "Proyecto Final - Bootcamp de Henry en Data Science": {
-            "title": "Esperanza de Vida - ETL & EDA & ML",
-            "link": "https://github.com/jorgeav527/life-expectancy.git",
-            "start": "Sep 2022",
-            "end": "Oct 2022",
-            "techstack": [
-                "OS Linux, Git & GitHub & Git LFS, Jupyter (Numpy & Pandas & Scikit-Learn, Matplotlib), Heroku, MongoDB, ElephantSQL, FastAPI, Streamlit, Apache Airflow, Docker, Linode (EC2 & RDS & S3)."
-            ],
-        },
         "RPG Labs - Grupo RPG SAC": {
             "title": "Aplicación Web para Servicios de Ensayos en los Laboratorios de Suelos de Ingeniería Civil",
             "link": "https://github.com/jorgeav527/rpg_labs_repo.git",
@@ -317,6 +301,24 @@ def spanish_pdf_view(request):
                 "OS Linux, Git & GitHub, HTML, CSS-Bootstrap, Django, Matplotlib & Bokeh, WeasyPrint, SQLite, PythonAnywhere."
             ],
         },
+        "Proyecto Final - Bootcamp de Henry en Data Science": {
+            "title": "Esperanza de Vida - ETL & EDA & ML",
+            "link": "https://github.com/jorgeav527/life-expectancy.git",
+            "start": "Sep 2022",
+            "end": "Oct 2022",
+            "techstack": [
+                "OS Linux, Git & GitHub & Git LFS, Jupyter (Numpy & Pandas & Scikit-Learn, Matplotlib), Heroku, MongoDB, ElephantSQL, FastAPI, Streamlit, Apache Airflow, Docker, Linode (EC2 & RDS & S3)."
+            ],
+        },
+        "Especialización en Machine Learning": {
+            "title": "Datathon - Aplicación de modelos en ML",
+            "link": "https://github.com/jorgeav527/Datathon.git",
+            "start": "Sep 2022",
+            "end": "Present",
+            "techstack": [
+                "Jupyter (Numpy & Pandas & Scikit-Learn & Plotly).",
+            ],
+        },
     }
     EXP_DICT = {
         "Grupo RPG SAC": {
@@ -326,9 +328,9 @@ def spanish_pdf_view(request):
             "start": "Dec 2021",
             "end": "Mar 2022",
             "responsibilities": [
-                'En el PRIMER MÓDULO "COTIZACIONES" la aplicación tiene la capacidad de registrar a los clientes y realizar cotizaciones de los ensayos requeridos para luego generar una orden de servicio y una hoja de liquidación de los ensayos ejecutados.',
-                "Análisis de información, diseño, desarrollo y despliegue de una herramienta web que se ajuste a los requerimientos del laboratorio.",
                 "Creación de un espacio virtual con Docker, montado en una instancia EC2 en los servidores de AWS, RDS para la base de datos relacional Backup & Restore y S3 para las imágenes y reportes en PDF.",
+                "Análisis de información, diseño, desarrollo y despliegue de una herramienta web que se ajuste a los requerimientos del laboratorio.",
+                'En el PRIMER MÓDULO "COTIZACIONES" la aplicación tiene la capacidad de registrar a los clientes y realizar cotizaciones de los ensayos requeridos para luego generar una orden de servicio y una hoja de liquidación de los ensayos ejecutados.',
             ],
         },
         "Municipalidad Distrital de Majes": {
@@ -370,6 +372,23 @@ def spanish_pdf_view(request):
         },
     }
     SKILL_DICT = {
+        "Full Stack Development": [
+            "OS Linux",
+            "Bash",
+            "Vuejs",
+            "Node",
+            "Django & DRF",
+            "Flask",
+            "HTMX",
+            "FastAPI",
+            "Git & GitHub",
+            "Jupyter Notebook",
+            "PostgreSQL & MySQL",
+            "Redis",
+            "Docker",
+            "AWS (EC2 & RDS & S3)",
+            "Linode",
+        ],
         "data science": [
             "JupyterLab",
             "Numpy",
@@ -386,22 +405,6 @@ def spanish_pdf_view(request):
             "Docker",
             "Streamlit",
             "PowerBI",
-        ],
-        "Full Stack Development": [
-            "OS Linux",
-            "Bash",
-            "Vuejs",
-            "Node",
-            "Django",
-            "Flask",
-            "HTMX",
-            "FastAPIiii",
-            "Git & GitHub",
-            "Jupyter Notebook",
-            "PostgreSQL & MySQL",
-            "Docker",
-            "AWS (EC2 & RDS & S3)",
-            "Linode",
         ],
         "Ingeniería Civil": [
             "Excel",
@@ -501,24 +504,6 @@ def portuguese_pdf_view(request):
         }
     }
     PROJECT_DICT = {
-        "Especialização em Machine Learning": {
-            "title": "Datathon - Aplicação de modelos em ML",
-            "link": "https://github.com/jorgeav527/Datathon.git",
-            "start": "Sep 2022",
-            "end": "Present",
-            "techstack": [
-                "Jupyter (Numpy & Pandas & Scikit-Learn & Plotly).",
-            ],
-        },
-        "Projeto Final - Bootcamp de Henry em Data Science": {
-            "title": "Esperança na vida - ETL & EDA & ML",
-            "link": "https://github.com/jorgeav527/life-expectancy.git",
-            "start": "Sep 2022",
-            "end": "Oct 2022",
-            "techstack": [
-                "OS Linux, Git & GitHub & Git LFS, Jupyter (Numpy & Pandas & Scikit-Learn, Matplotlib), Heroku, MongoDB, ElephantSQL, FastAPI, Streamlit, Apache Airflow, Docker, Linode (EC2 & RDS & S3)."
-            ],
-        },
         "RPG Labs - Grupo RPG SAC": {
             "title": "Aplicativo Web para Serviços de Teste nos Laboratórios de Solos da Engenharia Civil",
             "link": "https://github.com/jorgeav527/rpg_labs_repo.git",
@@ -538,7 +523,26 @@ def portuguese_pdf_view(request):
                 "OS Linux, Git & GitHub, HTML, CSS-Bootstrap, Django, Matplotlib & Bokeh, WeasyPrint, SQLite, PythonAnywhere."
             ],
         },
+        "Projeto Final - Bootcamp de Henry em Data Science": {
+            "title": "Esperança na vida - ETL & EDA & ML",
+            "link": "https://github.com/jorgeav527/life-expectancy.git",
+            "start": "Sep 2022",
+            "end": "Oct 2022",
+            "techstack": [
+                "OS Linux, Git & GitHub & Git LFS, Jupyter (Numpy & Pandas & Scikit-Learn, Matplotlib), Heroku, MongoDB, ElephantSQL, FastAPI, Streamlit, Apache Airflow, Docker, Linode (EC2 & RDS & S3)."
+            ],
+        },
+        "Especialização em Machine Learning": {
+            "title": "Datathon - Aplicação de modelos em ML",
+            "link": "https://github.com/jorgeav527/Datathon.git",
+            "start": "Sep 2022",
+            "end": "Present",
+            "techstack": [
+                "Jupyter (Numpy & Pandas & Scikit-Learn & Plotly).",
+            ],
+        },
     }
+
     EXP_DICT = {
         "Grupo RPG SAC": {
             "title": 'Engenheiro Civil "Automação de processos no Laboratório de Solos"',
@@ -547,9 +551,9 @@ def portuguese_pdf_view(request):
             "start": "Dec 2021",
             "end": "Mar 2022",
             "responsibilities": [
-                'No primer MÓDULO "ORÇAMENTO" o aplicativo tem a capacidade de cadastrar clientes e fazer cotações para o testes necessários para então gerar uma ordem de serviço e uma folha de liquidação dos testes realizados.',
-                "Análise de informações, desenho, desenvolvimento e implantação de uma ferramenta web que atende aos requisitos do laboratório.",
                 "Criação de um espaço virtual com Docker, montado em instância EC2 em servidores AWS, RDS pelo banco de dados relacional Backup & Restore e S3 bucket pelas imagens e orcamentos em PDF.",
+                "Análise de informações, desenho, desenvolvimento e implantação de uma ferramenta web que atende aos requisitos do laboratório.",
+                'No primer MÓDULO "ORÇAMENTO" o aplicativo tem a capacidade de cadastrar clientes e fazer cotações para o testes necessários para então gerar uma ordem de serviço e uma folha de liquidação dos testes realizados.',
             ],
         },
         "Prefeitura Provincial de Majes": {
@@ -591,6 +595,23 @@ def portuguese_pdf_view(request):
         },
     }
     SKILL_DICT = {
+        "Full Stack Development": [
+            "OS Linux",
+            "Bash",
+            "Vuejs",
+            "Node",
+            "Django & DRF",
+            "Flask",
+            "HTMX",
+            "FastAPI",
+            "Git & GitHub",
+            "Jupyter Notebook",
+            "PostgreSQL & MySQL",
+            "Redis",
+            "Docker",
+            "AWS (EC2 & RDS & S3)",
+            "Linode",
+        ],
         "data science": [
             "JupyterLab",
             "Numpy",
@@ -607,22 +628,6 @@ def portuguese_pdf_view(request):
             "Docker",
             "Streamlit",
             "PowerBI",
-        ],
-        "Full Stack Development": [
-            "OS Linux",
-            "Bash",
-            "Vuejs",
-            "Node",
-            "Django",
-            "Flask",
-            "HTMX",
-            "FastAPIiii",
-            "Git & GitHub",
-            "Jupyter Notebook",
-            "PostgreSQL & MySQL",
-            "Docker",
-            "AWS (EC2 & RDS & S3)",
-            "Linode",
         ],
         "Engenharia Civil": [
             "Excel",
