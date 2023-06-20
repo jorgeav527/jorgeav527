@@ -16,82 +16,72 @@
   </a>
 </div>
 <!-- End -->
+<br />
 <!-- Intro -->
-<h2 align="center">
-  A Civil Engineer 🧑‍💻 who loves to solve problems related to Web development, Data Science and Machine Learning 🔥
-</h2>
-<!-- End -->
-<br />
-<!-- Web Development Tools -->
-<h3 align="center">🛠️ First and foremost, I have been using <strong style="color:red;">Linux </strong>for 4+ years, so I have some experience with:
+<h3 align="left">
+  I've been using <strong style="color:red;">Linux</strong> for more than 5 years, I'm a <strong style="color:red;">Civil Engineer</strong> with experience as a <strong style="color:red;">Full-Stack DevOps</strong> and <strong style="color:red;">Cloud Computing</strong>, also have highly reliable <strong style="color:red;">Data Engineering</strong> skills.
 </h3>
-<p align="center">  
-  <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
-  <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain-wordmark.svg" />
-  <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gimp/gimp-original-wordmark.svg" />
-  <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/inkscape/inkscape-original-wordmark.svg" />
-  <img height=50 src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-official.svg" />
-  <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-  <img height=50 src="https://www.vectorlogo.zone/logos/vim/vim-icon.svg" />
-  <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original-wordmark.svg" />
-</p>
 <!-- End -->
 <br />
 <!-- Web Development Tools -->
-<h3 align="center">🛠️ When I face <strong style="color:red;">Web Development,</strong> I prefer to use these tecnologies:</h3>
-<p align="center">
-  <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />          
-  <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
-  <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
-  <img height=50 src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg" />
-  <img height=50 src="https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg" />
-  <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>
-  <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" />
-  <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"/>
-  <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
-  <img height=50 src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" />
-  <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"/>
-  <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" />
-  <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
-  <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" />
-  <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg" />
-  <img height=50 src="https://www.vectorlogo.zone/logos/linode/linode-ar21.svg" />
-  <img height=50 src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg" />
-</p>
-<!-- End -->
-<br />
-<!-- DS and ML -->
-<h3 align="center">🛠️ When I'm working on,<strong style="color:red;"> Data Science</strong> or trying some <strong style="color:red;">Machine Learning</strong> models:</h3>
-<p align="center">
-  <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" />
-  <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg" />
-  <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"/>
-  <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original-wordmark.svg" />
-  <img height=50 src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1024px-Scikit_learn_logo_small.svg.png"/>
-  <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"/>
-  <img height=50 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"/>
-  <img height=50 src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Cassandra_logo.svg"/>
-  <img height=50 src="https://www.vectorlogo.zone/logos/neo4j/neo4j-icon.svg"/>
-  <img height=50 src="https://www.vectorlogo.zone/logos/apache_hadoop/apache_hadoop-icon.svg"/>  
-  <img height=50 src="https://www.vectorlogo.zone/logos/apache_spark/apache_spark-ar21.svg" />
-  <img height=50 src="https://upload.wikimedia.org/wikipedia/commons/d/de/AirflowLogo.png"/>
-  <img height=50 src="https://raw.githubusercontent.com/gilbarbara/logos/9c6e5e9ef3c297da414a4809ae9f0f56a6384e91/logos/streamlit.svg"/>
-  <img height=50 src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg"/>
-</p>
-<!-- End -->
-<br />
-<!-- Background -->
-<h3 align="center">🛠️ Thanks to my <strong style="color:red;"> Background</strong>, I used to work with:</h3>
-<p align="center">
-  <img height=50 src="https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg" />
-  <img height=50 src="https://upload.wikimedia.org/wikipedia/commons/9/98/Microsoft_Project_%282019%E2%80%93present%29.svg" />
-  <img height=50 src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/845cba5c-455b-4019-95c6-c35729b77061/dcke2hy-779fbca2-bc7d-428d-9150-1ca9cb626b99.png/v1/fill/w_400,h_400,strp/icon_autocad_by_shellbulletsol_dcke2hy-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDAwIiwicGF0aCI6IlwvZlwvODQ1Y2JhNWMtNDU1Yi00MDE5LTk1YzYtYzM1NzI5Yjc3MDYxXC9kY2tlMmh5LTc3OWZiY2EyLWJjN2QtNDI4ZC05MTUwLTFjYTljYjYyNmI5OS5wbmciLCJ3aWR0aCI6Ijw9NDAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.eyf9wloXOx8epagqRsCoskKXb47fNe5ga7hcUQx7LxI" />
-  <img height=50 src="https://scontent.faqp3-1.fna.fbcdn.net/v/t1.6435-9/56691442_10157157403559253_2357510340503142400_n.png?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=wau7jr_1l2sAX8OxksA&_nc_ht=scontent.faqp3-1.fna&oh=00_AfAsyOaoyQo61SNqzcta0ZUCrig1Ub9SBQX4VhBM9rWzVA&oe=639A80D1"/>
-  <img height=50 src="https://i.pinimg.com/564x/c3/0f/44/c30f44799623528fec2b2d3b55941126.jpg" />
-  <img height=50 src="https://upload.wikimedia.org/wikipedia/commons/d/df/ArcGIS_logo.png"/>
-  <img height=50 src="https://upload.wikimedia.org/wikipedia/commons/9/91/QGIS_logo_new.svg" />
-  <img height=50 src="https://getvectorlogo.com/wp-content/uploads/2019/05/sap2000-vector-logo.png" />
-  <img height=50 src="https://www.logo.wine/a/logo/Bim_(company)/Bim_(company)-Logo.wine.svg" />
+<p align="left">
+  <h4 align="left">🛠️ My usual OS and some of the tools I use on every day:</h4>
+  <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
+  <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain-wordmark.svg" />
+  <img height=40 src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Manjaro-logo.svg" />
+  <img height=40 src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-official.svg" />
+  <img height=40 src="https://www.vectorlogo.zone/logos/vim/vim-icon.svg" />
+  <h4 align="left">🛠️ Some basic and fundamentals:</h4>
+  <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />          
+  <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
+  <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
+  <h4 align="left">Core Programming Languages:</h4>
+  <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>
+  <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"/>
+  <h4 align="left">🛠️ Some frameworks are fun to use, and I enjoy working with them:</h4>
+  <img height=40 src="https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg" />
+  <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg" />
+  <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"/>
+  <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"/>
+  <img height=40 src="https://devicons.railway.app/i/fiber.svg" />
+  <h4 align="left">🛠️ Some frameworks to handle data pipelines or workflows:</h4>
+  <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"/>
+  <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original-wordmark.svg" />
+  <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"/>
+  <img height=40 src="https://www.vectorlogo.zone/logos/apache_spark/apache_spark-ar21.svg" />
+  <img height=40 src="https://upload.wikimedia.org/wikipedia/commons/d/de/AirflowLogo.png"/>
+  <img height=40 src="https://keestalkstech.com/wp-content/uploads/2019/11/kafka-logo.png"/>
+  <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg" />
+  <img height=40 src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1024px-Scikit_learn_logo_small.svg.png"/>
+  <img height=40 src="https://raw.githubusercontent.com/gilbarbara/logos/9c6e5e9ef3c297da414a4809ae9f0f56a6384e91/logos/streamlit.svg"/>
+  <img height=40 src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg"/>
+  <h4 align="left">🛠️ Some databases I'm familiar with or have used before:</h4>
+  <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" />
+  <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+  <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" />
+  <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"/>
+  <img height=40 src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Cassandra_logo.svg"/>
+  <img height=40 src="https://www.vectorlogo.zone/logos/neo4j/neo4j-icon.svg"/>
+  <h4 align="left">🛠️ For cloud provider or deployment automated management</h4>
+  <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+  <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
+  <img height=40 src="https://www.jenkins.io/images/logos/jenkins/jenkins.svg" />
+  <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg" />
+  <img height=40 src="https://devicons.railway.app/i/terraform.svg" />
+  <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original-wordmark.svg" />
+  <h4 align="left">🛠️ Some cloud providers I have experience with:</h4>
+  <img height=40 src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg" />
+  <img height=40 src="https://www.vectorlogo.zone/logos/linode/linode-ar21.svg" />
+  <h4 align="left">🛠️ Thanks to my Background as a Civil Engineer, I used to work with:</h4>
+  <img height=40 src="https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg" />
+  <img height=40 src="https://upload.wikimedia.org/wikipedia/commons/9/98/Microsoft_Project_%282019%E2%80%93present%29.svg" />
+  <img height=40 src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/845cba5c-455b-4019-95c6-c35729b77061/dcke2hy-779fbca2-bc7d-428d-9140-1ca9cb626b99.png/v1/fill/w_400,h_400,strp/icon_autocad_by_shellbulletsol_dcke2hy-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDAwIiwicGF0aCI6IlwvZlwvODQ1Y2JhNWMtNDU1Yi00MDE5LTk1YzYtYzM1NzI5Yjc3MDYxXC9kY2tlMmh4LTc3OWZiY2EyLWJjN2QtNDI4ZC05MTUwLTFjYTljYjYyNmI5OS5wbmciLCJ3aWR0aCI6Ijw9NDAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.eyf9wloXOx8epagqRsCoskKXb47fNe5ga7hcUQx7LxI" />
+  <img height=40 src="https://scontent.faqp3-1.fna.fbcdn.net/v/t1.6435-9/56691442_10157157403559253_2357510340403142400_n.png?_nc_cat=100&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=wau7jr_1l2sAX8OxksA&_nc_ht=scontent.faqp3-1.fna&oh=00_AfAsyOaoyQo61SNqzcta0ZUCrig1Ub9SBQX4VhBM9rWzVA&oe=639A80D1"/>
+  <img height=40 src="https://i.pinimg.com/564x/c3/0f/44/c30f44799623528fec2b2d3b55941126.jpg" />
+  <img height=40 src="https://upload.wikimedia.org/wikipedia/commons/d/df/ArcGIS_logo.png"/>
+  <img height=40 src="https://upload.wikimedia.org/wikipedia/commons/9/91/QGIS_logo_new.svg" />
+  <img height=40 src="https://getvectorlogo.com/wp-content/uploads/2019/05/sap2000-vector-logo.png" />
+  <img height=40 src="https://www.logo.wine/a/logo/Bim_(company)/Bim_(company)-Logo.wine.svg" />
 </p>
 <!-- End -->
 <br />
