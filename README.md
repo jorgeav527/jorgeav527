@@ -24,27 +24,35 @@
 <!-- End -->
 <br />
 <!-- Web Development Tools -->
+<h4 align="left">🛠️ My usual OS and some of the tools I use on every day:</h4>
 <p align="left">
-  <h4 align="left">🛠️ My usual OS and some of the tools I use on every day:</h4>
   <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg">
   <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ubuntu/ubuntu-plain-wordmark.svg">
   <img height=40 src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Manjaro-logo.svg">
   <img height=40 src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-official.svg">
   <img height=40 src="https://www.vectorlogo.zone/logos/vim/vim-icon.svg">
-  <h4 align="left">🛠️ Some basic and fundamentals:</h4>
+</p>
+<h4 align="left">🛠️ Some basic and fundamentals:</h4>
+<p align="left">
   <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg">          
   <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg">
   <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"/>
+</p>
+<p align="left">
   <h4 align="left">Core Programming Languages:</h4>
   <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>
   <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg"/>
-  <h4 align="left">🛠️ Some frameworks are fun to use, and I enjoy working with them:</h4>
+</p>
+<h4 align="left">🛠️ Some frameworks are fun to use, and I enjoy working with them:</h4>
+<p align="left">
   <img height=40 src="https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg">
   <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original-wordmark.svg">
   <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"/>
   <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"/>
   <img height=40 src="https://devicons.railway.app/i/fiber.svg">
-  <h4 align="left">🛠️ Some frameworks to handle data pipelines or workflows:</h4>
+</p>
+<h4 align="left">🛠️ Some frameworks to handle data pipelines or workflows:</h4>
+<p align="left">
   <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"/>
   <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original-wordmark.svg">
   <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"/>
@@ -55,24 +63,32 @@
   <img height=40 src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Scikit_learn_logo_small.svg/1024px-Scikit_learn_logo_small.svg.png"/>
   <img height=40 src="https://raw.githubusercontent.com/gilbarbara/logos/9c6e5e9ef3c297da414a4809ae9f0f56a6384e91/logos/streamlit.svg"/>
   <img height=40 src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg"/>
-  <h4 align="left">🛠️ Some databases I'm familiar with or have used before:</h4>
+</p>
+<h4 align="left">🛠️ Some databases I'm familiar with or have used before:</h4>
+<p align="left">
   <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg">
   <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg">
   <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg">
   <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"/>
   <img height=40 src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Cassandra_logo.svg"/>
   <img height=40 src="https://www.vectorlogo.zone/logos/neo4j/neo4j-icon.svg"/>
-  <h4 align="left">🛠️ For cloud provider or deployment automated management</h4>
+</p>
+<h4 align="left">🛠️ For cloud provider or deployment automated management</h4>
+<p align="left">
   <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg">
   <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg">
   <img height=40 src="https://www.jenkins.io/images/logos/jenkins/jenkins.svg">
   <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg">
   <img height=40 src="https://devicons.railway.app/i/terraform.svg">
   <img height=40 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original-wordmark.svg">
-  <h4 align="left">🛠️ Some cloud providers I have experience with:</h4>
+</p>
+<h4 align="left">🛠️ Some cloud providers I have experience with:</h4>
+<p align="left">
   <img height=40 src="https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-ar21.svg">
   <img height=40 src="https://www.vectorlogo.zone/logos/linode/linode-ar21.svg">
-  <h4 align="left">🛠️ Thanks to my Background as a Civil Engineer, I used to work with:</h4>
+</p>
+<h4 align="left">🛠️ Thanks to my Background as a Civil Engineer, I used to work with:</h4>
+<p align="left">
   <img height=40 src="https://upload.wikimedia.org/wikipedia/commons/3/34/Microsoft_Office_Excel_%282019%E2%80%93present%29.svg">
   <img height=40 src="https://upload.wikimedia.org/wikipedia/commons/9/98/Microsoft_Project_%282019%E2%80%93present%29.svg">
   <img height=40 src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/845cba5c-455b-4019-95c6-c35729b77061/dcke2hy-779fbca2-bc7d-428d-9140-1ca9cb626b99.png/v1/fill/w_400,h_400,strp/icon_autocad_by_shellbulletsol_dcke2hy-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDAwIiwicGF0aCI6IlwvZlwvODQ1Y2JhNWMtNDU1Yi00MDE5LTk1YzYtYzM1NzI5Yjc3MDYxXC9kY2tlMmh4LTc3OWZiY2EyLWJjN2QtNDI4ZC05MTUwLTFjYTljYjYyNmI5OS5wbmciLCJ3aWR0aCI6Ijw9NDAwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.eyf9wloXOx8epagqRsCoskKXb47fNe5ga7hcUQx7LxI">
