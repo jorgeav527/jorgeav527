@@ -8,17 +8,17 @@
 </div>
 <!-- End -->
 <!-- Social Media Links -->
-<div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
-    <span><h2>👀 Take a look: </h2></span>
-  <a href="https://www.linkedin.com/in/jorgeav527" style="margin-right: 10px;">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge" style="height: 25px;" />
-  </a>
-  <a href="https://www.youtube.com/channel/UCM0iDBNz_jSvap50m1yboyQ" style="margin-right: 10px;">
-    <img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube Badge" style="height: 25px;" />
-  </a>
-  <a href="https://www.jorgeav527.xyz/">
-    <img src="https://img.shields.io/badge/DevSpace-009900" alt="Personal Site Badge" style="height:25px;" />
-  </a>
+<div style="display: flex; align-items: center; justify-content: center; gap: 5px;">
+    <span style="font-size: 1.5em; line-height: 1.2em; font-weight: bold;">👀 Connect with me: </span>
+    <a href="https://www.linkedin.com/in/jorgeav527" style="margin-right: 10px;">
+        <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge" style="height: 25px;" />
+    </a>
+    <a href="https://www.youtube.com/channel/UCM0iDBNz_jSvap50m1yboyQ" style="margin-right: 10px;">
+        <img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube Badge" style="height: 25px;" />
+    </a>
+    <a href="https://www.jorgeav527.xyz/">
+        <img src="https://img.shields.io/badge/DevSpace-009900" alt="Personal Site Badge" style="height:25px;" />
+    </a>
 </div>
 <!-- End -->
 <!-- Intro -->
