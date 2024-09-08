@@ -1,54 +1,51 @@
-# Astro Starter Kit: Basics
+<!-- Header -->
+<div align="center">
+    <h1>
+      <strong>
+          <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=900&size=25&pause=1000&color=3F8114&vCenter=true&width=625&height=55&lines=Hi+there%2C+I'm+Jorge%2C+a+Software+Developer." alt="Typing SVG" />
+      </strong>
+    </h1>
+</div>
+<!-- End -->
+<!-- Social Media Links -->
+<div style="display: flex; align-items: center; justify-content: left; gap: 10px;">
+    <span style="font-size: 1.5em;">👀</span>
+  <a href="https://www.linkedin.com/in/jorgeav527" style="margin-right: 10px;">
+    <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge" style="height: 25px;" />
+  </a>
+  <a href="https://www.youtube.com/channel/UCM0iDBNz_jSvap50m1yboyQ" style="margin-right: 10px;">
+    <img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube Badge" style="height: 25px;" />
+  </a>
+  <a href="https://www.jorgeav527.xyz/">
+    <img src="https://img.shields.io/badge/DevSpace-009900" alt="Personal Site Badge" style="height:25px;" />
+  </a>
+</div>
+<!-- End -->
+<!-- Intro -->
+<div align="justify">
+    <h2>🚀 About Me</h2>
+    <div style="text-align: justify; font-family: 'Fira Mono', monospace;">
+      <p>Hey there! 😎👍 with nearly 7 years of using Linux (Debian), I’m your <strong>DevOps Engineer</strong> with a passion for <strong>Data Engineering</strong>. I geek out over Go and Python and love diving into new challenges to create awesome results.</p>
+      <p>Ready to tackle any project or workflow that comes in my way. I’m all about learning, growing, and having a blast while doing it. Let’s make some magic happen together!</p>
+    </div>
+</div>
+<!-- End -->
+<h3 align="left">🛠️ Top Skills:</h3>
 
-```sh
-npm create astro@latest -- --template basics
-```
+![Linux](https://img.shields.io/badge/SO-Linux-informational?style=flat&logo=linux&logoColor=white&color=6aa6f8)
+![Python](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=6aa6f8)
+![Go](https://img.shields.io/badge/Code-Go-informational?style=flat&logo=go&logoColor=white&color=6aa6f8)
+![Kotlin](https://img.shields.io/badge/Code-Kotlin-informational?style=flat&logo=kotlin&logoColor=white&color=6aa6f8)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+![FastAPI](https://img.shields.io/badge/Framework-FastAPI-informational?style=flat&logo=fastAPI&logoColor=white&color=6aa6f8)
+![Django](https://img.shields.io/badge/Framework-Django-informational?style=flat&logo=django&logoColor=white&color=6aa6f8)
+![Airflow](https://img.shields.io/badge/Framework-Airflow-informational?style=flat&logo=airflow&logoColor=white&color=6aa6f8)
+![Fiber](https://img.shields.io/badge/Framework-Fiber-informational?style=flat&logo=fiber&logoColor=white&color=6aa6f8)
+![Echo](https://img.shields.io/badge/Framework-Echo-informational?style=flat&logo=go-echo&logoColor=white&color=6aa6f8)
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+![Docker](https://img.shields.io/badge/Tools-Docker-informational?style=flat&logo=docker&logoColor=white&color=6aa6f8)
+![Kubernetes](https://img.shields.io/badge/Tools-Kubernetes-informational?style=flat&logo=kubernetes&logoColor=white&color=6aa6f8)
+![Kubernetes](https://img.shields.io/badge/Library-HTMX-informational?style=flat&logo=HTMX&logoColor=white&color=6aa6f8)
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+![AWS](https://img.shields.io/badge/Cloud-Aws-informational?style=flat&logo=aws&logoColor=white&color=6aa6f8)
+![Linode](https://img.shields.io/badge/Cloud-Linode-informational?style=flat&logo=linode&logoColor=white&color=6aa6f8)
