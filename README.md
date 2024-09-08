@@ -9,7 +9,6 @@
 <!-- End -->
 <!-- Social Media Links -->
 <div style="display: flex; align-items: center; justify-content: center; gap: 5px;">
-    <span style="font-size: 1.5em; line-height: 1.2em; font-weight: bold;">👀 Connect with me: </span>
     <a href="https://www.linkedin.com/in/jorgeav527" style="margin-right: 10px;">
         <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge" style="height: 25px;" />
     </a>
@@ -28,6 +27,13 @@
       <p>Hey there! 😎👍 with nearly 7 years of using Linux (Debian), I’m your <strong>DevOps Engineer</strong> with a passion for <strong>Data Engineering</strong>. I geek out over Go and Python and love diving into new challenges to create awesome results.</p>
       <p>Ready to tackle any project or workflow that comes in my way. I’m all about learning, growing, and having a blast while doing it. Let’s make some magic happen together!</p>
     </div>
+    <h2>👀 Something more</h2>
+    <ul>
+        <li>...</li>
+        <li>...</li>
+        <li>...</li>
+        <li>...</li>
+    </ul>
 </div>
 <!-- End -->
 <h3 align="left">🛠️ Top Skills:</h3>
