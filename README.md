@@ -8,8 +8,8 @@
 </div>
 <!-- End -->
 <!-- Social Media Links -->
-<div style="display: flex; align-items: center; justify-content: left; gap: 10px;">
-    <span style="font-size: 1.5em;">👀</span>
+<div style="display: flex; align-items: center; justify-content: center; gap: 10px;">
+    <h2>👀 Take a look: </h2>
   <a href="https://www.linkedin.com/in/jorgeav527" style="margin-right: 10px;">
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge" style="height: 25px;" />
   </a>
