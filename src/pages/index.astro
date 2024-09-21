@@ -1,4 +1,7 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import "../styles/global.css";
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
@@ -7,15 +10,16 @@ import Card from '../components/Card.astro';
 	<main>
 		<h1>Welcome to my <span class="text-gradient">DevSpace</span></h1>
 		<p class="instructions">
-			Hey there! 😎👍 With nearly 7 years of using 
-			<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" /> (Debian), 
-			I’m your <code>DevOps Engineer</code> with a passion for <code>Data Engineering</code>. 
-			I geek out over  
+			Hey there! 😎👍 With nearly 7 years of using
+			<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" /> (Debian),
+			I’m your <code>DevOps Engineer</code> with a passion for <code>Data Engineering</code>.
+			I geek out over
 			<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" />,
-			<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg" alt="Go" />, and 
-			<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" alt="Kotlin" /> 
+			<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg" alt="Go" />, and
+			<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" alt="Kotlin" />
 			and love diving into new challenges to create awesome results.
-		</p>		
+		</p>
+		<Navigation />
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="#"
@@ -38,6 +42,7 @@ import Card from '../components/Card.astro';
 				body="Here are my certificates and professional experience."
 			/>
 		</ul>
+		<Footer />
 	</main>
 </Layout>
 
