@@ -1,5 +1,6 @@
 ---
 import Navigation from '../components/Navigation.astro';
+import Hamburger from '../components/Hamburger.astro';
 import Footer from '../components/Footer.astro';
 import "../styles/global.css";
 import Layout from '../layouts/Layout.astro';
@@ -20,6 +21,7 @@ import Card from '../components/Card.astro';
 			and love diving into new challenges to create awesome results.
 		</p>
 		<Navigation />
+		<Hamburger />
 		<ul role="list" class="link-card-grid">
 			<Card
 				href="#"
@@ -43,6 +45,13 @@ import Card from '../components/Card.astro';
 			/>
 		</ul>
 		<Footer />
+        <Footer />
+        <script>
+            document.querySelector('.hamburger').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('expanded');
+            });
+        </script>
+</body>
 	</main>
 </Layout>
 
