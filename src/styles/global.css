@@ -8,17 +8,8 @@ h1 {
   @apply my-4 text-4xl;
 }
 
-/* nav styles */
-.hamburger {
-  @apply pr-5 cursor-pointer hidden md:block;
-}
-
-.hamburger .line {
-  @apply block w-10 h-1 mb-2.5 bg-orange-300;
-}
-
 .nav-links {
-  @apply w-full mt-20 ml-12 bg-orange-300 hidden md:flex md:static md:bg-transparent md:w-auto md:ml-20 md:space-x-4;
+  @apply w-full mt-20 ml-12 hidden md:flex md:static md:bg-transparent md:w-auto md:ml-20 md:space-x-4;
 }
 
 .nav-links a {
@@ -27,7 +18,7 @@ h1 {
 
 .nav-links a:hover,
 .nav-links a:focus {
-  @apply bg-orange-300;
+  @apply bg-blue-600;
 }
 
 .expanded {
