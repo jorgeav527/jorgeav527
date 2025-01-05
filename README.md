@@ -24,7 +24,7 @@
 <div align="justify">
     <h2>🚀 About Me</h2>
     <div style="text-align: justify; font-family: 'Fira Mono', monospace;">
-      <p>Hey there! 😎👍 with nearly 7 years of using Linux (Debian), I’m your <strong>DevOps Engineer</strong> with a passion for <strong>Data Engineering</strong>. I geek out over Go and Python and love diving into new challenges to create awesome results.</p>
+      <p>Hey there! 😎👍 With over 7 years of experience using Linux (Debian), I’m your <strong>DevOps Engineer</strong> with a passion for <strong>Data Engineering</strong>. I geek out over Rust, Go and Python and love diving into new challenges to create awesome results.</p>
       <p>Ready to tackle any project or workflow that comes in my way. I’m all about learning, growing, and having a blast while doing it. Let’s make some magic happen together!</p>
     </div>
     <h2>👀 Something more</h2>
@@ -41,6 +41,7 @@
 ![Linux](https://img.shields.io/badge/SO-Linux-informational?style=flat&logo=linux&logoColor=white&color=6aa6f8)
 ![Python](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=6aa6f8)
 ![Go](https://img.shields.io/badge/Code-Go-informational?style=flat&logo=go&logoColor=white&color=6aa6f8)
+![Rust](https://img.shields.io/badge/Code-Rust-informational?style=flat&logo=rust&logoColor=white&color=6aa6f8)
 ![Kotlin](https://img.shields.io/badge/Code-Kotlin-informational?style=flat&logo=kotlin&logoColor=white&color=6aa6f8)
 
 ![FastAPI](https://img.shields.io/badge/Framework-FastAPI-informational?style=flat&logo=fastAPI&logoColor=white&color=6aa6f8)
