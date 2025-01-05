@@ -1,107 +1,51 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import "../styles/global.css";
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import { Icon } from 'astro-icon/components';
 ---
 
 <Layout title="DevSpace">
-	<main>
-		<h1>Welcome to my <span class="text-gradient">DevSpace</span></h1>
-		<p class="instructions">
-			Hey there! 😎👍 With nearly 7 years of using 
-			<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Linux" /> (Debian), 
-			I’m your <code>DevOps Engineer</code> with a passion for <code>Data Engineering</code>. 
-			I geek out over  
-			<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" />,
-			<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original.svg" alt="Go" />, and 
-			<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kotlin/kotlin-original.svg" alt="Kotlin" /> 
-			and love diving into new challenges to create awesome results.
-		</p>		
-		<ul role="list" class="link-card-grid">
+	<main class="mx-auto p-4 max-w-4xl text-white text-lg leading-relaxed">
+		<h1 class="text-4xl font-bold leading-none text-center mb-4">
+			Welcome to my <span class="bg-gradient-to-r from-blue-500 to-sky-300 bg-clip-text text-transparent">DevSpace</span>
+		</h1>
+		<p class="border border-blue-500 bg-gradient-to-r from-blue-500 to-sky-600 p-6 rounded-lg text-gray-100">
+            Hey there! 😎👍 With nearly 7 years of using
+            <Icon name="devicon:linux" class="inline w-8 h-8 mx-1 align-middle" />
+            (Debian), I’m your <code class="text-s font-bold bg-opacity-10 text-blue-200 bg-blue-600 rounded px-1">DevOps Engineer</code>
+            with a passion for <code class="text-s font-bold bg-opacity-10 text-blue-200 bg-blue-600 rounded px-1">Data Engineering</code>.
+            I geek out over
+            <Icon name="devicon:python" class="inline w-8 h-8 mx-1 align-middle" />,
+            <Icon name="devicon:rust" class="inline w-8 h-8 mx-1 align-middle" />, and
+            <Icon name="devicon:kotlin" class="inline w-8 h-8 mx-1 align-middle" />
+            and love diving into new challenges to create awesome results.
+        </p>
+		<Navigation />
+		<ul role="list" class="grid grid-cols-1 md:grid-cols-2 gap-4 p-0">
 			<Card
 				href="#"
-				title="DevOps"
-				body="Here you can explore some of my DevOps implementations."
+				title="DevOps & Cloud Architectures"
+				body="Explore my DevOps projects, showcasing a variety of cloud architectures implemented across multiple frameworks."
 			/>
 			<Card
 				href="#"
 				title="Data Engineering"
-				body="These are some of my projects involving data pipelines."
+				body="Discover my data engineering projects, where I design robust data pipelines to transform raw data into insights."
 			/>
 			<Card
 				href="#"
-				title="Notes"
-				body="Here you can review my notes."
+				title="Projects"
+				body="Here’s a collection of my personal projects in Data Science and AI, showcasing innovative solutions and hands-on experience in the field."
 			/>
 			<Card
-				href="#"
-				title="Resume"
-				body="Here are my certificates and professional experience."
+			    href="#"
+		        title="Civil Engineering Projects"
+                body="Explore my projects in civil engineering, where I integrate coding and technical skills to solve real-world engineering challenges."
 			/>
 		</ul>
+		<Footer />
 	</main>
 </Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-	h1 {
-		font-size: 4rem;
-		font-weight: 700;
-		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
-	}
-	.text-gradient {
-		background-image: linear-gradient(90deg, #1e90ff, #87cefa, #1e90ff);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(30, 144, 255, 0.25);
-		background: linear-gradient(rgba(30, 144, 255, 0.66), rgba(30, 144, 255, 0.33));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.instructions img {
-        width: 30px;
-        height: 30px;
-        vertical-align: middle;
-        margin: 0 4px;
-    }
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	}
-</style>
