@@ -1,0 +1,9 @@
+baseURL: https://jorgeav527.xyz/
+languageCode: en-us
+params:
+  contact:
+    email: jorgeav527@gmail.com
+    phone: +51 973635864
+  subtitle: The Best Widgets on Earth
+title: ReCords, Inc.
+theme: terminal
