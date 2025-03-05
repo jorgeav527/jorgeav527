@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://jorgeav527.xyz/posts/</loc>
     <lastmod>2025-03-04T14:53:23-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://jorgeav527.xyz/</loc>
     <lastmod>2025-03-04T14:53:23-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/second/</loc>
+    <loc>https://jorgeav527.xyz/posts/second/</loc>
     <lastmod>2025-03-04T14:53:23-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/first/</loc>
+    <loc>https://jorgeav527.xyz/posts/first/</loc>
     <lastmod>2025-03-04T14:46:44-05:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://jorgeav527.xyz/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://jorgeav527.xyz/tags/</loc>
   </url>
 </urlset>

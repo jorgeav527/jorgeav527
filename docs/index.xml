@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ReCords, Inc.</title>
-    <link>http://localhost:1313/</link>
+    <link>https://jorgeav527.xyz/</link>
     <description>Recent content on ReCords, Inc.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Mar 2025 14:53:23 -0500</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 Mar 2025 14:53:23 -0500</lastBuildDate><atom:link href="https://jorgeav527.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Second</title>
-      <link>http://localhost:1313/posts/second/</link>
+      <link>https://jorgeav527.xyz/posts/second/</link>
       <pubDate>Tue, 04 Mar 2025 14:53:23 -0500</pubDate>
       
-      <guid>http://localhost:1313/posts/second/</guid>
+      <guid>https://jorgeav527.xyz/posts/second/</guid>
       <description></description>
       <content></content>
     </item>
     
     <item>
       <title>First</title>
-      <link>http://localhost:1313/posts/first/</link>
+      <link>https://jorgeav527.xyz/posts/first/</link>
       <pubDate>Tue, 04 Mar 2025 14:46:44 -0500</pubDate>
       
-      <guid>http://localhost:1313/posts/first/</guid>
+      <guid>https://jorgeav527.xyz/posts/first/</guid>
       <description>&lt;h2 id=&#34;aws-cloud-practitioner&#34;&gt;AWS Cloud Practitioner&lt;/h2&gt;
 &lt;h3 id=&#34;what-is-a-client-server-model&#34;&gt;What is a client-server model?&lt;/h3&gt;</description>
       <content>&lt;h2 id=&#34;aws-cloud-practitioner&#34;&gt;AWS Cloud Practitioner&lt;/h2&gt;
