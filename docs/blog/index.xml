@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on REcords, Inc.</title>
+    <link>http://jorgeav527.xyz/blog/</link>
+    <description>Recent content in Blogs on REcords, Inc.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 06 Mar 2025 16:11:11 -0500</lastBuildDate><atom:link href="http://jorgeav527.xyz/blog/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
