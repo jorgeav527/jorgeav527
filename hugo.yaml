@@ -1,9 +1,46 @@
-baseURL: https://jorgeav527.github.io/jorgeav527/
+baseURL: http://jorgeav527.xyz/
 languageCode: en-us
+copyright: MIT License
+theme: terminal
+pagination:
+  pagerSize: 5
+autoCover: true
 params:
   contact:
     email: jorgeav527@gmail.com
     phone: +51 973635864
-  subtitle: The Best Widgets on Earth
-title: ReCords, Inc.
-theme: terminal
+  fullWidthTheme: false
+  centerTheme: true
+
+languages:
+  en:
+    title: "REcords, Inc."
+    subtitle: "A simple, retro theme for Hugo"
+    keywords: ""
+    copyright: ""
+    menuMore: "Show more"
+    readMore: "Read more"
+    readOtherPosts: "Read other posts"
+
+    params:
+      logo:
+        logoText: "527REcords/"
+        logoHomeLink: "/"
+
+    menu:
+      main:
+        - identifier: "about"
+          name: "About"
+          url: "/about"
+        # - identifier: "resume"
+        #   name: "Resume"
+        #   url: "/resume"
+        - identifier: "posts"
+          name: "Posts"
+          url: "/posts"
+        - identifier: "projects"
+          name: "Projects"
+          url: "/projects"
+        # - identifier: "blog"
+        #   name: "Blog"
+        #   url: "/blog"

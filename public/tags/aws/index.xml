@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AWS on REcords, Inc.</title>
+    <link>http://localhost:1313/tags/aws/</link>
+    <description>Recent content in AWS on REcords, Inc.</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 06 Mar 2025 15:45:35 -0500</lastBuildDate><atom:link href="http://localhost:1313/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ECS &amp; EKS</title>
+      <link>http://localhost:1313/posts/13/</link>
+      <pubDate>Thu, 06 Mar 2025 15:45:35 -0500</pubDate>
+      
+      <guid>http://localhost:1313/posts/13/</guid>
+      <description>&lt;h2 id=&#34;what-is-a-client-server-model&#34;&gt;What is a client-server model?&lt;/h2&gt;
+&lt;p&gt;In computing, a &lt;strong&gt;client&lt;/strong&gt; can be a web browser or desktop application that a person interacts with to make requests to computer servers. A &lt;strong&gt;server&lt;/strong&gt; can be services, such as Amazon Elastic Compute Cloud (Amazon EC2) – a type of virtual server.&lt;/p&gt;
+&lt;p&gt;About deployment models.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Deployment Model&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Description&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Example Use Case&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Cloud-Based Deployment&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;- Run, migrate, or build applications in the cloud.Use low-level infrastructure or higher-level services to reduce management overhead.&lt;/td&gt;
+          &lt;td&gt;An application built with virtual servers, databases, and networking components, fully based in the cloud.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;On-Premises Deployment&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;- Resources are deployed in on-premises data centers.Uses virtualization and resource management tools known as private cloud deployment.&lt;/td&gt;
+          &lt;td&gt;Applications running on technology fully kept in an on-premises data center with enhanced resource utilization.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Hybrid Deployment&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;- Combines cloud-based and on-premises resources.Suitable for legacy applications or regulatory requirements enables cloud integration.&lt;/td&gt;
+          &lt;td&gt;Legacy applications remain on premises, while batch data processing and analytics services run in the cloud.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;ec2&#34;&gt;EC2&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Amazon Elastic Compute Cloud (EC2) provides secure and resizable compute capacity in the cloud.&lt;/li&gt;
+&lt;li&gt;It enables running applications on virtual servers (EC2 instances) in the AWS Cloud.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multitenancy&lt;/strong&gt;: Instances share physical hardware securely using a hypervisor.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Configuration Control&lt;/strong&gt;: Customize the operating system (Windows or Linux), software, and networking settings.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Resizable Instances&lt;/strong&gt;: Adjust instance size based on resource needs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Networking Control&lt;/strong&gt;: Define public or private access to instances.&lt;/li&gt;
+&lt;li&gt;EC2 instances are isolated from each other, ensuring secure multitenant environments.&lt;/li&gt;
+&lt;li&gt;The compute as a Service Model, provides high availability of compute capacity manage by AWS.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;types-of-ec2-instances&#34;&gt;Types of EC2 instances&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;General purpose instances&lt;/strong&gt;: provide a balance of compute, memory, and networking resources.
+&lt;ul&gt;
+&lt;li&gt;application servers&lt;/li&gt;
+&lt;li&gt;gaming servers&lt;/li&gt;
+&lt;li&gt;backend servers for enterprise applications&lt;/li&gt;
+&lt;li&gt;small and medium databases&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Compute optimized instances&lt;/strong&gt;: compute-bound applications that benefit from high-performance processors.
+&lt;ul&gt;
+&lt;li&gt;compute-intensive applications servers&lt;/li&gt;
+&lt;li&gt;dedicated gaming servers&lt;/li&gt;
+&lt;li&gt;batch processing workloads that require processing many transactions in a single group&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Memory optimized instances&lt;/strong&gt;: are designed to deliver fast performance for workloads that process large datasets in memory.
+&lt;ul&gt;
+&lt;li&gt;high-performance database&lt;/li&gt;
+&lt;li&gt;real-time processing of a large amount of unstructured data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Accelerated computing instances&lt;/strong&gt;: use hardware accelerators, or coprocessors, to perform some functions more efficiently than is possible in software running on CPUs.
+&lt;ul&gt;
+&lt;li&gt;functions include floating-point number calculations&lt;/li&gt;
+&lt;li&gt;graphics applications processing, and data pattern matching.&lt;/li&gt;
+&lt;li&gt;game streaming&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Storage optimized instances&lt;/strong&gt;: are designed for workloads that require high, sequential read and write access to large datasets on local storage. &lt;em&gt;Storage optimized instances are designed to deliver tens of thousands of low-latency, random IOPS-&amp;gt;It indicates how many different input or output operations a device can perform in one second. to applications.&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;distributed file systems&lt;/li&gt;
+&lt;li&gt;data warehousing applications&lt;/li&gt;
+&lt;li&gt;high-frequency online transaction processing (OLTP) systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;ec2-pricing&#34;&gt;EC2 pricing&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;On-Demand Instances&lt;/strong&gt; are ideal for short-term, irregular workloads that cannot be interrupted.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reserved Instances&lt;/strong&gt; are a billing discount applied to the use of On-Demand Instances in your account. There are two available types of Reserved Instances:
+&lt;ul&gt;
+&lt;li&gt;Standard Reserved Instances: This option is a good fit if you know the EC2 instance type and size you need for your steady-state applications and in which AWS Region you plan to run them.&lt;/li&gt;
+&lt;li&gt;Convertible Reserved Instances:  If you need to run your EC2 instances in different Availability Zones or different instance types, then Convertible Reserved Instances might be right for you.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;EC2 Instance Savings Plans&lt;/strong&gt; reduce your EC2 instance costs when you make an hourly spend commitment to an instance family and Region for a 1-year or 3-year term. This term commitment results in savings of up to 72 percent compared to On-Demand rates.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Spot Instances&lt;/strong&gt; are ideal for workloads with flexible start and end times, or that can withstand interruptions. Spot Instances use unused Amazon EC2 computing capacity and offer you cost savings at up to 90% off of On-Demand prices.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dedicated Hosts&lt;/strong&gt; are physical servers with Amazon EC2 instance capacity that is fully dedicated to your use. Dedicated Hosts are the most expensive.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;amazon-ec2-auto-scaling&#34;&gt;Amazon EC2 Auto Scaling&lt;/h3&gt;
+&lt;p&gt;Amazon EC2 Auto Scaling enables you to automatically add or remove Amazon EC2 instances in response to changing application demand.&lt;/p&gt;</description>
+      <content>&lt;h2 id=&#34;what-is-a-client-server-model&#34;&gt;What is a client-server model?&lt;/h2&gt;
+&lt;p&gt;In computing, a &lt;strong&gt;client&lt;/strong&gt; can be a web browser or desktop application that a person interacts with to make requests to computer servers. A &lt;strong&gt;server&lt;/strong&gt; can be services, such as Amazon Elastic Compute Cloud (Amazon EC2) – a type of virtual server.&lt;/p&gt;
+&lt;p&gt;About deployment models.&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Deployment Model&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Description&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Example Use Case&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Cloud-Based Deployment&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;- Run, migrate, or build applications in the cloud.Use low-level infrastructure or higher-level services to reduce management overhead.&lt;/td&gt;
+          &lt;td&gt;An application built with virtual servers, databases, and networking components, fully based in the cloud.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;On-Premises Deployment&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;- Resources are deployed in on-premises data centers.Uses virtualization and resource management tools known as private cloud deployment.&lt;/td&gt;
+          &lt;td&gt;Applications running on technology fully kept in an on-premises data center with enhanced resource utilization.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Hybrid Deployment&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;- Combines cloud-based and on-premises resources.Suitable for legacy applications or regulatory requirements enables cloud integration.&lt;/td&gt;
+          &lt;td&gt;Legacy applications remain on premises, while batch data processing and analytics services run in the cloud.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;ec2&#34;&gt;EC2&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Amazon Elastic Compute Cloud (EC2) provides secure and resizable compute capacity in the cloud.&lt;/li&gt;
+&lt;li&gt;It enables running applications on virtual servers (EC2 instances) in the AWS Cloud.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multitenancy&lt;/strong&gt;: Instances share physical hardware securely using a hypervisor.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Configuration Control&lt;/strong&gt;: Customize the operating system (Windows or Linux), software, and networking settings.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Resizable Instances&lt;/strong&gt;: Adjust instance size based on resource needs.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Networking Control&lt;/strong&gt;: Define public or private access to instances.&lt;/li&gt;
+&lt;li&gt;EC2 instances are isolated from each other, ensuring secure multitenant environments.&lt;/li&gt;
+&lt;li&gt;The compute as a Service Model, provides high availability of compute capacity manage by AWS.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;types-of-ec2-instances&#34;&gt;Types of EC2 instances&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;General purpose instances&lt;/strong&gt;: provide a balance of compute, memory, and networking resources.
+&lt;ul&gt;
+&lt;li&gt;application servers&lt;/li&gt;
+&lt;li&gt;gaming servers&lt;/li&gt;
+&lt;li&gt;backend servers for enterprise applications&lt;/li&gt;
+&lt;li&gt;small and medium databases&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Compute optimized instances&lt;/strong&gt;: compute-bound applications that benefit from high-performance processors.
+&lt;ul&gt;
+&lt;li&gt;compute-intensive applications servers&lt;/li&gt;
+&lt;li&gt;dedicated gaming servers&lt;/li&gt;
+&lt;li&gt;batch processing workloads that require processing many transactions in a single group&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Memory optimized instances&lt;/strong&gt;: are designed to deliver fast performance for workloads that process large datasets in memory.
+&lt;ul&gt;
+&lt;li&gt;high-performance database&lt;/li&gt;
+&lt;li&gt;real-time processing of a large amount of unstructured data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Accelerated computing instances&lt;/strong&gt;: use hardware accelerators, or coprocessors, to perform some functions more efficiently than is possible in software running on CPUs.
+&lt;ul&gt;
+&lt;li&gt;functions include floating-point number calculations&lt;/li&gt;
+&lt;li&gt;graphics applications processing, and data pattern matching.&lt;/li&gt;
+&lt;li&gt;game streaming&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Storage optimized instances&lt;/strong&gt;: are designed for workloads that require high, sequential read and write access to large datasets on local storage. &lt;em&gt;Storage optimized instances are designed to deliver tens of thousands of low-latency, random IOPS-&amp;gt;It indicates how many different input or output operations a device can perform in one second. to applications.&lt;/em&gt;
+&lt;ul&gt;
+&lt;li&gt;distributed file systems&lt;/li&gt;
+&lt;li&gt;data warehousing applications&lt;/li&gt;
+&lt;li&gt;high-frequency online transaction processing (OLTP) systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;ec2-pricing&#34;&gt;EC2 pricing&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;On-Demand Instances&lt;/strong&gt; are ideal for short-term, irregular workloads that cannot be interrupted.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Reserved Instances&lt;/strong&gt; are a billing discount applied to the use of On-Demand Instances in your account. There are two available types of Reserved Instances:
+&lt;ul&gt;
+&lt;li&gt;Standard Reserved Instances: This option is a good fit if you know the EC2 instance type and size you need for your steady-state applications and in which AWS Region you plan to run them.&lt;/li&gt;
+&lt;li&gt;Convertible Reserved Instances:  If you need to run your EC2 instances in different Availability Zones or different instance types, then Convertible Reserved Instances might be right for you.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;EC2 Instance Savings Plans&lt;/strong&gt; reduce your EC2 instance costs when you make an hourly spend commitment to an instance family and Region for a 1-year or 3-year term. This term commitment results in savings of up to 72 percent compared to On-Demand rates.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Spot Instances&lt;/strong&gt; are ideal for workloads with flexible start and end times, or that can withstand interruptions. Spot Instances use unused Amazon EC2 computing capacity and offer you cost savings at up to 90% off of On-Demand prices.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dedicated Hosts&lt;/strong&gt; are physical servers with Amazon EC2 instance capacity that is fully dedicated to your use. Dedicated Hosts are the most expensive.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;amazon-ec2-auto-scaling&#34;&gt;Amazon EC2 Auto Scaling&lt;/h3&gt;
+&lt;p&gt;Amazon EC2 Auto Scaling enables you to automatically add or remove Amazon EC2 instances in response to changing application demand.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Dynamic scaling responds to changing demand.&lt;/li&gt;
+&lt;li&gt;Predictive scaling automatically schedules the right number of Amazon EC2 instances based on predicted demand.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Types of scaling:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;strong&gt;minimum capacity&lt;/strong&gt; is the number of Amazon EC2 instances that launch immediately after you have created the Auto Scaling group.&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;desired capacity&lt;/strong&gt; at two Amazon EC2 instances even though your application needs a minimum of a single Amazon EC2 instance to run.&lt;/li&gt;
+&lt;li&gt;The &lt;strong&gt;maximum capacity&lt;/strong&gt; you might configure the Auto Scaling group to scale out in response to increased demand, but only to a maximum of four Amazon EC2 instances.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;elastic-load-balancing&#34;&gt;&lt;strong&gt;Elastic Load Balancing&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Elastic Load Balancing is an AWS service that automatically distributes incoming application traffic across multiple resources, such as Amazon EC2 instances. It serves as a single point of contact for web traffic directed at an Auto Scaling group, ensuring that as EC2 instances are added or removed, all incoming requests are first routed to the load balancer.&lt;/p&gt;
+&lt;p&gt;The load balancer then evenly distributes the workload across available instances, preventing any one instance from becoming overwhelmed. Although it is a separate service from Amazon EC2 Auto Scaling, both work together to maintain high performance and availability for applications running in Amazon EC2.&lt;/p&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Cloud Architect</title>
+      <link>http://localhost:1313/posts/12/</link>
+      <pubDate>Wed, 05 Mar 2025 14:46:35 -0500</pubDate>
+      
+      <guid>http://localhost:1313/posts/12/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+  </channel>
+</rss>
