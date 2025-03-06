@@ -5,6 +5,7 @@
     <link>http://localhost:1313/blog/</link>
     <description>Recent content in Blogs on REcords, Inc.</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Thu, 06 Mar 2025 16:11:11 -0500</lastBuildDate><atom:link href="http://localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -13,6 +13,17 @@
       <pubDate>Thu, 06 Mar 2025 15:45:35 -0500</pubDate>
       
       <guid>http://localhost:1313/posts/13/</guid>
+      <description>&lt;h2 id=&#34;ecs-vs-eks&#34;&gt;ECS vs EKS&lt;/h2&gt;</description>
+      <content>&lt;h2 id=&#34;ecs-vs-eks&#34;&gt;ECS vs EKS&lt;/h2&gt;
+</content>
+    </item>
+    
+    <item>
+      <title>Cloud Architect</title>
+      <link>http://localhost:1313/posts/12/</link>
+      <pubDate>Wed, 05 Mar 2025 14:46:35 -0500</pubDate>
+      
+      <guid>http://localhost:1313/posts/12/</guid>
       <description>&lt;h2 id=&#34;what-is-a-client-server-model&#34;&gt;What is a client-server model?&lt;/h2&gt;
 &lt;p&gt;In computing, a &lt;strong&gt;client&lt;/strong&gt; can be a web browser or desktop application that a person interacts with to make requests to computer servers. A &lt;strong&gt;server&lt;/strong&gt; can be services, such as Amazon Elastic Compute Cloud (Amazon EC2) – a type of virtual server.&lt;/p&gt;
 &lt;p&gt;About deployment models.&lt;/p&gt;
@@ -213,16 +224,6 @@
 &lt;p&gt;Elastic Load Balancing is an AWS service that automatically distributes incoming application traffic across multiple resources, such as Amazon EC2 instances. It serves as a single point of contact for web traffic directed at an Auto Scaling group, ensuring that as EC2 instances are added or removed, all incoming requests are first routed to the load balancer.&lt;/p&gt;
 &lt;p&gt;The load balancer then evenly distributes the workload across available instances, preventing any one instance from becoming overwhelmed. Although it is a separate service from Amazon EC2 Auto Scaling, both work together to maintain high performance and availability for applications running in Amazon EC2.&lt;/p&gt;
 </content>
-    </item>
-    
-    <item>
-      <title>Cloud Architect</title>
-      <link>http://localhost:1313/posts/12/</link>
-      <pubDate>Wed, 05 Mar 2025 14:46:35 -0500</pubDate>
-      
-      <guid>http://localhost:1313/posts/12/</guid>
-      <description></description>
-      <content></content>
     </item>
     
   </channel>
