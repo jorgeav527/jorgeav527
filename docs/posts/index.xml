@@ -13,8 +13,14 @@
       <pubDate>Thu, 06 Mar 2025 15:45:35 -0500</pubDate>
       
       <guid>https://jorgeav527.xyz/posts/13/</guid>
-      <description>&lt;h2 id=&#34;ecs-vs-eks&#34;&gt;ECS vs EKS&lt;/h2&gt;</description>
+      <description>&lt;h2 id=&#34;ecs-vs-eks&#34;&gt;ECS vs EKS&lt;/h2&gt;
+&lt;p&gt;First lesson take a look at the following diagram is a simple ECS cluster with a fastAPI, grafana, prometheus, redpanda-console, redpanda broker and a Axium API.
+We will see how to setup a ECS cluster using this services, with the AWS console and with Terraform.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/KwqUAYm.png&#34; alt=&#34;Imgur&#34;&gt;&lt;/p&gt;</description>
       <content>&lt;h2 id=&#34;ecs-vs-eks&#34;&gt;ECS vs EKS&lt;/h2&gt;
+&lt;p&gt;First lesson take a look at the following diagram is a simple ECS cluster with a fastAPI, grafana, prometheus, redpanda-console, redpanda broker and a Axium API.
+We will see how to setup a ECS cluster using this services, with the AWS console and with Terraform.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/KwqUAYm.png&#34; alt=&#34;Imgur&#34;&gt;&lt;/p&gt;
 </content>
     </item>
     
