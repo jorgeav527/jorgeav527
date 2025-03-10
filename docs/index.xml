@@ -25,7 +25,7 @@ We will see how to setup a ECS cluster using this services, with the AWS console
     </item>
     
     <item>
-      <title>Cloud Architect</title>
+      <title>AWS Certified Cloud Practitioner Certification</title>
       <link>https://jorgeav527.xyz/posts/12/</link>
       <pubDate>Wed, 05 Mar 2025 14:46:35 -0500</pubDate>
       
@@ -226,9 +226,63 @@ We will see how to setup a ECS cluster using this services, with the AWS console
 &lt;li&gt;The &lt;strong&gt;desired capacity&lt;/strong&gt; at two Amazon EC2 instances even though your application needs a minimum of a single Amazon EC2 instance to run.&lt;/li&gt;
 &lt;li&gt;The &lt;strong&gt;maximum capacity&lt;/strong&gt; you might configure the Auto Scaling group to scale out in response to increased demand, but only to a maximum of four Amazon EC2 instances.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;elastic-load-balancing&#34;&gt;&lt;strong&gt;Elastic Load Balancing&lt;/strong&gt;&lt;/h2&gt;
-&lt;p&gt;Elastic Load Balancing is an AWS service that automatically distributes incoming application traffic across multiple resources, such as Amazon EC2 instances. It serves as a single point of contact for web traffic directed at an Auto Scaling group, ensuring that as EC2 instances are added or removed, all incoming requests are first routed to the load balancer.&lt;/p&gt;
-&lt;p&gt;The load balancer then evenly distributes the workload across available instances, preventing any one instance from becoming overwhelmed. Although it is a separate service from Amazon EC2 Auto Scaling, both work together to maintain high performance and availability for applications running in Amazon EC2.&lt;/p&gt;
+&lt;h2 id=&#34;elastic-load-balancing&#34;&gt;Elastic Load Balancing&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/iKkJymD.png&#34; alt=&#34;Imgur&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Elastic Load Balancing is the AWS service that automatically distributes incoming application traffic across multiple resources, such as Amazon EC2 instances.&lt;/li&gt;
+&lt;li&gt;A load balancer is an application that takes in requests and routes them to the instances to be processed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;messaging-and-queuing&#34;&gt;Messaging and Queuing&lt;/h2&gt;
+&lt;h3 id=&#34;amazon-simple-queue-service-or-sqs&#34;&gt;Amazon Simple Queue Service or SQS&lt;/h3&gt;
+&lt;p&gt;SQS allows you to send, store, and receive messages between software components at any volume. This is without losing messages or requiring other services to be available.&lt;/p&gt;
+&lt;h3 id=&#34;amazon-simple-notification-service-or-sns&#34;&gt;Amazon Simple Notification Service or SNS&lt;/h3&gt;
+&lt;p&gt;Amazon SNS is similar in that it is used to send out messages to services, but it can also send out notifications to end users. It does this in a different way called a publish/subscribe or pub/sub model. This means that you can create something called an SNS topic which is just a channel for messages to be delivered.&lt;/p&gt;
+&lt;h2 id=&#34;serverless-computing&#34;&gt;Serverless computing&lt;/h2&gt;
+&lt;h3 id=&#34;aws-lambda&#34;&gt;AWS Lambda&lt;/h3&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/NS3Xi9Z.png&#34; alt=&#34;Imgur&#34;&gt;&lt;/p&gt;
+&lt;p&gt;AWS Lambda(opens in a new tab) is a service that lets you run code without needing to provision or manage servers.&lt;/p&gt;
+&lt;p&gt;While using AWS Lambda, you pay only for the compute time that you consume. Charges apply only when your code is running. You can also run code for virtually any type of application or backend service, all with zero administration.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;IMPORTANT -&amp;gt; What is the difference between Serverless and Serverful computing?&lt;/strong&gt;&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Serverful&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Serverless&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;1. Provision instances (virtual servers)&lt;/td&gt;
+          &lt;td&gt;1. You upload your code to Lambda.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;2. Upload your code.&lt;/td&gt;
+          &lt;td&gt;2. You set your code to trigger from an event source, such as AWS services, mobile applications, or HTTP endpoints.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;3. Continue to manage the instances while your application is running.&lt;/td&gt;
+          &lt;td&gt;3. Lambda runs your code only when triggered.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;4. Manage the instances while your application is running.&lt;/td&gt;
+          &lt;td&gt;4. Lambda runs your code only when triggered.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;amazon-elastic-container-service-amazon-ecs&#34;&gt;Amazon Elastic Container Service (Amazon ECS)&lt;/h3&gt;
+&lt;p&gt;A highly scalable, high-performance container management system that enables you to run and scale containerized applications on AWS.&lt;/p&gt;
+&lt;h3 id=&#34;amazon-elastic-kubernetes-service-amazon-eks&#34;&gt;Amazon Elastic Kubernetes Service (Amazon EKS)&lt;/h3&gt;
+&lt;p&gt;A fully managed service that you can use to run Kubernetes on AWS.&lt;/p&gt;
+&lt;h3 id=&#34;aws-fargate&#34;&gt;AWS Fargate&lt;/h3&gt;
+&lt;p&gt;AWS Fargate(opens in a new tab) is a serverless compute engine for containers. It works with both Amazon ECS and Amazon EKS.&lt;/p&gt;
+&lt;h2 id=&#34;aws-global-infrastructure&#34;&gt;AWS Global Infrastructure&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;IMPORTANT -&amp;gt; How to select the right AWS region?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Compliance: If your company requires data to stay within a specific country, choose a Region that meets those requirements (e.g., London for UK data residency).&lt;/li&gt;
+&lt;li&gt;Proximity: Running infrastructure close to customers improves content delivery (e.g., a Washington, DC company might use the Singapore Region for customers there).&lt;/li&gt;
+&lt;li&gt;Availability: The closest Region may lack certain features, as AWS expands services gradually by building hardware in each Region.&lt;/li&gt;
+&lt;li&gt;Pricing: Costs vary by Region due to local tax structures (e.g., running workloads in São Paulo may be 50% more expensive than in Oregon).&lt;/li&gt;
+&lt;/ol&gt;
 </content>
     </item>
     
@@ -351,8 +405,12 @@ We will see how to setup a ECS cluster using this services, with the AWS console
       <pubDate>Tue, 25 Feb 2025 15:30:29 -0500</pubDate>
       
       <guid>https://jorgeav527.xyz/posts/4/</guid>
-      <description>&lt;h2 id=&#34;understanding-docker&#34;&gt;Understanding Docker&lt;/h2&gt;</description>
+      <description>&lt;h2 id=&#34;understanding-docker&#34;&gt;Understanding Docker&lt;/h2&gt;
+&lt;h3 id=&#34;containers&#34;&gt;Containers&lt;/h3&gt;
+&lt;p&gt;Containers provide you with a standard way to package your application&amp;rsquo;s code and dependencies into a single object. You can also use containers for processes and workflows in which there are essential requirements for security, reliability, and scalability.&lt;/p&gt;</description>
       <content>&lt;h2 id=&#34;understanding-docker&#34;&gt;Understanding Docker&lt;/h2&gt;
+&lt;h3 id=&#34;containers&#34;&gt;Containers&lt;/h3&gt;
+&lt;p&gt;Containers provide you with a standard way to package your application&amp;rsquo;s code and dependencies into a single object. You can also use containers for processes and workflows in which there are essential requirements for security, reliability, and scalability.&lt;/p&gt;
 </content>
     </item>
     

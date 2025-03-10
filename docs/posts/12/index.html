@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
   
-    <title>Cloud Architect :: REcords, Inc.</title>
+    <title>AWS Certified Cloud Practitioner Certification :: REcords, Inc.</title>
   
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="How to become a Cloud Architect?" />
+<meta name="description" content="How to become a Cloud Practitioner?" />
 <meta name="keywords" content="" />
 
   <meta name="robots" content="noodp" />
@@ -75,8 +75,8 @@
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
-<meta property="og:title" content="Cloud Architect">
-<meta property="og:description" content="How to become a Cloud Architect?" />
+<meta property="og:title" content="AWS Certified Cloud Practitioner Certification">
+<meta property="og:description" content="How to become a Cloud Practitioner?" />
 <meta property="og:url" content="https://jorgeav527.xyz/posts/12/" />
 <meta property="og:site_name" content="REcords, Inc." />
 
@@ -172,7 +172,7 @@
     
 <article class="post">
   <h1 class="post-title">
-    <a href="https://jorgeav527.xyz/posts/12/">Cloud Architect</a>
+    <a href="https://jorgeav527.xyz/posts/12/">AWS Certified Cloud Practitioner Certification</a>
   </h1>
   <div class="post-meta"><time class="post-date">2025-03-05</time></div>
 
@@ -294,9 +294,63 @@
 <li>The <strong>desired capacity</strong> at two Amazon EC2 instances even though your application needs a minimum of a single Amazon EC2 instance to run.</li>
 <li>The <strong>maximum capacity</strong> you might configure the Auto Scaling group to scale out in response to increased demand, but only to a maximum of four Amazon EC2 instances.</li>
 </ul>
-<h2 id="elastic-load-balancing"><strong>Elastic Load Balancing</strong><a href="#elastic-load-balancing" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<p>Elastic Load Balancing is an AWS service that automatically distributes incoming application traffic across multiple resources, such as Amazon EC2 instances. It serves as a single point of contact for web traffic directed at an Auto Scaling group, ensuring that as EC2 instances are added or removed, all incoming requests are first routed to the load balancer.</p>
-<p>The load balancer then evenly distributes the workload across available instances, preventing any one instance from becoming overwhelmed. Although it is a separate service from Amazon EC2 Auto Scaling, both work together to maintain high performance and availability for applications running in Amazon EC2.</p>
+<h2 id="elastic-load-balancing">Elastic Load Balancing<a href="#elastic-load-balancing" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p><img src="https://i.imgur.com/iKkJymD.png" alt="Imgur"></p>
+<ul>
+<li>Elastic Load Balancing is the AWS service that automatically distributes incoming application traffic across multiple resources, such as Amazon EC2 instances.</li>
+<li>A load balancer is an application that takes in requests and routes them to the instances to be processed.</li>
+</ul>
+<h2 id="messaging-and-queuing">Messaging and Queuing<a href="#messaging-and-queuing" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="amazon-simple-queue-service-or-sqs">Amazon Simple Queue Service or SQS<a href="#amazon-simple-queue-service-or-sqs" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>SQS allows you to send, store, and receive messages between software components at any volume. This is without losing messages or requiring other services to be available.</p>
+<h3 id="amazon-simple-notification-service-or-sns">Amazon Simple Notification Service or SNS<a href="#amazon-simple-notification-service-or-sns" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Amazon SNS is similar in that it is used to send out messages to services, but it can also send out notifications to end users. It does this in a different way called a publish/subscribe or pub/sub model. This means that you can create something called an SNS topic which is just a channel for messages to be delivered.</p>
+<h2 id="serverless-computing">Serverless computing<a href="#serverless-computing" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="aws-lambda">AWS Lambda<a href="#aws-lambda" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p><img src="https://i.imgur.com/NS3Xi9Z.png" alt="Imgur"></p>
+<p>AWS Lambda(opens in a new tab) is a service that lets you run code without needing to provision or manage servers.</p>
+<p>While using AWS Lambda, you pay only for the compute time that you consume. Charges apply only when your code is running. You can also run code for virtually any type of application or backend service, all with zero administration.</p>
+<p><strong>IMPORTANT -&gt; What is the difference between Serverless and Serverful computing?</strong></p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Serverful</strong></th>
+          <th><strong>Serverless</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1. Provision instances (virtual servers)</td>
+          <td>1. You upload your code to Lambda.</td>
+      </tr>
+      <tr>
+          <td>2. Upload your code.</td>
+          <td>2. You set your code to trigger from an event source, such as AWS services, mobile applications, or HTTP endpoints.</td>
+      </tr>
+      <tr>
+          <td>3. Continue to manage the instances while your application is running.</td>
+          <td>3. Lambda runs your code only when triggered.</td>
+      </tr>
+      <tr>
+          <td>4. Manage the instances while your application is running.</td>
+          <td>4. Lambda runs your code only when triggered.</td>
+      </tr>
+  </tbody>
+</table>
+<h3 id="amazon-elastic-container-service-amazon-ecs">Amazon Elastic Container Service (Amazon ECS)<a href="#amazon-elastic-container-service-amazon-ecs" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>A highly scalable, high-performance container management system that enables you to run and scale containerized applications on AWS.</p>
+<h3 id="amazon-elastic-kubernetes-service-amazon-eks">Amazon Elastic Kubernetes Service (Amazon EKS)<a href="#amazon-elastic-kubernetes-service-amazon-eks" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>A fully managed service that you can use to run Kubernetes on AWS.</p>
+<h3 id="aws-fargate">AWS Fargate<a href="#aws-fargate" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>AWS Fargate(opens in a new tab) is a serverless compute engine for containers. It works with both Amazon ECS and Amazon EKS.</p>
+<h2 id="aws-global-infrastructure">AWS Global Infrastructure<a href="#aws-global-infrastructure" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p><strong>IMPORTANT -&gt; How to select the right AWS region?</strong></p>
+<ol>
+<li>Compliance: If your company requires data to stay within a specific country, choose a Region that meets those requirements (e.g., London for UK data residency).</li>
+<li>Proximity: Running infrastructure close to customers improves content delivery (e.g., a Washington, DC company might use the Singapore Region for customers there).</li>
+<li>Availability: The closest Region may lack certain features, as AWS expands services gradually by building hardware in each Region.</li>
+<li>Pricing: Costs vary by Region due to local tax structures (e.g., running workloads in São Paulo may be 50% more expensive than in Oregon).</li>
+</ol>
 
       </div></div>
 
