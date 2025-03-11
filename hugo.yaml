@@ -24,8 +24,8 @@ languages:
 
     params:
       logo:
-        logoText: "527REcords/"
-        logoHomeLink: "/"
+        logoText: "cords527/"
+        logoHomeLink: "/about"
 
     menu:
       main:

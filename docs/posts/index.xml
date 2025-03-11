@@ -13,14 +13,61 @@
       <pubDate>Thu, 06 Mar 2025 15:45:35 -0500</pubDate>
       
       <guid>https://jorgeav527.xyz/posts/13/</guid>
-      <description>&lt;h2 id=&#34;ecs-vs-eks&#34;&gt;ECS vs EKS&lt;/h2&gt;
+      <description>&lt;h1 id=&#34;ecs-vs-eks&#34;&gt;ECS vs EKS&lt;/h1&gt;
 &lt;p&gt;First lesson take a look at the following diagram is a simple ECS cluster with a fastAPI, grafana, prometheus, redpanda-console, redpanda broker and a Axium API.
 We will see how to setup a ECS cluster using this services, with the AWS console and with Terraform.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/KwqUAYm.png&#34; alt=&#34;Imgur&#34;&gt;&lt;/p&gt;</description>
-      <content>&lt;h2 id=&#34;ecs-vs-eks&#34;&gt;ECS vs EKS&lt;/h2&gt;
+&lt;h2 id=&#34;ecs&#34;&gt;ECS&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Understanding the architecture&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We will use two APIs, a message broker for streaming data, and a monitoring system with Prometheus and Grafana, but first we need to understand the needs of each service.&lt;/p&gt;</description>
+      <content>&lt;h1 id=&#34;ecs-vs-eks&#34;&gt;ECS vs EKS&lt;/h1&gt;
 &lt;p&gt;First lesson take a look at the following diagram is a simple ECS cluster with a fastAPI, grafana, prometheus, redpanda-console, redpanda broker and a Axium API.
 We will see how to setup a ECS cluster using this services, with the AWS console and with Terraform.&lt;/p&gt;
+&lt;h2 id=&#34;ecs&#34;&gt;ECS&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Understanding the architecture&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;We will use two APIs, a message broker for streaming data, and a monitoring system with Prometheus and Grafana, but first we need to understand the needs of each service.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;APIs: We have one API for the application and one for monitoring and get information.&lt;/li&gt;
+&lt;li&gt;Message Broker: We need a message broker to stream data between services, in the past we used Kafka (it was very dificult to setup because of the complexity of the configuration, and it was not fast enough), and redis pub/sub (in the API and docker we have incompatible for linux and mac because of OPENSSL package).&lt;/li&gt;
+&lt;li&gt;Monitoring: We need a monitoring system to monitor the health of our services.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+  &lt;div class=&#34;collapsable-code&#34;&gt;
+    &lt;input id=&#34;651478239&#34; type=&#34;checkbox&#34;  /&gt;
+    &lt;label for=&#34;651478239&#34;&gt;
+      &lt;span class=&#34;collapsable-code__language&#34;&gt;bash&lt;/span&gt;
+      &lt;span class=&#34;collapsable-code__title&#34;&gt;Error with OPENSSL package and Redis&lt;/span&gt;
+      &lt;span class=&#34;collapsable-code__toggle&#34; data-label-expand=&#34;△&#34; data-label-collapse=&#34;▽&#34;&gt;&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;pre class=&#34;language-bash&#34; &gt;&lt;code&gt;
+    openssl::ssl::SslStream&amp;lt;S&amp;gt;::read_uninit&amp;#39;:
+    215.9           sqlx_postgres.db90206912fb9d19-cgu.13:(.text._ZN7openssl3ssl18SslStream$LT$S$GT$11read_uninit17h8195d4e4fd2c0fa9E&amp;#43;0x2d): undefined reference to SSL_read_ex&amp;#39;
+    ...
+    215.9 error: could not compile roadr_rs (bin &amp;#34;roadr_rs&amp;#34;) due to 1 previous error
+    ------
+    ERROR: failed to solve: process &amp;#34;/bin/sh -c cargo build --release&amp;#34; did not complete successfully: exit code: 101
+    Error: buildx failed with: ERROR: failed to solve: process &amp;#34;/bin/sh -c cargo build --release&amp;#34; did not complete successfully: exit code: 101
+  &lt;/code&gt;&lt;/pre&gt;
+  &lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;Monitoring: We need a monitoring system to monitor the health of our services.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Setting up the ECS cluster&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/jE0F9rb.png&#34; alt=&#34;Imgur&#34;&gt;&lt;/p&gt;
 &lt;p&gt;&lt;img src=&#34;https://i.imgur.com/KwqUAYm.png&#34; alt=&#34;Imgur&#34;&gt;&lt;/p&gt;
+
+&lt;img src=&#34;https://i.imgur.com/jE0F9rb.png&#34;  alt=&#34;Hello Friend&#34;  class=&#34;center&#34;  style=&#34;border-radius: 8px;&#34;    /&gt;
+
+
 </content>
     </item>
     
@@ -426,6 +473,74 @@ We will see how to setup a ECS cluster using this services, with the AWS console
 &lt;/ul&gt;
 &lt;h3 id=&#34;amazon-redshift&#34;&gt;Amazon Redshift&lt;/h3&gt;
 &lt;p&gt;Amazon Redshift is a data warehousing service that you can use for big data analytics. It offers the ability to collect data from many sources and helps you to understand relationships and trends across your data.&lt;/p&gt;
+&lt;h2 id=&#34;aws-database-migration-service-aws-dms&#34;&gt;AWS Database Migration Service (AWS DMS)&lt;/h2&gt;
+&lt;p&gt;With AWS DMS, you move data between a source database and a target database. The source and target databases(opens in a new tab) can be of the same type or different types.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;IMPORTANT -&amp;gt; What are the common use cases for AWS DMS?&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Development and test database migrations: Enabling developers to test applications against production data without affecting production users.&lt;/li&gt;
+&lt;li&gt;Database consolidation: Combining several databases into a single database.&lt;/li&gt;
+&lt;li&gt;Continuous replication: Sending ongoing copies of your data to other target sources instead of doing a one-time migration&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;amazon-documentdb&#34;&gt;Amazon DocumentDB&lt;/h2&gt;
+&lt;p&gt;Is a document database service that supports MongoDB workloads. (MongoDB is a document database program.)&lt;/p&gt;
+&lt;h2 id=&#34;amazon-neptune&#34;&gt;Amazon Neptune&lt;/h2&gt;
+&lt;p&gt;Is a graph database service. You can use Amazon Neptune to build and run applications that work with highly connected datasets, such as recommendation engines, fraud detection, and knowledge graphs.&lt;/p&gt;
+&lt;h2 id=&#34;amazon-quantum-ledger-database-amazon-qldb&#34;&gt;Amazon Quantum Ledger Database (Amazon QLDB)&lt;/h2&gt;
+&lt;p&gt;Is a ledger database service.&lt;/p&gt;
+&lt;p&gt;You can use Amazon QLDB to review a complete history of all the changes that have been made to your application data.&lt;/p&gt;
+&lt;h2 id=&#34;amazon-managed-blockchain&#34;&gt;Amazon Managed Blockchain&lt;/h2&gt;
+&lt;p&gt;Is a service that you can use to create and manage blockchain networks with open-source frameworks.&lt;/p&gt;
+&lt;p&gt;Blockchain is a distributed ledger system that lets multiple parties run transactions and share data without a central authority.&lt;/p&gt;
+&lt;h2 id=&#34;amazon-elasticache&#34;&gt;Amazon ElastiCache&lt;/h2&gt;
+&lt;p&gt;Is a service that adds caching layers on top of your databases to help improve the read times of common requests.&lt;/p&gt;
+&lt;p&gt;It supports two types of data stores: Redis and Memcached.&lt;/p&gt;
+&lt;h2 id=&#34;amazon-dynamodb-accelerator-dax&#34;&gt;Amazon DynamoDB Accelerator (DAX)&lt;/h2&gt;
+&lt;p&gt;Is an in-memory cache for DynamoDB.&lt;/p&gt;
+&lt;p&gt;It helps improve response times from single-digit milliseconds to microseconds.&lt;/p&gt;
+&lt;h1 id=&#34;module-6-security&#34;&gt;Module 6: Security&lt;/h1&gt;
+&lt;p&gt;The shared responsibility model divides into customer responsibilities (commonly referred to as “security in the cloud”) and AWS responsibilities (commonly referred to as “security of the cloud”).&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/Ug19iG0.png&#34; alt=&#34;Imgur&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;iam&#34;&gt;IAM&lt;/h2&gt;
+&lt;h3 id=&#34;iam-users&#34;&gt;IAM users&lt;/h3&gt;
+&lt;p&gt;It represents the identity of the person or application that interacts with AWS services and resources. It consists of a name and credentials.&lt;/p&gt;
+&lt;h3 id=&#34;iam-policies&#34;&gt;IAM policies&lt;/h3&gt;
+&lt;p&gt;An IAM policy is a document that allows or denies permissions to AWS services and resources.&lt;/p&gt;
+&lt;h3 id=&#34;iam-groups&#34;&gt;IAM groups&lt;/h3&gt;
+&lt;p&gt;An IAM group is a collection of IAM users. When you assign an IAM policy to a group, all users in the group are granted permissions specified by the policy.&lt;/p&gt;
+&lt;h3 id=&#34;iam-roles&#34;&gt;IAM roles&lt;/h3&gt;
+&lt;p&gt;An IAM role is an identity that you can assume to gain temporary access to permissions.&lt;/p&gt;
+&lt;p&gt;Before an IAM user, application, or service can assume an IAM role, they must be granted permissions to switch to the role. When someone assumes an IAM role, they abandon all previous permissions that they had under a previous role and assume the permissions of the new role.&lt;/p&gt;
+&lt;h2 id=&#34;compliance&#34;&gt;Compliance&lt;/h2&gt;
+&lt;p&gt;AWS Artifact(opens in a new tab) is a service that provides on-demand access to AWS security and compliance reports and select online agreements. AWS Artifact consists of two main sections:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;AWS Artifact Agreements: In AWS Artifact Agreements, you can review, accept, and manage agreements for an individual account and for all your accounts in AWS Organizations. Different types of agreements are offered to address the needs of customers who are subject to specific regulations, such as the Health Insurance Portability and Accountability Act (HIPAA).&lt;/li&gt;
+&lt;li&gt;AWS Artifact Reports: AWS Artifact Reports provide compliance reports from third-party auditors. These auditors have tested and verified that AWS is compliant with a variety of global, regional, and industry-specific security standards and regulations.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;IMPORTANT -&amp;gt; The customer compliance center?&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In the Customer Compliance Center, you can read customer compliance stories to discover how companies in regulated industries have solved various compliance, governance, and audit challenges.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;AWS answers to key compliance questions&lt;/li&gt;
+&lt;li&gt;An overview of AWS risk and compliance&lt;/li&gt;
+&lt;li&gt;An auditing security checklist&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;denial-of-service-attacks&#34;&gt;Denial-of-Service Attacks&lt;/h2&gt;
+&lt;p&gt;A denial-of-service (DoS) attack is a deliberate attempt to make a website or application unavailable to users. Some of them are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;A DDoS attack aims to overwhelm an application&amp;rsquo;s capacity, making it unavailable. Since a single machine isn&amp;rsquo;t powerful enough, attackers distribute the attack across multiple compromised machines (bots), unknowingly used to flood the target&amp;rsquo;s infrastructure.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A UDP flood attack exploits internet services like the National Weather Service, which provide large responses to small requests. The attacker sends a simple request (e.g., &amp;ldquo;Give me weather&amp;rdquo;) but spoofs the return address to the victim’s server. As a result, the service floods the victim with massive amounts of data, overwhelming its capacity. This is just one of many brute-force attacks designed to exhaust a network’s resources&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;HTTP-level attacks mimic legitimate user behavior, such as repeatedly performing complex product searches. These attacks come from a network of compromised bots, overwhelming the server with excessive requests. As a result, real customers are unable to access the service.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The Slowloris attack exploits server connection limits by making slow, incomplete requests, forcing the server to keep connections open indefinitely. This is like someone taking excessively long to order at a coffee shop, blocking others from being served. A few attackers can exhaust server resources, severely impacting availability.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;aws-shield&#34;&gt;AWS Shield&lt;/h3&gt;
+&lt;p&gt;AWS Shield is a service that protects applications against DDoS attacks. AWS Shield provides two levels of protection: Standard and Advanced.&lt;/p&gt;
 </content>
     </item>
     

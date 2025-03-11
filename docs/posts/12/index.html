@@ -110,9 +110,9 @@
   <header class="header">
   <div class="header__inner">
     <div class="header__logo">
-      <a href="/">
+      <a href="/about">
   <div class="logo">
-    527REcords/
+    cords527/
   </div>
 </a>
 
@@ -494,6 +494,74 @@
 </ul>
 <h3 id="amazon-redshift">Amazon Redshift<a href="#amazon-redshift" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>Amazon Redshift is a data warehousing service that you can use for big data analytics. It offers the ability to collect data from many sources and helps you to understand relationships and trends across your data.</p>
+<h2 id="aws-database-migration-service-aws-dms">AWS Database Migration Service (AWS DMS)<a href="#aws-database-migration-service-aws-dms" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>With AWS DMS, you move data between a source database and a target database. The source and target databases(opens in a new tab) can be of the same type or different types.</p>
+<p><strong>IMPORTANT -&gt; What are the common use cases for AWS DMS?</strong></p>
+<ol>
+<li>Development and test database migrations: Enabling developers to test applications against production data without affecting production users.</li>
+<li>Database consolidation: Combining several databases into a single database.</li>
+<li>Continuous replication: Sending ongoing copies of your data to other target sources instead of doing a one-time migration</li>
+</ol>
+<h2 id="amazon-documentdb">Amazon DocumentDB<a href="#amazon-documentdb" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Is a document database service that supports MongoDB workloads. (MongoDB is a document database program.)</p>
+<h2 id="amazon-neptune">Amazon Neptune<a href="#amazon-neptune" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Is a graph database service. You can use Amazon Neptune to build and run applications that work with highly connected datasets, such as recommendation engines, fraud detection, and knowledge graphs.</p>
+<h2 id="amazon-quantum-ledger-database-amazon-qldb">Amazon Quantum Ledger Database (Amazon QLDB)<a href="#amazon-quantum-ledger-database-amazon-qldb" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Is a ledger database service.</p>
+<p>You can use Amazon QLDB to review a complete history of all the changes that have been made to your application data.</p>
+<h2 id="amazon-managed-blockchain">Amazon Managed Blockchain<a href="#amazon-managed-blockchain" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Is a service that you can use to create and manage blockchain networks with open-source frameworks.</p>
+<p>Blockchain is a distributed ledger system that lets multiple parties run transactions and share data without a central authority.</p>
+<h2 id="amazon-elasticache">Amazon ElastiCache<a href="#amazon-elasticache" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Is a service that adds caching layers on top of your databases to help improve the read times of common requests.</p>
+<p>It supports two types of data stores: Redis and Memcached.</p>
+<h2 id="amazon-dynamodb-accelerator-dax">Amazon DynamoDB Accelerator (DAX)<a href="#amazon-dynamodb-accelerator-dax" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>Is an in-memory cache for DynamoDB.</p>
+<p>It helps improve response times from single-digit milliseconds to microseconds.</p>
+<h1 id="module-6-security">Module 6: Security<a href="#module-6-security" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<p>The shared responsibility model divides into customer responsibilities (commonly referred to as “security in the cloud”) and AWS responsibilities (commonly referred to as “security of the cloud”).</p>
+<p><img src="https://i.imgur.com/Ug19iG0.png" alt="Imgur"></p>
+<h2 id="iam">IAM<a href="#iam" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="iam-users">IAM users<a href="#iam-users" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>It represents the identity of the person or application that interacts with AWS services and resources. It consists of a name and credentials.</p>
+<h3 id="iam-policies">IAM policies<a href="#iam-policies" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>An IAM policy is a document that allows or denies permissions to AWS services and resources.</p>
+<h3 id="iam-groups">IAM groups<a href="#iam-groups" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>An IAM group is a collection of IAM users. When you assign an IAM policy to a group, all users in the group are granted permissions specified by the policy.</p>
+<h3 id="iam-roles">IAM roles<a href="#iam-roles" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>An IAM role is an identity that you can assume to gain temporary access to permissions.</p>
+<p>Before an IAM user, application, or service can assume an IAM role, they must be granted permissions to switch to the role. When someone assumes an IAM role, they abandon all previous permissions that they had under a previous role and assume the permissions of the new role.</p>
+<h2 id="compliance">Compliance<a href="#compliance" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>AWS Artifact(opens in a new tab) is a service that provides on-demand access to AWS security and compliance reports and select online agreements. AWS Artifact consists of two main sections:</p>
+<ol>
+<li>AWS Artifact Agreements: In AWS Artifact Agreements, you can review, accept, and manage agreements for an individual account and for all your accounts in AWS Organizations. Different types of agreements are offered to address the needs of customers who are subject to specific regulations, such as the Health Insurance Portability and Accountability Act (HIPAA).</li>
+<li>AWS Artifact Reports: AWS Artifact Reports provide compliance reports from third-party auditors. These auditors have tested and verified that AWS is compliant with a variety of global, regional, and industry-specific security standards and regulations.</li>
+</ol>
+<p><strong>IMPORTANT -&gt; The customer compliance center?</strong></p>
+<p>In the Customer Compliance Center, you can read customer compliance stories to discover how companies in regulated industries have solved various compliance, governance, and audit challenges.</p>
+<ul>
+<li>AWS answers to key compliance questions</li>
+<li>An overview of AWS risk and compliance</li>
+<li>An auditing security checklist</li>
+</ul>
+<h2 id="denial-of-service-attacks">Denial-of-Service Attacks<a href="#denial-of-service-attacks" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<p>A denial-of-service (DoS) attack is a deliberate attempt to make a website or application unavailable to users. Some of them are</p>
+<ul>
+<li>
+<p>A DDoS attack aims to overwhelm an application&rsquo;s capacity, making it unavailable. Since a single machine isn&rsquo;t powerful enough, attackers distribute the attack across multiple compromised machines (bots), unknowingly used to flood the target&rsquo;s infrastructure.</p>
+</li>
+<li>
+<p>A UDP flood attack exploits internet services like the National Weather Service, which provide large responses to small requests. The attacker sends a simple request (e.g., &ldquo;Give me weather&rdquo;) but spoofs the return address to the victim’s server. As a result, the service floods the victim with massive amounts of data, overwhelming its capacity. This is just one of many brute-force attacks designed to exhaust a network’s resources</p>
+</li>
+<li>
+<p>HTTP-level attacks mimic legitimate user behavior, such as repeatedly performing complex product searches. These attacks come from a network of compromised bots, overwhelming the server with excessive requests. As a result, real customers are unable to access the service.</p>
+</li>
+<li>
+<p>The Slowloris attack exploits server connection limits by making slow, incomplete requests, forcing the server to keep connections open indefinitely. This is like someone taking excessively long to order at a coffee shop, blocking others from being served. A few attackers can exhaust server resources, severely impacting availability.</p>
+</li>
+</ul>
+<h3 id="aws-shield">AWS Shield<a href="#aws-shield" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>AWS Shield is a service that protects applications against DDoS attacks. AWS Shield provides two levels of protection: Standard and Advanced.</p>
 
       </div></div>
 
