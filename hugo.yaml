@@ -2,6 +2,8 @@ baseURL: https://jorgeav527.xyz/
 languageCode: en-us
 copyright: MIT License
 theme: terminal
+toc: true
+tocTitle: "Table of dfsdfdsContents"
 pagination:
   pagerSize: 5
 autoCover: true
@@ -10,37 +12,57 @@ params:
     email: jorgeav527@gmail.com
     phone: +51 973635864
   fullWidthTheme: false
-  centerTheme: true
+  profileImage: /img/me_35.jpeg
+  author: Jorge Alarcón
+  profession: "Software Engineer"
+  gitHub: "https://github.com/jorgeav527"
+  linkedIn: "https://www.linkedin.com/in/jorgeav527/"
+  email: "jorgeav527@gmail.com"
 
 languages:
   en:
-    title: "REcords, Inc."
+    title: "Cords527 Inc."
     subtitle: "A simple, retro theme for Hugo"
     keywords: ""
     copyright: ""
     menuMore: "Show more"
-    readMore: "Read more"
     readOtherPosts: "Read other posts"
-
     params:
+      subtitle: "A simple, retro theme for Hugo"
+      menuMore: "Show more"
+      readMore: "Read more ->"
+      readOtherPosts: "Read other posts"
+      newerPosts: "Newer posts"
+      olderPosts: "Older posts"
+      missingContentMessage: "Page not found..."
+      missingBackButtonLabel: "Back to home page"
+      minuteReadingTime: "min read"
+      words: "words"
       logo:
-        logoText: "cords527/"
-        logoHomeLink: "/about"
+        logoText: ""
+        logoHomeLink: "/home"
+        logoImg: "/icons/og-image.svg"
 
     menu:
       main:
-        - identifier: "about"
-          name: "About"
-          url: "/about"
-        # - identifier: "resume"
-        #   name: "Resume"
-        #   url: "/resume"
+        - identifier: "home"
+          name: "Home"
+          pageRef: "/home"
+          weight: 10
+          pre: <i class="fa fa-home"></i>
         - identifier: "posts"
           name: "Posts"
-          url: "/posts"
+          pageRef: "/posts"
+          weight: 20
         - identifier: "projects"
           name: "Projects"
-          url: "/projects"
-        # - identifier: "blog"
-        #   name: "Blog"
-        #   url: "/blog"
+          pageRef: "/projects"
+          weight: 30
+        - identifier: "blog"
+          name: "Blog"
+          pageRef: "/blog"
+          weight: 40
+        # - identifier: "resume"
+        #   name: "Resume"
+        #   pageRef: "/resume"
+        #   weight: 50
