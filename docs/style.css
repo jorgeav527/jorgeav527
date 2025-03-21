@@ -86,3 +86,17 @@
     background: var(--accent);
     color: var(--background);
 }
+
+details {
+    border: 1px solid var(--accent);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+details > summary {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+    background: var(--accent);
+    color: black;
+}

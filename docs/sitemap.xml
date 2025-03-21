@@ -2,14 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jorgeav527.xyz/</loc>
-    <lastmod>2025-03-06T16:56:50-05:00</lastmod>
-  </url><url>
-    <loc>https://jorgeav527.xyz/projects/</loc>
-    <lastmod>2025-03-06T16:56:50-05:00</lastmod>
-  </url><url>
     <loc>https://jorgeav527.xyz/blog/</loc>
     <lastmod>2025-03-06T16:11:11-05:00</lastmod>
+  </url><url>
+    <loc>https://jorgeav527.xyz/</loc>
+    <lastmod>2025-03-06T16:11:11-05:00</lastmod>
+  </url><url>
+    <loc>https://jorgeav527.xyz/projects/1/</loc>
+    <lastmod>2025-03-06T16:11:08-05:00</lastmod>
+  </url><url>
+    <loc>https://jorgeav527.xyz/projects/2/</loc>
+    <lastmod>2025-03-06T16:11:08-05:00</lastmod>
+  </url><url>
+    <loc>https://jorgeav527.xyz/projects/</loc>
+    <lastmod>2025-03-06T16:11:08-05:00</lastmod>
+  </url><url>
+    <loc>https://jorgeav527.xyz/projects/3/</loc>
+    <lastmod>2025-03-06T16:11:08-05:00</lastmod>
   </url><url>
     <loc>https://jorgeav527.xyz/tags/aws/</loc>
     <lastmod>2025-03-06T15:45:35-05:00</lastmod>

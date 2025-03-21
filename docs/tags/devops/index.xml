@@ -477,6 +477,32 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;aws-shield&#34;&gt;AWS Shield&lt;/h3&gt;
 &lt;p&gt;AWS Shield is a service that protects applications against DDoS attacks. AWS Shield provides two levels of protection: Standard and Advanced.&lt;/p&gt;
+&lt;p&gt;
+&lt;details&gt;
+  &lt;summary&gt;See the details&lt;/summary&gt;
+  &lt;p&gt;This is a &lt;strong&gt;bold&lt;/strong&gt; word.&lt;/p&gt;
+&lt;/details&gt;
+
+
+&lt;details&gt;
+  &lt;summary&gt;See the details 2&lt;/summary&gt;
+  &lt;p&gt;This is a &lt;strong&gt;bold&lt;/strong&gt; right.
+this is a &lt;strong&gt;bold&lt;/strong&gt; right another paragraph
+this is a &lt;strong&gt;bold&lt;/strong&gt; right another paragraph&lt;/p&gt;
+&lt;/details&gt;
+
+
+&lt;details&gt;
+  &lt;summary&gt;Details&lt;/summary&gt;
+  &lt;p&gt;This is a &lt;strong&gt;bold&lt;/strong&gt; right.&lt;/p&gt;
+&lt;/details&gt;
+
+
+&lt;details&gt;
+  &lt;summary&gt;See the details&lt;/summary&gt;
+  &lt;p&gt;This is a &lt;strong&gt;bold&lt;/strong&gt; word.&lt;/p&gt;
+&lt;/details&gt;
+&lt;/p&gt;
 </content>
     </item>
     

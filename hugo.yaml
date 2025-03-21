@@ -2,8 +2,6 @@ baseURL: https://jorgeav527.xyz/
 languageCode: en-us
 copyright: MIT License
 theme: terminal
-toc: true
-tocTitle: "Table of dfsdfdsContents"
 pagination:
   pagerSize: 5
 autoCover: true
@@ -19,6 +17,7 @@ params:
   linkedIn: "https://www.linkedin.com/in/jorgeav527/"
   youtube: "https://www.youtube.com/@jorgeav527-xyz"
   email: "jorgeav527@gmail.com"
+  # contentTypeName: "projects"
 
 languages:
   en:
@@ -42,7 +41,6 @@ languages:
       logo:
         logoText: ""
         logoHomeLink: "/home"
-        logoImg: "/icons/og-image.svg"
 
     menu:
       main:
