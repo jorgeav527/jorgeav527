@@ -30,7 +30,7 @@ languages:
     params:
       subtitle: "A simple, retro theme for Hugo"
       menuMore: "Show more"
-      readMore: "Read more ->"
+      readMore: "Read more →"
       readOtherPosts: "Read other posts"
       newerPosts: "Newer posts"
       olderPosts: "Older posts"

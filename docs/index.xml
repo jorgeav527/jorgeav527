@@ -71,8 +71,8 @@ We will see how to setup a ECS cluster using this services, with the AWS console
 
 
   &lt;div class=&#34;collapsable-code&#34;&gt;
-    &lt;input id=&#34;635472819&#34; type=&#34;checkbox&#34;  /&gt;
-    &lt;label for=&#34;635472819&#34;&gt;
+    &lt;input id=&#34;594162738&#34; type=&#34;checkbox&#34;  /&gt;
+    &lt;label for=&#34;594162738&#34;&gt;
       &lt;span class=&#34;collapsable-code__language&#34;&gt;bash&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__title&#34;&gt;Error with OPENSSL package and Redis&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__toggle&#34; data-label-expand=&#34;△&#34; data-label-collapse=&#34;▽&#34;&gt;&lt;/span&gt;
@@ -577,13 +577,13 @@ We will see how to setup a ECS cluster using this services, with the AWS console
 &lt;p&gt;
 &lt;details&gt;
   &lt;summary&gt;See the details&lt;/summary&gt;
-  &lt;p&gt;This is a &lt;strong&gt;bold&lt;/strong&gt; word.&lt;/p&gt;
+  &lt;p&gt;This is a &lt;strong&gt;bold&lt;/strong&gt; word.jojo&lt;/p&gt;
 &lt;/details&gt;
 
 
 &lt;details&gt;
   &lt;summary&gt;See the details 2&lt;/summary&gt;
-  &lt;p&gt;This is a &lt;strong&gt;bold&lt;/strong&gt; right.
+  &lt;p&gt;This is a &lt;strong&gt;bold&lt;/strong&gt; right.dsfdsfs
 this is a &lt;strong&gt;bold&lt;/strong&gt; right another paragraph
 this is a &lt;strong&gt;bold&lt;/strong&gt; right another paragraph&lt;/p&gt;
 &lt;/details&gt;
