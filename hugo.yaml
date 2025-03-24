@@ -17,6 +17,7 @@ params:
   linkedIn: "https://www.linkedin.com/in/jorgeav527/"
   youtube: "https://www.youtube.com/@jorgeav527-xyz"
   email: "jorgeav527@gmail.com"
+  toc: true
   # contentTypeName: "projects"
 
 languages:
