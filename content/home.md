@@ -3,7 +3,7 @@ title = "Home"
 toc = false
 +++
 
-## Hello and welcome to my blog! 🚀
+## Hello, I'm Jorge 🤓 and welcome to my blog! 🚀
 
 1. Post: Everything you need to know about Code and Programming.
 3. Projects: Projects I'm currently working on.
