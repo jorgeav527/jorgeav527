@@ -38,8 +38,8 @@ We will see how to setup a ECS cluster using this services, with the AWS console
 
 
   &lt;div class=&#34;collapsable-code&#34;&gt;
-    &lt;input id=&#34;746352918&#34; type=&#34;checkbox&#34;  /&gt;
-    &lt;label for=&#34;746352918&#34;&gt;
+    &lt;input id=&#34;892413567&#34; type=&#34;checkbox&#34;  /&gt;
+    &lt;label for=&#34;892413567&#34;&gt;
       &lt;span class=&#34;collapsable-code__language&#34;&gt;bash&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__title&#34;&gt;Error with OPENSSL package and Redis&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__toggle&#34; data-label-expand=&#34;△&#34; data-label-collapse=&#34;▽&#34;&gt;&lt;/span&gt;
@@ -184,11 +184,13 @@ We will see how to setup a ECS cluster using this services, with the AWS console
 
 &lt;details&gt;
   &lt;summary&gt;General purpose instances&lt;/summary&gt;
-  &lt;p&gt;Provide a balance of compute, memory, and networking resources.&lt;/p&gt;
+  &lt;p&gt;Provide a balance of compute, memory, and networking resources.
+Applications built on open source software such as&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Application servers&lt;/li&gt;
-&lt;li&gt;Gaming servers&lt;/li&gt;
 &lt;li&gt;Backend servers for enterprise applications&lt;/li&gt;
+&lt;li&gt;Microservices&lt;/li&gt;
+&lt;li&gt;Caching fleets&lt;/li&gt;
+&lt;li&gt;Gaming servers&lt;/li&gt;
 &lt;li&gt;Small and medium databases&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/details&gt;
@@ -200,7 +202,16 @@ We will see how to setup a ECS cluster using this services, with the AWS console
 &lt;ul&gt;
 &lt;li&gt;Compute-intensive applications servers&lt;/li&gt;
 &lt;li&gt;Dedicated gaming servers&lt;/li&gt;
+&lt;li&gt;High performance web servers&lt;/li&gt;
+&lt;li&gt;High performance computing (HPC)&lt;/li&gt;
+&lt;li&gt;Media transcoding&lt;/li&gt;
+&lt;li&gt;Scientific modeling&lt;/li&gt;
+&lt;li&gt;Dedicated gaming servers&lt;/li&gt;
+&lt;li&gt;Machine learning inference&lt;/li&gt;
 &lt;li&gt;Batch processing workloads that require processing many transactions in a single group&lt;/li&gt;
+&lt;li&gt;Video encoding&lt;/li&gt;
+&lt;li&gt;Scientific modeling&lt;/li&gt;
+&lt;li&gt;Distributed analytics&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/details&gt;
 
@@ -209,8 +220,9 @@ We will see how to setup a ECS cluster using this services, with the AWS console
   &lt;summary&gt;Memory optimized instances&lt;/summary&gt;
   &lt;p&gt;Designed to deliver fast performance for workloads that process large datasets in memory.&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;high-performance database&lt;/li&gt;
-&lt;li&gt;real-time processing of a large amount of unstructured data&lt;/li&gt;
+&lt;li&gt;High-performance database, in-memory caches&lt;/li&gt;
+&lt;li&gt;Real-time processing of a large amount of unstructured data&lt;/li&gt;
+&lt;li&gt;Real-time big data analytics.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/details&gt;
 
@@ -219,6 +231,8 @@ We will see how to setup a ECS cluster using this services, with the AWS console
   &lt;summary&gt;Accelerated computing instances&lt;/summary&gt;
   &lt;p&gt;Use hardware accelerators, or coprocessors, to perform some functions more efficiently than is possible in software running on CPUs.&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;Generative AI applications, including question answering, code generation, video and image generation, speech recognition, and more.&lt;/li&gt;
+&lt;li&gt;HPC applications at scale in pharmaceutical discovery, seismic analysis, weather forecasting, and financial modeling.&lt;/li&gt;
 &lt;li&gt;Functions include floating-point number calculations&lt;/li&gt;
 &lt;li&gt;Graphics applications processing&lt;/li&gt;
 &lt;li&gt;Data pattern matching&lt;/li&gt;
@@ -229,10 +243,12 @@ We will see how to setup a ECS cluster using this services, with the AWS console
 
 &lt;details&gt;
   &lt;summary&gt;Storage optimized instances&lt;/summary&gt;
-  &lt;p&gt;Use hardware accelerators, or coprocessors, to perform some functions more efficiently than is possible in software running on CPUs.
-are designed for workloads that require high, sequential read and write access to large datasets on local storage.
+  &lt;p&gt;Are designed for workloads that require high, sequential read and write access to very large data sets on local storage
 Storage optimized instances are designed to deliver tens of thousands of low-latency, random IOPS.&lt;/p&gt;
 &lt;ul&gt;
+&lt;li&gt;I/O intensive workloads that require real-time latency access to data such as relational databases (MySQL, PostgreSQL)&lt;/li&gt;
+&lt;li&gt;Real-time databases, NoSQL databases (Aerospike, Apache Druid, Clickhouse, MongoDB)&lt;/li&gt;
+&lt;li&gt;Real- time analytics such as Apache Spark.&lt;/li&gt;
 &lt;li&gt;Distributed file systems&lt;/li&gt;
 &lt;li&gt;Data warehousing applications&lt;/li&gt;
 &lt;li&gt;High-frequency online transaction processing (OLTP) systems&lt;/li&gt;
@@ -249,7 +265,7 @@ Storage optimized instances are designed to deliver tens of thousands of low-lat
 
 &lt;details&gt;
   &lt;summary&gt;Reserved Instances&lt;/summary&gt;
-  &lt;p&gt;A billing discount applied to On-Demand Instances. Types include:&lt;/p&gt;
+  &lt;p&gt;You can purchase Standard Reserved and Convertible Reserved Instances for a 1-year or 3-year term. You realize greater cost savings with the 3-year option. Types include:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Standard Reserved Instances: Best when you know the exact EC2 instance type, size, and AWS Region for steady-state applications&lt;/li&gt;
 &lt;li&gt;Convertible Reserved Instances: Ideal when you need flexibility across Availability Zones or instance types&lt;/li&gt;
@@ -351,14 +367,127 @@ Storage optimized instances are designed to deliver tens of thousands of low-lat
 &lt;h3 id=&#34;aws-fargate&#34;&gt;AWS Fargate&lt;/h3&gt;
 &lt;p&gt;AWS Fargate is a serverless compute engine for containers. It works with both Amazon ECS and Amazon EKS.&lt;/p&gt;
 &lt;h3 id=&#34;aws-global-infrastructure&#34;&gt;AWS Global Infrastructure&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;IMPORTANT -&amp;gt; How to select the right AWS region?&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
+
+&lt;details&gt;
+  &lt;summary&gt;How to select the right AWS region?&lt;/summary&gt;
+  &lt;ol&gt;
 &lt;li&gt;Compliance: If your company requires data to stay within a specific country, choose a Region that meets those requirements (e.g., London for UK data residency).&lt;/li&gt;
 &lt;li&gt;Proximity: Running infrastructure close to customers improves content delivery (e.g., a Washington, DC company might use the Singapore Region for customers there).&lt;/li&gt;
 &lt;li&gt;Availability: The closest Region may lack certain features, as AWS expands services gradually by building hardware in each Region.&lt;/li&gt;
 &lt;li&gt;Pricing: Costs vary by Region due to local tax structures (e.g., running workloads in São Paulo may be 50% more expensive than in Oregon).&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;&amp;ndash;&amp;gt; &amp;ldquo;here goes the rest of the content&amp;rdquo;&lt;/p&gt;
+&lt;/details&gt;
+
+
+&lt;details&gt;
+  &lt;summary&gt;What are the AWS Global Infrastructure scopes?&lt;/summary&gt;
+  &lt;ol&gt;
+&lt;li&gt;AWS Region: A physically isolated cluster of data centers in a specific location (e.g., US-East-1, Frankfurt). (36 Regions)&lt;/li&gt;
+&lt;li&gt;Availability Zone (AZ): One or more discrete data centers in a Region, separated to minimize failure risk. (114 AZ)&lt;/li&gt;
+&lt;li&gt;AWS Data Center: A single facility within an AZ, containing physical servers, networking, and storage.&lt;/li&gt;
+&lt;li&gt;EC2 Instance – A virtual machine running inside a specific AZ.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/details&gt;
+
+
+&lt;details&gt;
+  &lt;summary&gt;Ways to Interact with AWS Services&lt;/summary&gt;
+  &lt;ol&gt;
+&lt;li&gt;AWS Management Console&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;A web-based graphical interface for managing AWS services.&lt;/li&gt;
+&lt;li&gt;Best for &lt;strong&gt;visual management, monitoring, and quick configurations&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Provides dashboards and interactive controls for easy service navigation.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;AWS Command Line Interface (CLI)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;A command-line tool for interacting with AWS services programmatically.&lt;/li&gt;
+&lt;li&gt;Best for &lt;strong&gt;automation, scripting, and DevOps workflows&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Allows bulk operations and remote management of AWS resources.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;AWS Software Development Kits (SDKs)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;SDKs allow developers to integrate AWS services within applications using programming languages.&lt;/li&gt;
+&lt;li&gt;Available for &lt;strong&gt;Python (Boto3), JavaScript, Java, Go, .NET, and more&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Best for &lt;strong&gt;developers building cloud-native applications with AWS APIs&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+
+
+&lt;details&gt;
+  &lt;summary&gt;AWS Infrastructure as Code (IaC) Options&lt;/summary&gt;
+  &lt;ol&gt;
+&lt;li&gt;AWS Elastic Beanstalk&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;A &lt;strong&gt;Platform as a Service (PaaS)&lt;/strong&gt; that simplifies application deployment.&lt;/li&gt;
+&lt;li&gt;Manages infrastructure &lt;strong&gt;automatically&lt;/strong&gt;, handling scaling, monitoring, and maintenance.&lt;/li&gt;
+&lt;li&gt;Best for &lt;strong&gt;developers deploying applications without worrying about infrastructure setup&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;AWS CloudFormation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;A &lt;strong&gt;fully-managed Infrastructure as Code (IaC)&lt;/strong&gt; service.&lt;/li&gt;
+&lt;li&gt;Uses &lt;strong&gt;YAML or JSON templates&lt;/strong&gt; to define and provision AWS resources.&lt;/li&gt;
+&lt;li&gt;Best for &lt;strong&gt;DevOps teams managing AWS infrastructure through automation&lt;/strong&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/details&gt;
+
+&lt;h3 id=&#34;edge-locations&#34;&gt;Edge locations&lt;/h3&gt;
+&lt;p&gt;An edge location is a site that Amazon CloudFront uses to store cached copies of your content closer to your customers for faster delivery. (more tan 700 Edges)&lt;/p&gt;
+
+&lt;img src=&#34;https://i.imgur.com/fyFSyn3.png&#34;  alt=&#34;Edge Locations&#34;  class=&#34;center&#34;    /&gt;
+
+
+&lt;h2 id=&#34;networking&#34;&gt;Networking&lt;/h2&gt;
+&lt;h3 id=&#34;aws-direct-connect&#34;&gt;AWS Direct Connect&lt;/h3&gt;
+&lt;p&gt;Is a service that lets you to establish a dedicated private connection between your data center and a VPC. AWS Direct Connect provides a physical line that connects your network to your AWS VPC.&lt;/p&gt;
+&lt;h3 id=&#34;internet-gateway-igw&#34;&gt;Internet Gateway IGW&lt;/h3&gt;
+&lt;p&gt;To allow public traffic from the internet to access your VPC, you attach an internet gateway to the VPC.&lt;/p&gt;
+&lt;h3 id=&#34;virtual-private-gateway&#34;&gt;Virtual Private Gateway&lt;/h3&gt;
+&lt;p&gt;A virtual private gateway enables you to establish a virtual private network (VPN) connection between your VPC and a private network, such as an on-premises data center or internal corporate network. A virtual private gateway allows traffic into the VPC only if it is coming from an approved network.&lt;/p&gt;
+&lt;h3 id=&#34;virtual-private-conection-vpc&#34;&gt;Virtual Private Conection VPC&lt;/h3&gt;
+
+&lt;img src=&#34;https://i.imgur.com/JluT17D.png&#34;  alt=&#34;Flow&#34;  class=&#34;center&#34;    /&gt;
+
+
+&lt;p&gt;Amazon VPC enables you to provision an isolated section of the AWS Cloud. In this isolated section, you can launch resources in a virtual network that you define.&lt;/p&gt;
+&lt;h3 id=&#34;public-subnets&#34;&gt;Public subnets&lt;/h3&gt;
+&lt;p&gt;Public subnets contain resources that need to be accessible by the public, such as an online store’s website.&lt;/p&gt;
+&lt;h3 id=&#34;private-subnets&#34;&gt;Private subnets&lt;/h3&gt;
+&lt;p&gt;Private subnets contain resources that should be accessible only through your private network, such as a database that contains customers’ personal information and order histories.&lt;/p&gt;
+&lt;h3 id=&#34;a-network-acl&#34;&gt;A network ACL&lt;/h3&gt;
+&lt;p&gt;Is a virtual firewall that controls inbound and outbound traffic at the subnet level.
+By default, your account’s default network ACL allows all inbound and outbound traffic, but you can modify it by adding your own rules.
+Network ACLs perform &lt;strong&gt;stateless&lt;/strong&gt; packet filtering. They remember nothing and check packets that cross the subnet border each way: inbound and outbound.&lt;/p&gt;
+&lt;h3 id=&#34;security-groups-sg&#34;&gt;Security groups SG&lt;/h3&gt;
+&lt;p&gt;A security group is a virtual firewall that controls inbound and outbound traffic for an Amazon EC2 instance.
+By default, a security group denies all inbound traffic and allows all outbound traffic.
+Security groups perform &lt;strong&gt;stateful&lt;/strong&gt; packet filtering. They remember previous decisions made for incoming packets.&lt;/p&gt;
+
+&lt;img src=&#34;https://i.imgur.com/x42mVxq.png&#34;  alt=&#34;ACL and SG&#34;  class=&#34;center&#34;    /&gt;
+
+
+&lt;h3 id=&#34;amazon-route-53&#34;&gt;Amazon Route 53&lt;/h3&gt;
+&lt;p&gt;Is a DNS service:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;When you enter the domain name into your browser, this request is sent to a customer DNS resolver.&lt;/li&gt;
+&lt;li&gt;The customer DNS resolver asks the company DNS server for the IP address that corresponds to AnyCompany’s website.&lt;/li&gt;
+&lt;li&gt;The company DNS server responds by providing the IP address for AnyCompany’s website, 192.0.2.0.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Using this with CloudFront&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;A customer requests data from the application by going to AnyCompany’s website.&lt;/li&gt;
+&lt;li&gt;Amazon Route 53 uses DNS resolution to identify AnyCompany.com’s corresponding IP address, 192.0.2.0. This information is sent back to the customer.&lt;/li&gt;
+&lt;li&gt;The customer’s request is sent to the nearest edge location through Amazon CloudFront.&lt;/li&gt;
+&lt;li&gt;Amazon CloudFront connects to the Application Load Balancer, which sends the incoming packet to an Amazon EC2 instance.&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h1 id=&#34;storage-and-databases&#34;&gt;STORAGE AND DATABASES&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;IMPORTANT -&amp;gt; What is a instance store?&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;

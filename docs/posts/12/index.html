@@ -279,6 +279,20 @@
         <li><a href="#amazon-elastic-kubernetes-service-amazon-eks">Amazon Elastic Kubernetes Service (Amazon EKS)</a></li>
         <li><a href="#aws-fargate">AWS Fargate</a></li>
         <li><a href="#aws-global-infrastructure">AWS Global Infrastructure</a></li>
+        <li><a href="#edge-locations">Edge locations</a></li>
+      </ul>
+    </li>
+    <li><a href="#networking">Networking</a>
+      <ul>
+        <li><a href="#aws-direct-connect">AWS Direct Connect</a></li>
+        <li><a href="#internet-gateway-igw">Internet Gateway IGW</a></li>
+        <li><a href="#virtual-private-gateway">Virtual Private Gateway</a></li>
+        <li><a href="#virtual-private-conection-vpc">Virtual Private Conection VPC</a></li>
+        <li><a href="#public-subnets">Public subnets</a></li>
+        <li><a href="#private-subnets">Private subnets</a></li>
+        <li><a href="#a-network-acl">A network ACL</a></li>
+        <li><a href="#security-groups-sg">Security groups SG</a></li>
+        <li><a href="#amazon-route-53">Amazon Route 53</a></li>
       </ul>
     </li>
   </ul>
@@ -429,11 +443,13 @@
 
 <details>
   <summary>General purpose instances</summary>
-  <p>Provide a balance of compute, memory, and networking resources.</p>
+  <p>Provide a balance of compute, memory, and networking resources.
+Applications built on open source software such as</p>
 <ul>
-<li>Application servers</li>
-<li>Gaming servers</li>
 <li>Backend servers for enterprise applications</li>
+<li>Microservices</li>
+<li>Caching fleets</li>
+<li>Gaming servers</li>
 <li>Small and medium databases</li>
 </ul>
 </details>
@@ -445,7 +461,16 @@
 <ul>
 <li>Compute-intensive applications servers</li>
 <li>Dedicated gaming servers</li>
+<li>High performance web servers</li>
+<li>High performance computing (HPC)</li>
+<li>Media transcoding</li>
+<li>Scientific modeling</li>
+<li>Dedicated gaming servers</li>
+<li>Machine learning inference</li>
 <li>Batch processing workloads that require processing many transactions in a single group</li>
+<li>Video encoding</li>
+<li>Scientific modeling</li>
+<li>Distributed analytics</li>
 </ul>
 </details>
 
@@ -454,8 +479,9 @@
   <summary>Memory optimized instances</summary>
   <p>Designed to deliver fast performance for workloads that process large datasets in memory.</p>
 <ul>
-<li>high-performance database</li>
-<li>real-time processing of a large amount of unstructured data</li>
+<li>High-performance database, in-memory caches</li>
+<li>Real-time processing of a large amount of unstructured data</li>
+<li>Real-time big data analytics.</li>
 </ul>
 </details>
 
@@ -464,6 +490,8 @@
   <summary>Accelerated computing instances</summary>
   <p>Use hardware accelerators, or coprocessors, to perform some functions more efficiently than is possible in software running on CPUs.</p>
 <ul>
+<li>Generative AI applications, including question answering, code generation, video and image generation, speech recognition, and more.</li>
+<li>HPC applications at scale in pharmaceutical discovery, seismic analysis, weather forecasting, and financial modeling.</li>
 <li>Functions include floating-point number calculations</li>
 <li>Graphics applications processing</li>
 <li>Data pattern matching</li>
@@ -474,10 +502,12 @@
 
 <details>
   <summary>Storage optimized instances</summary>
-  <p>Use hardware accelerators, or coprocessors, to perform some functions more efficiently than is possible in software running on CPUs.
-are designed for workloads that require high, sequential read and write access to large datasets on local storage.
+  <p>Are designed for workloads that require high, sequential read and write access to very large data sets on local storage
 Storage optimized instances are designed to deliver tens of thousands of low-latency, random IOPS.</p>
 <ul>
+<li>I/O intensive workloads that require real-time latency access to data such as relational databases (MySQL, PostgreSQL)</li>
+<li>Real-time databases, NoSQL databases (Aerospike, Apache Druid, Clickhouse, MongoDB)</li>
+<li>Real- time analytics such as Apache Spark.</li>
 <li>Distributed file systems</li>
 <li>Data warehousing applications</li>
 <li>High-frequency online transaction processing (OLTP) systems</li>
@@ -494,7 +524,7 @@ Storage optimized instances are designed to deliver tens of thousands of low-lat
 
 <details>
   <summary>Reserved Instances</summary>
-  <p>A billing discount applied to On-Demand Instances. Types include:</p>
+  <p>You can purchase Standard Reserved and Convertible Reserved Instances for a 1-year or 3-year term. You realize greater cost savings with the 3-year option. Types include:</p>
 <ul>
 <li>Standard Reserved Instances: Best when you know the exact EC2 instance type, size, and AWS Region for steady-state applications</li>
 <li>Convertible Reserved Instances: Ideal when you need flexibility across Availability Zones or instance types</li>
@@ -596,14 +626,127 @@ Storage optimized instances are designed to deliver tens of thousands of low-lat
 <h3 id="aws-fargate">AWS Fargate<a href="#aws-fargate" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>AWS Fargate is a serverless compute engine for containers. It works with both Amazon ECS and Amazon EKS.</p>
 <h3 id="aws-global-infrastructure">AWS Global Infrastructure<a href="#aws-global-infrastructure" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<p><strong>IMPORTANT -&gt; How to select the right AWS region?</strong></p>
-<ol>
+
+<details>
+  <summary>How to select the right AWS region?</summary>
+  <ol>
 <li>Compliance: If your company requires data to stay within a specific country, choose a Region that meets those requirements (e.g., London for UK data residency).</li>
 <li>Proximity: Running infrastructure close to customers improves content delivery (e.g., a Washington, DC company might use the Singapore Region for customers there).</li>
 <li>Availability: The closest Region may lack certain features, as AWS expands services gradually by building hardware in each Region.</li>
 <li>Pricing: Costs vary by Region due to local tax structures (e.g., running workloads in São Paulo may be 50% more expensive than in Oregon).</li>
 </ol>
-<p>&ndash;&gt; &ldquo;here goes the rest of the content&rdquo;</p>
+</details>
+
+
+<details>
+  <summary>What are the AWS Global Infrastructure scopes?</summary>
+  <ol>
+<li>AWS Region: A physically isolated cluster of data centers in a specific location (e.g., US-East-1, Frankfurt). (36 Regions)</li>
+<li>Availability Zone (AZ): One or more discrete data centers in a Region, separated to minimize failure risk. (114 AZ)</li>
+<li>AWS Data Center: A single facility within an AZ, containing physical servers, networking, and storage.</li>
+<li>EC2 Instance – A virtual machine running inside a specific AZ.</li>
+</ol>
+</details>
+
+
+<details>
+  <summary>Ways to Interact with AWS Services</summary>
+  <ol>
+<li>AWS Management Console</li>
+</ol>
+<ul>
+<li>A web-based graphical interface for managing AWS services.</li>
+<li>Best for <strong>visual management, monitoring, and quick configurations</strong>.</li>
+<li>Provides dashboards and interactive controls for easy service navigation.</li>
+</ul>
+<ol start="2">
+<li>AWS Command Line Interface (CLI)</li>
+</ol>
+<ul>
+<li>A command-line tool for interacting with AWS services programmatically.</li>
+<li>Best for <strong>automation, scripting, and DevOps workflows</strong>.</li>
+<li>Allows bulk operations and remote management of AWS resources.</li>
+</ul>
+<ol start="3">
+<li>AWS Software Development Kits (SDKs)</li>
+</ol>
+<ul>
+<li>SDKs allow developers to integrate AWS services within applications using programming languages.</li>
+<li>Available for <strong>Python (Boto3), JavaScript, Java, Go, .NET, and more</strong>.</li>
+<li>Best for <strong>developers building cloud-native applications with AWS APIs</strong>.</li>
+</ul>
+</details>
+
+
+<details>
+  <summary>AWS Infrastructure as Code (IaC) Options</summary>
+  <ol>
+<li>AWS Elastic Beanstalk</li>
+</ol>
+<ul>
+<li>A <strong>Platform as a Service (PaaS)</strong> that simplifies application deployment.</li>
+<li>Manages infrastructure <strong>automatically</strong>, handling scaling, monitoring, and maintenance.</li>
+<li>Best for <strong>developers deploying applications without worrying about infrastructure setup</strong>.</li>
+</ul>
+<ol start="2">
+<li>AWS CloudFormation</li>
+</ol>
+<ul>
+<li>A <strong>fully-managed Infrastructure as Code (IaC)</strong> service.</li>
+<li>Uses <strong>YAML or JSON templates</strong> to define and provision AWS resources.</li>
+<li>Best for <strong>DevOps teams managing AWS infrastructure through automation</strong>.</li>
+</ul>
+</details>
+
+<h3 id="edge-locations">Edge locations<a href="#edge-locations" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>An edge location is a site that Amazon CloudFront uses to store cached copies of your content closer to your customers for faster delivery. (more tan 700 Edges)</p>
+
+<img src="https://i.imgur.com/fyFSyn3.png"  alt="Edge Locations"  class="center"    />
+
+
+<h2 id="networking">Networking<a href="#networking" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="aws-direct-connect">AWS Direct Connect<a href="#aws-direct-connect" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Is a service that lets you to establish a dedicated private connection between your data center and a VPC. AWS Direct Connect provides a physical line that connects your network to your AWS VPC.</p>
+<h3 id="internet-gateway-igw">Internet Gateway IGW<a href="#internet-gateway-igw" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>To allow public traffic from the internet to access your VPC, you attach an internet gateway to the VPC.</p>
+<h3 id="virtual-private-gateway">Virtual Private Gateway<a href="#virtual-private-gateway" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>A virtual private gateway enables you to establish a virtual private network (VPN) connection between your VPC and a private network, such as an on-premises data center or internal corporate network. A virtual private gateway allows traffic into the VPC only if it is coming from an approved network.</p>
+<h3 id="virtual-private-conection-vpc">Virtual Private Conection VPC<a href="#virtual-private-conection-vpc" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+
+<img src="https://i.imgur.com/JluT17D.png"  alt="Flow"  class="center"    />
+
+
+<p>Amazon VPC enables you to provision an isolated section of the AWS Cloud. In this isolated section, you can launch resources in a virtual network that you define.</p>
+<h3 id="public-subnets">Public subnets<a href="#public-subnets" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Public subnets contain resources that need to be accessible by the public, such as an online store’s website.</p>
+<h3 id="private-subnets">Private subnets<a href="#private-subnets" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Private subnets contain resources that should be accessible only through your private network, such as a database that contains customers’ personal information and order histories.</p>
+<h3 id="a-network-acl">A network ACL<a href="#a-network-acl" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Is a virtual firewall that controls inbound and outbound traffic at the subnet level.
+By default, your account’s default network ACL allows all inbound and outbound traffic, but you can modify it by adding your own rules.
+Network ACLs perform <strong>stateless</strong> packet filtering. They remember nothing and check packets that cross the subnet border each way: inbound and outbound.</p>
+<h3 id="security-groups-sg">Security groups SG<a href="#security-groups-sg" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>A security group is a virtual firewall that controls inbound and outbound traffic for an Amazon EC2 instance.
+By default, a security group denies all inbound traffic and allows all outbound traffic.
+Security groups perform <strong>stateful</strong> packet filtering. They remember previous decisions made for incoming packets.</p>
+
+<img src="https://i.imgur.com/x42mVxq.png"  alt="ACL and SG"  class="center"    />
+
+
+<h3 id="amazon-route-53">Amazon Route 53<a href="#amazon-route-53" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Is a DNS service:</p>
+<ol>
+<li>When you enter the domain name into your browser, this request is sent to a customer DNS resolver.</li>
+<li>The customer DNS resolver asks the company DNS server for the IP address that corresponds to AnyCompany’s website.</li>
+<li>The company DNS server responds by providing the IP address for AnyCompany’s website, 192.0.2.0.</li>
+</ol>
+<p>Using this with CloudFront</p>
+<ol>
+<li>A customer requests data from the application by going to AnyCompany’s website.</li>
+<li>Amazon Route 53 uses DNS resolution to identify AnyCompany.com’s corresponding IP address, 192.0.2.0. This information is sent back to the customer.</li>
+<li>The customer’s request is sent to the nearest edge location through Amazon CloudFront.</li>
+<li>Amazon CloudFront connects to the Application Load Balancer, which sends the incoming packet to an Amazon EC2 instance.</li>
+</ol>
 <h1 id="storage-and-databases">STORAGE AND DATABASES<a href="#storage-and-databases" class="hanchor" ariaLabel="Anchor">#</a> </h1>
 <p><strong>IMPORTANT -&gt; What is a instance store?</strong></p>
 <ul>
