@@ -282,7 +282,7 @@
         <li><a href="#edge-locations">Edge locations</a></li>
       </ul>
     </li>
-    <li><a href="#networking">Networking</a>
+    <li><a href="#7-networking">7. Networking</a>
       <ul>
         <li><a href="#aws-direct-connect">AWS Direct Connect</a></li>
         <li><a href="#internet-gateway-igw">Internet Gateway IGW</a></li>
@@ -295,44 +295,30 @@
         <li><a href="#amazon-route-53">Amazon Route 53</a></li>
       </ul>
     </li>
-  </ul>
-
-  <ul>
-    <li><a href="#amazon-elastic-block-store-amazon-ebs">Amazon Elastic Block Store (Amazon EBS)</a></li>
-    <li><a href="#ebs-snapshot">EBS snapshot</a></li>
-    <li><a href="#s3-bucket">S3 Bucket</a>
+    <li><a href="#8-storage-and-databases">8. STORAGE AND DATABASES</a>
       <ul>
-        <li><a href="#s3-standard">S3 Standard</a></li>
-        <li><a href="#s3-standard-ia">S3 Standard-IA</a></li>
-        <li><a href="#s3-one-zone-ia">S3 One Zone-IA</a></li>
-        <li><a href="#s3-intelligent-tiering">S3 Intelligent-Tiering</a></li>
-        <li><a href="#s3-glacier-instant-retrieval">S3 Glacier Instant Retrieval</a></li>
-        <li><a href="#s3-glacier-flexible-retrieval">S3 Glacier Flexible Retrieval</a></li>
-        <li><a href="#s3-glacier-deep-archive">S3 Glacier Deep Archive</a></li>
-        <li><a href="#s3-glacier-deep-archive-1">S3 Glacier Deep Archive</a></li>
-        <li><a href="#s3-outposts">S3 Outposts</a></li>
+        <li><a href="#amazon-elastic-block-store-amazon-ebs">Amazon Elastic Block Store (Amazon EBS)</a></li>
+        <li><a href="#s3-bucket">S3 Bucket</a></li>
         <li><a href="#amazon-elastic-file-system-amazon-efs">Amazon Elastic File System (Amazon EFS)</a></li>
         <li><a href="#amazon-relational-database-service-amazon-rds">Amazon Relational Database Service (Amazon RDS)</a></li>
         <li><a href="#amazon-nonrelational-databases">Amazon Nonrelational databases</a></li>
         <li><a href="#amazon-redshift">Amazon Redshift</a></li>
+        <li><a href="#aws-database-migration-service-aws-dms">AWS Database Migration Service (AWS DMS)</a></li>
+        <li><a href="#amazon-documentdb">Amazon DocumentDB</a></li>
+        <li><a href="#amazon-neptune">Amazon Neptune</a></li>
+        <li><a href="#amazon-quantum-ledger-database-amazon-qldb">Amazon Quantum Ledger Database (Amazon QLDB)</a></li>
+        <li><a href="#amazon-managed-blockchain">Amazon Managed Blockchain</a></li>
+        <li><a href="#amazon-elasticache">Amazon ElastiCache</a></li>
+        <li><a href="#amazon-dynamodb-accelerator-dax">Amazon DynamoDB Accelerator (DAX)</a></li>
       </ul>
     </li>
-    <li><a href="#aws-database-migration-service-aws-dms">AWS Database Migration Service (AWS DMS)</a></li>
-    <li><a href="#amazon-documentdb">Amazon DocumentDB</a></li>
-    <li><a href="#amazon-neptune">Amazon Neptune</a></li>
-    <li><a href="#amazon-quantum-ledger-database-amazon-qldb">Amazon Quantum Ledger Database (Amazon QLDB)</a></li>
-    <li><a href="#amazon-managed-blockchain">Amazon Managed Blockchain</a></li>
-    <li><a href="#amazon-elasticache">Amazon ElastiCache</a></li>
-    <li><a href="#amazon-dynamodb-accelerator-dax">Amazon DynamoDB Accelerator (DAX)</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#iam">IAM</a>
+    <li><a href="#6-security">6. Security</a>
       <ul>
         <li><a href="#iam-users">IAM users</a></li>
         <li><a href="#iam-policies">IAM policies</a></li>
         <li><a href="#iam-groups">IAM groups</a></li>
         <li><a href="#iam-roles">IAM roles</a></li>
+        <li><a href="#aws-organizations">AWS Organizations</a></li>
       </ul>
     </li>
     <li><a href="#compliance">Compliance</a></li>
@@ -704,7 +690,7 @@ Storage optimized instances are designed to deliver tens of thousands of low-lat
 <img src="https://i.imgur.com/fyFSyn3.png"  alt="Edge Locations"  class="center"    />
 
 
-<h2 id="networking">Networking<a href="#networking" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h2 id="7-networking">7. Networking<a href="#7-networking" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <h3 id="aws-direct-connect">AWS Direct Connect<a href="#aws-direct-connect" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>Is a service that lets you to establish a dedicated private connection between your data center and a VPC. AWS Direct Connect provides a physical line that connects your network to your AWS VPC.</p>
 <h3 id="internet-gateway-igw">Internet Gateway IGW<a href="#internet-gateway-igw" class="hanchor" ariaLabel="Anchor">#</a> </h3>
@@ -734,105 +720,146 @@ Security groups perform <strong>stateful</strong> packet filtering. They remembe
 
 
 <h3 id="amazon-route-53">Amazon Route 53<a href="#amazon-route-53" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<p>Is a DNS service:</p>
-<ol>
+
+<details>
+  <summary>how does it works in a DNS service?</summary>
+  <ol>
 <li>When you enter the domain name into your browser, this request is sent to a customer DNS resolver.</li>
 <li>The customer DNS resolver asks the company DNS server for the IP address that corresponds to AnyCompany’s website.</li>
 <li>The company DNS server responds by providing the IP address for AnyCompany’s website, 192.0.2.0.</li>
 </ol>
-<p>Using this with CloudFront</p>
-<ol>
+</details>
+
+
+<details>
+  <summary>how does it works using CloudFront?</summary>
+  <ol>
 <li>A customer requests data from the application by going to AnyCompany’s website.</li>
 <li>Amazon Route 53 uses DNS resolution to identify AnyCompany.com’s corresponding IP address, 192.0.2.0. This information is sent back to the customer.</li>
 <li>The customer’s request is sent to the nearest edge location through Amazon CloudFront.</li>
 <li>Amazon CloudFront connects to the Application Load Balancer, which sends the incoming packet to an Amazon EC2 instance.</li>
 </ol>
-<h1 id="storage-and-databases">STORAGE AND DATABASES<a href="#storage-and-databases" class="hanchor" ariaLabel="Anchor">#</a> </h1>
-<p><strong>IMPORTANT -&gt; What is a instance store?</strong></p>
-<ul>
-<li>
-<p>An instance store provides temporary block-level storage for an Amazon EC2 instance. An instance store is disk storage that is physically attached to the host computer for an EC2 instance, and therefore has the same lifespan as the instance.</p>
-</li>
-<li>
-<p>When the instance is terminated, you lose any data in the instance store.</p>
-</li>
+</details>
+
+<h2 id="8-storage-and-databases">8. STORAGE AND DATABASES<a href="#8-storage-and-databases" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+
+<details>
+  <summary>What is a instance store?</summary>
+  <ul>
+<li>An instance store provides temporary block-level storage for an Amazon EC2 instance. An instance store is disk storage that is physically attached to the host computer for an EC2 instance, and therefore has the same lifespan as the instance.</li>
+<li>When the instance is terminated, you lose any data in the instance store.</li>
 </ul>
-<p><strong>IMPORTANT -&gt; What is a object storage?</strong></p>
-<ul>
-<li>
-<p>In object storage, each object consists of data, metadata, and a key.</p>
-</li>
-<li>
-<p>The data might be an image, video, text document, or any other type of file. Metadata contains information about what the data is, how it is used, the object size, and so on. An object’s key is its unique identifier.</p>
-</li>
+</details>
+
+
+<details>
+  <summary>What is a object storage?</summary>
+  <ul>
+<li>In object storage, each object consists of data, metadata, and a key.</li>
+<li>The data might be an image, video, text document, or any other type of file.</li>
+<li>Metadata contains information about what the data is, how it is used, the object size, and so on.</li>
+<li>An object’s key is its unique identifier.</li>
 </ul>
-<h2 id="amazon-elastic-block-store-amazon-ebs">Amazon Elastic Block Store (Amazon EBS)<a href="#amazon-elastic-block-store-amazon-ebs" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+</details>
+
+<h3 id="amazon-elastic-block-store-amazon-ebs">Amazon Elastic Block Store (Amazon EBS)<a href="#amazon-elastic-block-store-amazon-ebs" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>Block-level storage volumes behave like physical hard drives.</p>
 <p>EBS is a service that provides block-level storage volumes that you can use with Amazon EC2 instances. If you stop or terminate an Amazon EC2 instance, all the data on the attached EBS volume remains available.</p>
 <p>When you create an EBS volume, you define the configuration (such as volume size and type) and provision it. After you create an EBS volume, it can attach to an Amazon EC2 instance.</p>
 <p>Because EBS volumes are for data that needs to persist, it’s important to back up the data. You can take incremental backups of EBS volumes by creating Amazon EBS snapshots.</p>
-<h2 id="ebs-snapshot">EBS snapshot<a href="#ebs-snapshot" class="hanchor" ariaLabel="Anchor">#</a> </h2>
-<p>An EBS snapshot is an incremental backup. The first snapshot of an EBS volume copies all the data, while subsequent snapshots only save the blocks of data that have changed since the last snapshot. This approach differs from full backups, where all data is copied every time, including unchanged data. Incremental backups are more efficient, saving storage space and reducing backup time compared to full backups.</p>
-<h2 id="s3-bucket">S3 Bucket<a href="#s3-bucket" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+
+<details>
+  <summary>What is a EBS snapshot?</summary>
+  <p>An EBS snapshot is an incremental backup. The first snapshot of an EBS volume copies all the data, while subsequent snapshots only save the blocks of data that have changed since the last snapshot. This approach differs from full backups, where all data is copied every time, including unchanged data. Incremental backups are more efficient, saving storage space and reducing backup time compared to full backups.</p>
+</details>
+
+<h3 id="s3-bucket">S3 Bucket<a href="#s3-bucket" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>Amazon S3 (Simple Storage Service) is an object-level storage service that stores data as objects within buckets. It supports uploading any file type (e.g., images, videos, documents) and is commonly used for backups, media storage, and archiving. Amazon S3 provides unlimited storage space, with a maximum object size of 5 TB. Users can set permissions to control access and visibility of files and enable versioning to track changes to objects over time.</p>
 <p>There are two questions you have to answer about what kind of data you want to store in S3:</p>
 <ol>
 <li>How often you plan to retrieve data from S3?</li>
 <li>How available you need your data to be in S3?</li>
 </ol>
-<h3 id="s3-standard">S3 Standard<a href="#s3-standard" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<ul>
+
+<details>
+  <summary>What is the S3 Standard?</summary>
+  <ul>
 <li>Designed for frequently accessed data</li>
 <li>Stores data in a minimum of three Availability Zones</li>
 <li>Has a higher cost than other storage</li>
 </ul>
 <p>This makes it a good choice for a wide range of use cases, such as websites, content distribution, and data analytics.</p>
-<h3 id="s3-standard-ia">S3 Standard-IA<a href="#s3-standard-ia" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<ul>
+</details>
+
+
+<details>
+  <summary>What is the S3 Standard-IA?</summary>
+  <ul>
 <li>Ideal for infrequently accessed data</li>
 <li>Stores data in a minimum of three Availability Zones</li>
 <li>Has a lower storage price and higher retrieval price</li>
 </ul>
-<h3 id="s3-one-zone-ia">S3 One Zone-IA<a href="#s3-one-zone-ia" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<ul>
+<p>This makes it a good choice for a wide range of use cases, backup storage for disaster recovery, video, images, or other media files that are not part of a frequently viewed library but need to be accessible without long retrieval delays.</p>
+</details>
+
+
+<details>
+  <summary>What is the S3 One Zone-IA?</summary>
+  <ul>
 <li>Stores data in a single Availability Zone</li>
 <li>Has a lower storage price than Amazon S3 Standard-IA</li>
 <li>if you want to save costs on storage.</li>
 <li>You can easily reproduce your data in the event of an Availability Zone failure.</li>
 </ul>
-<h3 id="s3-intelligent-tiering">S3 Intelligent-Tiering<a href="#s3-intelligent-tiering" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<ul>
+</details>
+
+
+<details>
+  <summary>What is the S3 Intelligent-Tiering?</summary>
+  <ul>
 <li>Ideal for data with unknown or changing access patterns</li>
 <li>Requires a small monthly monitoring and automation fee per object</li>
 </ul>
 <p>If you haven’t accessed an object for 30 consecutive days, Amazon S3 automatically moves it to the infrequent access tier, S3 Standard-IA. If you access an object in the infrequent access tier, Amazon S3 automatically moves it to the frequent access tier, S3 Standard.</p>
-<h3 id="s3-glacier-instant-retrieval">S3 Glacier Instant Retrieval<a href="#s3-glacier-instant-retrieval" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<ul>
+</details>
+
+
+<details>
+  <summary>What is the S3 Glacier Instant Retrieval?</summary>
+  <ul>
 <li>Works well for archived data that requires immediate access</li>
 <li>Can retrieve objects within a few milliseconds</li>
 </ul>
 <p>You can retrieve objects stored in the S3 Glacier Instant Retrieval storage class within milliseconds, with the same performance as S3 Standard.</p>
-<h3 id="s3-glacier-flexible-retrieval">S3 Glacier Flexible Retrieval<a href="#s3-glacier-flexible-retrieval" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<ul>
+</details>
+
+
+<details>
+  <summary>What is the S3 Glacier Flexible Retrieval?</summary>
+  <ul>
 <li>Low-cost storage designed for data archiving</li>
 <li>Able to retrieve objects within a few minutes to hours</li>
 </ul>
 <p>You can retrieve objects stored in the S3 Glacier Flexible Retrieval storage class within a few hours, with a lower retrieval price than S3 Glacier Instant Retrieval.</p>
-<h3 id="s3-glacier-deep-archive">S3 Glacier Deep Archive<a href="#s3-glacier-deep-archive" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<ul>
-<li>Ideal for data that requires infrequent access and long-term retention</li>
-<li>Can retrieve objects within a few days</li>
-</ul>
-<p>Is a low-cost storage ideal for data archiving. For example, you might use this storage class to store archived customer records or older photos and video files. You can retrieve your data from S3 Glacier Flexible Retrieval from 1 minute to 12 hours.</p>
-<h3 id="s3-glacier-deep-archive-1">S3 Glacier Deep Archive<a href="#s3-glacier-deep-archive-1" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<ul>
+</details>
+
+
+<details>
+  <summary>What is the S3 Glacier Deep Archive?</summary>
+  <ul>
 <li>Lowest-cost object storage class ideal for archiving</li>
 <li>Able to retrieve objects within 12 hours</li>
 <li>All objects from this storage class are replicated and stored across at least three geographically dispersed Availability Zones.</li>
 </ul>
 <p>This storage class is the lowest-cost storage in the AWS Cloud, with data retrieval from 12 to 48 hours.</p>
-<h3 id="s3-outposts">S3 Outposts<a href="#s3-outposts" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<p>Amazon S3 Outposts delivers object storage to your on-premises AWS Outposts environment. Amazon S3 Outposts is designed to store data durably and redundantly across multiple devices and servers on your Outposts.</p>
+</details>
+
+
+<details>
+  <summary>What is the S3 Glacier Deep Archive?</summary>
+  <p>Amazon S3 Outposts delivers object storage to your on-premises AWS Outposts environment. Amazon S3 Outposts is designed to store data durably and redundantly across multiple devices and servers on your Outposts.</p>
+</details>
+
 <table>
   <thead>
       <tr>
@@ -862,9 +889,13 @@ Security groups perform <strong>stateful</strong> packet filtering. They remembe
 <h3 id="amazon-elastic-file-system-amazon-efs">Amazon Elastic File System (Amazon EFS)<a href="#amazon-elastic-file-system-amazon-efs" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>In file storage, multiple clients (such as users, applications, servers, and so on) can access data that is stored in shared file folders.</p>
 <p>As you add and remove files, Amazon EFS grows and shrinks automatically. It can scale on demand to petabytes without disrupting applications.</p>
-<p><strong>IMPORTANT -&gt; EFS vs EBS?</strong></p>
-<p>An Amazon EBS volume stores data in a single Availability Zone.</p>
+
+<details>
+  <summary>EFS vs EBS?</summary>
+  <p>An Amazon EBS volume stores data in a single Availability Zone.</p>
 <p>Amazon EFS is a regional service. It stores data in and across multiple Availability Zones.</p>
+</details>
+
 <h3 id="amazon-relational-database-service-amazon-rds">Amazon Relational Database Service (Amazon RDS)<a href="#amazon-relational-database-service-amazon-rds" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>Relational databases use structured query language (SQL) to store and query data. This approach allows data to be stored in an easily understandable, consistent, and scalable way.</p>
 <p>Amazon RDS is a managed service that automates tasks such as hardware provisioning, database setup, patching, and backups.</p>
@@ -889,34 +920,37 @@ Security groups perform <strong>stateful</strong> packet filtering. They remembe
 </ul>
 <h3 id="amazon-redshift">Amazon Redshift<a href="#amazon-redshift" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>Amazon Redshift is a data warehousing service that you can use for big data analytics. It offers the ability to collect data from many sources and helps you to understand relationships and trends across your data.</p>
-<h2 id="aws-database-migration-service-aws-dms">AWS Database Migration Service (AWS DMS)<a href="#aws-database-migration-service-aws-dms" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="aws-database-migration-service-aws-dms">AWS Database Migration Service (AWS DMS)<a href="#aws-database-migration-service-aws-dms" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>With AWS DMS, you move data between a source database and a target database. The source and target databases(opens in a new tab) can be of the same type or different types.</p>
-<p><strong>IMPORTANT -&gt; What are the common use cases for AWS DMS?</strong></p>
-<ol>
+
+<details>
+  <summary>What are the common use cases for AWS DMS?</summary>
+  <ol>
 <li>Development and test database migrations: Enabling developers to test applications against production data without affecting production users.</li>
 <li>Database consolidation: Combining several databases into a single database.</li>
 <li>Continuous replication: Sending ongoing copies of your data to other target sources instead of doing a one-time migration</li>
 </ol>
-<h2 id="amazon-documentdb">Amazon DocumentDB<a href="#amazon-documentdb" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+</details>
+
+<h3 id="amazon-documentdb">Amazon DocumentDB<a href="#amazon-documentdb" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>Is a document database service that supports MongoDB workloads. (MongoDB is a document database program.)</p>
-<h2 id="amazon-neptune">Amazon Neptune<a href="#amazon-neptune" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="amazon-neptune">Amazon Neptune<a href="#amazon-neptune" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>Is a graph database service. You can use Amazon Neptune to build and run applications that work with highly connected datasets, such as recommendation engines, fraud detection, and knowledge graphs.</p>
-<h2 id="amazon-quantum-ledger-database-amazon-qldb">Amazon Quantum Ledger Database (Amazon QLDB)<a href="#amazon-quantum-ledger-database-amazon-qldb" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="amazon-quantum-ledger-database-amazon-qldb">Amazon Quantum Ledger Database (Amazon QLDB)<a href="#amazon-quantum-ledger-database-amazon-qldb" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>Is a ledger database service.</p>
 <p>You can use Amazon QLDB to review a complete history of all the changes that have been made to your application data.</p>
-<h2 id="amazon-managed-blockchain">Amazon Managed Blockchain<a href="#amazon-managed-blockchain" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="amazon-managed-blockchain">Amazon Managed Blockchain<a href="#amazon-managed-blockchain" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>Is a service that you can use to create and manage blockchain networks with open-source frameworks.</p>
 <p>Blockchain is a distributed ledger system that lets multiple parties run transactions and share data without a central authority.</p>
-<h2 id="amazon-elasticache">Amazon ElastiCache<a href="#amazon-elasticache" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="amazon-elasticache">Amazon ElastiCache<a href="#amazon-elasticache" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>Is a service that adds caching layers on top of your databases to help improve the read times of common requests.</p>
 <p>It supports two types of data stores: Redis and Memcached.</p>
-<h2 id="amazon-dynamodb-accelerator-dax">Amazon DynamoDB Accelerator (DAX)<a href="#amazon-dynamodb-accelerator-dax" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="amazon-dynamodb-accelerator-dax">Amazon DynamoDB Accelerator (DAX)<a href="#amazon-dynamodb-accelerator-dax" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>Is an in-memory cache for DynamoDB.</p>
 <p>It helps improve response times from single-digit milliseconds to microseconds.</p>
-<h1 id="module-6-security">Module 6: Security<a href="#module-6-security" class="hanchor" ariaLabel="Anchor">#</a> </h1>
+<h2 id="6-security">6. Security<a href="#6-security" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>The shared responsibility model divides into customer responsibilities (commonly referred to as “security in the cloud”) and AWS responsibilities (commonly referred to as “security of the cloud”).</p>
 <p><img src="https://i.imgur.com/Ug19iG0.png" alt="Imgur"></p>
-<h2 id="iam">IAM<a href="#iam" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <h3 id="iam-users">IAM users<a href="#iam-users" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>It represents the identity of the person or application that interacts with AWS services and resources. It consists of a name and credentials.</p>
 <h3 id="iam-policies">IAM policies<a href="#iam-policies" class="hanchor" ariaLabel="Anchor">#</a> </h3>
@@ -926,6 +960,8 @@ Security groups perform <strong>stateful</strong> packet filtering. They remembe
 <h3 id="iam-roles">IAM roles<a href="#iam-roles" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>An IAM role is an identity that you can assume to gain temporary access to permissions.</p>
 <p>Before an IAM user, application, or service can assume an IAM role, they must be granted permissions to switch to the role. When someone assumes an IAM role, they abandon all previous permissions that they had under a previous role and assume the permissions of the new role.</p>
+<h3 id="aws-organizations">AWS Organizations<a href="#aws-organizations" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>In AWS Organizations, you can centrally control permissions for the accounts in your organization by using service control policies (SCPs)(opens in a new tab). SCPs enable you to place restrictions on the AWS services, resources, and individual API actions that users and roles in each account can access.</p>
 <h2 id="compliance">Compliance<a href="#compliance" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>AWS Artifact(opens in a new tab) is a service that provides on-demand access to AWS security and compliance reports and select online agreements. AWS Artifact consists of two main sections:</p>
 <ol>
