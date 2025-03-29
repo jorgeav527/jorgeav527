@@ -355,6 +355,12 @@
         <li><a href="#aws-snow-family">AWS Snow Family</a></li>
       </ul>
     </li>
+    <li><a href="#13-the-cloud-journey">13. The Cloud Journey</a>
+      <ul>
+        <li><a href="#the-aws-well-architected-framework">The AWS Well-Architected Framework</a></li>
+        <li><a href="#advantages-of-cloud-computing">Advantages of cloud computing</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
     </div>
@@ -1312,7 +1318,7 @@ Security groups perform <strong>stateful</strong> packet filtering. They remembe
 <p>AWS Marketplace is a digital catalog that includes thousands of software listings from independent software vendors. You can use AWS Marketplace to find, test, and buy software that runs on AWS.</p>
 <h2 id="12-migration-and-innovation">12. Migration and Innovation<a href="#12-migration-and-innovation" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <h3 id="aws-cloud-adoption-framework-aws-caf">AWS Cloud Adoption Framework (AWS CAF)<a href="#aws-cloud-adoption-framework-aws-caf" class="hanchor" ariaLabel="Anchor">#</a> </h3>
-<p>At the highest level, the AWS Cloud Adoption Framework (AWS CAF)(opens in a new tab) organizes guidance into six areas of focus, called Perspectives. Each Perspective addresses distinct responsibilities. The planning process helps the right people across the organization prepare for the changes ahead.</p>
+<p>At the highest level, the AWS Cloud Adoption Framework (AWS CAF) organizes guidance into six areas of focus, called Perspectives. Each Perspective addresses distinct responsibilities. The planning process helps the right people across the organization prepare for the changes ahead.</p>
 
 <details>
   <summary>The Business Perspective</summary>
@@ -1427,58 +1433,161 @@ Security groups perform <strong>stateful</strong> packet filtering. They remembe
 </details>
 
 <h3 id="aws-snow-family">AWS Snow Family<a href="#aws-snow-family" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>The AWS Snow Family is a collection of physical devices that help to physically transport up to exabytes of data into and out of AWS.</p>
+<p>Security Features Across All Snow Family Devices</p>
 <ul>
-<li>
-<p>Internet transfer and Direct Connect can be slow and costly for huge data volumes</p>
-</li>
-<li>
-<p><strong>AWS Snow Family of Devices</strong></p>
-<ul>
-<li>
-<p><strong>AWS Snowcone</strong></p>
-<ul>
+<li>Designed to be secure and tamper-resistant both on-site and during transit</li>
+<li>Hardware and software are cryptographically signed</li>
+<li>Data is automatically encrypted using 256-bit encryption keys, which are owned and managed by the customer (integrated with AWS Key Management Service)</li>
+</ul>
+
+<details>
+  <summary>AWS Snowcone</summary>
+  <ul>
 <li>Smallest device with up to 8 TB capacity</li>
 <li>Includes edge computing options (Amazon EC2 instances and AWS IoT Greengrass)</li>
 <li>Workflow: Order → Ship → Plug in &amp; copy data → Ship back → Data transferred to your AWS account (typically an S3 bucket)</li>
 <li>Ideal for terabytes of data like analytics, video libraries, image collections, backups, etc.</li>
 </ul>
-</li>
-<li>
-<p><strong>AWS Snowball Edge</strong></p>
-<ul>
-<li>Designed for situations where 8 TB is not enough</li>
+</details>
+
+
+<details>
+  <summary>AWS Snowball Edge</summary>
+  <ul>
 <li>Available in two versions:
-<ul>
-<li>Compute Optimized</li>
-<li>Storage Optimized</li>
-</ul>
+<ol>
+<li>Compute Optimized: Storage: 80 TB of hard disk drive (HDD) capacity for block volumes and Amazon S3 compatible object storage, and 1 TB of SATA solid state drive (SSD) for block volumes.</li>
+<li>Storage Optimized: Storage: 80-TB usable HDD capacity for Amazon S3 compatible object storage or Amazon EBS compatible block volumes and 28 TB of usable NVMe SSD capacity for Amazon EBS compatible block volumes.</li>
+</ol>
 </li>
+<li>Designed for situations where 8 TB is not enough</li>
 <li>Rack-mountable and clusterable for greater computing needs</li>
 <li>Can run AWS Lambda functions, EC2-compatible AMIs, or AWS IoT Greengrass for on-site data processing</li>
 <li>Use cases include IoT data streams, image compression, video transcoding, and industrial signaling</li>
 </ul>
-</li>
-<li>
-<p><strong>AWS Snowmobile</strong></p>
-<ul>
+</details>
+
+
+<details>
+  <summary>AWS Snowmobile</summary>
+  <ul>
 <li>Largest offering, housed in a 45-foot rugged shipping container</li>
 <li>Capable of storing up to 100 petabytes</li>
 <li>Ideal for massive migrations and data center shutdowns</li>
 <li>Delivered by truck; appears as a network-attached storage device upon installation</li>
 <li>Features robust physical security: tamper-resistant, waterproof, temperature controlled, fire suppression, GPS tracking, 24/7 video surveillance, and escort security during transit</li>
 </ul>
-</li>
-</ul>
-</li>
-<li>
-<p><strong>Security Features Across All Snow Family Devices</strong></p>
+</details>
+
+<h2 id="13-the-cloud-journey">13. The Cloud Journey<a href="#13-the-cloud-journey" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h3 id="the-aws-well-architected-framework">The AWS Well-Architected Framework<a href="#the-aws-well-architected-framework" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>The AWS Well-Architected Framework helps you understand how to design and operate reliable, secure, efficient, and cost-effective systems in the AWS Cloud. It provides a way for you to consistently measure your architecture against best practices and design principles and identify areas for improvement.</p>
+<p>The Well-Architected Framework is based on six pillars:</p>
+
+<details>
+  <summary>Operational Excellence</summary>
+  <p>Operational excellence is the ability to run and monitor systems to deliver business value and to continually improve supporting processes and procedures.</p>
+<p>Design principles for operational excellence in the cloud include performing operations as code, annotating documentation, anticipating failure, and frequently making small, reversible changes.</p>
+</details>
+
+
+<details>
+  <summary>Security</summary>
+  <p>The Security pillar is the ability to protect information, systems, and assets while delivering business value through risk assessments and mitigation strategies.</p>
+<p>When considering the security of your architecture, apply these best practices:</p>
 <ul>
-<li>Designed to be secure and tamper-resistant both on-site and during transit</li>
-<li>Hardware and software are cryptographically signed</li>
-<li>Data is automatically encrypted using 256-bit encryption keys, which are owned and managed by the customer (integrated with AWS Key Management Service)</li>
+<li>Automate security best practices when possible.</li>
+<li>Apply security at all layers.</li>
+<li>Protect data in transit and at rest.</li>
 </ul>
-</li>
+</details>
+
+
+<details>
+  <summary>Reliability</summary>
+  <p>Reliability is the ability of a system to do the following:</p>
+<ul>
+<li>Recover from infrastructure or service disruptions</li>
+<li>Dynamically acquire computing resources to meet demand</li>
+<li>Mitigate disruptions such as misconfigurations or transient network issues</li>
 </ul>
+<p>Reliability includes testing recovery procedures, scaling horizontally to increase aggregate system availability, and automatically recovering from failure.</p>
+</details>
+
+
+<details>
+  <summary>Performance</summary>
+  <p>Performance efficiency is the ability to use computing resources efficiently to meet system requirements and to maintain that efficiency as demand changes and technologies evolve.</p>
+<p>Evaluating the performance efficiency of your architecture includes experimenting more often, using serverless architectures, and designing systems to be able to go global in minutes.</p>
+</details>
+
+
+<details>
+  <summary>Cost Optimization</summary>
+  <p>Cost optimization is the ability to run systems to deliver business value at the lowest price point.</p>
+<p>Cost optimization includes adopting a consumption model, analyzing and attributing expenditure, and using managed services to reduce the cost of ownership.</p>
+</details>
+
+
+<details>
+  <summary>Cost Optimization</summary>
+  <p>Sustainability is the ability to continually improve sustainability impacts by reducing energy consumption and increasing efficiency across all components of a workload by maximizing the benefits from the provisioned resources and minimizing the total resources required.</p>
+<p>To facilitate good design for sustainability:</p>
+<ul>
+<li>Understand your impact</li>
+<li>Establish sustainability goals</li>
+<li>Maximize utilization</li>
+<li>Anticipate and adopt new, more efficient hardware and software offerings</li>
+<li>Use managed services</li>
+<li>Reduce the downstream impact of your cloud workloads</li>
+</ul>
+</details>
+
+<h3 id="advantages-of-cloud-computing">Advantages of cloud computing<a href="#advantages-of-cloud-computing" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>Operating in the AWS Cloud offers many benefits over computing in on-premises or hybrid environments.</p>
+<p>In this section, you will learn about six advantages of cloud computing:</p>
+
+<details>
+  <summary>Trade upfront expenses for variable expenses</summary>
+  <p>Upfront expenses include data centers, physical servers, and other resources that you would need to invest in before using computing resources.</p>
+<p>Instead of investing heavily in data centers and servers before you know how you’re going to use them, you can pay only when you consume computing resources.</p>
+</details>
+
+
+<details>
+  <summary>Benefit from massive economies of scale</summary>
+  <p>By using cloud computing, you can achieve a lower variable cost than you can get on your own.</p>
+<p>Because usage from hundreds of thousands of customers aggregates in the cloud, providers such as AWS can achieve higher economies of scale. Economies of scale translate into lower pay-as-you-go prices.</p>
+</details>
+
+
+<details>
+  <summary>Stop guessing capacity and scale in or out</summary>
+  <p>With cloud computing, you don’t have to predict how much infrastructure capacity you will need before deploying an application.</p>
+<p>For example, you can launch Amazon Elastic Compute Cloud (Amazon EC2) instances when needed and pay only for the compute time you use. Instead of paying for resources that are unused or dealing with limited capacity, you can access only the capacity that you need, and scale in or out in response to demand.</p>
+</details>
+
+
+<details>
+  <summary>Increase speed and agility</summary>
+  <p>The flexibility of cloud computing makes it easier for you to develop and deploy applications.</p>
+<p>This flexibility also provides your development teams with more time to experiment and innovate.</p>
+</details>
+
+
+<details>
+  <summary>Stop spending money and maintaining infrastructure or data centers</summary>
+  <p>Cloud computing in data centers often requires you to spend more money and time managing infrastructure and servers.</p>
+<p>A benefit of cloud computing is the ability to focus less on these tasks and more on your applications and customers.</p>
+</details>
+
+
+<details>
+  <summary>Go global in minutes</summary>
+  <p>The AWS Cloud global footprint enables you to quickly deploy applications to customers around the world, while providing them with low latency.</p>
+</details>
+
 
       </div></div>
 
