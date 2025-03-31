@@ -38,8 +38,8 @@ We will see how to setup a ECS cluster using this services, with the AWS console
 
 
   &lt;div class=&#34;collapsable-code&#34;&gt;
-    &lt;input id=&#34;527163948&#34; type=&#34;checkbox&#34;  /&gt;
-    &lt;label for=&#34;527163948&#34;&gt;
+    &lt;input id=&#34;348965271&#34; type=&#34;checkbox&#34;  /&gt;
+    &lt;label for=&#34;348965271&#34;&gt;
       &lt;span class=&#34;collapsable-code__language&#34;&gt;bash&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__title&#34;&gt;Error with OPENSSL package and Redis&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__toggle&#34; data-label-expand=&#34;△&#34; data-label-collapse=&#34;▽&#34;&gt;&lt;/span&gt;
@@ -698,7 +698,10 @@ Security groups perform &lt;strong&gt;stateful&lt;/strong&gt; packet filtering. 
 &lt;p&gt;It helps improve response times from single-digit milliseconds to microseconds.&lt;/p&gt;
 &lt;h2 id=&#34;8-security&#34;&gt;8. Security&lt;/h2&gt;
 &lt;p&gt;The shared responsibility model divides into customer responsibilities (commonly referred to as “security in the cloud”) and AWS responsibilities (commonly referred to as “security of the cloud”).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://i.imgur.com/Ug19iG0.png&#34; alt=&#34;Imgur&#34;&gt;&lt;/p&gt;
+
+&lt;img src=&#34;https://i.imgur.com/Ug19iG0.png&#34;  alt=&#34;Share responsability&#34;  class=&#34;center&#34;    /&gt;
+
+
 &lt;h3 id=&#34;iam-users&#34;&gt;IAM users&lt;/h3&gt;
 &lt;p&gt;It represents the identity of the person or application that interacts with AWS services and resources. It consists of a name and credentials.&lt;/p&gt;
 &lt;h3 id=&#34;iam-policies&#34;&gt;IAM policies&lt;/h3&gt;
@@ -811,7 +814,7 @@ Security groups perform &lt;strong&gt;stateful&lt;/strong&gt; packet filtering. 
 &lt;h3 id=&#34;amazon-guardduty&#34;&gt;Amazon GuardDuty&lt;/h3&gt;
 &lt;p&gt;Amazon GuardDuty is a service that provides intelligent threat detection for your AWS infrastructure and resources.&lt;/p&gt;
 &lt;p&gt;After you have enabled GuardDuty for your AWS account, GuardDuty begins monitoring your network and account activity. You do not have to deploy or manage any additional security software. GuardDuty then continuously analyzes data from multiple AWS sources, including VPC Flow Logs and DNS logs.&lt;/p&gt;
-&lt;h2 id=&#34;10-monitoring&#34;&gt;10. Monitoring&lt;/h2&gt;
+&lt;h2 id=&#34;9-monitoring&#34;&gt;9. Monitoring&lt;/h2&gt;
 &lt;h3 id=&#34;amazon-cloudwatch&#34;&gt;Amazon CloudWatch&lt;/h3&gt;
 &lt;p&gt;Amazon CloudWatch is a web service that enables you to monitor and manage various metrics and configure alarm actions based on data from those metrics.&lt;/p&gt;
 &lt;p&gt;CloudWatch uses metrics to represent the data points for your resources. AWS services send metrics to CloudWatch.&lt;/p&gt;
@@ -848,7 +851,7 @@ Security groups perform &lt;strong&gt;stateful&lt;/strong&gt; packet filtering. 
 &lt;li&gt;Fault Tolerance&lt;/li&gt;
 &lt;li&gt;Service Limits&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;11-pricing-and-support&#34;&gt;11. Pricing and Support&lt;/h2&gt;
+&lt;h2 id=&#34;10-pricing-and-support&#34;&gt;10. Pricing and Support&lt;/h2&gt;
 &lt;h3 id=&#34;aws-free-tier&#34;&gt;AWS Free Tier&lt;/h3&gt;
 &lt;p&gt;The AWS Free Tier enables you to begin using certain services without having to worry about incurring costs for the specified period.&lt;/p&gt;
 &lt;p&gt;Three types of offers are available:&lt;/p&gt;
@@ -893,152 +896,15 @@ Security groups perform &lt;strong&gt;stateful&lt;/strong&gt; packet filtering. 
 &lt;h3 id=&#34;aws-support&#34;&gt;AWS Support&lt;/h3&gt;
 &lt;p&gt;AWS offers four different Support plans to help you troubleshoot issues, lower costs, and efficiently use AWS services.&lt;/p&gt;
 
-&lt;details&gt;
-  &lt;summary&gt;How AWS Basic Support works?&lt;/summary&gt;
-  &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Free for All AWS Customers&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Access to Resources&lt;/strong&gt;:
-&lt;ul&gt;
-&lt;li&gt;Whitepapers&lt;/li&gt;
-&lt;li&gt;Documentation&lt;/li&gt;
-&lt;li&gt;Support communities&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Billing and Service Limit Support&lt;/strong&gt;:
-&lt;ul&gt;
-&lt;li&gt;Contact AWS for billing questions&lt;/li&gt;
-&lt;li&gt;Request service limit increases&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;AWS Trusted Advisor&lt;/strong&gt;:
-&lt;ul&gt;
-&lt;li&gt;Limited selection of checks available&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;AWS Personal Health Dashboard&lt;/strong&gt;:
-&lt;ul&gt;
-&lt;li&gt;Receive alerts and remediation guidance during AWS events&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
+&lt;img src=&#34;https://i.imgur.com/HlzGkk6.png&#34;  alt=&#34;Support&#34;  class=&#34;center&#34;    /&gt;
 
-
-&lt;details&gt;
-  &lt;summary&gt;How AWS Developer Support works?&lt;/summary&gt;
-  &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Best Practice Guidance&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Client-Side Diagnostic Tools&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Building-Block Architecture Support&lt;/strong&gt;:
-&lt;ul&gt;
-&lt;li&gt;Guidance on how to integrate AWS offerings, features, and services&lt;/li&gt;
-&lt;li&gt;Helps identify opportunities to combine specific services to meet your company&amp;rsquo;s needs&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-
-
-&lt;details&gt;
-  &lt;summary&gt;How AWS Business Support works?&lt;/summary&gt;
-  &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Use-Case Guidance&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Helps identify AWS offerings, features, and services best suited to your specific needs&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;All AWS Trusted Advisor Checks&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Limited Third-Party Software Support&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Assistance with common operating systems and application stack components&lt;/li&gt;
-&lt;li&gt;For advanced topics like performance optimization, custom scripts, or security issues, direct support from the software provider may be needed&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-
-
-&lt;details&gt;
-  &lt;summary&gt;How AWS Enterprise On-Ramp Support works?&lt;/summary&gt;
-  &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Access to a Pool of Technical Account Managers&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Proactive guidance and coordination with AWS programs and experts&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Cost Optimization Workshop&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Conducted once per year&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Concierge Support Team&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Billing and account assistance&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Monitoring Tools&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Track costs and performance through Trusted Advisor and Health API/Dashboard&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Proactive Support Services&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Consultative review and architecture guidance (once per year)&lt;/li&gt;
-&lt;li&gt;Infrastructure Event Management support (once per year)&lt;/li&gt;
-&lt;li&gt;Support automation workflows&lt;/li&gt;
-&lt;li&gt;Business-critical issue response time of 30 minutes or less&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
-
-
-&lt;details&gt;
-  &lt;summary&gt;How AWS Enterprise Support works?&lt;/summary&gt;
-  &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Designated Technical Account Manager&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Provides proactive guidance and coordinates access to programs and AWS experts&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Concierge Support Team&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Billing and account assistance&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Operations Reviews and Health Monitoring Tools&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Track the health of your environment&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Training and Game Days&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Initiatives to drive innovation&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Monitoring Tools&lt;/strong&gt;
-&lt;ul&gt;
-&lt;li&gt;Track costs and performance via Trusted Advisor and Health API/Dashboard&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Full Access to Proactive Services&lt;/strong&gt; (provided by a designated Technical Account Manager):
-&lt;ul&gt;
-&lt;li&gt;Consultative review and architecture guidance&lt;/li&gt;
-&lt;li&gt;Infrastructure Event Management support&lt;/li&gt;
-&lt;li&gt;Cost Optimization Workshop and tools&lt;/li&gt;
-&lt;li&gt;Support automation workflows&lt;/li&gt;
-&lt;li&gt;15 minutes or less response time for business-critical issues&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/details&gt;
 
 &lt;h3 id=&#34;technical-account-manager-tam&#34;&gt;Technical Account Manager (TAM)&lt;/h3&gt;
 &lt;p&gt;The Enterprise On-Ramp and Enterprise Support plans include access to a Technical Account Manager (TAM).&lt;/p&gt;
 &lt;p&gt;The TAM is your primary point of contact at AWS. If your company subscribes to Enterprise Support or Enterprise On-Ramp, your TAM educates, empowers, and evolves your cloud journey across the full range of AWS services. TAMs provide expert engineering guidance, help you design solutions that efficiently integrate AWS services, assist with cost-effective and resilient architectures, and provide direct access to AWS programs and a broad community of experts.&lt;/p&gt;
 &lt;h3 id=&#34;aws-marketplace&#34;&gt;AWS Marketplace&lt;/h3&gt;
 &lt;p&gt;AWS Marketplace is a digital catalog that includes thousands of software listings from independent software vendors. You can use AWS Marketplace to find, test, and buy software that runs on AWS.&lt;/p&gt;
-&lt;h2 id=&#34;12-migration-and-innovation&#34;&gt;12. Migration and Innovation&lt;/h2&gt;
+&lt;h2 id=&#34;11-migration-and-innovation&#34;&gt;11. Migration and Innovation&lt;/h2&gt;
 &lt;h3 id=&#34;aws-cloud-adoption-framework-aws-caf&#34;&gt;AWS Cloud Adoption Framework (AWS CAF)&lt;/h3&gt;
 &lt;p&gt;At the highest level, the AWS Cloud Adoption Framework (AWS CAF) organizes guidance into six areas of focus, called Perspectives. Each Perspective addresses distinct responsibilities. The planning process helps the right people across the organization prepare for the changes ahead.&lt;/p&gt;
 
@@ -1202,7 +1068,7 @@ Security groups perform &lt;strong&gt;stateful&lt;/strong&gt; packet filtering. 
 &lt;/ul&gt;
 &lt;/details&gt;
 
-&lt;h2 id=&#34;13-the-cloud-journey&#34;&gt;13. The Cloud Journey&lt;/h2&gt;
+&lt;h2 id=&#34;12-the-cloud-journey&#34;&gt;12. The Cloud Journey&lt;/h2&gt;
 &lt;h3 id=&#34;the-aws-well-architected-framework&#34;&gt;The AWS Well-Architected Framework&lt;/h3&gt;
 &lt;p&gt;The AWS Well-Architected Framework helps you understand how to design and operate reliable, secure, efficient, and cost-effective systems in the AWS Cloud. It provides a way for you to consistently measure your architecture against best practices and design principles and identify areas for improvement.&lt;/p&gt;
 &lt;p&gt;The Well-Architected Framework is based on six pillars:&lt;/p&gt;

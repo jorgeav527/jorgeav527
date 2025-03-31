@@ -328,14 +328,14 @@
         <li><a href="#amazon-guardduty">Amazon GuardDuty</a></li>
       </ul>
     </li>
-    <li><a href="#10-monitoring">10. Monitoring</a>
+    <li><a href="#9-monitoring">9. Monitoring</a>
       <ul>
         <li><a href="#amazon-cloudwatch">Amazon CloudWatch</a></li>
         <li><a href="#cloudtrail">CloudTrail</a></li>
         <li><a href="#aws-trusted-advisor">AWS Trusted Advisor</a></li>
       </ul>
     </li>
-    <li><a href="#11-pricing-and-support">11. Pricing and Support</a>
+    <li><a href="#10-pricing-and-support">10. Pricing and Support</a>
       <ul>
         <li><a href="#aws-free-tier">AWS Free Tier</a></li>
         <li><a href="#aws-pricing-calculator">AWS Pricing Calculator</a></li>
@@ -348,14 +348,14 @@
         <li><a href="#aws-marketplace">AWS Marketplace</a></li>
       </ul>
     </li>
-    <li><a href="#12-migration-and-innovation">12. Migration and Innovation</a>
+    <li><a href="#11-migration-and-innovation">11. Migration and Innovation</a>
       <ul>
         <li><a href="#aws-cloud-adoption-framework-aws-caf">AWS Cloud Adoption Framework (AWS CAF)</a></li>
         <li><a href="#6-strategies-for-migration">6 strategies for migration</a></li>
         <li><a href="#aws-snow-family">AWS Snow Family</a></li>
       </ul>
     </li>
-    <li><a href="#13-the-cloud-journey">13. The Cloud Journey</a>
+    <li><a href="#12-the-cloud-journey">12. The Cloud Journey</a>
       <ul>
         <li><a href="#the-aws-well-architected-framework">The AWS Well-Architected Framework</a></li>
         <li><a href="#advantages-of-cloud-computing">Advantages of cloud computing</a></li>
@@ -976,7 +976,10 @@ Security groups perform <strong>stateful</strong> packet filtering. They remembe
 <p>It helps improve response times from single-digit milliseconds to microseconds.</p>
 <h2 id="8-security">8. Security<a href="#8-security" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <p>The shared responsibility model divides into customer responsibilities (commonly referred to as “security in the cloud”) and AWS responsibilities (commonly referred to as “security of the cloud”).</p>
-<p><img src="https://i.imgur.com/Ug19iG0.png" alt="Imgur"></p>
+
+<img src="https://i.imgur.com/Ug19iG0.png"  alt="Share responsability"  class="center"    />
+
+
 <h3 id="iam-users">IAM users<a href="#iam-users" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>It represents the identity of the person or application that interacts with AWS services and resources. It consists of a name and credentials.</p>
 <h3 id="iam-policies">IAM policies<a href="#iam-policies" class="hanchor" ariaLabel="Anchor">#</a> </h3>
@@ -1089,7 +1092,7 @@ Security groups perform <strong>stateful</strong> packet filtering. They remembe
 <h3 id="amazon-guardduty">Amazon GuardDuty<a href="#amazon-guardduty" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>Amazon GuardDuty is a service that provides intelligent threat detection for your AWS infrastructure and resources.</p>
 <p>After you have enabled GuardDuty for your AWS account, GuardDuty begins monitoring your network and account activity. You do not have to deploy or manage any additional security software. GuardDuty then continuously analyzes data from multiple AWS sources, including VPC Flow Logs and DNS logs.</p>
-<h2 id="10-monitoring">10. Monitoring<a href="#10-monitoring" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h2 id="9-monitoring">9. Monitoring<a href="#9-monitoring" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <h3 id="amazon-cloudwatch">Amazon CloudWatch<a href="#amazon-cloudwatch" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>Amazon CloudWatch is a web service that enables you to monitor and manage various metrics and configure alarm actions based on data from those metrics.</p>
 <p>CloudWatch uses metrics to represent the data points for your resources. AWS services send metrics to CloudWatch.</p>
@@ -1126,7 +1129,7 @@ Security groups perform <strong>stateful</strong> packet filtering. They remembe
 <li>Fault Tolerance</li>
 <li>Service Limits</li>
 </ol>
-<h2 id="11-pricing-and-support">11. Pricing and Support<a href="#11-pricing-and-support" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h2 id="10-pricing-and-support">10. Pricing and Support<a href="#10-pricing-and-support" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <h3 id="aws-free-tier">AWS Free Tier<a href="#aws-free-tier" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>The AWS Free Tier enables you to begin using certain services without having to worry about incurring costs for the specified period.</p>
 <p>Three types of offers are available:</p>
@@ -1171,152 +1174,15 @@ Security groups perform <strong>stateful</strong> packet filtering. They remembe
 <h3 id="aws-support">AWS Support<a href="#aws-support" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>AWS offers four different Support plans to help you troubleshoot issues, lower costs, and efficiently use AWS services.</p>
 
-<details>
-  <summary>How AWS Basic Support works?</summary>
-  <ul>
-<li><strong>Free for All AWS Customers</strong></li>
-<li><strong>Access to Resources</strong>:
-<ul>
-<li>Whitepapers</li>
-<li>Documentation</li>
-<li>Support communities</li>
-</ul>
-</li>
-<li><strong>Billing and Service Limit Support</strong>:
-<ul>
-<li>Contact AWS for billing questions</li>
-<li>Request service limit increases</li>
-</ul>
-</li>
-<li><strong>AWS Trusted Advisor</strong>:
-<ul>
-<li>Limited selection of checks available</li>
-</ul>
-</li>
-<li><strong>AWS Personal Health Dashboard</strong>:
-<ul>
-<li>Receive alerts and remediation guidance during AWS events</li>
-</ul>
-</li>
-</ul>
-</details>
+<img src="https://i.imgur.com/HlzGkk6.png"  alt="Support"  class="center"    />
 
-
-<details>
-  <summary>How AWS Developer Support works?</summary>
-  <ul>
-<li><strong>Best Practice Guidance</strong></li>
-<li><strong>Client-Side Diagnostic Tools</strong></li>
-<li><strong>Building-Block Architecture Support</strong>:
-<ul>
-<li>Guidance on how to integrate AWS offerings, features, and services</li>
-<li>Helps identify opportunities to combine specific services to meet your company&rsquo;s needs</li>
-</ul>
-</li>
-</ul>
-</details>
-
-
-<details>
-  <summary>How AWS Business Support works?</summary>
-  <ul>
-<li><strong>Use-Case Guidance</strong>
-<ul>
-<li>Helps identify AWS offerings, features, and services best suited to your specific needs</li>
-</ul>
-</li>
-<li><strong>All AWS Trusted Advisor Checks</strong></li>
-<li><strong>Limited Third-Party Software Support</strong>
-<ul>
-<li>Assistance with common operating systems and application stack components</li>
-<li>For advanced topics like performance optimization, custom scripts, or security issues, direct support from the software provider may be needed</li>
-</ul>
-</li>
-</ul>
-</details>
-
-
-<details>
-  <summary>How AWS Enterprise On-Ramp Support works?</summary>
-  <ul>
-<li><strong>Access to a Pool of Technical Account Managers</strong>
-<ul>
-<li>Proactive guidance and coordination with AWS programs and experts</li>
-</ul>
-</li>
-<li><strong>Cost Optimization Workshop</strong>
-<ul>
-<li>Conducted once per year</li>
-</ul>
-</li>
-<li><strong>Concierge Support Team</strong>
-<ul>
-<li>Billing and account assistance</li>
-</ul>
-</li>
-<li><strong>Monitoring Tools</strong>
-<ul>
-<li>Track costs and performance through Trusted Advisor and Health API/Dashboard</li>
-</ul>
-</li>
-<li><strong>Proactive Support Services</strong>
-<ul>
-<li>Consultative review and architecture guidance (once per year)</li>
-<li>Infrastructure Event Management support (once per year)</li>
-<li>Support automation workflows</li>
-<li>Business-critical issue response time of 30 minutes or less</li>
-</ul>
-</li>
-</ul>
-</details>
-
-
-<details>
-  <summary>How AWS Enterprise Support works?</summary>
-  <ul>
-<li><strong>Designated Technical Account Manager</strong>
-<ul>
-<li>Provides proactive guidance and coordinates access to programs and AWS experts</li>
-</ul>
-</li>
-<li><strong>Concierge Support Team</strong>
-<ul>
-<li>Billing and account assistance</li>
-</ul>
-</li>
-<li><strong>Operations Reviews and Health Monitoring Tools</strong>
-<ul>
-<li>Track the health of your environment</li>
-</ul>
-</li>
-<li><strong>Training and Game Days</strong>
-<ul>
-<li>Initiatives to drive innovation</li>
-</ul>
-</li>
-<li><strong>Monitoring Tools</strong>
-<ul>
-<li>Track costs and performance via Trusted Advisor and Health API/Dashboard</li>
-</ul>
-</li>
-<li><strong>Full Access to Proactive Services</strong> (provided by a designated Technical Account Manager):
-<ul>
-<li>Consultative review and architecture guidance</li>
-<li>Infrastructure Event Management support</li>
-<li>Cost Optimization Workshop and tools</li>
-<li>Support automation workflows</li>
-<li>15 minutes or less response time for business-critical issues</li>
-</ul>
-</li>
-</ul>
-</details>
 
 <h3 id="technical-account-manager-tam">Technical Account Manager (TAM)<a href="#technical-account-manager-tam" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>The Enterprise On-Ramp and Enterprise Support plans include access to a Technical Account Manager (TAM).</p>
 <p>The TAM is your primary point of contact at AWS. If your company subscribes to Enterprise Support or Enterprise On-Ramp, your TAM educates, empowers, and evolves your cloud journey across the full range of AWS services. TAMs provide expert engineering guidance, help you design solutions that efficiently integrate AWS services, assist with cost-effective and resilient architectures, and provide direct access to AWS programs and a broad community of experts.</p>
 <h3 id="aws-marketplace">AWS Marketplace<a href="#aws-marketplace" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>AWS Marketplace is a digital catalog that includes thousands of software listings from independent software vendors. You can use AWS Marketplace to find, test, and buy software that runs on AWS.</p>
-<h2 id="12-migration-and-innovation">12. Migration and Innovation<a href="#12-migration-and-innovation" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h2 id="11-migration-and-innovation">11. Migration and Innovation<a href="#11-migration-and-innovation" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <h3 id="aws-cloud-adoption-framework-aws-caf">AWS Cloud Adoption Framework (AWS CAF)<a href="#aws-cloud-adoption-framework-aws-caf" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>At the highest level, the AWS Cloud Adoption Framework (AWS CAF) organizes guidance into six areas of focus, called Perspectives. Each Perspective addresses distinct responsibilities. The planning process helps the right people across the organization prepare for the changes ahead.</p>
 
@@ -1480,7 +1346,7 @@ Security groups perform <strong>stateful</strong> packet filtering. They remembe
 </ul>
 </details>
 
-<h2 id="13-the-cloud-journey">13. The Cloud Journey<a href="#13-the-cloud-journey" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h2 id="12-the-cloud-journey">12. The Cloud Journey<a href="#12-the-cloud-journey" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 <h3 id="the-aws-well-architected-framework">The AWS Well-Architected Framework<a href="#the-aws-well-architected-framework" class="hanchor" ariaLabel="Anchor">#</a> </h3>
 <p>The AWS Well-Architected Framework helps you understand how to design and operate reliable, secure, efficient, and cost-effective systems in the AWS Cloud. It provides a way for you to consistently measure your architecture against best practices and design principles and identify areas for improvement.</p>
 <p>The Well-Architected Framework is based on six pillars:</p>
