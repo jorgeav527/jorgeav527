@@ -38,8 +38,8 @@ We will see how to setup a ECS cluster using this services, with the AWS console
 
 
   &lt;div class=&#34;collapsable-code&#34;&gt;
-    &lt;input id=&#34;348965271&#34; type=&#34;checkbox&#34;  /&gt;
-    &lt;label for=&#34;348965271&#34;&gt;
+    &lt;input id=&#34;671243958&#34; type=&#34;checkbox&#34;  /&gt;
+    &lt;label for=&#34;671243958&#34;&gt;
       &lt;span class=&#34;collapsable-code__language&#34;&gt;bash&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__title&#34;&gt;Error with OPENSSL package and Redis&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__toggle&#34; data-label-expand=&#34;△&#34; data-label-collapse=&#34;▽&#34;&gt;&lt;/span&gt;
@@ -1335,8 +1335,74 @@ Security groups perform &lt;strong&gt;stateful&lt;/strong&gt; packet filtering. 
       <pubDate>Fri, 21 Feb 2025 14:46:44 -0500</pubDate>
       
       <guid>https://jorgeav527.xyz/posts/1/</guid>
-      <description>&lt;h2 id=&#34;learning-python--rust-with-data-structures-and-algorithms&#34;&gt;Learning Python &amp;amp; Rust with Data Structures and Algorithms&lt;/h2&gt;</description>
-      <content>&lt;h2 id=&#34;learning-python--rust-with-data-structures-and-algorithms&#34;&gt;Learning Python &amp;amp; Rust with Data Structures and Algorithms&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;what-are-data-structures&#34;&gt;What are Data Structures?&lt;/h2&gt;
+&lt;p&gt;Data structures are essential ingredients in creating fast and powerful algorithms. They help in managing and organizing data, reduce complexity, and increase efficiency.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Primitive Data Structures: are basic data structures provided by programming languages to represent single values, such as integers, floating-point numbers, characters, and booleans.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Abstract Data Structures: are higher-level data structures that are built using primitive data types and provide more complex and specialized operations. Some common examples of abstract data structures include arrays, linked lists, stacks, queues, trees, and graphs.&lt;/p&gt;</description>
+      <content>&lt;h2 id=&#34;what-are-data-structures&#34;&gt;What are Data Structures?&lt;/h2&gt;
+&lt;p&gt;Data structures are essential ingredients in creating fast and powerful algorithms. They help in managing and organizing data, reduce complexity, and increase efficiency.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Primitive Data Structures: are basic data structures provided by programming languages to represent single values, such as integers, floating-point numbers, characters, and booleans.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Abstract Data Structures: are higher-level data structures that are built using primitive data types and provide more complex and specialized operations. Some common examples of abstract data structures include arrays, linked lists, stacks, queues, trees, and graphs.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;what-are-algorithms&#34;&gt;What are Algorithms?&lt;/h2&gt;
+&lt;p&gt;Algorithms are fundamental to computer programming as they provide step-by-step instructions for executing tasks to solve problems. An efficient algorithm can help us to find the solution we are looking for, and to transform a slow program into a faster one.&lt;/p&gt;
+
+&lt;details&gt;
+  &lt;summary&gt;What are the common use cases for AWS DMS?&lt;/summary&gt;
+  &lt;p&gt;Data structures and algorithms (DSA) go hand in hand. A data structure is not worth much if you cannot search through it or manipulate it efficiently using algorithms, and the algorithms in this tutorial are not worth much without a data structure to work on.&lt;/p&gt;
+&lt;/details&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;&lt;strong&gt;Term&lt;/strong&gt;&lt;/th&gt;
+          &lt;th&gt;&lt;strong&gt;Definition&lt;/strong&gt;&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Algorithm&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;A set of step-by-step instructions to solve a specific problem.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Data Structure&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;A way of organizing data so it can be used efficiently. Common data structures include arrays, linked lists, and binary trees.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Time Complexity&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;A measure of the amount of time an algorithm takes to run, depending on the amount of data the algorithm is working on.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Space Complexity&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;A measure of the amount of memory an algorithm uses, depending on the amount of data the algorithm is working on.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Big O Notation&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;A mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity. Used to describe time complexity.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Recursion&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;A programming technique where a function calls itself.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Divide and Conquer&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;A method of solving complex problems by breaking them into smaller, more manageable sub-problems, solving the sub-problems, and combining the solutions.&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;Brute Force&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;A simple and straightforward way an algorithm can work by trying all possible solutions and then choosing the best one.&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
 </content>
     </item>
     
