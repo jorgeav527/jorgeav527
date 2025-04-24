@@ -237,17 +237,630 @@
       </h2>
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#hello-world">Hello, world!</a></li>
+    <li><a href="#referencias">Referencias</a></li>
+    <li><a href="#1-operaciones-con-numeros-y-flotantes">1. Operaciones con numeros y flotantes</a></li>
+    <li><a href="#2-operaciones-con-boleanos">2. Operaciones con boleanos</a></li>
+    <li><a href="#3-operaciones-con-cadenas-de-caracteres">3. Operaciones con cadenas de caracteres</a></li>
+    <li><a href="#4-colecciones">4. Colecciones</a></li>
+    <li><a href="#5-control-de-flujo">5. Control de flujo</a></li>
+    <li><a href="#6-funciones">6. Funciones</a></li>
+    <li><a href="#7-alcance-de-las-variables">7. Alcance de las variables</a></li>
+    <li><a href="#8-opp">8. OPP</a></li>
   </ul>
 </nav>
     </div>
   
 
   <div class="post-content"><div>
-        <h2 id="hello-world">Hello, world!<a href="#hello-world" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+        <h2 id="referencias">Referencias<a href="#referencias" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<ul>
+<li><a href="https://www.w3schools.com/python/python_syntax.asp">Python Syntax - W3Schools</a></li>
+<li><a href="https://www.sololearn.com/en/">SoloLearn - Python Courses</a></li>
+<li><a href="https://cs50.harvard.edu/python/2022/">CS50&rsquo;s Python Course - Harvard</a></li>
+<li><a href="https://www.freecodecamp.org/learn">freeCodeCamp Python Curriculum</a></li>
+<li><a href="https://learnxinyminutes.com/docs/python/">Learn Python in Y Minutes</a></li>
+</ul>
+<h2 id="1-operaciones-con-numeros-y-flotantes">1. Operaciones con numeros y flotantes<a href="#1-operaciones-con-numeros-y-flotantes" class="hanchor" ariaLabel="Anchor">#</a> </h2>
 
-<img src="https://i.imgur.com/pEvhXPV.png"  alt="Share responsability"  class="center"    />
 
+
+  <div class="collapsable-code">
+    <input id="391856247" type="checkbox"  />
+    <label for="391856247">
+      <span class="collapsable-code__language">python</span>
+      <span class="collapsable-code__title">Numeros y flotantes</span>
+      <span class="collapsable-code__toggle" data-label-expand="△" data-label-collapse="▽"></span>
+    </label>
+    <pre class="language-python" ><code>
+# Sumamos 1 más 1 y mostramos el resultado
+print(1&#43;1)  # La salida será 2
+
+# Restamos 1 de 8 y mostramos el resultado
+print(8-1)  # La salida será 7
+
+# Multiplicamos 10 por 2 y mostramos el resultado
+print(10*2)  # La salida será 20
+
+# División
+# Dividimos 11 entre 4 y mostramos el resultado
+print(11/4)  # La salida será 2.75 (como número decimal)
+
+# Dividimos 11.0 entre 4.0 y mostramos el resultado
+print(11.0/4.0)  # La salida también será 2.75 (como número decimal)
+
+# Modulo
+# Calculamos el residuo de la división de 7 entre 3 y mostramos el resultado
+print(7%3)  # La salida será 1
+
+# Exponentes
+# En este espresión elevamos 2 a la cuarta potencia y mostramos el resultado
+print(2**4)  # La salida será 16
+
+# PEMDAS
+# realiza la adición antes de la multiplicación, siguiendo la regla de PEMDAS.
+print(1 &#43; 3 * 2)    # =&gt; 7
+print((1 &#43; 3) * 2)  # =&gt; 8
+</code></pre>
+  </div>
+
+
+
+<details>
+  <summary>Cual es el resultado de print(( (2 + 8 / 4 ** 2) * (3 - 1) ) % 5) ?</summary>
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>resultado <span style="color:#f92672">=</span> ( (<span style="color:#ae81ff">2</span> <span style="color:#f92672">+</span> <span style="color:#ae81ff">8</span> <span style="color:#f92672">/</span> <span style="color:#ae81ff">4</span> <span style="color:#f92672">**</span> <span style="color:#ae81ff">2</span>) <span style="color:#f92672">*</span> (<span style="color:#ae81ff">3</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>) ) <span style="color:#f92672">%</span> <span style="color:#ae81ff">5</span>
+</span></span><span style="display:flex;"><span>print(resultado)  <span style="color:#75715e"># ¿Qué imprime?</span>
+</span></span></code></pre></div></details>
+
+<p>Por si no se acuerdan el acrónimo PEMDAS se usa para recordar el orden de las operaciones aritméticas:</p>
+<ol>
+<li>Primero las operaciones dentro de los paréntesis.</li>
+<li>Luego exponentes o potencias.</li>
+<li>Luego multiplicaciones y divisiones de izquierda a derecha.</li>
+<li>Y por último sumas y restas también de izquierda a derecha.</li>
+</ol>
+<h2 id="2-operaciones-con-boleanos">2. Operaciones con boleanos<a href="#2-operaciones-con-boleanos" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+
+
+
+  <div class="collapsable-code">
+    <input id="286539417" type="checkbox"  />
+    <label for="286539417">
+      <span class="collapsable-code__language">python</span>
+      <span class="collapsable-code__title">Boleanos</span>
+      <span class="collapsable-code__toggle" data-label-expand="△" data-label-collapse="▽"></span>
+    </label>
+    <pre class="language-python" ><code>
+# Realizamos la operación lógica &#34;and&#34; entre True y False y mostramos el resultado
+print(True and False)  # La salida será False
+
+# En esta operación &#34;and&#34;, ambos operandos deben ser True para que el resultado sea True.
+# Como uno de los operandos es False, el resultado es False.
+
+# Realizamos la operación lógica &#34;or&#34; entre False y True y mostramos el resultado
+print(False or True)  # La salida será True
+
+# En esta operación &#34;or&#34;, al menos uno de los operandos debe ser True para que el resultado sea True.
+# Como uno de los operandos es True, el resultado es True.
+</code></pre>
+  </div>
+
+
+
+<details>
+  <summary>Ojo</summary>
+  <p>En Python, las comparaciones entre valores numéricos y valores booleanos pueden ser interesantes debido a que por ejemplo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Comparamos si 0 es igual a False y mostramos el resultado</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#ae81ff">0</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">False</span>)  <span style="color:#75715e"># La salida será True</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># En Python, False se considera igual a 0 en contextos de comparación numérica.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Comparamos si 1 es igual a True y mostramos el resultado</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#ae81ff">1</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">True</span>)  <span style="color:#75715e"># La salida será True</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Al igual que en el caso anterior, True se considera igual a 1 en contextos de comparación numérica.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Mucho cuidado</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#66d9ef">True</span> <span style="color:#f92672">+</span> <span style="color:#66d9ef">True</span>)  <span style="color:#75715e"># =&gt; 2</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#66d9ef">True</span> <span style="color:#f92672">*</span> <span style="color:#ae81ff">8</span>)     <span style="color:#75715e"># =&gt; 8</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#66d9ef">False</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">5</span>)    <span style="color:#75715e"># =&gt; -5</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#ae81ff">0</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">False</span>)   <span style="color:#75715e"># =&gt; True</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#ae81ff">2</span> <span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">True</span>)     <span style="color:#75715e"># =&gt; True</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#ae81ff">2</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">True</span>)    <span style="color:#75715e"># =&gt; False</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#f92672">-</span><span style="color:#ae81ff">5</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">False</span>)  <span style="color:#75715e"># =&gt; True</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Aplicamos la operación lógica &#34;not&#34; a True y mostramos el resultado</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#f92672">not</span> <span style="color:#66d9ef">True</span>)  <span style="color:#75715e"># La salida será False</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># La operación &#34;not&#34; invierte el valor booleano. Como True se invierte a False, la salida es False.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Aplicamos la operación lógica &#34;not&#34; a False y mostramos el resultado</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#f92672">not</span> <span style="color:#66d9ef">False</span>)  <span style="color:#75715e"># La salida será True</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># De manera similar, la operación &#34;not&#34; invierte el valor booleano. Como False se invierte a True, la salida es True</span>
+</span></span></code></pre></div></details>
+
+
+
+
+  <div class="collapsable-code">
+    <input id="147596283" type="checkbox"  />
+    <label for="147596283">
+      <span class="collapsable-code__language">python</span>
+      <span class="collapsable-code__title">Comparación</span>
+      <span class="collapsable-code__toggle" data-label-expand="△" data-label-collapse="▽"></span>
+    </label>
+    <pre class="language-python" ><code>
+print(5 == 5.0)       # =&gt; True   (Igualdad)
+print(3 != &#34;3&#34;)       # =&gt; True   (Desigualdad)
+print(10 &gt; 8.5)       # =&gt; True   (Mayor que)
+print(&#34;a&#34; &lt; &#34;b&#34;)      # =&gt; True   (Menor que - orden lexicográfico)
+print([1, 2] &gt;= [1])  # =&gt; True   (Mayor o igual que - compara listas)
+print(None &lt;= None)   # =&gt; True   (Menor o igual que - None solo es igual a None)
+
+# [1, 2] &gt;= [1] es True porque:
+# Los primeros elementos son iguales (1 == 1).
+# La lista izquierda es más larga (tiene un elemento extra: 2).
+</code></pre>
+  </div>
+
+
+<h2 id="3-operaciones-con-cadenas-de-caracteres">3. Operaciones con cadenas de caracteres<a href="#3-operaciones-con-cadenas-de-caracteres" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+
+
+
+  <div class="collapsable-code">
+    <input id="673495128" type="checkbox"  />
+    <label for="673495128">
+      <span class="collapsable-code__language">python</span>
+      <span class="collapsable-code__title">Caracteres</span>
+      <span class="collapsable-code__toggle" data-label-expand="△" data-label-collapse="▽"></span>
+    </label>
+    <pre class="language-python" ><code>
+# Cadenas
+print(&#34;This is a string.&#34;)
+print(&#39;This is also a string.&#39;)
+
+# La forma que se utiliza para inyectar valores en cadenas
+name = &#34;jorge&#34;
+age = 33
+print(f&#34;{name} is {age} years old.&#34;)
+
+# Slices Básicos [start:stop]
+cad = &#34;w3resource&#34;
+print(cad[:2] &#43; cad[-2:])  # Primeros 2 &#43; últimos 2: &#39;w3ce&#39;
+cad = &#34;w3&#34;
+print(cad[:2] &#43; cad[-2:])  # &#39;w3w3&#39; (solapa cuando len(cad) &lt;= 4)
+cad = &#34;w&#34;
+print(cad[:2] &#43; cad[-2:])  # &#39;ww&#39; (Python no da error con índices fuera de rango)
+
+# Slices Complejos [start:stop:step]
+cad = &#34;w3resource&#34;
+print(cad[2:8:2])  # Desde índice 2 al 8, cada 2 caracteres: &#39;reo&#39;
+print(cad[::-1])  # Invierte la cadena: &#39;ecruoser3w&#39;
+print(cad[5:1:-1])  # Desde 5 al 1 en reversa: &#39;oser&#39;
+</code></pre>
+  </div>
+
+
+
+<details>
+  <summary>Como ocultar una tarjeta de crédito menos los 4 últimos números?</summary>
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">ocultar_tarjeta</span>(numero):
+</span></span><span style="display:flex;"><span>    num_str <span style="color:#f92672">=</span> str(numero)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span><span style="color:#f92672">****</span> <span style="color:#f92672">****</span> <span style="color:#f92672">****</span> {num_str[<span style="color:#f92672">-</span><span style="color:#ae81ff">4</span>:]}<span style="color:#e6db74">&#34;  # &#34;</span><span style="color:#f92672">****</span> <span style="color:#f92672">****</span> <span style="color:#f92672">****</span> <span style="color:#ae81ff">5678</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(ocultar_tarjeta(<span style="color:#ae81ff">1234567890125678</span>))
+</span></span></code></pre></div></details>
+
+<h2 id="4-colecciones">4. Colecciones<a href="#4-colecciones" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(type([]))
+</span></span><span style="display:flex;"><span>print(type(()))
+</span></span><span style="display:flex;"><span>print(type({}))
+</span></span><span style="display:flex;"><span>print(type(set()))
+</span></span></code></pre></div>
+
+
+  <div class="collapsable-code">
+    <input id="671854392" type="checkbox"  />
+    <label for="671854392">
+      <span class="collapsable-code__language">python</span>
+      <span class="collapsable-code__title">Listas</span>
+      <span class="collapsable-code__toggle" data-label-expand="△" data-label-collapse="▽"></span>
+    </label>
+    <pre class="language-python" ><code>
+# Tipos de estructuras vacías
+
+# 📚 Características de las Listas en Python `[]`
+# Mutables
+# Se pueden modificar después de su creación:
+lista = [1, 2, 3]
+lista[0] = 99  # [99, 2, 3]
+
+# Ordenadas
+# Conservan el orden de inserción:
+[3, 1, 2] == [1, 2, 3]  # False
+
+# Heterogéneas
+# Acepan múltiples tipos de datos:
+mezcla = [1, &#34;Python&#34;, True, 3.14, [1, 2]]
+
+# Acceso por índices
+# (`[0]`) y negativos (`[-1]`):
+lista = [10, 20, 30]
+print(lista[-1])  # 30
+
+# Slicing
+# Subconjuntos con `[inicio:fin:paso]`:
+[1, 2, 3, 4][1:3]  # [2, 3]
+[1, 2, 3, 4][::2]  # [1, 3]
+[1, 2, 3, 4][::-1]  # [4, 3, 2, 1]
+
+# Anidadas
+# Pueden contener otras listas:
+matriz = [[1, 2], [3, 4]]
+
+# operaciones de listas
+lista = [1, 2, 3]
+lista.extend([4, 5])   # [1,2,3,4,5]
+lista.insert(1, 99)    # [1,99,2,3]
+lista.remove(2)        # [1,99,3]
+lista.reverse()        # [3,99,1]
+</code></pre>
+  </div>
+
+
+
+
+
+  <div class="collapsable-code">
+    <input id="738942516" type="checkbox"  />
+    <label for="738942516">
+      <span class="collapsable-code__language">python</span>
+      <span class="collapsable-code__title">Tuplas</span>
+      <span class="collapsable-code__toggle" data-label-expand="△" data-label-collapse="▽"></span>
+    </label>
+    <pre class="language-python" ><code>
+# 📚 Características de las Tuplas en Python `()`
+
+## 📌 Características Principales
+
+# Inmutables
+# No se pueden modificar después de su creación:
+tupla = (1, 2, 3)
+# tupla[0] = 99  # Error: TypeError
+
+# Ordenadas
+# Conservan el orden de inserción:
+(3, 1, 2) == (1, 2, 3)  # False
+
+# Heterogéneas
+# Aceptan múltiples tipos de datos:
+mezcla = (1, &#34;Python&#34;, True, 3.14, [1, 2])  # Sí permite listas internas
+
+# Acceso por índices
+# Positivos (`[0]`) y negativos (`[-1]`):
+tupla = (10, 20, 30)
+print(tupla[-1])  # 30
+
+# Slicing
+# Subconjuntos con `[inicio:fin:paso]`:
+(1, 2, 3, 4)[1:3]  # (2, 3)
+(1, 2, 3, 4)[::2]  # (1, 3)
+(1, 2, 3, 4)[::-1]  # (4, 3, 2, 1)
+
+# Anidadas
+# Pueden contener otras tuplas:
+matriz = ((1, 2), (3, 4))
+
+# Operaciones de listas
+# Concatenación
+tupla1 = (1, 2)
+tupla2 = (3, 4)
+print(tupla1 &#43; tupla2)  # (1, 2, 3, 4)
+
+# Repetición
+print((&#34;a&#34;,) * 3)  # (&#39;a&#39;, &#39;a&#39;, &#39;a&#39;)
+
+# Longitud
+print(len((1, 2, 3)))  # 3
+
+# Contenido
+print(2 in (1, 2, 3))  # True
+
+tupla = (1, 2, 2, 3)
+
+# count() - Cuenta ocurrencias
+print(tupla.count(2))  # 2
+
+# index() - Devuelve primera posición
+print(tupla.index(3))  # 3
+
+# Desempaquetado
+a, b, c = (1, 2, 3)
+print(b)  # 2
+</code></pre>
+  </div>
+
+
+
+
+
+  <div class="collapsable-code">
+    <input id="736915842" type="checkbox"  />
+    <label for="736915842">
+      <span class="collapsable-code__language">python</span>
+      <span class="collapsable-code__title">Diccionarios</span>
+      <span class="collapsable-code__toggle" data-label-expand="△" data-label-collapse="▽"></span>
+    </label>
+    <pre class="language-python" ><code>
+# 📚 Características de los Diccionarios en Python `{}`
+
+## 📌 Características Principales
+
+# Mutables
+# Se pueden modificar después de su creación:
+# Como también se pueden crear directamente:
+dic = {&#39;a&#39;: 1, &#39;b&#39;: 2}
+dic[&#39;a&#39;] = 99  # {&#39;a&#39;: 99, &#39;b&#39;: 2}
+
+# No ordenados (hasta Python 3.6)
+# A partir de Python 3.7&#43; mantienen orden de inserción:
+{&#39;a&#39;: 1, &#39;b&#39;: 2} == {&#39;b&#39;: 2, &#39;a&#39;: 1}  # False en Python 3.7&#43;
+
+# Claves únicas
+# Las claves no se pueden repetir:
+dic = {&#39;a&#39;: 1, &#39;a&#39;: 2}  # {&#39;a&#39;: 2} (sobrescribe)
+
+# ejemplo de diccionarios
+dic = {&#39;a&#39;: 1, &#39;b&#39;: 2}
+
+# Acceso
+print(dic[&#39;a&#39;])  # 1
+print(dic.get(&#39;c&#39;, &#39;default&#39;))  # &#39;default&#39; (evita KeyError)
+
+# Agregar/Modificar
+dic[&#39;c&#39;] = 3  # {&#39;a&#39;: 1, &#39;b&#39;: 2, &#39;c&#39;: 3}
+
+# Eliminar
+del dic[&#39;b&#39;]  # {&#39;a&#39;: 1, &#39;c&#39;: 3}
+valor = dic.pop(&#39;a&#39;)  # valor=1, dic={&#39;c&#39;: 3}
+
+# metodos importantes
+dic = {&#39;a&#39;: 1, &#39;b&#39;: 2}
+
+# keys(), values(), items()
+print(dic.keys())   # dict_keys([&#39;a&#39;, &#39;b&#39;])
+print(dic.values()) # dict_values([1, 2])
+print(dic.items())  # dict_items([(&#39;a&#39;, 1), (&#39;b&#39;, 2)])
+</code></pre>
+  </div>
+
+
+
+
+
+  <div class="collapsable-code">
+    <input id="634781592" type="checkbox"  />
+    <label for="634781592">
+      <span class="collapsable-code__language">python</span>
+      <span class="collapsable-code__title">Conjuntos</span>
+      <span class="collapsable-code__toggle" data-label-expand="△" data-label-collapse="▽"></span>
+    </label>
+    <pre class="language-python" ><code>
+# 📚 Características de los Conjuntos (Sets) en Python `{}`
+
+## 📌 Características Principales
+
+# Mutables (set) vs Inmutables (frozenset)
+mi_set = {1, 2, 3}
+mi_frozenset = frozenset([1, 2, 3])
+
+# No ordenados
+print({2, 1, 3} == {1, 2, 3})  # True
+
+# Elementos únicos (no duplicados)
+print({1, 1, 2})  # {1, 2}
+
+# Hashables como elementos
+valido = {1, &#39;a&#39;, (1, 2)}
+# invalido = {[1, 2]}  # TypeError (listas no son hashables)
+
+a = {1, 2, 3}
+b = {3, 4, 5}
+
+# Unión
+print(a | b)  # {1, 2, 3, 4, 5}
+
+# Intersección
+print(a &amp; b)  # {3}
+
+# Diferencia
+print(a - b)  # {1, 2}
+
+# Diferencia simétrica
+print(a ^ b)  # {1, 2, 4, 5}
+
+# Metodos esenciales
+s = {1, 2}
+
+# Añadir elemento
+s.add(3)  # {1, 2, 3}
+
+# Eliminar
+s.remove(2)  # {1, 3} (KeyError si no existe)
+s.discard(99)  # No da error
+
+# Pop (elimina aleatorio)
+elem = s.pop()
+
+# Limpiar
+s.clear()  # set()
+</code></pre>
+  </div>
+
+
+<h2 id="5-control-de-flujo">5. Control de flujo<a href="#5-control-de-flujo" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h2 id="6-funciones">6. Funciones<a href="#6-funciones" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+<h2 id="7-alcance-de-las-variables">7. Alcance de las variables<a href="#7-alcance-de-las-variables" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+
+
+
+  <div class="collapsable-code">
+    <input id="378149562" type="checkbox"  />
+    <label for="378149562">
+      <span class="collapsable-code__language">python</span>
+      <span class="collapsable-code__title">Scope de la variable x</span>
+      <span class="collapsable-code__toggle" data-label-expand="△" data-label-collapse="▽"></span>
+    </label>
+    <pre class="language-python" ><code>
+# Alcance de Variables
+
+# Definimos una variable global &#39;x&#39; con el valor 5.
+x = 5
+
+# Creamos una función &#39;set_x&#39; que toma un argumento &#39;num&#39;.
+def set_x(num):
+    # Dentro de la función, creamos una nueva variable local &#39;x&#39; con el valor &#39;num&#39;.
+    x = num
+    # Imprimimos el valor de &#39;x&#39; dentro de la función &#39;set_x&#39;.
+    print(&#34;Dentro de set_x:&#34;, x)
+
+# Creamos una función &#39;set_global_x&#39; que toma un argumento &#39;num&#39;.
+def set_global_x(num):
+    # Utilizamos la palabra clave &#39;global&#39; para indicar que estamos modificando la variable global &#39;x&#39;.
+    global x
+    # Imprimimos el valor de la variable global &#39;x&#39; antes de cambiarlo.
+    print(&#34;Antes de set_global_x:&#34;, x)
+    # Asignamos el valor &#39;num&#39; a la variable global &#39;x&#39;.
+    x = num
+    # Imprimimos el nuevo valor de la variable global &#39;x&#39;.
+    print(&#34;Después de set_global_x:&#34;, x)
+
+# Imprimimos el valor de la variable global &#39;x&#39; antes de llamar a las funciones.
+print(&#34;Valor de x antes de las funciones:&#34;, x)
+
+# Llamamos a las funciones &#39;set_x&#39; y &#39;set_global_x&#39; con diferentes valores.
+set_x(43)  # Esto crea una variable local &#39;x&#39; con el valor 43 y la imprime.
+set_global_x(6)  # Esto modifica la variable global &#39;x&#39; y la imprime.
+
+# Imprimimos el valor de la variable global &#39;x&#39; después de llamar a las funciones.
+print(&#34;Valor de x después de las funciones:&#34;, x)
+</code></pre>
+  </div>
+
+
+
+<details>
+  <summary>Colecciones o estructuras de datos</summary>
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"></code></pre></div></details>
+
+<h2 id="8-opp">8. OPP<a href="#8-opp" class="hanchor" ariaLabel="Anchor">#</a> </h2>
+
+
+
+  <div class="collapsable-code">
+    <input id="357269841" type="checkbox"  />
+    <label for="357269841">
+      <span class="collapsable-code__language">python</span>
+      <span class="collapsable-code__title">Class Dog</span>
+      <span class="collapsable-code__toggle" data-label-expand="△" data-label-collapse="▽"></span>
+    </label>
+    <pre class="language-python" ><code>
+from abc import ABC, abstractmethod, ClassVar
+
+# Abstracción: Definir interfaces y ocultar detalles complejos
+class Animal(ABC):  # Clase abstracta
+    @abstractmethod
+    def make_sound(self) -&gt; str:
+        pass
+
+# Encapsulamiento: Ocultar detalles internos y proveer interfaz controlada
+# Herencia de la clase Animal
+class Dog(Animal):
+    &#34;&#34;&#34;A class representing a dog with basic attributes and behaviors.&#34;&#34;&#34;
+
+    species: ClassVar[str] = &#39;mammal&#39;
+    total_dogs = 0  # Variable de clase para rastrear todos los perros creados
+
+    def __init__(self, name: str, age: int) -&gt; None:
+        if not name:
+            raise ValueError(&#34;Name cannot be empty&#34;)
+        if age &lt;= 0:
+            raise ValueError(&#34;Age must be positive&#34;)
+
+        # Atributos &#34;protegidos&#34; (por convención con _)
+        self._name: str = name
+        self._age: int = age
+        Dog.total_dogs &#43;= 1  # Incrementa el contador al crear una nueva instancia
+
+        publico = 1      # Público
+        _protegido = 2   # Protegido (por convención)
+        __privado = 3    # &#34;Privado&#34; (name mangling)
+
+    @property
+    def description(self) -&gt; str:
+        &#34;&#34;&#34;Return a formatted string with the dog&#39;s name and age.&#34;&#34;&#34;
+        return f&#34;{self._name} is {self._age} years old&#34;
+
+    def speak(self, sound: str) -&gt; str:
+        return f&#34;{self._name} says {sound.lower()}&#34;
+
+    def have_birthday(self) -&gt; None:
+        &#34;&#34;&#34;Increment the dog&#39;s age by 1 year.&#34;&#34;&#34;
+        self._age &#43;= 1
+        print(f&#34;Happy birthday {self._name}! Now {self.description}&#34;)
+
+    @staticmethod
+    def dog_years_to_human(years: int) -&gt; float:
+        return years * 4
+
+    @classmethod
+    def from_birth_year(cls, name: str, birth_year: int) -&gt; &#39;Dog&#39;:
+        current_year = 2023  # Podría obtenerse de datetime.now().year
+        age = current_year - birth_year
+        return cls(name, age)  # cls se refiere a la clase misma crea una nueva instancia (Dog)
+
+    @classmethod
+    def get_total_dogs(cls) -&gt; int:
+        &#34;&#34;&#34;Método de clase para obtener el total de perros creados.&#34;&#34;&#34;
+        return cls.total_dogs
+
+    # Métodos para obtener y modificar los atributos privados
+    def get_name(self):
+        return self.__name
+
+    def get_age(self):
+        return self.__age
+
+    def set_name(self, name):
+        self.__name = name
+
+    def set_age(self, age):
+        self.__age = age
+
+# polimorfismo se ve mejor cuando tenemos múltiples clases no relacionadas por herencia pero que comparten la misma interfaz.
+class Cat(Animal):
+    def __init__(self, name: str):
+        self.name = name
+
+    def make_sound(self) -&gt; str:
+        return &#34;Meow!&#34;
+
+# Acceso:
+e = Ejemplo()
+print(e.publico)        # ✅ 1
+print(e._protegido)     # ⚠️ 2 (accesible pero no recomendado)
+# print(e.__privado)    # ❌ Error
+print(e._Ejemplo__privado)  # ⚠️ 3 (acceso forzado - evitar
+</code></pre>
+  </div>
+
+
+
+<details>
+  <summary>Que es el ABC</summary>
+  <p>Es una clase especial del módulo abc que permite crear clases abstractas:</p>
+<ul>
+<li>No se puede instanciar directamente: Solo sirve como plantilla.</li>
+<li>Obliga a implementar métodos: Define un &ldquo;contrato&rdquo; que las subclases deben cumplir.</li>
+</ul>
+</details>
 
 
       </div></div>

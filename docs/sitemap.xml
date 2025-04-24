@@ -2,10 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jorgeav527.xyz/blog/</loc>
-    <lastmod>2025-03-06T16:11:11-05:00</lastmod>
+    <loc>https://jorgeav527.xyz/tags/aws/</loc>
+    <lastmod>2025-03-07T15:45:35-05:00</lastmod>
+  </url><url>
+    <loc>https://jorgeav527.xyz/posts/14/</loc>
+    <lastmod>2025-03-07T15:45:35-05:00</lastmod>
   </url><url>
     <loc>https://jorgeav527.xyz/</loc>
+    <lastmod>2025-03-07T15:45:35-05:00</lastmod>
+  </url><url>
+    <loc>https://jorgeav527.xyz/posts/</loc>
+    <lastmod>2025-03-07T15:45:35-05:00</lastmod>
+  </url><url>
+    <loc>https://jorgeav527.xyz/tags/</loc>
+    <lastmod>2025-03-07T15:45:35-05:00</lastmod>
+  </url><url>
+    <loc>https://jorgeav527.xyz/tags/wa-framework/</loc>
+    <lastmod>2025-03-07T15:45:35-05:00</lastmod>
+  </url><url>
+    <loc>https://jorgeav527.xyz/blog/</loc>
     <lastmod>2025-03-06T16:11:11-05:00</lastmod>
   </url><url>
     <loc>https://jorgeav527.xyz/projects/1/</loc>
@@ -23,19 +38,10 @@
     <loc>https://jorgeav527.xyz/projects/3/</loc>
     <lastmod>2025-03-06T16:11:08-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/tags/aws/</loc>
-    <lastmod>2025-03-06T15:45:35-05:00</lastmod>
-  </url><url>
     <loc>https://jorgeav527.xyz/tags/cluster/</loc>
     <lastmod>2025-03-06T15:45:35-05:00</lastmod>
   </url><url>
     <loc>https://jorgeav527.xyz/posts/13/</loc>
-    <lastmod>2025-03-06T15:45:35-05:00</lastmod>
-  </url><url>
-    <loc>https://jorgeav527.xyz/posts/</loc>
-    <lastmod>2025-03-06T15:45:35-05:00</lastmod>
-  </url><url>
-    <loc>https://jorgeav527.xyz/tags/</loc>
     <lastmod>2025-03-06T15:45:35-05:00</lastmod>
   </url><url>
     <loc>https://jorgeav527.xyz/posts/12/</loc>
