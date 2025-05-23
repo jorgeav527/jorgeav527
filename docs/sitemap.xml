@@ -2,115 +2,127 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jorgeav527.xyz/tags/aws/</loc>
+    <loc>https://docs.cordstart.com/tags/aws/</loc>
+    <lastmod>2025-05-05T14:46:35-05:00</lastmod>
+  </url><url>
+    <loc>https://docs.cordstart.com/posts/15/</loc>
+    <lastmod>2025-05-05T14:46:35-05:00</lastmod>
+  </url><url>
+    <loc>https://docs.cordstart.com/</loc>
+    <lastmod>2025-05-05T14:46:35-05:00</lastmod>
+  </url><url>
+    <loc>https://docs.cordstart.com/tags/data/</loc>
+    <lastmod>2025-05-05T14:46:35-05:00</lastmod>
+  </url><url>
+    <loc>https://docs.cordstart.com/tags/engineering/</loc>
+    <lastmod>2025-05-05T14:46:35-05:00</lastmod>
+  </url><url>
+    <loc>https://docs.cordstart.com/posts/</loc>
+    <lastmod>2025-05-05T14:46:35-05:00</lastmod>
+  </url><url>
+    <loc>https://docs.cordstart.com/tags/</loc>
+    <lastmod>2025-05-05T14:46:35-05:00</lastmod>
+  </url><url>
+    <loc>https://docs.cordstart.com/posts/14/</loc>
     <lastmod>2025-03-07T15:45:35-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/posts/14/</loc>
+    <loc>https://docs.cordstart.com/tags/wa-framework/</loc>
     <lastmod>2025-03-07T15:45:35-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/</loc>
-    <lastmod>2025-03-07T15:45:35-05:00</lastmod>
-  </url><url>
-    <loc>https://jorgeav527.xyz/posts/</loc>
-    <lastmod>2025-03-07T15:45:35-05:00</lastmod>
-  </url><url>
-    <loc>https://jorgeav527.xyz/tags/</loc>
-    <lastmod>2025-03-07T15:45:35-05:00</lastmod>
-  </url><url>
-    <loc>https://jorgeav527.xyz/tags/wa-framework/</loc>
-    <lastmod>2025-03-07T15:45:35-05:00</lastmod>
-  </url><url>
-    <loc>https://jorgeav527.xyz/blog/</loc>
+    <loc>https://docs.cordstart.com/blog/</loc>
     <lastmod>2025-03-06T16:11:11-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/projects/1/</loc>
+    <loc>https://docs.cordstart.com/projects/1/</loc>
     <lastmod>2025-03-06T16:11:08-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/projects/2/</loc>
+    <loc>https://docs.cordstart.com/projects/2/</loc>
     <lastmod>2025-03-06T16:11:08-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/projects/</loc>
+    <loc>https://docs.cordstart.com/projects/</loc>
     <lastmod>2025-03-06T16:11:08-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/projects/4/</loc>
+    <loc>https://docs.cordstart.com/projects/4/</loc>
     <lastmod>2025-03-06T16:11:08-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/projects/3/</loc>
+    <loc>https://docs.cordstart.com/projects/3/</loc>
     <lastmod>2025-03-06T16:11:08-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/tags/cluster/</loc>
+    <loc>https://docs.cordstart.com/tags/cluster/</loc>
     <lastmod>2025-03-06T15:45:35-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/posts/13/</loc>
+    <loc>https://docs.cordstart.com/posts/13/</loc>
     <lastmod>2025-03-06T15:45:35-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/posts/12/</loc>
+    <loc>https://docs.cordstart.com/tags/architect/</loc>
     <lastmod>2025-03-05T14:46:35-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/tags/devops/</loc>
+    <loc>https://docs.cordstart.com/posts/12/</loc>
     <lastmod>2025-03-05T14:46:35-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/posts/11/</loc>
+    <loc>https://docs.cordstart.com/tags/devops/</loc>
+    <lastmod>2025-03-05T14:46:35-05:00</lastmod>
+  </url><url>
+    <loc>https://docs.cordstart.com/posts/11/</loc>
     <lastmod>2025-03-04T14:46:35-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/tags/development/</loc>
+    <loc>https://docs.cordstart.com/tags/development/</loc>
     <lastmod>2025-03-04T14:46:35-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/tags/rust/</loc>
+    <loc>https://docs.cordstart.com/tags/rust/</loc>
     <lastmod>2025-03-04T14:46:35-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/tags/data-engineering/</loc>
+    <loc>https://docs.cordstart.com/tags/data-engineering/</loc>
     <lastmod>2025-03-03T14:46:30-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/tags/data-science/</loc>
+    <loc>https://docs.cordstart.com/tags/data-science/</loc>
     <lastmod>2025-03-03T14:46:30-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/posts/10/</loc>
+    <loc>https://docs.cordstart.com/posts/10/</loc>
     <lastmod>2025-03-03T14:46:30-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/posts/9/</loc>
+    <loc>https://docs.cordstart.com/posts/9/</loc>
     <lastmod>2025-03-02T14:46:27-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/posts/8/</loc>
+    <loc>https://docs.cordstart.com/posts/8/</loc>
     <lastmod>2025-03-01T14:46:23-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/posts/7/</loc>
+    <loc>https://docs.cordstart.com/posts/7/</loc>
     <lastmod>2025-02-28T14:46:20-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/posts/6/</loc>
+    <loc>https://docs.cordstart.com/posts/6/</loc>
     <lastmod>2025-02-27T14:46:20-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/posts/5/</loc>
+    <loc>https://docs.cordstart.com/posts/5/</loc>
     <lastmod>2025-02-26T15:30:29-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/posts/4/</loc>
+    <loc>https://docs.cordstart.com/posts/4/</loc>
     <lastmod>2025-02-25T15:30:29-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/posts/3/</loc>
+    <loc>https://docs.cordstart.com/posts/3/</loc>
     <lastmod>2025-02-24T14:46:13-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/posts/2/</loc>
+    <loc>https://docs.cordstart.com/posts/2/</loc>
     <lastmod>2025-02-23T14:45:45-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/tags/algorithms/</loc>
+    <loc>https://docs.cordstart.com/tags/algorithms/</loc>
     <lastmod>2025-02-21T14:46:44-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/tags/data-structures/</loc>
+    <loc>https://docs.cordstart.com/tags/data-structures/</loc>
     <lastmod>2025-02-21T14:46:44-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/tags/design-patterns/</loc>
+    <loc>https://docs.cordstart.com/tags/design-patterns/</loc>
     <lastmod>2025-02-21T14:46:44-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/tags/python/</loc>
+    <loc>https://docs.cordstart.com/tags/python/</loc>
     <lastmod>2025-02-21T14:46:44-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/posts/1/</loc>
+    <loc>https://docs.cordstart.com/posts/1/</loc>
     <lastmod>2025-02-21T14:46:44-05:00</lastmod>
   </url><url>
-    <loc>https://jorgeav527.xyz/categories/</loc>
+    <loc>https://docs.cordstart.com/categories/</loc>
   </url><url>
-    <loc>https://jorgeav527.xyz/home/</loc>
+    <loc>https://docs.cordstart.com/home/</loc>
   </url><url>
-    <loc>https://jorgeav527.xyz/resume/</loc>
+    <loc>https://docs.cordstart.com/resume/</loc>
   </url>
 </urlset>

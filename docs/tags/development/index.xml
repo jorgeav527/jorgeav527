@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Development on Cords527 Inc.</title>
-    <link>https://jorgeav527.xyz/tags/development/</link>
+    <link>https://docs.cordstart.com/tags/development/</link>
     <description>Recent content in Development on Cords527 Inc.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 04 Mar 2025 14:46:35 -0500</lastBuildDate><atom:link href="https://jorgeav527.xyz/tags/development/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 04 Mar 2025 14:46:35 -0500</lastBuildDate><atom:link href="https://docs.cordstart.com/tags/development/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>API - Crux - Natives</title>
-      <link>https://jorgeav527.xyz/posts/11/</link>
+      <link>https://docs.cordstart.com/posts/11/</link>
       <pubDate>Tue, 04 Mar 2025 14:46:35 -0500</pubDate>
       
-      <guid>https://jorgeav527.xyz/posts/11/</guid>
+      <guid>https://docs.cordstart.com/posts/11/</guid>
       <description>&lt;h2 id=&#34;complete-flow-for-a-native-application&#34;&gt;Complete flow for a native application&lt;/h2&gt;
 &lt;h3 id=&#34;overview-architecture&#34;&gt;Overview architecture&lt;/h3&gt;
 &lt;h3 id=&#34;api&#34;&gt;API&lt;/h3&gt;
@@ -28,10 +28,10 @@
     
     <item>
       <title>Streaming events</title>
-      <link>https://jorgeav527.xyz/posts/9/</link>
+      <link>https://docs.cordstart.com/posts/9/</link>
       <pubDate>Sun, 02 Mar 2025 14:46:27 -0500</pubDate>
       
-      <guid>https://jorgeav527.xyz/posts/9/</guid>
+      <guid>https://docs.cordstart.com/posts/9/</guid>
       <description>&lt;h2 id=&#34;kafka&#34;&gt;Kafka&lt;/h2&gt;
 &lt;h2 id=&#34;redis&#34;&gt;Redis&lt;/h2&gt;
 &lt;h2 id=&#34;redpanda&#34;&gt;Redpanda&lt;/h2&gt;</description>

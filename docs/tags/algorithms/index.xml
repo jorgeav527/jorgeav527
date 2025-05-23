@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Algorithms on Cords527 Inc.</title>
-    <link>https://jorgeav527.xyz/tags/algorithms/</link>
+    <link>https://docs.cordstart.com/tags/algorithms/</link>
     <description>Recent content in Algorithms on Cords527 Inc.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 21 Feb 2025 14:46:44 -0500</lastBuildDate><atom:link href="https://jorgeav527.xyz/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 21 Feb 2025 14:46:44 -0500</lastBuildDate><atom:link href="https://docs.cordstart.com/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Python &amp; Rust</title>
-      <link>https://jorgeav527.xyz/posts/1/</link>
+      <link>https://docs.cordstart.com/posts/1/</link>
       <pubDate>Fri, 21 Feb 2025 14:46:44 -0500</pubDate>
       
-      <guid>https://jorgeav527.xyz/posts/1/</guid>
+      <guid>https://docs.cordstart.com/posts/1/</guid>
       <description>&lt;h2 id=&#34;what-are-data-structures&#34;&gt;What are Data Structures?&lt;/h2&gt;
 &lt;p&gt;Data structures are essential ingredients in creating fast and powerful algorithms. They help in managing and organizing data, reduce complexity, and increase efficiency.&lt;/p&gt;
 &lt;ol&gt;
