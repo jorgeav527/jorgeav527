@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Engineering on Cords527 Inc.</title>
-    <link>https://docs.cordstart.com/tags/engineering/</link>
+    <link>http://docs.cordstart.com/tags/engineering/</link>
     <description>Recent content in Engineering on Cords527 Inc.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 05 May 2025 14:46:35 -0500</lastBuildDate><atom:link href="https://docs.cordstart.com/tags/engineering/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 May 2025 14:46:35 -0500</lastBuildDate><atom:link href="http://docs.cordstart.com/tags/engineering/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AWS Certified Data Engineering</title>
-      <link>https://docs.cordstart.com/posts/15/</link>
+      <link>http://docs.cordstart.com/posts/15/</link>
       <pubDate>Mon, 05 May 2025 14:46:35 -0500</pubDate>
       
-      <guid>https://docs.cordstart.com/posts/15/</guid>
+      <guid>http://docs.cordstart.com/posts/15/</guid>
       <description>&lt;h2 id=&#34;1-introduction&#34;&gt;1. Introduction&lt;/h2&gt;
 &lt;p&gt;As a data engineer, you play a crucial role in transforming raw data into valuable insights for organizations. You design, develop, and maintain data architectures and extract, transform, load (ETL) pipelines that data analysts, data scientists, and other data consumers can use to effectively access and analyze data.&lt;/p&gt;
 &lt;h3 id=&#34;what-are-the-key-functions-of-the-data-engineer&#34;&gt;What are the key functions of the data engineer?&lt;/h3&gt;

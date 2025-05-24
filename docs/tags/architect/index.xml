@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Architect on Cords527 Inc.</title>
-    <link>https://docs.cordstart.com/tags/architect/</link>
+    <link>http://docs.cordstart.com/tags/architect/</link>
     <description>Recent content in Architect on Cords527 Inc.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 05 Mar 2025 14:46:35 -0500</lastBuildDate><atom:link href="https://docs.cordstart.com/tags/architect/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Mar 2025 14:46:35 -0500</lastBuildDate><atom:link href="http://docs.cordstart.com/tags/architect/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AWS Certified Solutions Architect</title>
-      <link>https://docs.cordstart.com/posts/12/</link>
+      <link>http://docs.cordstart.com/posts/12/</link>
       <pubDate>Wed, 05 Mar 2025 14:46:35 -0500</pubDate>
       
-      <guid>https://docs.cordstart.com/posts/12/</guid>
+      <guid>http://docs.cordstart.com/posts/12/</guid>
       <description>&lt;h2 id=&#34;1-cloud-computing&#34;&gt;1. Cloud computing&lt;/h2&gt;
 &lt;h3 id=&#34;what-is-a-client-server-model&#34;&gt;What is a client-server model?&lt;/h3&gt;
 &lt;p&gt;In computing, a &lt;strong&gt;client&lt;/strong&gt; can be a web browser or desktop application that a person interacts with to make requests to computer servers. A &lt;strong&gt;server&lt;/strong&gt; can be services, such as a remote system (hardware or software) that processes requests and returns responses like (AWS EC2, Google Cloud).&lt;/p&gt;

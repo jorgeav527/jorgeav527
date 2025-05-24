@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogs on Cords527 Inc.</title>
-    <link>https://docs.cordstart.com/blog/</link>
+    <link>http://docs.cordstart.com/blog/</link>
     <description>Recent content in Blogs on Cords527 Inc.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 06 Mar 2025 16:11:11 -0500</lastBuildDate><atom:link href="https://docs.cordstart.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Mar 2025 16:11:11 -0500</lastBuildDate><atom:link href="http://docs.cordstart.com/blog/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
