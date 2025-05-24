@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cluster on Cords527 Inc.</title>
-    <link>http://docs.cordstart.com/tags/cluster/</link>
+    <link>https://docs.cordstart.com/tags/cluster/</link>
     <description>Recent content in Cluster on Cords527 Inc.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 06 Mar 2025 15:45:35 -0500</lastBuildDate><atom:link href="http://docs.cordstart.com/tags/cluster/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Mar 2025 15:45:35 -0500</lastBuildDate><atom:link href="https://docs.cordstart.com/tags/cluster/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ECS &amp; EKS</title>
-      <link>http://docs.cordstart.com/posts/13/</link>
+      <link>https://docs.cordstart.com/posts/13/</link>
       <pubDate>Thu, 06 Mar 2025 15:45:35 -0500</pubDate>
       
-      <guid>http://docs.cordstart.com/posts/13/</guid>
+      <guid>https://docs.cordstart.com/posts/13/</guid>
       <description>&lt;h1 id=&#34;ecs-vs-eks&#34;&gt;ECS vs EKS&lt;/h1&gt;
 &lt;p&gt;First lesson take a look at the following diagram is a simple ECS cluster with a fastAPI, grafana, prometheus, redpanda-console, redpanda broker and a Axium API.
 We will see how to setup a ECS cluster using this services, with the AWS console and with Terraform.&lt;/p&gt;
@@ -38,8 +38,8 @@ We will see how to setup a ECS cluster using this services, with the AWS console
 
 
   &lt;div class=&#34;collapsable-code&#34;&gt;
-    &lt;input id=&#34;458693271&#34; type=&#34;checkbox&#34;  /&gt;
-    &lt;label for=&#34;458693271&#34;&gt;
+    &lt;input id=&#34;695834721&#34; type=&#34;checkbox&#34;  /&gt;
+    &lt;label for=&#34;695834721&#34;&gt;
       &lt;span class=&#34;collapsable-code__language&#34;&gt;bash&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__title&#34;&gt;Error with OPENSSL package and Redis&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__toggle&#34; data-label-expand=&#34;△&#34; data-label-collapse=&#34;▽&#34;&gt;&lt;/span&gt;
