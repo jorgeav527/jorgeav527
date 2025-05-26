@@ -15,8 +15,8 @@
     <a href="https://www.youtube.com/channel/UCM0iDBNz_jSvap50m1yboyQ" style="margin-right: 10px;">
         <img src="https://img.shields.io/badge/YouTube-red?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube Badge" style="height: 25px;" />
     </a>
-    <a href="https://www.jorgeav527.xyz/">
-        <img src="https://img.shields.io/badge/DevSpace-009900" alt="Personal Site Badge" style="height:25px;" />
+    <a href="https://docs.cordstart.com/">
+        <img src="https://img.shields.io/badge/Docs%2ECordStart-EEC35E" alt="Personal Site Badge" style="height:25px;" />
     </a>
 </div>
 <!-- End -->
@@ -33,8 +33,8 @@
 
 ![Linux](https://img.shields.io/badge/SO-Linux-informational?style=flat&logo=linux&logoColor=white&color=6aa6f8)
 ![Python](https://img.shields.io/badge/Code-Python-informational?style=flat&logo=python&logoColor=white&color=6aa6f8)
-![Go](https://img.shields.io/badge/Code-Go-informational?style=flat&logo=go&logoColor=white&color=6aa6f8)
 ![Rust](https://img.shields.io/badge/Code-Rust-informational?style=flat&logo=rust&logoColor=white&color=6aa6f8)
+![Go](https://img.shields.io/badge/Code-Go-informational?style=flat&logo=go&logoColor=white&color=6aa6f8)
 ![Kotlin](https://img.shields.io/badge/Code-Kotlin-informational?style=flat&logo=kotlin&logoColor=white&color=6aa6f8)
 
 ![FastAPI](https://img.shields.io/badge/Framework-FastAPI-informational?style=flat&logo=fastAPI&logoColor=white&color=6aa6f8)
