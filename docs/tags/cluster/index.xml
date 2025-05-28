@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Cluster on Cords527 Inc.</title>
+    <title>Cluster on Docs.CordStart</title>
     <link>https://docs.cordstart.com/tags/cluster/</link>
-    <description>Recent content in Cluster on Cords527 Inc.</description>
+    <description>Recent content in Cluster on Docs.CordStart</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 06 Mar 2025 15:45:35 -0500</lastBuildDate><atom:link href="https://docs.cordstart.com/tags/cluster/index.xml" rel="self" type="application/rss+xml" />
@@ -38,8 +38,8 @@ We will see how to setup a ECS cluster using this services, with the AWS console
 
 
   &lt;div class=&#34;collapsable-code&#34;&gt;
-    &lt;input id=&#34;783124965&#34; type=&#34;checkbox&#34;  /&gt;
-    &lt;label for=&#34;783124965&#34;&gt;
+    &lt;input id=&#34;174392586&#34; type=&#34;checkbox&#34;  /&gt;
+    &lt;label for=&#34;174392586&#34;&gt;
       &lt;span class=&#34;collapsable-code__language&#34;&gt;bash&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__title&#34;&gt;Error with OPENSSL package and Redis&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__toggle&#34; data-label-expand=&#34;△&#34; data-label-collapse=&#34;▽&#34;&gt;&lt;/span&gt;

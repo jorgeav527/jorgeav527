@@ -22,14 +22,13 @@ params:
 
 languages:
   en:
-    title: "Cords527 Inc."
-    subtitle: "A simple, retro theme for Hugo"
+    title: "Docs.CordStart"
+    subtitle: "Docs for CordStart"
     keywords: ""
     copyright: ""
     menuMore: "Show more"
     readOtherPosts: "Read other posts"
     params:
-      subtitle: "A simple, retro theme for Hugo"
       menuMore: "Show more"
       readMore: "Read more →"
       readOtherPosts: "Read other posts"
