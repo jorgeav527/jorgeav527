@@ -70,8 +70,8 @@
 
 
   &lt;div class=&#34;collapsable-code&#34;&gt;
-    &lt;input id=&#34;936754812&#34; type=&#34;checkbox&#34;  /&gt;
-    &lt;label for=&#34;936754812&#34;&gt;
+    &lt;input id=&#34;573196842&#34; type=&#34;checkbox&#34;  /&gt;
+    &lt;label for=&#34;573196842&#34;&gt;
       &lt;span class=&#34;collapsable-code__language&#34;&gt;python&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__title&#34;&gt;Numeros y flotantes&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__toggle&#34; data-label-expand=&#34;△&#34; data-label-collapse=&#34;▽&#34;&gt;&lt;/span&gt;
@@ -130,8 +130,8 @@ print((1 &amp;#43; 3) * 2)  # =&amp;gt; 8
 
 
   &lt;div class=&#34;collapsable-code&#34;&gt;
-    &lt;input id=&#34;936754812&#34; type=&#34;checkbox&#34;  /&gt;
-    &lt;label for=&#34;936754812&#34;&gt;
+    &lt;input id=&#34;573196842&#34; type=&#34;checkbox&#34;  /&gt;
+    &lt;label for=&#34;573196842&#34;&gt;
       &lt;span class=&#34;collapsable-code__language&#34;&gt;python&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__title&#34;&gt;Numeros y flotantes&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__toggle&#34; data-label-expand=&#34;△&#34; data-label-collapse=&#34;▽&#34;&gt;&lt;/span&gt;
@@ -188,8 +188,8 @@ print((1 &amp;#43; 3) * 2)  # =&amp;gt; 8
 
 
   &lt;div class=&#34;collapsable-code&#34;&gt;
-    &lt;input id=&#34;849652371&#34; type=&#34;checkbox&#34;  /&gt;
-    &lt;label for=&#34;849652371&#34;&gt;
+    &lt;input id=&#34;542398671&#34; type=&#34;checkbox&#34;  /&gt;
+    &lt;label for=&#34;542398671&#34;&gt;
       &lt;span class=&#34;collapsable-code__language&#34;&gt;python&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__title&#34;&gt;Boleanos&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__toggle&#34; data-label-expand=&#34;△&#34; data-label-collapse=&#34;▽&#34;&gt;&lt;/span&gt;
@@ -244,8 +244,8 @@ print(False or True)  # La salida será True
 
 
   &lt;div class=&#34;collapsable-code&#34;&gt;
-    &lt;input id=&#34;378519246&#34; type=&#34;checkbox&#34;  /&gt;
-    &lt;label for=&#34;378519246&#34;&gt;
+    &lt;input id=&#34;261875394&#34; type=&#34;checkbox&#34;  /&gt;
+    &lt;label for=&#34;261875394&#34;&gt;
       &lt;span class=&#34;collapsable-code__language&#34;&gt;python&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__title&#34;&gt;Comparación&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__toggle&#34; data-label-expand=&#34;△&#34; data-label-collapse=&#34;▽&#34;&gt;&lt;/span&gt;
@@ -270,8 +270,8 @@ print(None &amp;lt;= None)   # =&amp;gt; True   (Menor o igual que - None solo e
 
 
   &lt;div class=&#34;collapsable-code&#34;&gt;
-    &lt;input id=&#34;473195628&#34; type=&#34;checkbox&#34;  /&gt;
-    &lt;label for=&#34;473195628&#34;&gt;
+    &lt;input id=&#34;375612894&#34; type=&#34;checkbox&#34;  /&gt;
+    &lt;label for=&#34;375612894&#34;&gt;
       &lt;span class=&#34;collapsable-code__language&#34;&gt;python&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__title&#34;&gt;Caracteres&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__toggle&#34; data-label-expand=&#34;△&#34; data-label-collapse=&#34;▽&#34;&gt;&lt;/span&gt;
@@ -322,8 +322,8 @@ print(cad[5:1:-1])  # Desde 5 al 1 en reversa: &amp;#39;oser&amp;#39;
 
 
   &lt;div class=&#34;collapsable-code&#34;&gt;
-    &lt;input id=&#34;231546978&#34; type=&#34;checkbox&#34;  /&gt;
-    &lt;label for=&#34;231546978&#34;&gt;
+    &lt;input id=&#34;638241579&#34; type=&#34;checkbox&#34;  /&gt;
+    &lt;label for=&#34;638241579&#34;&gt;
       &lt;span class=&#34;collapsable-code__language&#34;&gt;python&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__title&#34;&gt;Listas&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__toggle&#34; data-label-expand=&#34;△&#34; data-label-collapse=&#34;▽&#34;&gt;&lt;/span&gt;
@@ -374,8 +374,8 @@ lista.reverse()        # [3,99,1]
 
 
   &lt;div class=&#34;collapsable-code&#34;&gt;
-    &lt;input id=&#34;617432589&#34; type=&#34;checkbox&#34;  /&gt;
-    &lt;label for=&#34;617432589&#34;&gt;
+    &lt;input id=&#34;412965873&#34; type=&#34;checkbox&#34;  /&gt;
+    &lt;label for=&#34;412965873&#34;&gt;
       &lt;span class=&#34;collapsable-code__language&#34;&gt;python&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__title&#34;&gt;Tuplas&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__toggle&#34; data-label-expand=&#34;△&#34; data-label-collapse=&#34;▽&#34;&gt;&lt;/span&gt;
@@ -447,8 +447,8 @@ print(b)  # 2
 
 
   &lt;div class=&#34;collapsable-code&#34;&gt;
-    &lt;input id=&#34;317259846&#34; type=&#34;checkbox&#34;  /&gt;
-    &lt;label for=&#34;317259846&#34;&gt;
+    &lt;input id=&#34;165894273&#34; type=&#34;checkbox&#34;  /&gt;
+    &lt;label for=&#34;165894273&#34;&gt;
       &lt;span class=&#34;collapsable-code__language&#34;&gt;python&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__title&#34;&gt;Diccionarios&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__toggle&#34; data-label-expand=&#34;△&#34; data-label-collapse=&#34;▽&#34;&gt;&lt;/span&gt;
@@ -501,8 +501,8 @@ print(dic.items())  # dict_items([(&amp;#39;a&amp;#39;, 1), (&amp;#39;b&amp;#39;
 
 
   &lt;div class=&#34;collapsable-code&#34;&gt;
-    &lt;input id=&#34;981457263&#34; type=&#34;checkbox&#34;  /&gt;
-    &lt;label for=&#34;981457263&#34;&gt;
+    &lt;input id=&#34;321467985&#34; type=&#34;checkbox&#34;  /&gt;
+    &lt;label for=&#34;321467985&#34;&gt;
       &lt;span class=&#34;collapsable-code__language&#34;&gt;python&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__title&#34;&gt;Conjuntos&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__toggle&#34; data-label-expand=&#34;△&#34; data-label-collapse=&#34;▽&#34;&gt;&lt;/span&gt;
@@ -567,8 +567,8 @@ s.clear()  # set()
 
 
   &lt;div class=&#34;collapsable-code&#34;&gt;
-    &lt;input id=&#34;528394671&#34; type=&#34;checkbox&#34;  /&gt;
-    &lt;label for=&#34;528394671&#34;&gt;
+    &lt;input id=&#34;758634219&#34; type=&#34;checkbox&#34;  /&gt;
+    &lt;label for=&#34;758634219&#34;&gt;
       &lt;span class=&#34;collapsable-code__language&#34;&gt;python&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__title&#34;&gt;Scope de la variable x&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__toggle&#34; data-label-expand=&#34;△&#34; data-label-collapse=&#34;▽&#34;&gt;&lt;/span&gt;
@@ -620,8 +620,8 @@ print(&amp;#34;Valor de x después de las funciones:&amp;#34;, x)
 
 
   &lt;div class=&#34;collapsable-code&#34;&gt;
-    &lt;input id=&#34;729534618&#34; type=&#34;checkbox&#34;  /&gt;
-    &lt;label for=&#34;729534618&#34;&gt;
+    &lt;input id=&#34;768549321&#34; type=&#34;checkbox&#34;  /&gt;
+    &lt;label for=&#34;768549321&#34;&gt;
       &lt;span class=&#34;collapsable-code__language&#34;&gt;python&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__title&#34;&gt;Class Dog&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__toggle&#34; data-label-expand=&#34;△&#34; data-label-collapse=&#34;▽&#34;&gt;&lt;/span&gt;
@@ -732,8 +732,8 @@ print(e._Ejemplo__privado)  # ⚠️ 3 (acceso forzado - evitar
 
 
   &lt;div class=&#34;collapsable-code&#34;&gt;
-    &lt;input id=&#34;391457268&#34; type=&#34;checkbox&#34;  /&gt;
-    &lt;label for=&#34;391457268&#34;&gt;
+    &lt;input id=&#34;967214358&#34; type=&#34;checkbox&#34;  /&gt;
+    &lt;label for=&#34;967214358&#34;&gt;
       &lt;span class=&#34;collapsable-code__language&#34;&gt;python&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__title&#34;&gt;Errores&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__toggle&#34; data-label-expand=&#34;△&#34; data-label-collapse=&#34;▽&#34;&gt;&lt;/span&gt;
