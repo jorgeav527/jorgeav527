@@ -1,0 +1,248 @@
+{
+    "EXPERIENCE": "experiencia laboral",
+    "PROFESSION": "Ingeniero Civil",
+    "SECOND_PROFESSION": "Ingeniero de Software",
+    "EDUCATION": "educación",
+    "LANGUAGE": "idiomas",
+    "SKILL": "habilidades",
+    "FEATURE": "destacados",
+    "VOLUNTER": "voluntariado",
+    "ABOUT": "sobre mí",
+    "PROJECT": "proyectos",
+    "ABOUT_DESCRIPTION": [
+        "Desde 2018, Jorge Alarcón obtuvo experiencia en Desarrollo de Software y Ciencia de Datos, actualmente trabajando y ganando experiencia como DevOps e Ingeníero de Datos. Anteriormente trabajó como Ingeniero Civil en Perú y Brasil, enfocándose en la automatización de procesos.",
+        "Con más de siete años de experiencia en Linux, Python y Rust, Jorge Alarcón se especializa en desarrollar pipelines de CI/CD y de datos, implementando diferentes arquitecturas de APIs junto con Desarrollo Dirigido por Pruebas (TDD) y arquitectura limpia para garantizar eficiencia y fiabilidad. Su experiencia se extiende a la implementación y orquestación de servicios en la nube utilizando Infraestructura como Código (IaC) en AWS (ECS y EKS)."
+    ],
+    "VOLUNTEER": [
+        {
+            "organization": "AIESEC en Colombia",
+            "description": "9000xBogota es una iniciativa de AIESEC que demuestra a los ciudadanos de Bogotá que jóvenes de diversas nacionalidades pueden sentir empatía y respeto por la ciudad que se convierte en su hogar temporal, al mismo tiempo que crean conciencia social y proporcionan información sobre la importancia del calentamiento global.",
+            "name": "Universidad de los Andes, Colombia: 7000xBogotá",
+            "start": "Dic 2010",
+            "end": "Mar 2011",
+            "location": "Bogotá Colombia"
+        }
+    ],
+    "FEATURES": [
+        {
+            "name": "Arquitectura DevOps para aplicación Nodejs de Startup",
+            "title": "Automatización de Pipeline CI/CD en AWS para Tech Fastrip (Startup FinTech)",
+            "location": "Brasil",
+            "start": "May 2025",
+            "end": "Presente",
+            "link": "https://github.com/viajefacil"
+        },
+        {
+            "name": "Consultor de Arquitectura DevOps para Microservicios Spring Boot",
+            "title": "Automatización de Pipeline CI/CD en AWS para Tech Cifras (FinTech Española)",
+            "location": "España",
+            "start": "Nov 2024",
+            "end": "Dic 2024",
+            "link": "https://github.com/username/project"
+        },
+        {
+            "name": "II CONGRESO INTERNACIONAL DE INGENIERÍA CIVIL II CIDEIC UCSM 2021",
+            "title": "PONENTE \"Desarrollo Web para Ingenieros Civiles\"",
+            "location": "Arequipa, Arequipa, Perú",
+            "start": "Nov 2021",
+            "end": "Nov 2021",
+            "link": "https://github.com/username/project"
+        }
+    ],
+    "PROJECTS": {
+        "RPG Labs - Grupo RPG SAC": {
+            "title": "Aplicación Web para Servicios de Pruebas en un Laboratorio de Suelos de Ingeniería Civil",
+            "link": "https://github.com/jorgeav527/rpg_labs_repo.git",
+            "start": "Dic 2021",
+            "end": "Mar 2022",
+            "techstack": [
+                "OS Linux, Git & GitHub (GitHub Flow), HTML, CSS-BootstrapMade, Django, HTMX, Nginx, Bash, Docker, Html2pdf, PostgreSQL, AWS (EC2 & RDS & S3)."
+            ]
+        },
+        "EPIC Labs - Tesis Profesional": {
+            "title": "Tesis: Automatización y Sistematización de Laboratorio de Ingeniería Civil",
+            "location": "Arequipa, Arequipa, Perú",
+            "link": "https://github.com/jorgeav527/epiclabs.git",
+            "start": "Dic 2019",
+            "end": "Dic 2020",
+            "techstack": [
+                "OS Linux, Git & GitHub, HTML, CSS-Bootstrap, Django, Matplotlib & Bokeh, WeasyPrint, SQLite, PythonAnywhere."
+            ]
+        },
+        "Proyecto final para el Bootcamp de Ciencia de Datos de Henry": {
+            "title": "Esperanza de Vida - ETL & EDA & ML",
+            "link": "https://github.com/jorgeav527/life-expectancy.git",
+            "start": "Sep 2022",
+            "end": "Oct 2022",
+            "techstack": [
+                "OS Linux, Git & GitHub & Git LFS, Jupyter (Numpy & Pandas & Scikit-Learn, Matplotlib), Heroku, MongoDB, ElephantSQL, FastAPI, Streamlit, Apache Airflow, Docker, Linode (EC2 & RDS & S3)."
+            ]
+        },
+        "Especialización en Machine Learning": {
+            "title": "Datathon - Aplicando Modelado ML",
+            "link": "https://github.com/jorgeav527/Datathon.git",
+            "start": "Sep 2022",
+            "end": "Presente",
+            "techstack": ["Jupyter (Numpy & Pandas & Scikit-Learn & Plotly)."]
+        }
+    },
+    "CIVIL_EXPERIENCES": [
+        {
+            "company": "Municipalidad Distrital de Majes",
+            "title": "Ingeniero Civil",
+            "location": "Majes, Arequipa, Perú",
+            "type": "Presencial, Tiempo completo",
+            "start": "May 2021",
+            "end": "Ago 2021",
+            "time": "4 meses",
+            "responsibilities": [
+                "Asistencia en la elaboración y revisión de liquidaciones técnico-financieras de proyectos de inversión pública, identificación y registro de Inversiones Públicas (IOARR), de acuerdo con la Directiva de Servicios de Pago de la Ley de Contrataciones del Estado.",
+                "Revisión e informe sobre adicionales, deductivos y ampliaciones de inversión de proyectos públicos.",
+                "Revisión mensual de residuos generados en proyectos públicos y recuperación adecuada de residuos.",
+                "Seguimiento y actualización de la gestión y cronograma de diversos proyectos públicos a través de plataformas web en línea (Formulario 12B)."
+            ]
+        },
+        {
+            "company": "Juares Arquitectos & Ingenieros SAC",
+            "title": "Ingeniero Civil",
+            "location": "Arequipa, Arequipa, Perú",
+            "type": "Presencial, Freelance",
+            "start": "Nov 2018",
+            "end": "Nov 2019",
+            "time": "1 año",
+            "responsibilities": [
+                "Apoyo profesional en detalles técnicos y estructurales de edificios y muros de contención.",
+                "Control detallado eficiente diario, semanal y mensual del cronograma de trabajo a través de la herramienta MS Project.",
+                "Elaboración de valoraciones mensuales de trabajo, presentadas en Excel.",
+                "Creación de informes y pronósticos de mano de obra adicional, aumentos de capital e incrementos de costos."
+            ]
+        },
+        {
+            "company": "FourC Bilingual Academy",
+            "title": "Ingeniero de Mantenimiento de Edificios",
+            "location": "Bauru, São Paulo, Brasil",
+            "type": "Presencial, Prácticas",
+            "start": "Jun 2016",
+            "end": "Dic 2017",
+            "time": "1 año 6 meses",
+            "responsibilities": [
+                "Apoyo profesional en la resolución de defectos de construcción con pronósticos y múltiples soluciones.",
+                "Control detallado y eficiente del cronograma de tareas diarias, semanales y mensuales del equipo de mantenimiento con MS Project.",
+                "Reduje el consumo de agua potable en un 30% y el consumo mensual de electricidad en un 11% utilizando datos preexistentes."
+            ]
+        }
+    ],
+    "SOFTWARE_EXPERIENCES": [
+        {
+            "company": "Roadr",
+            "title": "Full-Stack DevOps",
+            "location": "Los Ángeles, California, EEUU",
+            "type": "Remoto, Full-time",
+            "start": "Feb 2023",
+            "end": "Abr 2025",
+            "time": "2 años 4 meses",
+            "responsibilities": [
+                "He trabajado con una variedad de stacks tecnológicos, incluyendo Node con Express y React, GO con Fiber, Rust con Axum y Python con Django, FastAPI y Airflow.",
+                "He containerizado numerosos frameworks usando Docker y he desplegado y gestionado aplicaciones basadas en la nube, incorporando prácticas de Infraestructura como Código (IaC) con herramientas como Terraform y Ansible, en plataformas como AWS y Linode.",
+                "Tengo una sólida base en operaciones Unix/Linux y he trabajado extensamente con herramientas esenciales de CI/CD como Jenkins o GitHub actions, implementando Gitflow como parte de mi flujo de trabajo.",
+                "He gestionado bases de datos como MongoDB, PostgreSQL y Cassandra para Desarrollo Dirigido por Modelos (MDD), y utilizado servicios como Kafka y Redis para desarrollo basado en eventos, procesamiento de datos y mensajería, junto con desarrollo usando GraphQL.",
+                "También he monitoreado instancias de manera efectiva con Netdata, asegurando un rendimiento y fiabilidad óptimos.",
+                "Configuré un clúster ECS con ECR/DockerHub para gestión de imágenes, Route 53 y un Load Balancer para tráfico de API, y Redpanda con Cloud Map, todo integrado con ASG y SG.",
+                "Desplegué y configuré un clúster de Kubernetes para orquestación de contenedores."
+            ]
+        },
+        {
+            "company": "Roadr",
+            "title": "Ingeniero de Datos",
+            "location": "Los Ángeles, California, EEUU",
+            "type": "Remoto, Full-time",
+            "start": "Feb 2023",
+            "end": "Abr 2025",
+            "time": "2 años 4 meses",
+            "responsibilities": [
+                "Soy responsable de extraer, diseñar, construir y mantener la infraestructura de datos que impulsa la toma de decisiones basada en datos de nuestra organización.",
+                "He diseñado, desarrollado y desplegado APIs usando FastAPI para un servicio de dashboard, usando Docker y adoptando mejores prácticas como arquitectura limpia, linting, formateo y tipado. Mi enfoque de desarrollo incorpora Desarrollo Dirigido por Pruebas (TDD) e integra servicios como MongoDB, Redis (para funcionalidad pub/sub) y GraphQL.",
+                "Tan pronto como la aplicación se lanza, he diseñado, desarrollado y desplegado un pipeline de Airflow usando Docker. He orquestado servicios para una aplicación web usando MongoDB, utilizado un bucket S3 para un data lake y empleado PostgreSQL o Cassandra para data warehousing. Los procesos ETL son capaces de manejar tanto tareas por lotes como de streaming, usando Kafka o Redis pub/sub.",
+                "Implementé el backend para un agente llamado Maia usando FastAPI y la API de OpenAI, orientado a proporcionar soporte en operaciones e información de manera conversacional.",
+                "Desarrollo y mantengo un dashboard de Grafana con múltiples fuentes de datos, incluyendo Infinity, MongoDB y PostgreSQL."
+            ]
+        },
+        {
+            "company": "Cibertec",
+            "title": "Instructor de Fundamentos de Python para Ciencia de Datos y Desarrollo de API",
+            "location": "Lima, Perú",
+            "type": "Remoto, Part-time",
+            "start": "Oct 2023",
+            "end": "Presente",
+            "time": "1 año 8 meses",
+            "responsibilities": [
+                "Ofrezco orientación y mentoría a estudiantes, ayudándoles a navegar por sus trayectorias profesionales y tomar decisiones informadas relacionadas con la ciencia de datos y el desarrollo de API.",
+                "Evalúo el rendimiento de los estudiantes a través de tareas, cuestionarios, exámenes y proyectos.",
+                "Proporciono retroalimentación constructiva para ayudar a los estudiantes a mejorar sus habilidades con Python."
+            ]
+        },
+        {
+            "company": "Grupo RPG SAC",
+            "title": "Desarrollador Web y Automatización de TI en un Laboratorio de Suelos",
+            "location": "Tiabaya, Arequipa, Perú",
+            "type": "Híbrido, Freelance",
+            "start": "Dic 2021",
+            "end": "May 2022",
+            "time": "6 meses",
+            "responsibilities": [
+                "Construí un espacio virtual Docker usando Django, HTMX y Postgres que se montó en una instancia EC2 en servidores AWS, con RDS para el respaldo y restauración de la base de datos relacional y usando S3 para las imágenes e informes PDF.",
+                "Planifiqué y realicé el análisis de información, diseñé, desarrollé e implementé una herramienta web que cumple con los requisitos y necesidades del laboratorio.",
+                "En el PRIMER MÓDULO \"COTIZACIONES\" la aplicación web tiene la característica de registrar clientes y hacer cotizaciones para las pruebas requeridas. Luego, para las pruebas que se realizaron, crear una orden de servicio y una hoja de liquidación."
+            ]
+        },
+        {
+            "company": "UCSM - EPIC Labs",
+            "title": "Desarrollador Web y Automatización de TI en los Laboratorios de EPIC",
+            "location": "Tiabaya, Arequipa, Perú",
+            "type": "Híbrido, Freelance",
+            "start": "Dic 2019",
+            "end": "Ene 2021",
+            "time": "1 año 2 meses",
+            "responsibilities": [
+                "Construí una herramienta de aplicación web usando HTML/CSS, JavaScript, jQuery, Django y SQLite, que se montó en una instancia EC2 en servidores PythonAnywhere.",
+                "Diseñé el flujo del proceso de planificación para estudiantes, investigadores de tesis y clientes externos basado en las necesidades del laboratorio, e implementé un tipo de arquitectura SaaS.",
+                "Como proyecto piloto, planifiqué y realicé el análisis de información, diseñé, desarrollé e implementé una herramienta web que cumple con los requisitos y necesidades del laboratorio."
+            ]
+        }
+    ],
+    "SKILLS": {
+        "Idiomas": ["Español: Nativo", "Portugués: Avanzado C2", "Inglés: Avanzado C1"],
+        "Ingeniería de Datos": [
+            "Apache Spark",
+            "Apache Airflow",
+            "Apache Kafka",
+            "RedPanda",
+            "Cassandra",
+            "Neo4j",
+            "Pandas",
+            "Streamlit",
+            "Dash Plotly",
+            "Snowflake",
+            "PostgreSQL",
+            "Redis",
+            "MongoDB"
+        ],
+        "Full-Stack": ["Svelte", "HTMX", "Leptos", "Django", "FastAPI", "Axum"],
+        "DevOps e Ingeniería en la Nube": [
+            "Linux",
+            "Bash",
+            "Docker",
+            "Jenkins",
+            "GitHub Actions",
+            "Terraform",
+            "Ansible",
+            "Kubernetes",
+            "AWS (ECS & EKS)",
+            "Linode",
+            "Git & GitHub",
+            "NetData",
+            "Grafana",
+            "Prometheus"
+        ]
+    }
+}

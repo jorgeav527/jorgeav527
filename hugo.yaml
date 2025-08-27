@@ -1,10 +1,13 @@
 baseURL: https://docs.cordstart.com/
 languageCode: en-us
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
 copyright: MIT License
 theme: terminal
 pagination:
   pagerSize: 5
 autoCover: true
+
 params:
   contact:
     email: jorgeav527@gmail.com
@@ -22,12 +25,12 @@ params:
 
 languages:
   en:
+    languageName: "English"
+    weight: 1
     title: "Docs.CordStart"
     subtitle: "Docs for CordStart"
     keywords: ""
     copyright: ""
-    menuMore: "Show more"
-    readOtherPosts: "Read other posts"
     params:
       menuMore: "Show more"
       readMore: "Read more →"
@@ -63,5 +66,45 @@ languages:
           weight: 40
         # - identifier: "resume"
         #   name: "Resume"
+        #   pageRef: "/resume"
+        #   weight: 50
+
+  sp:
+    languageName: "Español"
+    weight: 2
+    title: "Docs.CordStart"
+    subtitle: "Documentación de CordStart"
+    params:
+      readMore: "Leer más →"
+      missingContentMessage: "Página no encontrada..."
+      missingBackButtonLabel: "Volver al inicio"
+    menu:
+      main:
+        - identifier: "home"
+          name: "Inicio"
+          pageRef: "/home"
+          weight: 10
+        # - identifier: "resume"
+        #   name: "Currículum"
+        #   pageRef: "/resume"
+        #   weight: 50
+
+  pt:
+    languageName: "Português"
+    weight: 3
+    title: "Docs.CordStart"
+    subtitle: "Documentos do CordStart"
+    params:
+      readMore: "Leia mais →"
+      missingContentMessage: "Página não encontrada..."
+      missingBackButtonLabel: "Voltar para o início"
+    menu:
+      main:
+        - identifier: "home"
+          name: "Início"
+          pageRef: "/home"
+          weight: 10
+        # - identifier: "resume"
+        #   name: "Currículo"
         #   pageRef: "/resume"
         #   weight: 50

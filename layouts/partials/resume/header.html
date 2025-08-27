@@ -1,0 +1,26 @@
+{{ $lang := .Site.Language.Lang }} {{ $basic := .Site.Data.resume_2025.basic }} {{ $data :=
+.Site.Data.resume_2025.english }}
+<!-- fallback -->
+
+{{ if eq $lang "en" }} {{ $data = .Site.Data.resume_2025.english }} {{ else if eq $lang "sp" }} {{
+$data = .Site.Data.resume_2025.spanish }} {{ else if eq $lang "pt" }} {{ $data =
+.Site.Data.resume_2025.portuguese }} {{ end }}
+
+<div class="header-main">
+    <div class="name-content">
+        <div class="name-title">
+            <h1>{{ $basic.NAME }}</h1>
+            <p class="professional-title">{{ $basic.SELF_THOUGHT }} & {{ $basic.BOOTCAMP }}</p>
+            <p>{{ $data.ABOUT_DESCRIPTION }}</p>
+        </div>
+
+        <div class="contact-links">
+            <a href="https://wa.me/{{ $basic.PHONE }}" class="contact-link-small">
+                <i class="bi bi-telephone"></i> {{ $basic.PHONE }}
+            </a>
+            <a href="mailto:{{ $basic.GMAIL }}" class="contact-link-small">
+                <i class="bi bi-envelope"></i> {{ $basic.GMAIL }}
+            </a>
+        </div>
+    </div>
+</div>

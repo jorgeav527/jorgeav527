@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Professional CV - {{ .Site.Data.resume_2025.basic.NAME }} - Software Developer"
+        />
+        <meta name="author" content="{{ .Site.Data.resume_2025.basic.NAME }}" />
+
+        <title>{{ .Title }}</title>
+        <link rel="stylesheet" href="/css/cv.css" />
+    </head>
+    <body>
+        {{ block "cv-main" . }}{{ end }} {{ partial "resume/header.html" . }}
+    </body>
+</html>
