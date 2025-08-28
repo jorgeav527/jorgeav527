@@ -1,0 +1,13 @@
+EXPERIENCE: "experiencia laboral"
+PROFESSION: "Ingeniero Civil"
+SECOND_PROFESSION: "Ingeniero de Software"
+EDUCATION: "educación"
+LANGUAGE: "idiomas"
+SKILL: "habilidades"
+FEATURE: "destacados"
+VOLUNTER: "voluntariado"
+ABOUT: "sobre mí"
+PROJECT: "proyectos"
+ABOUT_DESCRIPTION:
+  - "Desde 2018, Jorge Alarcón obtuvo experiencia en Desarrollo de Software y Ciencia de Datos, actualmente trabajando y ganando experiencia como DevOps e Ingeníero de Datos. Anteriormente trabajó como Ingeniero Civil en Perú y Brasil, enfocándose en la automatización de procesos."
+  - "Con más de siete años de experiencia en Linux, Python y Rust, Jorge Alarcón se especializa en desarrollar pipelines de CI/CD y de datos, implementando diferentes arquitecturas de APIs junto con Desarrollo Dirigido por Pruebas (TDD) y arquitectura limpia para garantizar eficiencia y fiabilidad. Su experiencia se extiende a la implementación y orquestación de servicios en la nube utilizando Infraestructura como Código (IaC) en AWS (ECS y EKS)."

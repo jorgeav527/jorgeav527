@@ -1,0 +1,366 @@
+:root {
+    --primary-color: #0062cc;
+    --primary-light: #e6f0ff;
+    --primary-dark: #004c99;
+    --secondary-color: #6c757d;
+    --dark-color: #212529;
+    --light-color: #f8f9fa;
+    --success-color: #28a745;
+    --border-color: #dee2e6;
+    --spacing-unit: 1rem;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: #f5f7fa;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.cv-container {
+    max-width: 1140px;
+    margin: 2rem auto;
+    background-color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Header Styles */
+.cv-header {
+    padding: 1rem 2.5rem 1rem;
+    background-color: white;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Main Content Styles */
+.cv-content {
+    padding: 1rem 2.5rem 1rem;
+}
+
+.header-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.name-title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark-color);
+}
+
+.professional-title {
+    color: var(--primary-color);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: all 0.2s ease;
+}
+
+.contact-link:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.contact-link i {
+    margin-right: 0.5rem;
+}
+
+.contact-link-small {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.2rem 0.5rem;
+    border-radius: 50px;
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    text-decoration: none;
+    font-size: 0.7rem;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.contact-link-small:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.contact-link-small i {
+    margin-right: 0.3rem;
+}
+
+.content-section {
+    margin-bottom: 1rem;
+}
+
+.section-title {
+    color: var(--dark-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.sub-section-title {
+    color: var(--primary-dark);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Experience & Feature Items */
+.experience-item,
+.feature-item {
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.item-header {
+    margin-bottom: 1rem;
+}
+
+.item-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.item-subtitle {
+    color: var(--primary-dark);
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.project-link {
+    color: var(--primary-dark);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.project-link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.meta-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.875rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.75rem;
+}
+
+.meta-info-item {
+    display: flex;
+    align-items: center;
+}
+
+.meta-info-item i {
+    margin-right: 0.4rem;
+}
+
+.responsibilities-list {
+    padding-left: 1.25rem;
+}
+
+.responsibilities-list li {
+    margin-bottom: 0.5rem;
+    text-align: justify;
+    line-height: 1.4;
+}
+
+/* About Section */
+.about-text {
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+}
+
+/* Education Styles */
+.education-item {
+    margin-bottom: 1.5rem;
+}
+
+.education-item:last-child {
+    margin-bottom: 0;
+}
+
+.certification-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.certification-link {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
+}
+
+/* Skills Section */
+.skills-category {
+    margin-bottom: 0.5rem;
+}
+
+.category-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.subcategory-title {
+    font-size: 0.95rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
+}
+
+.subcategory-title-inline {
+    /* font-size: 0.95rem; */
+    /* color: var(--secondary-color); */
+    margin-bottom: 0.5rem;
+    /* line-height: 1.8; */
+}
+
+.skill-tag-small {
+    color: var(--primary-dark);
+    font-size: 0.75rem;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 0.7rem;
+    /* margin-bottom: 0.4rem; */
+}
+
+/* Language Section */
+.language-list {
+    list-style: none;
+    padding: 0;
+}
+
+.language-item {
+    margin-bottom: 0.5rem;
+    display: flex;
+}
+
+.language-name {
+    color: var(--primary-color);
+    font-weight: 500;
+    margin-right: 0.5rem;
+}
+
+/* Volunteer Section */
+.volunteer-item {
+    margin-bottom: 1.5rem;
+}
+
+.volunteer-description {
+    text-align: justify;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+@page {
+    size: A4 portrait;
+    margin: 10mm 10mm 10mm 10mm;
+}
+
+@media print {
+    html,
+    body {
+        margin: 0 !important;
+        padding: 0 !important;
+        background: white !important;
+    }
+
+    .cv-container {
+        max-width: none !important;
+        width: 100% !important;
+        margin: 0 !important;
+        box-shadow: none !important;
+        border-radius: 0 !important;
+        overflow: visible !important;
+    }
+
+    /* Full-width sections */
+    .cv-content,
+    .about-section,
+    .experience-item,
+    .education-item,
+    .volunteer-item,
+    .skills-category {
+        width: 100% !important;
+    }
+
+    .cv-header {
+        width: 100% !important;
+        margin: 0 !important;
+        padding-top: 0 !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        padding-bottom: 5mm !important;
+    }
+
+    /* Remove gutters inside cv-content */
+    .cv-content {
+        padding: 0 !important;
+    }
+
+    /* Keep your color tricks */
+    .contact-link,
+    .contact-link-small,
+    .skill-tag {
+        border: 1px solid var(--primary-color) !important;
+        background-color: var(--primary-light) !important;
+        color: var(--primary-dark) !important;
+        -webkit-print-color-adjust: exact;
+    }
+}

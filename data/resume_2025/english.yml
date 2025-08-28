@@ -1,0 +1,226 @@
+EXPERIENCE: "work experience"
+PROFESSION: "Civil Engineer"
+SECOND_PROFESSION: "Software Engineer"
+EDUCATION: "education"
+LANGUAGE: "languages"
+SKILL: "skills"
+FEATURE: "featured"
+VOLUNTER: "volunteering"
+ABOUT: "about me"
+
+ABOUT_DESCRIPTION:
+  - "Since 9918, Jorge Alarcón has been enhancing his expertise in Software Development and Data Science, currently working and gaining experience as a Full Stack DevOps and Data Engineer. Previously worked as a Civil Engineer in Peru and Brazil, focusing on process automation."
+  - "With over seven years of experience in Linux, Python and Rust, Jorge Alarcón specializes in developing CI/CD and data pipelines, implementing various API architectures with Test-Driven Development (TDD) and clean architecture to ensure efficiency and reliability. His expertise extends to deploying and orchestrating cloud services using Infrastructure as Code (IaC) on AWS (ECS and EKS)."
+
+VOLUNTEER:
+  - organization: "AIESEC en Colombia"
+    description: "9000xBogota is an AIESEC initiative that demonstrates to the citizens of Bogotá that young people of various nationalities can feel empathy and respect for the city that becomes their temporary home, while also raising social awareness and providing information about the importance of global warming."
+    name: "Universidad de los Andes, Colombia: 7000xBogotá"
+    start: "Dec 2010"
+    end: "Mar 2011"
+    location: "Bogota Colombia"
+
+FEATURES:
+  - name: "Nodejs Startup application DevOps Architecture"
+    title: "AWS CI/CD Pipeline Automation for Tech Fastrip (Startup FinTech)"
+    location: "Brazil"
+    start: "May 2025"
+    end: "Present"
+    link: "https://github.com/viajefacil"
+
+  - name: "Spring Boot Microservices DevOps Architecture Consultant"
+    title: "AWS CI/CD Pipeline Automation for Tech Cifras (Spanish FinTech)"
+    location: "Spain"
+    start: "Nov 2024"
+    end: "Dic 2024"
+    link: "https://github.com/username/project"
+
+  - name: "II INTERNATIONAL CONGRESS OF CIVIL ENGINEERING II CIDEIC UCSM 2021"
+    title: 'SPEAKER "Web Development for Civil Engineer"'
+    location: "Arequipa, Arequipa, Perú"
+    start: "Nov 2021"
+    end: "Nov 2021"
+    link: "https://github.com/username/project"
+
+PROJECTS:
+  "RPG Labs - Grupo RPG SAC":
+    title: "Web Application for Testing Services at a Civil Engineering Soils Laboratory"
+    link: "https://github.com/jorgeav527/rpg_labs_repo.git"
+    start: "Dec 2021"
+    end: "Mar 2022"
+    techstack:
+      - "OS Linux, Git & GitHub (GitHub Flow), HTML, CSS-BootstrapMade, Django, HTMX, Nginx, Bash, Docker, Html2pdf, PostgreSQL, AWS (EC2 & RDS & S3)."
+
+  "EPIC Labs - Professional Thesis Degree":
+    title: "Thesis: Civil Engineering Laboratory Automation and Systematization"
+    location: "Arequipa, Arequipa, Perú"
+    link: "https://github.com/jorgeav527/epiclabs.git"
+    start: "Dec 2019"
+    end: "Dec 2020"
+    techstack:
+      - "OS Linux, Git & GitHub, HTML, CSS-Bootstrap, Django, Matplotlib & Bokeh, WeasyPrint, SQLite, PythonAnywhere."
+
+  "Final project for Henry's Data Science Bootcamp":
+    title: "Life Expectancy - ETL & EDA & ML"
+    link: "https://github.com/jorgeav527/life-expectancy.git"
+    start: "Sep 2022"
+    end: "Oct 2022"
+    techstack:
+      - "OS Linux, Git & GitHub & Git LFS, Jupyter (Numpy & Pandas & Scikit-Learn, Matplotlib), Heroku, MongoDB, ElephantSQL, FastAPI, Streamlit, Apache Airflow, Docker, Linode (EC2 & RDS & S3)."
+
+  "Machine Learning Specialization":
+    title: "Datathon - Applying ML Modeling"
+    link: "https://github.com/jorgeav527/Datathon.git"
+    start: "Sep 2022"
+    end: "Present"
+    techstack:
+      - "Jupyter (Numpy & Pandas & Scikit-Learn & Plotly)."
+
+CIVIL_EXPERIENCES:
+  - company: "Municipalidad Distrital de Majes"
+    title: "Civil Engineer"
+    location: "Majes, Arequipa, Perú"
+    type: "On-site, Full-time"
+    start: "May 2021"
+    end: "Aug 2021"
+    time: "4 mos"
+    responsibilities:
+      - "Assistance in the reporting and review of technical-financial liquidations..."
+      - "Review and report on the additional, deductive, and investment extensions..."
+      - "Monthly review of waste generated..."
+      - "Monitoring and updating management..."
+
+  - company: "Juares Arquitectos & Ingenieros SAC"
+    title: "Civil Engineer"
+    location: "Arequipa, Arequipa, Perú"
+    type: "On-site, Freelance"
+    start: "Nov 2018"
+    end: "Nov 2019"
+    time: "1 año"
+    responsibilities:
+      - "Professional support on technical and structural details..."
+      - "Control of the schedule work through MS Project..."
+      - "Reporting monthly work valuations..."
+      - "Forecasting of additional labor and cost increases."
+
+  - company: "FourC Bilingual Academy"
+    title: "Engineer Building Maintenance"
+    location: "Bauru, São Paulo, Brazil"
+    type: "On-Site, Internship"
+    start: "Jun 2016"
+    end: "Dec 2017"
+    time: "1 yr 6 mos"
+    responsibilities:
+      - "Solving construction defects with forecasts and multiple solutions."
+      - "Efficient control of the maintenance team's schedule with MS Project."
+      - "Reduced water consumption by 30% and electricity by 11%."
+
+SOFTWARE_EXPERIENCES:
+  - company: "Roadr"
+    title: "Full-Stack DevOps"
+    location: "Los Angeles, California, United States"
+    type: "Remote, Full-time"
+    start: "Feb 2023"
+    end: "June 2025"
+    time: "2 yr 6 mos"
+    responsibilities:
+      - "Worked with Node, React, Go, Rust, Python (Django, FastAPI, Airflow)."
+      - "Containerized frameworks with Docker and IaC with Terraform/Ansible."
+      - "Managed databases: MongoDB, PostgreSQL, Cassandra..."
+      - "Kafka & Redis for event-driven dev, GraphQL APIs..."
+      - "Monitored with Netdata, set up ECS cluster..."
+      - "Deployed Kubernetes cluster."
+
+  - company: "Roadr"
+    title: "Data Engineer"
+    location: "Los Angeles, California, United States"
+    type: "Remote, Full-time"
+    start: "Feb 2023"
+    end: "June 2025"
+    time: "2 yr 6 mos"
+    responsibilities:
+      - "Built and maintained a global data infrastructure..."
+      - "Developed FastAPI backend with TDD, Docker, Redis, GraphQL..."
+      - "Designed ETL pipelines with Airflow, Cassandra, S3..."
+      - "Implemented Maia bot with FastAPI + OpenAI API."
+      - "Migrated MongoDB → PostgreSQL, Cassandra → Redshift..."
+
+  - company: "Cibertec"
+    title: "Python Fundamentals Instructor"
+    location: "Lima, Peru"
+    type: "Remote, Part-time"
+    start: "Oct 2023"
+    end: "Present"
+    time: "1 yr 8 mos"
+    responsibilities:
+      - "Guided and mentored students in Data Science & APIs."
+      - "Evaluated students via projects, exams, and assignments."
+      - "Provided feedback on Python skills."
+
+  - company: "Grupo RPG SAC"
+    title: "Web Developer & IT Automation"
+    location: "Tiabaya, Arequipa, Perú"
+    type: "Hybrid, Freelance"
+    start: "Dec 2021"
+    end: "May 2022"
+    time: "6 mos"
+    responsibilities:
+      - "Built Docker + Django + Postgres stack on AWS (EC2, RDS, S3)."
+      - "Designed/deployed lab web tool with modules for quotes, orders, settlements."
+
+  - company: "UCSM - EPIC Labs"
+    title: "Web Developer & IT Automation"
+    location: "Tiabaya, Arequipa, Perú"
+    type: "Hybrid, Freelance"
+    start: "Dec 2019"
+    end: "Jan 2021"
+    time: "1 yr 2 mos"
+    responsibilities:
+      - "Built Django + SQLite app on PythonAnywhere EC2."
+      - "Planned SaaS flow for students, thesis, and clients."
+      - "Pilot project for lab automation."
+
+SKILLS:
+  Languages:
+    - "Spanish: Native"
+    - "Portuguese: Advanced C2"
+    - "English: Advanced C1"
+
+  Data Engineering:
+    - "Apache Spark"
+    - "Apache Airflow"
+    - "Apache Kafka"
+    - "RedPanda"
+    - "Cassandra"
+    - "Neo4j"
+    - "Pandas"
+    - "Streamlit"
+    - "Dash Plotly"
+    - "Snowflake"
+    - "PostgreSQL"
+    - "Redis"
+    - "MongoDB"
+
+  Full-Stack:
+    - "Svelte"
+    - "HTMX"
+    - "Leptos"
+    - "Django"
+    - "FastAPI"
+    - "Axum"
+
+  DevOps and Cloud Engineering:
+    - "Linux"
+    - "Bash"
+    - "Docker"
+    - "Jenkins"
+    - "GitHub Actions"
+    - "Terraform"
+    - "Ansible"
+    - "Kubernetes"
+    - "AWS (ECS & EKS)"
+    - "Linode"
+    - "Git & GitHub"
+    - "NetData"
+    - "Grafana"
+    - "Prometheus"

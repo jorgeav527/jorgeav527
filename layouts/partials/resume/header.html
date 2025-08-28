@@ -11,7 +11,9 @@ $data = .Site.Data.resume_2025.spanish }} {{ else if eq $lang "pt" }} {{ $data =
         <div class="name-title">
             <h1>{{ $basic.NAME }}</h1>
             <p class="professional-title">{{ $basic.SELF_THOUGHT }} & {{ $basic.BOOTCAMP }}</p>
-            <p>{{ $data.ABOUT_DESCRIPTION }}</p>
+            {{ range $data.ABOUT_DESCRIPTION }}
+            <p>{{ . }}</p>
+            {{ end }}
         </div>
 
         <div class="contact-links">
@@ -20,6 +22,18 @@ $data = .Site.Data.resume_2025.spanish }} {{ else if eq $lang "pt" }} {{ $data =
             </a>
             <a href="mailto:{{ $basic.GMAIL }}" class="contact-link-small">
                 <i class="bi bi-envelope"></i> {{ $basic.GMAIL }}
+            </a>
+            <a href="https://github.com/jorgeav527" class="contact-link-small">
+                <i class="bi bi-github"></i> {{ $basic.GITHUB }}
+            </a>
+            <a
+                href="https://www.linkedin.com/in/jorgeav527/?locale=en_US"
+                class="contact-link-small"
+            >
+                <i class="bi bi-linkedin"></i> {{ $basic.LINKEDIN }}
+            </a>
+            <a href="https://docs.cordstart.com/" class="contact-link-small">
+                <i class="bi bi-globe"></i> {{ $basic.WEBPAGE }}
             </a>
         </div>
     </div>

@@ -1,3 +1,28 @@
 {{ define "cv-main" }}
-<div>{{ partial "resume/header.html" . }}</div>
+<div class="cv-container">
+    <!-- Header Section -->
+    <header class="cv-header">{{ partial "resume/header.html" . }}</header>
+
+    <main class="cv-content">
+        <div class="">
+            <!-- About Me Section -->
+            <section class="content-section" id="about"></section>
+
+            <!-- Skills Section -->
+            <section class="content-section" id="skills"></section>
+
+            <!-- Experience Section -->
+            <section class="content-section" id="experience"></section>
+
+            <!-- Feature Projects Section -->
+            <section class="content-section" id="feature"></section>
+        </div>
+    </main>
+
+    <footer class="cv-footer">
+        <div class="text-center py-3">
+            <small class="text-muted">Last updated: {{ now.Format "January 2006" }}</small>
+        </div>
+    </footer>
+</div>
 {{ end }}

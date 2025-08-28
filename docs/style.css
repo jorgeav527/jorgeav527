@@ -149,23 +149,34 @@
     height: 24px;
 }
 
-.social-links {
+.resume-links {
+    margin-top: 0.5em;
     display: flex;
-    gap: 20px;
     justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
-.social-links a {
+.resume-links a {
     color: var(--accent);
     text-decoration: none;
     border: 1px solid var(--accent);
-    padding: 5px 15px;
-    border-radius: 4px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
 }
 
-.social-links a:hover {
+.resume-links a:hover {
     background: var(--accent);
     color: var(--background);
+}
+
+.resume-links svg {
+    width: 24px;
+    height: 24px;
 }
 
 .specialties-list {

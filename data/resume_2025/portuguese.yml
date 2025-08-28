@@ -1,0 +1,14 @@
+EXPERIENCE: "experiência profissional"
+PROFESSION: "Engenheiro Civil"
+SECOND_PROFESSION: "Engenheiro de Software"
+EDUCATION: "educação"
+LANGUAGE: "idiomas"
+SKILL: "habilidades & ferramentas"
+FEATURE: "destaques"
+VOLUNTER: "voluntariado"
+ABOUT: "sobre mim"
+PROJECT: "projetos"
+
+ABOUT_DESCRIPTION:
+  - "Desde 2018, Jorge Alarcón tem aprimorado sua experiência em Desenvolvimento Web e Ciência de Dados, atualmente trabalhando e ganhando experiência como Full Stack DevOps e Engenheiro de Dados. Anteriormente, trabalhou como Engenheiro Civil no Peru e no Brasil."
+  - "Com mais de sete anos de sólida experiência em Linux, Jorge Alarcón se especializa no desenvolvimento de pipelines de dados, APIs REST, protocolo gRPC como microsserviços e aplicações web. Sua experiência se destaca por sua abordagem abrangente para implementar e orquestrar serviços em nuvem por meio de IaC na AWS e Linode, integrando práticas de CI/CD e aplicando o Desenvolvimento Orientado por Testes (TDD) e uma arquitetura limpa para garantir eficiência e confiabilidade em cada fase do projeto."
