@@ -26,9 +26,15 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Playfair Display", serif;
-    font-weight: 600;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700; /* bold headings */
     margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+p {
+    text-align: justify;
+    line-height: 1.4; /* keep readability */
 }
 
 .cv-container {
@@ -44,12 +50,16 @@ h6 {
 .cv-header {
     padding: 1rem 2.5rem 1rem;
     background-color: white;
-    border-bottom: 1px solid var(--border-color);
+    /*border-bottom: 1px solid var(--border-color);*/
 }
 
 /* Main Content Styles */
 .cv-content {
     padding: 1rem 2.5rem 1rem;
+}
+
+.name-title p {
+    text-indent: 1.25rem; /* indent first line only */
 }
 
 .header-main {
@@ -69,16 +79,15 @@ h6 {
 }
 
 .name-title h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     color: var(--dark-color);
 }
 
-.professional-title {
-    color: var(--primary-color);
-    font-size: 1.25rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
+.subcategory-tags {
+    margin: 0 0 0 1.25rem; /* keep clean spacing between paragraphs */
 }
 
 .contact-links {
@@ -139,12 +148,12 @@ h6 {
     margin-bottom: 1rem;
 }
 
-.section-title {
-    color: var(--dark-color);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
+.section-title,
+.professional-title {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-light);
+    padding-bottom: 0.3rem;
+    margin-bottom: 1.5rem;
 }
 
 .sub-section-title {
@@ -155,11 +164,17 @@ h6 {
     margin-bottom: 0.5rem;
 }
 
-/* Experience & Feature Items */
-.experience-item,
-.feature-item {
-    margin-bottom: 1rem;
-    position: relative;
+.experience-item ul {se;
+    margin: 0.75em 0 1.5em 1.25em; /* balanced spacing */
+    padding: 0;
+    list-style-type: disc; /* simple, professional bullets */
+}
+
+.experience-item li {
+    margin-bottom: 0.5rem; /* tighter spacing for readability */
+    margin-left: 1rem;
+    line-height: 1.4; /* improves text readability */
+    color: var(--dark-color); /* softer than pure black */
 }
 
 .item-header {
@@ -272,12 +287,15 @@ h6 {
 }
 
 .skill-tag-small {
-    color: var(--primary-dark);
+    background-color: var(--primary-light);
+    border: 1px solid var(--primary-color);
+    border-radius: 12px;
+    padding: 0.2rem 0.6rem;
     font-size: 0.75rem;
     font-weight: 500;
+    color: var(--primary-dark);
     display: inline-block;
-    margin-right: 0.7rem;
-    /* margin-bottom: 0.4rem; */
+    margin: 0.2rem;
 }
 
 /* Language Section */
@@ -319,6 +337,31 @@ h6 {
         margin: 0 !important;
         padding: 0 !important;
         background: white !important;
+        font-size: 11pt; /* good default for print */
+        line-height: 1.4; /* improves readability */
+    }
+
+    .section-title,
+    .professional-title {
+        font-size: 14pt;
+        font-weight: 600;
+        border-bottom: 1px solid var(--primary-color);
+        padding-bottom: 2mm;
+        margin-bottom: 3mm;
+    }
+
+    .experience-item ul {
+        margin: 2mm 0 2mm 4mm;
+        padding: 0;
+    }
+
+    .experience-item li {
+        margin-bottom: 1mm;
+        margin-left: 4mm;
+    }
+
+    .subcategory-tags {
+        margin: 0 0 0 3mm; /* keep clean spacing between paragraphs */
     }
 
     .cv-container {
@@ -338,6 +381,17 @@ h6 {
     .volunteer-item,
     .skills-category {
         width: 100% !important;
+        margin-bottom: 4mm !important;
+    }
+
+    .name-title p {
+        text-indent: 4mm; /* indent first line only */
+    }
+
+    .item-header {
+        margin-bottom: 1rem;
+        page-break-inside: avoid; /* don’t break inside */
+        break-inside: avoid; /* modern syntax */
     }
 
     .cv-header {
@@ -362,5 +416,13 @@ h6 {
         background-color: var(--primary-light) !important;
         color: var(--primary-dark) !important;
         -webkit-print-color-adjust: exact;
+    }
+
+    .cv-footer {
+      text-align: center;
+      font-size: 10pt;
+      color: var(--secondary-color);
+      page-break-after: auto;   /* allow it only at the end */
+      page-break-inside: avoid; /* never split */
     }
 }

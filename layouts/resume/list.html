@@ -5,14 +5,15 @@
 
     <main class="cv-content">
         <div class="">
-            <!-- About Me Section -->
-            <section class="content-section" id="about"></section>
-
             <!-- Skills Section -->
-            <section class="content-section" id="skills"></section>
+            <section class="content-section" id="skills">
+                {{ partial "resume/skills.html" . }}
+            </section>
 
             <!-- Experience Section -->
-            <section class="content-section" id="experience"></section>
+            <section class="content-section" id="experience">
+                {{ partial "resume/experience.html" . }}
+            </section>
 
             <!-- Feature Projects Section -->
             <section class="content-section" id="feature"></section>

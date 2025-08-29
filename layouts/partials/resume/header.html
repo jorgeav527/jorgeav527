@@ -10,7 +10,7 @@ $data = .Site.Data.resume_2025.spanish }} {{ else if eq $lang "pt" }} {{ $data =
     <div class="name-content">
         <div class="name-title">
             <h1>{{ $basic.NAME }}</h1>
-            <p class="professional-title">{{ $basic.SELF_THOUGHT }} & {{ $basic.BOOTCAMP }}</p>
+            <h3 class="professional-title">{{ $basic.SELF_THOUGHT }} & {{ $basic.BOOTCAMP }}</h3>
             {{ range $data.ABOUT_DESCRIPTION }}
             <p>{{ . }}</p>
             {{ end }}

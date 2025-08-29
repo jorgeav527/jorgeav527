@@ -1,0 +1,46 @@
+{{ $lang := .Site.Language.Lang }} {{ $basic := .Site.Data.resume_2025.basic }} {{ $data :=
+.Site.Data.resume_2025.english }}
+<!-- fallback -->
+
+{{ if eq $lang "en" }} {{ $data = .Site.Data.resume_2025.english }} {{ else if eq $lang "sp" }} {{
+$data = .Site.Data.resume_2025.spanish }} {{ else if eq $lang "pt" }} {{ $data =
+.Site.Data.resume_2025.portuguese }} {{ end }}
+
+<section class="experience-section">
+    <h2 class="section-title">
+        {{ $data.EXPERIENCE }}
+        <span class="sub-section-title ms-2">{{ $data.SECOND_PROFESSION }}</span>
+    </h2>
+
+    <div class="experience-content">
+        {{ range $software := $data.SOFTWARE_EXPERIENCES }}
+        <div class="experience-item">
+            <div class="item-header">
+                <h3 class="item-title">{{ $software.title }}</h3>
+                <h4 class="item-subtitle">{{ $software.company }}</h4>
+
+                <div class="meta-info">
+                    <span class="meta-info-item">
+                        <i class="bi bi-calendar3"></i> {{ $software.start }} - {{ $software.end }}
+                        ({{ $software.time }})
+                    </span>
+                    <span class="meta-info-item">
+                        <i class="bi bi-geo-alt-fill"></i> {{ $software.location }}
+                    </span>
+                    <span class="meta-info-item">
+                        <i class="bi bi-person-workspace"></i> {{ $software.type }}
+                    </span>
+                </div>
+            </div>
+
+            <div class="responsibilities">
+                <ul class="responsibilities-list">
+                    {{ range $responsibility := $software.responsibilities }}
+                    <li>{{ $responsibility }}</li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>

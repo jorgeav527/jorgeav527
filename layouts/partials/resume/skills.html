@@ -1,0 +1,23 @@
+{{ $lang := .Site.Language.Lang }} {{ $basic := .Site.Data.resume_2025.basic }} {{ $data :=
+.Site.Data.resume_2025.english }}
+<!-- fallback -->
+
+{{ if eq $lang "en" }} {{ $data = .Site.Data.resume_2025.english }} {{ else if eq $lang "sp" }} {{
+$data = .Site.Data.resume_2025.spanish }} {{ else if eq $lang "pt" }} {{ $data =
+.Site.Data.resume_2025.portuguese }} {{ end }}
+
+<section class="skills-section">
+    <h2 class="section-title">{{ $data.SKILL }}</h2>
+    <div class="skills-content">
+        {{ range $category, $values := $data.SKILLS }}
+        <div class="skills-category">
+            <h3 class="category-title">{{ $category }}</h3>
+            <div class="subcategory-tags">
+                {{ range $v := $values }}
+                <span class="skill-tag-small">{{ $v }}</span>
+                {{ end }}
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</section>

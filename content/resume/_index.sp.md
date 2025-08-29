@@ -1,5 +1,5 @@
 +++
-title = "Curriculum Vitae SP"
+title = "CV SP"
 layout = "resume"
 type = "resume"
 url = "/sp/resume/"

@@ -9,5 +9,50 @@ VOLUNTER: "voluntariado"
 ABOUT: "sobre mí"
 PROJECT: "proyectos"
 ABOUT_DESCRIPTION:
-  - "Desde 2018, Jorge Alarcón obtuvo experiencia en Desarrollo de Software y Ciencia de Datos, actualmente trabajando y ganando experiencia como DevOps e Ingeníero de Datos. Anteriormente trabajó como Ingeniero Civil en Perú y Brasil, enfocándose en la automatización de procesos."
-  - "Con más de siete años de experiencia en Linux, Python y Rust, Jorge Alarcón se especializa en desarrollar pipelines de CI/CD y de datos, implementando diferentes arquitecturas de APIs junto con Desarrollo Dirigido por Pruebas (TDD) y arquitectura limpia para garantizar eficiencia y fiabilidad. Su experiencia se extiende a la implementación y orquestación de servicios en la nube utilizando Infraestructura como Código (IaC) en AWS (ECS y EKS)."
+  - Desde 2018, Jorge Alarcón se desempeña como Full Stack DevOps y Data Engineer, con más de 4 años de experiencia profesional en Desarrollo de Software y Data Engineering. Inició su carrera como Ingeniero Civil en Perú y Brasil, enfocado en la automatización de procesos, antes de hacer la transición al sector tecnológico.
+  - Especializado en Linux, Python y Rust, cuenta con experiencia práctica en el desarrollo de pipelines de CI/CD, pipelines de datos y arquitecturas de API utilizando Test-Driven Development (TDD) y clean architecture para garantizar eficiencia y confiabilidad. Su experiencia incluye el despliegue y la orquestación de servicios en la nube con AWS (ECS, EKS) mediante Infrastructure as Code (IaC) para entornos escalables y seguros.
+
+SKILLS:
+  Idiomas:
+    - "Español: Nativo"
+    - "Portugués: Avanzado C2"
+    - "Inglés: Avanzado C1"
+
+  Ingeniería de Datos:
+    - Apache Spark
+    - Apache Airflow
+    - Apache Kafka
+    - RedPanda
+    - Cassandra
+    - Neo4j
+    - Pandas
+    - Streamlit
+    - Dash Plotly
+    - Snowflake
+    - PostgreSQL
+    - Redis
+    - MongoDB
+
+  DevOps y Arquitectura Cloud:
+    - Linux
+    - Bash
+    - Docker
+    - Jenkins
+    - GitHub Actions
+    - Terraform
+    - Ansible
+    - Kubernetes
+    - AWS (ECS & EKS)
+    - Linode
+    - Git & GitHub
+    - NetData
+    - Grafana
+    - Prometheus
+
+  Full-Stack:
+    - Svelte
+    - HTMX
+    - Leptos
+    - Django
+    - FastAPI
+    - Axum

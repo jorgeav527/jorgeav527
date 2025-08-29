@@ -1,5 +1,5 @@
 +++
-title = "Curriculum Vita EN"
+title = "CV EN"
 layout = "resume"
 type = "resume"
 url = "/en/resume/"
