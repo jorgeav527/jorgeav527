@@ -6,18 +6,44 @@
 $data = .Site.Data.resume_2025.spanish }} {{ else if eq $lang "pt" }} {{ $data =
 .Site.Data.resume_2025.portuguese }} {{ end }}
 
-<section class="skills-section">
-    <h2 class="section-title">{{ $data.SKILL }}</h2>
-    <div class="skills-content">
-        {{ range $category, $values := $data.SKILLS }}
-        <div class="skills-category">
-            <h3 class="category-title">{{ $category }}</h3>
-            <div class="subcategory-tags">
-                {{ range $v := $values }}
-                <span class="skill-tag-small">{{ $v }}</span>
-                {{ end }}
+<section class="education-section">
+    <h2 class="section-title">{{ $data.EDUCATION }}</h2>
+    <div class="education-content">
+        <div class="education-item">
+            <div class="item-header">
+                <!-- University name -->
+                <!--<h3 class="item-title">{{ $basic.UNIVERSITY }}</h3>-->
+                <!-- Career / profession -->
+                <h4 class="item-subtitle">{{ $data.PROFESSION }}</h4>
+
+                <!-- Meta info styled same as experience -->
+                <div class="meta-info">
+                    <span class="meta-info-item">
+                        <i class="bi bi-calendar3"></i> {{ $basic.UNI_START }} - {{ $basic.UNI_END
+                        }}
+                    </span>
+                    <span class="meta-info-item">
+                        <i class="bi bi-geo-alt-fill"></i> {{ $basic.UNI_LOCATION }}
+                    </span>
+                    <span class="meta-info-item">
+                        <i class="bi bi-person-badge"></i> CIP: {{ $basic.CIP }}
+                    </span>
+                </div>
             </div>
         </div>
-        {{ end }}
+
+        <!-- Languages merged here -->
+        <div class="education-item">
+            <div class="item-header">
+                <h4 class="item-subtitle">{{ $data.LANGUAGE }}</h4>
+                <div class="meta-info">
+                    {{ range $lang := $data.LANGUAGES }}
+                    <span class="meta-info-item">
+                        <i class="bi bi-translate"></i> {{ $lang }}
+                    </span>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
     </div>
 </section>

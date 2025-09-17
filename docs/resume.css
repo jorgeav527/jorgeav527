@@ -164,7 +164,7 @@ p {
     margin-bottom: 0.5rem;
 }
 
-.experience-item ul {se;
+.experience-item ul {
     margin: 0.75em 0 1.5em 1.25em; /* balanced spacing */
     padding: 0;
     list-style-type: disc; /* simple, professional bullets */
@@ -175,6 +175,11 @@ p {
     margin-left: 1rem;
     line-height: 1.4; /* improves text readability */
     color: var(--dark-color); /* softer than pure black */
+}
+
+.experience-item .meta-info.tools-info {
+    margin-top: 0rem; /* a little space after responsibilities */
+    margin-bottom: 1.25rem; /* extra space before next experience */
 }
 
 .item-header {
@@ -419,10 +424,10 @@ p {
     }
 
     .cv-footer {
-      text-align: center;
-      font-size: 10pt;
-      color: var(--secondary-color);
-      page-break-after: auto;   /* allow it only at the end */
-      page-break-inside: avoid; /* never split */
+        text-align: center;
+        font-size: 10pt;
+        color: var(--secondary-color);
+        page-break-after: auto; /* allow it only at the end */
+        page-break-inside: avoid; /* never split */
     }
 }

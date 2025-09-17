@@ -40,6 +40,16 @@ $data = .Site.Data.resume_2025.spanish }} {{ else if eq $lang "pt" }} {{ $data =
                     {{ end }}
                 </ul>
             </div>
+            <div class="meta-info tools-info">
+                {{ if $software.tools }}
+                <div class="d-flex">
+                    <div>
+                        <i class="bi bi-tools"></i>
+                        <strong>Tools:</strong> {{ delimit $software.tools ", " }}
+                    </div>
+                </div>
+                {{ end }}
+            </div>
         </div>
         {{ end }}
     </div>
