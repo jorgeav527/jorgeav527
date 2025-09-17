@@ -199,15 +199,15 @@ SOFTWARE_EXPERIENCES:
     time: "2 yr 6 mos"
     responsibilities:
       - "Developed and deployed a scalable FastAPI backend with Clean Architecture, TDD, seamlessly integrated with services like Redis, GraphQL, and WebSockets."
-      - "Built data pipelines to ETL and centralize information from multiple sources into the company’s main database for global operations."
+      - "Built ETL pipelines and centralized information from multiple sources into the company’s main database for global operations."
       - "Designed and orchestrated ETL pipelines to support event-driven, data lakes, warehouses, and reporting."
       - "Implemented a conversational bot (Maia) backend using FastAPI with OpenAI API."
       - "Migrated from MongoDB to PostgreSQL and transitioned dashboards to Grafana for cost-efficient real-time reporting."
     tools:
       - "Python (FastAPI, Airflow)"
       - "Docker"
-      - "AWS (Lambda, EC2, S3, Redshift, Sep Funtions)"
-      - "Warehousing (Snowflake, Amazon Redshift, Kassandra)"
+      - "AWS (Lambda, EC2, S3, Redshift, Sep Functions)"
+      - "Warehousing (Snowflake, Amazon Redshift, Cassandra)"
       - "SQL (PostgreSQL)"
       - "NoSQL (MongoDB)"
       - "Redis (Pub/Sub)"
@@ -222,7 +222,7 @@ SOFTWARE_EXPERIENCES:
     type: "Remote, Part-time"
     start: "Oct 2023"
     end: "Present"
-    time: "1 yr 8 mos"
+    time: "2 yr"
     responsibilities:
       - "Offered guidance and mentorship to students in data science fundamentals and REST API development."
       - "Evaluate student performance through assignments, quizzes, exams, and projects."
