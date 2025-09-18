@@ -420,6 +420,7 @@ p {
         border: 1px solid var(--primary-color) !important;
         background-color: var(--primary-light) !important;
         color: var(--primary-dark) !important;
+        print-color-adjust: exact;
         -webkit-print-color-adjust: exact;
     }
 

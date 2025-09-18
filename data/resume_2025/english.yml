@@ -10,51 +10,12 @@ ABOUT: "about me"
 
 ABOUT_DESCRIPTION:
   - Since 2018 Jorge Alarcón is a Full Stack DevOps and Data Engineer with +7 years of professional experience in Software Development and Data Engineering. He began his career as a Civil Engineer in Peru and Brazil, focusing on process automation, before transitioning into technology.
-  - Specialized in Linux, Python, and Rust, he has hands-on expertise in developing CI/CD pipelines, data pipelines, and API architectures using Test-Driven Development (TDD) and clean architecture to ensure efficiency and reliability. His experience includes deploying and orchestrating cloud services on AWS (ECS, EKS) with Infrastructure as Code (IaC) for scalable and secure environments.
+  - Specialized in Linux, Python, and Rust, he has hands-on expertise in developing CI/CD pipelines, data pipelines, data processing, event-driven, and API architectures using Test-Driven Development (TDD) and clean architecture to ensure efficiency and reliability. His experience includes deploying and orchestrating cloud services on AWS (ECS, EKS) with Infrastructure as Code (IaC) for scalable and secure environments.
 
 LANGUAGES:
   - "Spanish: Native"
   - "Portuguese: Advanced C2"
   - "English: Advanced C1"
-
-  # Data Engineering:
-  #   - Apache Spark
-  #   - Apache Airflow
-  #   - Apache Kafka
-  #   - RedPanda
-  #   - Cassandra
-  #   - Neo4j
-  #   - Pandas
-  #   - Streamlit
-  #   - Dash Plotly
-  #   - Snowflake
-  #   - PostgreSQL
-  #   - Redis
-  #   - MongoDB
-
-  # Full-Stack:
-  #   - Svelte
-  #   - HTMX
-  #   - Leptos
-  #   - Django
-  #   - FastAPI
-  #   - Axum
-
-  # DevOps and Cloud Architecture:
-  #   - Linux
-  #   - Bash
-  #   - Docker
-  #   - Jenkins
-  #   - GitHub Actions
-  #   - Terraform
-  #   - Ansible
-  #   - Kubernetes
-  #   - AWS (ECS & EKS)
-  #   - Linode
-  #   - Git & GitHub
-  #   - NetData
-  #   - Grafana
-  #   - Prometheus
 
 VOLUNTEER:
   - organization: "AIESEC en Colombia"
@@ -161,7 +122,7 @@ CIVIL_EXPERIENCES:
 
 SOFTWARE_EXPERIENCES:
   - company: "Roadr"
-    title: "Full-Stack DevOps"
+    title: "Full Stack DevOps"
     location: "Los Angeles, California, United States"
     type: "Remote, Full-time"
     start: "Feb 2023"
@@ -178,7 +139,7 @@ SOFTWARE_EXPERIENCES:
       - "Python (FastAPI, Airflow)"
       - "Rust (Actix Web)"
       - "Go (Fiber, Echo)"
-      - "Node (Express, React)"
+      - "JavaScript (Express, React)"
       - "Docker (DockerHub)"
       - "AWS (ECS, Load Balancer, Route 53, CloudFront, S3, ASG, CloudMap, CloudWatch, CloudTrail, RDS)"
       - "Terraform"
@@ -217,7 +178,7 @@ SOFTWARE_EXPERIENCES:
       - "Grafana"
 
   - company: "Cibertec"
-    title: "Python Fundamentals for Data Science and API Developer Instructor"
+    title: "Python Instructor - Data Science and API Development"
     location: "Lima, Peru"
     type: "Remote, Part-time"
     start: "Oct 2023"
@@ -235,9 +196,9 @@ SOFTWARE_EXPERIENCES:
       - "WebSockets"
 
   - company: "Grupo RPG SAC"
-    title: "Web Developer and IT Automation at a Soils Laboratory"
+    title: "Full Stack Developer - Civil Engineering Soils Lab"
     location: "Tiabaya, Arequipa, Perú"
-    type: "Hybrid, Freelance"
+    type: "Full-time"
     start: "Dec 2021"
     end: "May 2022"
     time: "6 mos"
@@ -253,9 +214,9 @@ SOFTWARE_EXPERIENCES:
       - "AWS (EC2, RDS, S3)"
 
   - company: "UCSM - EPIC Labs"
-    title: "Web Developer and IT Automation at the Labs of EPIC"
-    location: "Tiabaya, Arequipa, Perú"
-    type: "Hybrid, Freelance"
+    title: "Full Stack Developer - Civil Engineering EPIC Lab"
+    location: "Yanahuara, Arequipa, Perú"
+    type: "Full-time"
     start: "Dec 2019"
     end: "Jan 2021"
     time: "1 yr 2 mos"
