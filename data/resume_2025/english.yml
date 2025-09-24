@@ -165,7 +165,7 @@ SOFTWARE_EXPERIENCES:
       - "Implemented a conversational bot (Maia) backend using FastAPI with OpenAI API."
       - "Migrated from MongoDB to PostgreSQL and transitioned dashboards to Grafana for cost-efficient real-time reporting."
     tools:
-      - "Python (FastAPI, Airflow)"
+      - "Python (FastAPI, Airflow, Pyspark)"
       - "Docker"
       - "AWS (Lambda, EC2, S3, Redshift, Sep Functions)"
       - "Warehousing (Snowflake, Amazon Redshift, Cassandra)"
@@ -199,9 +199,9 @@ SOFTWARE_EXPERIENCES:
     title: "Full Stack Developer - Civil Engineering Soils Lab"
     location: "Tiabaya, Arequipa, Perú"
     type: "Full-time"
-    start: "Dec 2021"
-    end: "May 2022"
-    time: "6 mos"
+    start: "Jul 2021"
+    end: "Dec 2022"
+    time: "1 yr 6 mos"
     responsibilities:
       - "Designed, developed, and deployed a web tool that met laboratory requirements."
       - "Built a modern Dockerized Django web application ready for production on AWS servers."
