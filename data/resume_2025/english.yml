@@ -206,6 +206,7 @@ SOFTWARE_EXPERIENCES:
       - "Designed, developed, and deployed a web tool that met laboratory requirements."
       - "Built a modern Dockerized Django web application ready for production on AWS servers."
       - "Developed a module for customer registration, test quotations, service orders, and settlement sheets."
+      - "Developed automated internal dashboards and PDF reports providing accurate metrics and insights."
     tools:
       - "Python (Django)"
       - "HTMX"
