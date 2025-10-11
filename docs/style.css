@@ -212,3 +212,55 @@ a.button.inline.next::after {
 .navigation-menu__inner > li a {
     text-decoration: none;
 }
+
+.post-cover {
+    margin: 1rem auto; /* centers the container horizontally */
+    height: 20rem;
+    width: 80%; /* make it smaller (80% of the parent width) */
+    display: flex; /* enables centering of child (image) */
+    justify-content: center; /* centers horizontally */
+    align-items: center; /* centers vertically */
+    overflow: hidden; /* hides any image overflow */
+    border: 2px solid #f5c518; /* 🟡 border directly on image */
+    border-radius: 8px;
+}
+
+.post-cover img {
+    max-width: 100%; /* makes the image responsive */
+    height: auto; /* preserves aspect ratio */
+    object-fit: contain; /* ensures the full image fits inside */
+    display: block;
+}
+
+/* 📱 Small phones */
+@media (max-width: 480px) {
+    .post-cover {
+        width: 95%;
+        height: 12rem; /* smaller height on tiny screens */
+        margin: 1rem auto;
+    }
+}
+
+/* 📲 Tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+    .post-cover {
+        width: 90%;
+        height: 14rem; /* medium height */
+    }
+}
+
+/* 💻 Laptops */
+@media (min-width: 769px) and (max-width: 1200px) {
+    .post-cover {
+        width: 85%;
+        height: 16rem;
+    }
+}
+
+/* 🖥️ Large desktops */
+@media (min-width: 1201px) {
+    .post-cover {
+        width: 70%; /* centered, not too wide */
+        height: 18rem;
+    }
+}

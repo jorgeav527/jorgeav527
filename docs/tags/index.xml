@@ -28,26 +28,6 @@
     </item>
     
     <item>
-      <title>Architect</title>
-      <link>https://docs.cordstart.com/tags/architect/</link>
-      <pubDate>Wed, 05 Mar 2025 14:46:35 -0500</pubDate>
-      
-      <guid>https://docs.cordstart.com/tags/architect/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>DevOps</title>
-      <link>https://docs.cordstart.com/tags/devops/</link>
-      <pubDate>Wed, 05 Mar 2025 14:46:35 -0500</pubDate>
-      
-      <guid>https://docs.cordstart.com/tags/devops/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
       <title>Development</title>
       <link>https://docs.cordstart.com/tags/development/</link>
       <pubDate>Tue, 04 Mar 2025 14:46:35 -0500</pubDate>
@@ -88,6 +68,26 @@
     </item>
     
     <item>
+      <title>Go</title>
+      <link>https://docs.cordstart.com/tags/go/</link>
+      <pubDate>Fri, 28 Feb 2025 14:46:20 -0500</pubDate>
+      
+      <guid>https://docs.cordstart.com/tags/go/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://docs.cordstart.com/tags/python/</link>
+      <pubDate>Fri, 28 Feb 2025 14:46:20 -0500</pubDate>
+      
+      <guid>https://docs.cordstart.com/tags/python/</guid>
+      <description></description>
+      <content></content>
+    </item>
+    
+    <item>
       <title>Algorithms</title>
       <link>https://docs.cordstart.com/tags/algorithms/</link>
       <pubDate>Fri, 21 Feb 2025 14:46:44 -0500</pubDate>
@@ -113,16 +113,6 @@
       <pubDate>Fri, 21 Feb 2025 14:46:44 -0500</pubDate>
       
       <guid>https://docs.cordstart.com/tags/design-patterns/</guid>
-      <description></description>
-      <content></content>
-    </item>
-    
-    <item>
-      <title>Python</title>
-      <link>https://docs.cordstart.com/tags/python/</link>
-      <pubDate>Fri, 21 Feb 2025 14:46:44 -0500</pubDate>
-      
-      <guid>https://docs.cordstart.com/tags/python/</guid>
       <description></description>
       <content></content>
     </item>

@@ -2,11 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://docs.cordstart.com/projects/6/</loc>
-    <lastmod>2025-05-23T16:11:08-05:00</lastmod>
-  </url><url>
     <loc>https://docs.cordstart.com/</loc>
-    <lastmod>2025-05-23T16:11:08-05:00</lastmod>
+    <lastmod>2025-10-10T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="sp"
@@ -23,7 +20,13 @@
                 href="https://docs.cordstart.com/"
                 />
   </url><url>
+    <loc>https://docs.cordstart.com/projects/7/</loc>
+    <lastmod>2025-10-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://docs.cordstart.com/projects/</loc>
+    <lastmod>2025-10-10T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://docs.cordstart.com/projects/6/</loc>
     <lastmod>2025-05-23T16:11:08-05:00</lastmod>
   </url><url>
     <loc>https://docs.cordstart.com/projects/5/</loc>
@@ -74,15 +77,6 @@
                 href="https://docs.cordstart.com/tags/"
                 />
   </url><url>
-    <loc>https://docs.cordstart.com/tags/architect/</loc>
-    <lastmod>2025-03-05T14:46:35-05:00</lastmod>
-  </url><url>
-    <loc>https://docs.cordstart.com/posts/12/</loc>
-    <lastmod>2025-03-05T14:46:35-05:00</lastmod>
-  </url><url>
-    <loc>https://docs.cordstart.com/tags/devops/</loc>
-    <lastmod>2025-03-05T14:46:35-05:00</lastmod>
-  </url><url>
     <loc>https://docs.cordstart.com/posts/11/</loc>
     <lastmod>2025-03-04T14:46:35-05:00</lastmod>
   </url><url>
@@ -104,10 +98,13 @@
     <loc>https://docs.cordstart.com/posts/9/</loc>
     <lastmod>2025-03-02T14:46:27-05:00</lastmod>
   </url><url>
-    <loc>https://docs.cordstart.com/posts/8/</loc>
-    <lastmod>2025-03-01T14:46:23-05:00</lastmod>
-  </url><url>
     <loc>https://docs.cordstart.com/posts/7/</loc>
+    <lastmod>2025-02-28T14:46:20-05:00</lastmod>
+  </url><url>
+    <loc>https://docs.cordstart.com/tags/go/</loc>
+    <lastmod>2025-02-28T14:46:20-05:00</lastmod>
+  </url><url>
+    <loc>https://docs.cordstart.com/tags/python/</loc>
     <lastmod>2025-02-28T14:46:20-05:00</lastmod>
   </url><url>
     <loc>https://docs.cordstart.com/posts/6/</loc>
@@ -132,9 +129,6 @@
     <lastmod>2025-02-21T14:46:44-05:00</lastmod>
   </url><url>
     <loc>https://docs.cordstart.com/tags/design-patterns/</loc>
-    <lastmod>2025-02-21T14:46:44-05:00</lastmod>
-  </url><url>
-    <loc>https://docs.cordstart.com/tags/python/</loc>
     <lastmod>2025-02-21T14:46:44-05:00</lastmod>
   </url><url>
     <loc>https://docs.cordstart.com/posts/1/</loc>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go on Docs.CordStart</title>
+    <link>https://docs.cordstart.com/tags/go/</link>
+    <description>Recent content in Go on Docs.CordStart</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 28 Feb 2025 14:46:20 -0500</lastBuildDate><atom:link href="https://docs.cordstart.com/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>API architecture</title>
+      <link>https://docs.cordstart.com/posts/7/</link>
+      <pubDate>Fri, 28 Feb 2025 14:46:20 -0500</pubDate>
+      
+      <guid>https://docs.cordstart.com/posts/7/</guid>
+      <description>&lt;h2 id=&#34;implementing-rest-architecture&#34;&gt;Implementing REST architecture&lt;/h2&gt;
+&lt;h2 id=&#34;implementing-graphql-architecture&#34;&gt;Implementing GraphQL architecture&lt;/h2&gt;
+&lt;h2 id=&#34;implementing-grpc-architecture&#34;&gt;Implementing gRPC architecture&lt;/h2&gt;
+&lt;h2 id=&#34;implementing-streaming-architecture&#34;&gt;Implementing streaming architecture&lt;/h2&gt;</description>
+      <content>&lt;h2 id=&#34;implementing-rest-architecture&#34;&gt;Implementing REST architecture&lt;/h2&gt;
+&lt;h2 id=&#34;implementing-graphql-architecture&#34;&gt;Implementing GraphQL architecture&lt;/h2&gt;
+&lt;h2 id=&#34;implementing-grpc-architecture&#34;&gt;Implementing gRPC architecture&lt;/h2&gt;
+&lt;h2 id=&#34;implementing-streaming-architecture&#34;&gt;Implementing streaming architecture&lt;/h2&gt;
+</content>
+    </item>
+    
+  </channel>
+</rss>

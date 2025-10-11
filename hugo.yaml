@@ -6,7 +6,6 @@ copyright: MIT License
 theme: terminal
 pagination:
   pagerSize: 5
-autoCover: true
 
 params:
   contact:
