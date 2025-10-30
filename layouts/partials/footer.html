@@ -1,21 +1,18 @@
 <footer class="footer">
-  <div class="footer__inner">
-    {{ if $.Site.Copyright }}
-      <div class="copyright copyright--user">
-        <span>© {{ now.Year }} {{ $.Site.Copyright | safeHTML }}</span>
-    {{ else }}
-      <div class="copyright">
-        <span>©{{ now.Year }}</span>
-    {{ end }}
-      <span> — This project was developed by <a href="https://github.com/jorgeav527" target="_blank">jorgeav527</a> and is part of the CordStart.inc group.</span>
-      </div>
-  </div>
+    <div class="footer__inner">
+        <div class="copyright">
+            <a href="https://gohugo.io/">Diseñado con gohugo.io</a>
+            <a href="https://github.com/CordStart">
+                Desarrollado por CordStart Tech</a
+            >
+            © 2025, CordStart Tech Todos los derechos reservados.
+        </div>
+    </div>
 </footer>
 
-{{ $menu := resources.Get "js/menu.js" | js.Build }}
-{{ $prism := resources.Get "js/prism.js" | js.Build }}
-
-{{ $bundle := slice $menu $prism | resources.Concat "bundle.js" | resources.Minify }}
+{{ $menu := resources.Get "js/menu.js" | js.Build }} {{ $prism := resources.Get
+"js/prism.js" | js.Build }} {{ $bundle := slice $menu $prism | resources.Concat
+"bundle.js" | resources.Minify }}
 
 <script type="text/javascript" src="{{ $bundle.RelPermalink }}"></script>
 

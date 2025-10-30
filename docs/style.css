@@ -214,30 +214,41 @@ a.button.inline.next::after {
 }
 
 .post-cover {
-    margin: 1rem auto; /* centers the container horizontally */
+    margin: 1.5rem auto;
     height: 20rem;
-    width: 80%; /* make it smaller (80% of the parent width) */
-    display: flex; /* enables centering of child (image) */
-    justify-content: center; /* centers horizontally */
-    align-items: center; /* centers vertically */
-    overflow: hidden; /* hides any image overflow */
-    border: 2px solid #f5c518; /* 🟡 border directly on image */
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 2px solid #f5c518; /* AWS yellow */
     border-radius: 8px;
 }
 
 .post-cover img {
-    max-width: 100%; /* makes the image responsive */
-    height: auto; /* preserves aspect ratio */
-    object-fit: contain; /* ensures the full image fits inside */
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
     display: block;
 }
 
 /* 📱 Small phones */
 @media (max-width: 480px) {
     .post-cover {
-        width: 95%;
-        height: 12rem; /* smaller height on tiny screens */
-        margin: 1rem auto;
+        width: 100%; /* full width */
+        height: auto; /* adapt height to image */
+        border-left: none; /* remove lateral borders */
+        border-right: none;
+        border-top: 2px solid #f5c518; /* keep top border */
+        border-bottom: 2px solid #f5c518; /* keep bottom border */
+        border-radius: 0; /* flat edges for mobile */
+        margin: 1rem 0; /* spacing above/below */
+    }
+
+    .post-cover img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* fill horizontally */
     }
 }
 
@@ -245,7 +256,7 @@ a.button.inline.next::after {
 @media (min-width: 481px) and (max-width: 768px) {
     .post-cover {
         width: 90%;
-        height: 14rem; /* medium height */
+        height: 14rem;
     }
 }
 
@@ -260,7 +271,7 @@ a.button.inline.next::after {
 /* 🖥️ Large desktops */
 @media (min-width: 1201px) {
     .post-cover {
-        width: 70%; /* centered, not too wide */
+        width: 70%;
         height: 18rem;
     }
 }

@@ -6,11 +6,11 @@
     <description>Recent content in Cluster on Docs.CordStart</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 06 Mar 2025 15:45:35 -0500</lastBuildDate><atom:link href="https://docs.cordstart.com/tags/cluster/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://docs.cordstart.com/tags/cluster/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ECS &amp; EKS</title>
       <link>https://docs.cordstart.com/posts/13/</link>
-      <pubDate>Thu, 06 Mar 2025 15:45:35 -0500</pubDate>
+      <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
       
       <guid>https://docs.cordstart.com/posts/13/</guid>
       <description>&lt;h1 id=&#34;ecs-vs-eks&#34;&gt;ECS vs EKS&lt;/h1&gt;
@@ -38,8 +38,8 @@ We will see how to setup a ECS cluster using this services, with the AWS console
 
 
   &lt;div class=&#34;collapsable-code&#34;&gt;
-    &lt;input id=&#34;319862457&#34; type=&#34;checkbox&#34;  /&gt;
-    &lt;label for=&#34;319862457&#34;&gt;
+    &lt;input id=&#34;438912657&#34; type=&#34;checkbox&#34;  /&gt;
+    &lt;label for=&#34;438912657&#34;&gt;
       &lt;span class=&#34;collapsable-code__language&#34;&gt;bash&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__title&#34;&gt;Error with OPENSSL package and Redis&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__toggle&#34; data-label-expand=&#34;△&#34; data-label-collapse=&#34;▽&#34;&gt;&lt;/span&gt;
