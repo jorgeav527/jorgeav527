@@ -60,8 +60,8 @@ We will see how to setup a ECS cluster using this services, with the AWS console
 
 
   &lt;div class=&#34;collapsable-code&#34;&gt;
-    &lt;input id=&#34;438912657&#34; type=&#34;checkbox&#34;  /&gt;
-    &lt;label for=&#34;438912657&#34;&gt;
+    &lt;input id=&#34;845392167&#34; type=&#34;checkbox&#34;  /&gt;
+    &lt;label for=&#34;845392167&#34;&gt;
       &lt;span class=&#34;collapsable-code__language&#34;&gt;bash&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__title&#34;&gt;Error with OPENSSL package and Redis&lt;/span&gt;
       &lt;span class=&#34;collapsable-code__toggle&#34; data-label-expand=&#34;△&#34; data-label-collapse=&#34;▽&#34;&gt;&lt;/span&gt;
@@ -99,8 +99,8 @@ We will see how to setup a ECS cluster using this services, with the AWS console
       <pubDate>Wed, 05 Mar 2025 14:46:35 -0500</pubDate>
       
       <guid>https://docs.cordstart.com/posts/12/</guid>
-      <description>&lt;h2 id=&#34;1-cloud-computing&#34;&gt;1. Cloud computing&lt;/h2&gt;</description>
-      <content>&lt;h2 id=&#34;1-cloud-computing&#34;&gt;1. Cloud computing&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;1-aws-iam&#34;&gt;1. AWS IAM&lt;/h2&gt;</description>
+      <content>&lt;h2 id=&#34;1-aws-iam&#34;&gt;1. AWS IAM&lt;/h2&gt;
 </content>
     </item>
     

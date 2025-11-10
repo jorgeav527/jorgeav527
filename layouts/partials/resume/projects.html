@@ -1,0 +1,52 @@
+{{ $lang := .Site.Language.Lang }} {{ $basic := .Site.Data.resume_2025.basic }}
+{{ $data := .Site.Data.resume_2025.english }} {{ if eq $lang "en" }} {{ $data =
+.Site.Data.resume_2025.english }} {{ else if eq $lang "sp" }} {{ $data =
+.Site.Data.resume_2025.spanish }} {{ else if eq $lang "pt" }} {{ $data =
+.Site.Data.resume_2025.portuguese }} {{ end }}
+
+<section class="projects-section">
+    <h2 class="section-title">{{ $data.PROJECTS }}</h2>
+
+    <div class="projects-content">
+        {{ range $project := $data.PROJECT_LIST }}
+        <div class="project-item">
+            <div class="item-header">
+                <!-- Project Title -->
+                <h3 class="item-title">{{ $project.TITLE }}</h3>
+
+                <!-- Optional Subtitle / Role -->
+                {{ with $project.ROLE }}
+                <h4 class="item-subtitle">{{ . }}</h4>
+                {{ end }}
+
+                <!-- Meta info similar to experience -->
+                <div class="meta-info">
+                    {{ with $project.DATE }}
+                    <span class="meta-info-item">
+                        <i class="bi bi-calendar3"></i> {{ . }}
+                    </span>
+                    {{ end }} {{ with $project.LOCATION }}
+                    <span class="meta-info-item">
+                        <i class="bi bi-geo-alt-fill"></i> {{ . }}
+                    </span>
+                    {{ end }} {{ with $project.LINK }}
+                    <span class="meta-info-item">
+                        <i class="bi bi-link-45deg"></i>
+                        <a href="{{ . }}" target="_blank">{{ . }}</a>
+                    </span>
+                    {{ end }}
+                </div>
+            </div>
+
+            <!-- Responsibilities or Description -->
+            {{ if $project.DESCRIPTIONS }}
+            <ul class="responsibilities-list">
+                {{ range $desc := $project.DESCRIPTIONS }}
+                <li>{{ $desc }}</li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</section>

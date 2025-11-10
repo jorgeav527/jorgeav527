@@ -342,22 +342,43 @@ p {
         margin: 0 !important;
         padding: 0 !important;
         background: white !important;
-        font-size: 11pt; /* good default for print */
-        line-height: 1.4; /* improves readability */
+        font-size: 10.5pt; /* good default for print */
+        line-height: 1.2; /* improves readability */
+    }
+    .name-title h1 {
+        font-size: 14pt;
+        font-weight: 450;
     }
 
     .section-title,
     .professional-title {
         font-size: 14pt;
-        font-weight: 600;
+        font-weight: 400;
         border-bottom: 1px solid var(--primary-color);
         padding-bottom: 2mm;
         margin-bottom: 3mm;
     }
 
     .experience-item ul {
-        margin: 2mm 0 2mm 4mm;
+        margin-top: 0mm;
+        margin-bottom: 0mm;
         padding: 0;
+    }
+
+    .responsibilities-list li {
+        line-height: 1.2; /* tighter line spacing */
+        /*margin-top: 0.3rem;*/
+    }
+
+    /*/*.meta-info {
+        margin-bottom: 0.2rem !important;
+    }*/
+    .experience-item ul {
+        margin-top: 0.1rem !important;
+    }
+    .experience-item li {
+        line-height: 1.2 !important;
+        margin-bottom: 0.25rem !important;
     }
 
     .experience-item li {
@@ -391,12 +412,19 @@ p {
 
     .name-title p {
         text-indent: 4mm; /* indent first line only */
+        line-height: 1.2;
     }
 
     .item-header {
-        margin-bottom: 1rem;
+        margin-bottom: 0.2mm;
         page-break-inside: avoid; /* don’t break inside */
         break-inside: avoid; /* modern syntax */
+    }
+
+    .item-title,
+    .item-subtitle,
+    .meta-info {
+        margin-bottom: 0.1rem !important; /* tighter spacing for PDF */
     }
 
     .cv-header {
