@@ -177,16 +177,17 @@ SOFTWARE_EXPERIENCES:
       - "Grafana"
 
   - company: "Cibertec"
-    title: "Python Instructor - Data Science and API Development"
+    title: "Python Instructor - API Development, Data Science and ML Fundamentals"
     location: "Lima, Peru"
-    type: "Remote, Part-time"
+    type: "Remote, Full-time"
     start: "Oct 2023"
     end: "Present"
-    time: "2 yr"
+    time: "2 yr, 4 mos"
     responsibilities:
-      - "Offered guidance and mentorship to students in data science fundamentals and REST API development."
-      - "Evaluate student performance through assignments, quizzes, exams, and projects."
-      - "Provide constructive feedback to help students improve their skills with Python."
+      - "Teach Python for Data Science from fundamentals to advanced (generators, OOP, automation)."
+      - "Guide students in API Development, explaining REST design both CSR and SSR."
+      - "Demonstrate Data Engineering concepts by building batch-oriented ETL pipelines with real-world datasets on Python + SQL."
+      - "Instruct on Machine Learning fundamentals, covering core algorithms, model evaluation, and applied use cases."
     tools:
       - "Python (FastAPI, Flask, Pandas, NumPy, Jupyter notebook)"
       - "Bash"
@@ -240,7 +241,7 @@ PROJECT_LIST:
     LOCATION: "Peru"
     LINK: "https://kromacompany.com"
     DESCRIPTIONS:
-      - "Built microservices for a dental ERP platform using Go (Echo) and a Rust (Leptos) frontend."
+      - "Built microservices for a dental ERP platform using Go (Echo) and Nuxt frontend."
       - "Designed containerized architecture with orchestration via AWS ECS."
       - "Implementing CI/CD pipelines, AWS S3 integration, and PostgreSQL."
 
@@ -259,5 +260,5 @@ PROJECT_LIST:
     LOCATION: "Spain"
     DESCRIPTIONS:
       - "Consulted on cloud infrastructure and DevOps best practices for a microservices-based financial platform."
-      - "Built and containerized backend APIs using Docker and deployed services on AWS ECS."
+      - "Built and containerized backend (Spring Boot) APIs using Docker and deployed services on AWS ECS."
       - "Implemented CI/CD automation, monitoring, and orchestration to support scalable operations."
