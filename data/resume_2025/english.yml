@@ -9,7 +9,7 @@ VOLUNTER: "volunteering"
 ABOUT: "about me"
 
 ABOUT_DESCRIPTION:
-  - Since 2018, Jorge Alarcón is a Full Stack DevOps and Data Engineer with over seven years of professional experience in software development and data engineering. Specialized in Linux, Python and Golang, he has strong expertise in building and automating systems, developing robust applications, and optimizing engineering processes through modern DevOps and data-driven practices. He began his career as a Civil Engineer in Peru and Brazil, focusing on process automation, before transitioning into technology.
+  - Since 2018, Jorge Alarcón is a Full Stack DevOps and Data Engineer with over seven years of professional experience in software development and data engineering. Specialized in Linux, Python, Go and Rust, he has strong expertise in building and automating systems, developing robust applications, and optimizing engineering processes through modern DevOps and data-driven practices. He began his career as a Civil Engineer in Peru and Brazil, focusing on process automation, before transitioning into technology.
 
 LANGUAGES:
   - "Spanish: Native"
@@ -136,7 +136,7 @@ SOFTWARE_EXPERIENCES:
       - "Reduced cloud infrastructure costs by 20% through migrating Kubernetes workloads to ECS on AWS."
     tools:
       - "Python (FastAPI, Airflow)"
-      - "Rust (Actix Web)"
+      - "Rust (Actix Web, Leptos)"
       - "Go (Fiber, Echo)"
       - "JavaScript (Express, React)"
       - "Docker (DockerHub)"
@@ -241,7 +241,7 @@ PROJECT_LIST:
     LOCATION: "Peru"
     LINK: "https://kromacompany.com"
     DESCRIPTIONS:
-      - "Built microservices for a dental ERP platform using Go (Echo) and Nuxt frontend."
+      - "Built microservices for a dental ERP platform using Go (Echo) and Leptos frontend."
       - "Designed containerized architecture with orchestration via AWS ECS."
       - "Implementing CI/CD pipelines, AWS S3 integration, and PostgreSQL."
 
