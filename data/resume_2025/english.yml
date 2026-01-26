@@ -137,8 +137,7 @@ SOFTWARE_EXPERIENCES:
     tools:
       - "Python (FastAPI, Airflow)"
       - "Rust (Actix Web, Leptos)"
-      - "Go (Fiber, Echo)"
-      - "JavaScript (Express, React)"
+      - "JavaScript (Express)"
       - "Docker (DockerHub)"
       - "AWS (ECS, Load Balancer, Route 53, CloudFront, S3, ASG, CloudMap, CloudWatch, CloudTrail, RDS)"
       - "CI/CD (Jenkins, GitHub Actions)"
@@ -166,7 +165,7 @@ SOFTWARE_EXPERIENCES:
       - "Migrated from MongoDB to PostgreSQL and transitioned dashboards to Grafana for cost-efficient real-time reporting."
     tools:
       - "Python (FastAPI, Airflow, Pyspark)"
-      - "Golang (Echo)"
+      - "Golang (Fiber, Echo)"
       - "Docker"
       - "AWS (Lambda, EMR, S3, Redshift, Sep Functions)"
       - "Warehousing (Snowflake, Amazon Redshift, Cassandra)"
