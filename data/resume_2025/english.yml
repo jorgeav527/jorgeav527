@@ -183,7 +183,7 @@ SOFTWARE_EXPERIENCES:
     end: "Present"
     time: "2 yr, 4 mos"
     responsibilities:
-      - "Teach Python for Data Science from fundamentals to advanced (generators, OOP, automation)."
+      - "Teach Python for Data Science, from fundamentals to advanced (generators, OOP, automation)."
       - "Guide students in API Development, explaining REST design both CSR and SSR."
       - "Demonstrate Data Engineering concepts by building batch-oriented ETL pipelines with real-world datasets on Python + SQL."
       - "Instruct on Machine Learning fundamentals, covering core algorithms, model evaluation, and applied use cases."
@@ -236,11 +236,11 @@ PROJECTS: "Projects"
 PROJECT_LIST:
   - TITLE: "Kroma Dental ERP Platform"
     ROLE: "Full Stack Developer & DevOps Engineer"
-    DATE: "Jul 2025 – Present"
+    DATE: "Oct 2025 – Present"
     LOCATION: "Peru"
     LINK: "https://kromacompany.com"
     DESCRIPTIONS:
-      - "Built microservices for a dental ERP platform using Go (Echo) and Leptos frontend."
+      - "Built microservices for a dental ERP platform using Go (Echo) and Vue frontend."
       - "Designed containerized architecture with orchestration via AWS ECS."
       - "Implementing CI/CD pipelines, AWS S3 integration, and PostgreSQL."
 
