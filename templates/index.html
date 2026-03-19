@@ -1,49 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ config.title }}</title>
+  
+  {# Link to your Tailwind v4 Output #}
+  <link rel="stylesheet" href="{{ get_url(path='style.css', cachebuster=true) }}">
 
-  {# Standard Meta #}
-  <title>{{ section.title | default(value=config.title) }}</title>
-  <meta name="description" content="{{ section.description | default(value=config.description) }}">
-
-  {# Tailwind v4 Output - Looks for style.css in your output directory #}
-  <link rel="stylesheet" type="text/css" href="{{ get_url(path='style.css', cachebuster=true) }}">
-
-  {# Social Meta #}
-  <meta property="og:title" content="{{ section.title | default(value=config.title) }}">
-  <meta property="og:url" content="{{ config.base_url }}">
+  {# Theme Script: Prevents the white flash #}
+  <script>
+    if (localStorage.getItem("pref-theme") === "dark" || (!("pref-theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+      document.documentElement.classList.add("dark");
+    }
+  </script>
 </head>
 
-{# The background classes refer to your @theme block in input.css #}
-<body class="bg-beams-light dark:bg-beams-dark bg-cover bg-fixed bg-center min-h-screen text-slate-900 dark:text-slate-100 font-sans">
+<body class="bg-theme text-primary selection:bg-accent/30 selection:text-accent transition-colors duration-300 min-h-screen">
 
-  {# Simple Navigation #}
-  <nav class="flex justify-end p-6">
-    <a href="{{ config.extra.project_gh }}" class="hover:text-blue-500 transition-colors" aria-label="GitHub">
-      <svg class="h-8 w-8 fill-current" viewBox="0 0 16 16">
-        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-      </svg>
-    </a>
+  {# Navigation #}
+  <nav class="mx-auto max-w-nav px-gap h-header flex items-center justify-between border-b border-border/10">
+    <a href="/" class="text-xl font-bold tracking-tighter text-accent">Blog CordStart</a>
+    
+    <div class="flex items-center gap-6">
+      <ul class="flex gap-4 text-sm font-medium text-secondary">
+        <li><a href="/home" class="hover:text-accent">Home</a></li>
+        <li><a href="/projects" class="hover:text-accent">Projects</a></li>
+        <li><a href="/posts" class="hover:text-accent">Posts</a></li>
+        <li><a href="/news" class="hover:text-accent">News</a></li>
+      </ul>
+      
+      <button id="theme-toggle" class="p-2 hover:bg-entry rounded-md transition-colors" aria-label="Toggle Theme">
+        <svg id="moon" class="dark:hidden w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        <svg id="sun" class="hidden dark:block w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>
+      </button>
+    </div>
   </nav>
 
-  <main class="mx-auto max-w-4xl px-6 pb-24">
-    {# This renders the content from your _index.md #}
-    <header class="prose prose-slate dark:prose-invert max-w-none">
-      {{ section.content | safe }}
-    </header>
+  <main class="mx-auto max-w-nav px-gap pt-16 md:pt-32 pb-20">
+      <div class="flex justify-center w-full">
+          <header class="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16 mb-24 max-w-fit">
+            <div class="shrink-0">
+              <img src="{{ get_url(path='me_02.png') }}" alt="Jorge Alarcón" 
+                   class="w-32 h-32 md:w-48 md:h-48 rounded-2xl object-cover shadow-2xl ring-4 ring-entry transition-transform hover:scale-105 duration-300">
+            </div>
+            <div class="text-center md:text-left max-w-xl">
+              <h1 class="text-5xl md:text-6xl font-black text-primary mb-4 tracking-tight">
+                  Jorge Alarcón
+              </h1>
+              <div class="font-black text-primary mb-4 tracking-tight">
+                {{ section.content | safe }}
+              </div>
+              {% include "social_links.html" %}
+            </div>
+          </header>
+      </div>
   </main>
 
-  <footer class="border-t border-slate-200 dark:border-slate-800 bg-white/5 backdrop-blur-md py-10">
-    <div class="text-center text-sm text-slate-500">
-      <p>Created by <span class="font-bold text-slate-900 dark:text-white">{{ config.extra.author_name }}</span></p>
-      <div class="mt-2">
-        <a href="{{ config.extra.project_gh }}" class="text-blue-500 hover:underline">Source on GitHub</a>
-      </div>
-    </div>
+  <footer class="text-center py-10 text-xs text-secondary/40 font-mono">
+    &copy; {{ now() | date(format="%Y") }} Jorge Alarcón // zola + tailwind v4 + catppuccin
   </footer>
 
+  <script>
+    const btn = document.getElementById("theme-toggle");
+    btn.addEventListener("click", () => {
+      const isDark = document.documentElement.classList.toggle("dark");
+      localStorage.setItem("pref-theme", isDark ? "dark" : "light");
+    });
+  </script>
 </body>
 </html>
