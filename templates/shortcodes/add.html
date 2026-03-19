@@ -1,0 +1,5 @@
+{% if body %}
+  {{ body | trim | markdown | safe | replace(from='>', to=' class="' ~ class ~ '">') | safe }}
+{% else %}
+  {{ to | trim | markdown | safe | replace(from='>', to=' class="' ~ class ~ '">') | safe }}
+{% endif %}

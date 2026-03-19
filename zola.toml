@@ -1,0 +1,10 @@
+base_url = "https://jorgeav527.github.io"
+title = "My Tailwind Zola Site"
+description = "Building something cool."
+output_dir = "public"
+compile_sass = false # Tailwind v4 handles CSS
+
+[extra]
+project_gh = "https://github.com/jorgeav527/jorgeav527_v2"
+author_name = "Jorge Alarcon"
+
