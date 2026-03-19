@@ -1,0 +1,12 @@
+# Dependency directories
+node_modules/
+
+# Zola build output
+public/
+
+# Tailwind temporary files (if any)
+.tailwind-cache/
+
+# OS files
+.DS_Store
+Thumbs.db
