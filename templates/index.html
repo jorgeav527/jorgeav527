@@ -30,6 +30,7 @@
         <li><a href="/posts" class="hover:text-primary transition-colors">Posts</a></li>
         <li><a href="/projects" class="hover:text-primary transition-colors">Projects</a></li>
         <li><a href="/archive" class="hover:text-primary transition-colors">Archive</a></li>
+        <li><a href="/blog" class="hover:text-primary transition-colors">Blog</a></li>
       </ul>
       {% include "theme_toggle.html" %}
     </div>
@@ -39,12 +40,12 @@
       <div class="flex justify-center w-full">
           <header class="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16 mb-24 max-w-fit">
             <div class="shrink-0">
-              <img src="{{ get_url(path='me_02.png') }}" alt="Jorge Alarcón" 
-                   class="w-32 h-32 md:w-48 md:h-48 rounded-2xl object-cover shadow-2xl ring-4 ring-entry transition-transform hover:scale-105 duration-300">
+              <img src="{{ get_url(path='me_01.png') }}" alt="Jorge Alarcón" 
+                   class="w-32 h-42 md:w-48 md:h-58 rounded-2xl object-cover shadow-2xl ring-4 ring-entry transition-transform hover:scale-105 duration-300">
             </div>
             <div class="text-center md:text-left max-w-xl">
               <h1 class="text-5xl md:text-6xl font-black text-primary mb-4 tracking-tight">
-                  Jorge Alarcón
+                  Jorge Alarcón V.
               </h1>
               <div class="font-black text-primary mb-4 tracking-tight">
                 {{ section.content | safe }}
