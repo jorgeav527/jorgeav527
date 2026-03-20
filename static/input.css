@@ -1,56 +1,36 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-@theme {
-  /* --- Layout & Spacing Tokens --- */
-  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --spacing-gap: 24px;
-  --width-nav: 1024px;
-  --width-main: 720px;
-  --height-header: 64px;
-  --radius-custom: 12px;
+@import "./catppuccin.css";
 
-/* Change these names to start with --color- */
-  --color-theme: var(--mac-base);
-  --color-entry: var(--mac-mantle);
-  --color-primary: var(--mac-text);
-  --color-secondary: var(--mac-subtext);
-  --color-accent: var(--mac-blue);
-  --color-border: var(--mac-crust);
-
-  /* Define the raw Catppuccin values as internal variables */
-  --mac-base: #24273a;
-  --mac-mantle: #1e2030;
-  --mac-text: #cad3f5;
-  --mac-subtext: #a5adcb;
-  --mac-blue: #8aadf4;
-  --mac-crust: #181926;
-
-  --moc-base: #1e1e2e;
-  --moc-mantle: #181825;
-  --moc-text: #cdd6f4;
-  --moc-subtext: #bac2de;
-  --moc-blue: #89b4fa;
-  --moc-crust: #11111b;
-}
 @layer base {
-  /* Default Colors: Macchiato */
+  --font-sans: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  /* 1. Default Functional Mapping (Macchiato) */
   :root {
-    --color-theme: var(--mac-base);
-    --color-entry: var(--mac-mantle);
-    --color-primary: var(--mac-text);
-    --color-secondary: var(--mac-subtext);
-    --color-accent: var(--mac-blue);
-    --color-border: var(--mac-crust);
+    --color-theme: var(--color-mac-base);
+    --color-entry: var(--color-mac-mantle);
+    --color-primary: var(--color-mac-text);
+    --color-secondary: var(--color-mac-subtext1);
+    --color-tertiary: var(--color-mac-subtext0);
+    --color-accent: var(--color-mac-blue);
+    --color-border: var(--color-mac-crust);
+    --color-code-bg: var(--color-mac-surface0);
+    
+    /* Apply these to the root to prevent white flashes */
+    background-color: var(--color-theme);
+    color: var(--color-primary);
   }
 
-  :root.dark {
-    --color-theme: var(--moc-base);
-    --color-entry: var(--moc-mantle);
-    --color-primary: var(--moc-text);
-    --color-secondary: var(--moc-subtext);
-    --color-accent: var(--moc-blue);
-    --color-border: var(--moc-crust);
+  /* 2. Light Theme Switch (Frappé) */
+  [data-theme="light"] {
+    --color-theme: var(--color-fra-base);
+    --color-entry: var(--color-fra-mantle);
+    --color-primary: var(--color-fra-text);
+    --color-secondary: var(--color-fra-subtext1);
+    --color-tertiary: var(--color-fra-subtext0);
+    --color-accent: var(--color-fra-blue);
+    --color-border: var(--color-fra-crust);
+    --color-code-bg: var(--color-fra-surface0);
   }
 
   html {
@@ -59,7 +39,10 @@
   }
 
   body {
-    @apply bg-theme text-primary antialiased;
+    /* Fixed: Added var() wrapper and changed to functional names */
+    background-color: var(--color-theme);
+    color: var(--color-primary);
+    @apply antialiased;
     font-family: var(--font-sans);
     line-height: 1.6;
   }
