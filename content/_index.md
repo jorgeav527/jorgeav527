@@ -3,6 +3,8 @@ template = "index.html"
 title = "Jorge Laco"
 +++
 
-Welcome to my personal site! I am a **Software Developer** and **Civil Engineer**.
-I enjoy developing in **Python** and **Rust**.
-If you like my work or have questions, feel free to contact me.
+Welcome to my personal site! i'm a software developer with a past life as a civil engineer.
+
+I enjoy developing in **Python**, **Rust** and LinuxLover.
+
+If you have any questions about code, feel free to contact me.
