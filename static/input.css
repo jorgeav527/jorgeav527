@@ -3,48 +3,55 @@
 
 @import "./catppuccin.css";
 
-@layer base {
+@theme {
+  /* Define the tokens so Tailwind generates utility classes */
   --font-sans: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  --color-theme: var(--ui-theme);
+  --color-entry: var(--ui-entry);
+  --color-primary: var(--ui-primary);
+  --color-secondary: var(--ui-secondary);
+  --color-tertiary: var(--ui-tertiary);
+  --color-accent: var(--ui-accent);
+  --color-border: var(--ui-border);
+  --color-code-bg: var(--ui-code-bg);
+}
 
-:root {
-    /* Use the Macchiato Base color for the dark theme background */
-    --color-theme: var(--color-mac-base); 
-    --color-entry: var(--color-mac-mantle);
-    --color-primary: var(--color-mac-text);
-    --color-secondary: var(--color-mac-subtext1);
-    --color-tertiary: var(--color-mac-subtext0);
-    --color-accent: var(--color-mac-blue);
-    --color-border: var(--color-mac-crust);
-    --color-code-bg: var(--color-mac-surface0);
+@layer base {
+  :root[data-theme="dark"] {
+    --ui-theme: var(--color-moc-base);
+    --ui-entry: var(--color-moc-mantle);
+    --ui-primary: var(--color-moc-text);
+    --ui-secondary: var(--color-moc-subtext1);
+    --ui-tertiary: var(--color-moc-subtext0);
+    --ui-accent: var(--color-moc-blue);
+    --ui-border: var(--color-moc-crust);
+    --ui-code-bg: var(--color-moc-surface0);
   }
 
-  [data-theme="light"] {
-    /* Use the Frappé Base color for the light theme background */
-    --color-theme: var(--color-fra-base);
-    --color-entry: var(--color-fra-mantle);
-    --color-primary: var(--color-fra-text);
-    --color-secondary: var(--color-fra-subtext1);
-    --color-tertiary: var(--color-fra-subtext0);
-    --color-accent: var(--color-fra-blue);
-    --color-border: var(--color-fra-crust);
-    --color-code-bg: var(--color-fra-surface0);
+  :root[data-theme="light"] {
+    --ui-theme: var(--color-fra-base);
+    --ui-entry: var(--color-fra-mantle);
+    --ui-primary: var(--color-fra-text);
+    --ui-secondary: var(--color-fra-subtext1);
+    --ui-tertiary: var(--color-fra-subtext0);
+    --ui-accent: var(--color-fra-blue);
+    --ui-border: var(--color-fra-crust);
+    --ui-code-bg: var(--color-fra-surface0);
   }
 
   body {
     background-color: var(--color-theme);
     color: var(--color-primary);
-    @apply antialiased transition-colors duration-300;
     font-family: var(--font-sans);
     line-height: 1.6;
+    @apply antialiased transition-colors duration-300;
   }
 
-  /* Global Reset */
   html {
-    -webkit-tap-highlight-color: transparent;
     scroll-behavior: smooth;
   }
 
-  /* Typography */
   .prose-catppuccin {
     @apply prose max-w-none;
     --tw-prose-body: var(--color-secondary);
