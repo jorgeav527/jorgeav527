@@ -1,0 +1,42 @@
+<nav class="mx-auto max-w-5xl px-6 h-15 flex items-center justify-between border-b-3 relative">
+  <div class="flex items-center gap-2">
+    <a href="/"
+      class="px-3 py-1.5 hover:bg-entry rounded-xl active:scale-95 border border-transparent hover:border-border/50 text-2xl font-bold text-primary group">
+      <span>Docs</span>
+    </a>
+    {% include "theme_toggle.html" %}
+  </div>
+
+  <button id="menu-btn"
+    class="md:hidden p-2.5 hover:bg-entry rounded-xl active:scale-95 border border-transparent hover:border-border/50 text-secondary">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path d="M4 6h16M4 12h16m-7 6h7" stroke-width="2" stroke-linecap="round"></path>
+    </svg>
+  </button>
+
+  <div id="nav-menu"
+    class="hidden absolute top-15 left-0 w-full border-b md:border-none md:static md:flex md:w-auto z-50"
+    style="background-color: var(--ui-theme)">
+    <ul
+      class="flex flex-col md:flex-row items-end md:items-center gap-1 px-6 py-1 md:p-0 text-sm font-medium uppercase text-secondary">
+      <li class="w-full md:w-auto">
+        <a href="/posts"
+          class="block text-right md:text-left px-4 py-2 hover:bg-entry rounded-xl active:scale-95 border border-transparent hover:border-border/50 hover:text-primary">
+          Posts
+        </a>
+      </li>
+      <li class="w-full md:w-auto">
+        <a href="/projects"
+          class="block text-right md:text-left px-4 py-2 hover:bg-entry rounded-xl active:scale-95 border border-transparent hover:border-border/50 hover:text-primary">
+          Projects
+        </a>
+      </li>
+      <li class="w-full md:w-auto">
+        <a href="/blog"
+          class="block text-right md:text-left px-4 py-2 hover:bg-entry rounded-xl active:scale-95 border border-transparent hover:border-border/50 hover:text-primary">
+          Blog
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

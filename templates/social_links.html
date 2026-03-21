@@ -29,8 +29,9 @@
   </a>
 
   <div class="relative group flex items-center">
-    <button class="flex items-center text-secondary hover:text-accent transition-colors cursor-default"
-      title="Download Resume">
+    <a href="/resume_en.pdf" target="_blank"
+      class="flex items-center text-secondary hover:text-accent transition-colors cursor-pointer"
+      title="Download English Resume (Hover for ES/PT)">
       <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
@@ -39,13 +40,11 @@
         <line x1="16" y1="17" x2="8" y2="17"></line>
         <polyline points="10 9 9 9 8 9"></polyline>
       </svg>
-    </button>
+    </a>
 
     <div
       class="absolute left-full ml-3 flex items-center bg-entry border border-border/40 rounded-full px-4 py-1.5 shadow-sm opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-x-2.5 group-hover:translate-x-0">
       <div class="flex items-center gap-4 text-[11px] font-bold tracking-tighter uppercase">
-        <a href="/resume_en.pdf" target="_blank" class="hover:text-accent transition-colors">en</a>
-        <span class="w-px h-3 bg-border/30"></span>
         <a href="/resume_es.pdf" target="_blank" class="hover:text-accent transition-colors">es</a>
         <span class="w-px h-3 bg-border/30"></span>
         <a href="/resume_pt.pdf" target="_blank" class="hover:text-accent transition-colors">pt</a>

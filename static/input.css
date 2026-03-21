@@ -19,25 +19,25 @@
 
 @layer base {
   :root[data-theme="dark"] {
-    --ui-theme: var(--color-moc-base);
-    --ui-entry: var(--color-moc-mantle);
-    --ui-primary: var(--color-moc-text);
-    --ui-secondary: var(--color-moc-subtext1);
-    --ui-tertiary: var(--color-moc-subtext0);
-    --ui-accent: var(--color-moc-blue);
-    --ui-border: var(--color-moc-crust);
-    --ui-code-bg: var(--color-moc-surface0);
+    --ui-theme: var(--color-mac-base);
+    --ui-entry: var(--color-mac-mantle);
+    --ui-primary: var(--color-mac-text);
+    --ui-secondary: var(--color-mac-subtext1);
+    --ui-tertiary: var(--color-mac-subtext0);
+    --ui-accent: var(--color-mac-blue);
+    --ui-border: var(--color-mac-crust);
+    --ui-code-bg: var(--color-mac-surface0);
   }
 
   :root[data-theme="light"] {
-    --ui-theme: var(--color-fra-base);
-    --ui-entry: var(--color-fra-mantle);
-    --ui-primary: var(--color-fra-text);
-    --ui-secondary: var(--color-fra-subtext1);
-    --ui-tertiary: var(--color-fra-subtext0);
-    --ui-accent: var(--color-fra-blue);
-    --ui-border: var(--color-fra-crust);
-    --ui-code-bg: var(--color-fra-surface0);
+    --ui-theme: var(--color-lat-base);
+    --ui-entry: var(--color-lat-mantle);
+    --ui-primary: var(--color-lat-text);
+    --ui-secondary: var(--color-lat-subtext1);
+    --ui-tertiary: var(--color-lat-subtext0);
+    --ui-accent: var(--color-lat-blue);
+    --ui-border: var(--color-lat-crust);
+    --ui-code-bg: var(--color-lat-surface0);
   }
 
   body {

@@ -22,50 +22,35 @@
 
 <body class="selection:bg-accent/30 selection:text-accent min-h-screen">
 
-  <nav class="mx-auto max-w-5xl px-6 h-15 flex items-center justify-between border-b-3">
-    
-    <a href="/" class="flex items-center gap-3 text-2xl font-bold text-secondary hover:text-primary">
-      <span class="mt-1">Docs</span>
-    </a>
+  {% include "navbar.html" %}
 
-    <div class="flex items-center gap-8">
-      <ul class="flex items-center gap-6 text-sm font-medium uppercase text-secondary">
-        <li><a href="/posts" class="hover:text-primary">Posts</a></li>
-        <li><a href="/projects" class="hover:text-primary">Projects</a></li>
-        <li><a href="/blog" class="hover:text-primary">Blog</a></li>
-      </ul>
-      {% include "theme_toggle.html" %}
-    </div>
-  </nav>
+<main class="mx-auto max-w-5xl px-6 pt-16 md:pt-32 pb-20">
+  <div class="flex justify-center w-full">
+    <header class="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16 mb-24 max-w-fit">
 
-  <main class="mx-auto max-w-nav px-gap pt-16 md:pt-32 pb-20">
-      <div class="flex justify-center w-full">
-          <header class="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16 mb-24 max-w-fit">
-
-            <div class="shrink-0 relative group/photo">
-              <img src="{{ get_url(path='me_01.png') }}" alt="Jorge Alarcón" 
-                   class="w-32 h-42 md:w-48 md:h-58 rounded-2xl object-cover shadow-2xl ring-3 ring-entry transition-transform hover:scale-105 duration-300">
-              
-              <div class="absolute -bottom-18 -left-10 w-40 h-40 md:w-40 md:h-40 
-                        drop-shadow-md transition-all 
-                        group-hover/photo:scale-110 group-hover/photo:-rotate-12 duration-300">
-                {% include "icon.html" %}
-              </div>            
-            </div>
-
-            <div class="text-center md:text-left max-w-xl">
-              <h1 class="text-3xl md:text-4xl font-black text-primary mb-4 tracking-tight">
-                  Jorge Alarcón Vargas
-              </h1>
-              <div class="prose-catppuccin text-base">
-                {{ section.content | safe }}
-              </div>
-              {% include "social_links.html" %}
-            </div>
-          </header>
+      <div class="shrink-0 relative group/photo">
+        <img src="{{ get_url(path='me_01.png') }}" alt="Jorge Alarcón" 
+             class="w-32 h-42 md:w-48 md:h-58 rounded-2xl object-cover shadow-2xl ring-3 ring-entry transition-all duration-300 hover:scale-105">
+        
+        <div class="absolute -bottom-12 -left-8 w-24 h-24 md:w-32 md:h-32 
+                  drop-shadow-md transition-all duration-300
+                  group-hover/photo:scale-110 group-hover/photo:-rotate-12">
+          {% include "icon.html" %}
+        </div>            
       </div>
-  </main>
 
+      <div class="text-center md:text-left max-w-xl">
+        <h1 class="text-3xl md:text-4xl font-black text-primary mb-4">
+            Jorge Alarcón Vargas
+        </h1>
+        <div class="prose-catppuccin text-base">
+          {{ section.content | safe }}
+        </div>
+        {% include "social_links.html" %}
+      </div>
+    </header>
+  </div>
+</main>
   <footer class="text-center py-auto text-xs text-secondary/40 font-mono">
     &copy; {{ now() | date(format="%Y-%b") }} by CordStart
   </footer>
@@ -84,6 +69,16 @@
       html.setAttribute("data-theme", newTheme);
       localStorage.setItem("theme", newTheme);
     });
+  </script>
+
+  <script>
+  const menuBtn = document.getElementById('menu-btn');
+  const navMenu = document.getElementById('nav-menu');
+
+  menuBtn.addEventListener('click', () => {
+    navMenu.classList.toggle('hidden');
+    navMenu.classList.toggle('flex'); // Ensures it uses flex when visible
+  });
   </script>
 
 </body>
