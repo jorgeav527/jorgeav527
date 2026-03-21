@@ -5,25 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ config.title }}</title>
   
-  <link rel="stylesheet" href="{{ get_url(path='style.css', cachebuster=true) }}">
+  <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
+  <link rel="icon" href="{{ get_url(path='icon.svg') }}" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{{ get_url(path='icon.svg') }}">
 
   <script>
-    /* SIMPLE THEME CHECK: Run immediately to set colors before body renders */
     if (localStorage.getItem("pref-theme") === "light" || 
-        (!localStorage.getItem("pref-theme") && window.matchMedia("(prefers-color-scheme: light)").matches)) {
+      (!localStorage.getItem("pref-theme") && window.matchMedia("(prefers-color-scheme: light)").matches)) {
       document.documentElement.setAttribute("data-theme", "light");
     }
   </script>
+
+
 </head>
 
 <body class="bg-theme text-primary selection:bg-accent/30 selection:text-accent transition-colors duration-300 min-h-screen">
 
   <nav class="mx-auto max-w-5xl px-6 h-15 flex items-center justify-between border-b-3">
-    <div class="flex items-center">
-      <a href="/" class="text-xl font-bold tracking-tighter text-accent hover:opacity-80 transition-opacity">
-        Docs CordStart
-      </a>
-    </div>
+    
+    <a href="/" class="flex items-center gap-3 text-2xl font-bold tracking-tight text-accent hover:text-primary transition-all group">
+      <span class="mt-1">Docs</span>
+    </a>
 
     <div class="flex items-center gap-8">
       <ul class="flex items-center gap-6 text-sm font-medium uppercase tracking-widest text-secondary">
@@ -38,10 +40,18 @@
   <main class="mx-auto max-w-nav px-gap pt-16 md:pt-32 pb-20">
       <div class="flex justify-center w-full">
           <header class="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16 mb-24 max-w-fit">
-            <div class="shrink-0">
+
+            <div class="shrink-0 relative group/photo">
               <img src="{{ get_url(path='me_01.png') }}" alt="Jorge Alarcón" 
                    class="w-32 h-42 md:w-48 md:h-58 rounded-2xl object-cover shadow-2xl ring-3 ring-entry transition-transform hover:scale-105 duration-300">
+              
+              <div class="absolute -bottom-18 -left-10 w-40 h-40 md:w-40 md:h-40 
+                        text-accent drop-shadow-md transition-all 
+                        group-hover/photo:scale-110 group-hover/photo:-rotate-12 duration-300">
+                {% include "icon.html" %}
+              </div>            
             </div>
+
             <div class="text-center md:text-left max-w-xl">
               <h1 class="text-3xl md:text-4xl font-black text-primary mb-4 tracking-tight">
                   Jorge Alarcón Vargas
@@ -60,18 +70,26 @@
   </footer>
 
   <script>
-    /* TOGGLE LOGIC */
     const btn = document.getElementById("theme-toggle");
-    btn.addEventListener("click", () => {
-      const html = document.documentElement;
-      if (html.getAttribute("data-theme") === "light") {
-        html.removeAttribute("data-theme");
-        localStorage.setItem("pref-theme", "dark");
-      } else {
+    const html = document.documentElement;
+
+    // Function to set theme
+    const setTheme = (isLight) => {
+      if (isLight) {
         html.setAttribute("data-theme", "light");
         localStorage.setItem("pref-theme", "light");
+      } else {
+        html.removeAttribute("data-theme");
+        localStorage.setItem("pref-theme", "dark");
       }
+    };
+
+    // Click Listener
+    btn.addEventListener("click", () => {
+      const isCurrentlyLight = html.getAttribute("data-theme") === "light";
+      setTheme(!isCurrentlyLight);
     });
   </script>
+
 </body>
 </html>

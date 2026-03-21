@@ -5,9 +5,10 @@
 
 @layer base {
   --font-sans: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  /* 1. Default Functional Mapping (Macchiato) */
-  :root {
-    --color-theme: var(--color-mac-base);
+
+:root {
+    /* Use the Macchiato Base color for the dark theme background */
+    --color-theme: var(--color-mac-base); 
     --color-entry: var(--color-mac-mantle);
     --color-primary: var(--color-mac-text);
     --color-secondary: var(--color-mac-subtext1);
@@ -15,14 +16,10 @@
     --color-accent: var(--color-mac-blue);
     --color-border: var(--color-mac-crust);
     --color-code-bg: var(--color-mac-surface0);
-    
-    /* Apply these to the root to prevent white flashes */
-    background-color: var(--color-theme);
-    color: var(--color-primary);
   }
 
-  /* 2. Light Theme Switch (Frappé) */
   [data-theme="light"] {
+    /* Use the Frappé Base color for the light theme background */
     --color-theme: var(--color-fra-base);
     --color-entry: var(--color-fra-mantle);
     --color-primary: var(--color-fra-text);
@@ -33,21 +30,21 @@
     --color-code-bg: var(--color-fra-surface0);
   }
 
+  body {
+    background-color: var(--color-theme);
+    color: var(--color-primary);
+    @apply antialiased transition-colors duration-300;
+    font-family: var(--font-sans);
+    line-height: 1.6;
+  }
+
+  /* Global Reset */
   html {
     -webkit-tap-highlight-color: transparent;
     scroll-behavior: smooth;
   }
 
-  body {
-    /* Fixed: Added var() wrapper and changed to functional names */
-    background-color: var(--color-theme);
-    color: var(--color-primary);
-    @apply antialiased;
-    font-family: var(--font-sans);
-    line-height: 1.6;
-  }
-
-  /* Typography Plugin Customization */
+  /* Typography */
   .prose-catppuccin {
     @apply prose max-w-none;
     --tw-prose-body: var(--color-secondary);
@@ -65,4 +62,3 @@
     --tw-prose-pre-bg: var(--color-code-bg);
   }
 }
-

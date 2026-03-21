@@ -68,4 +68,74 @@
   --color-fra-sapphire: #85c1dc;
   --color-fra-blue: #8caaee;
   --color-fra-lavender: #babbf1;
+
+  /* --- Light Theme: Latte (Bright & Professional) --- */
+  /* Backgrounds */
+  --color-lat-base: #eff1f5;
+  --color-lat-mantle: #e6e9ef;
+  --color-lat-crust: #dce0e8;
+
+  /* Text Colors */
+  --color-lat-text: #4c4f69;
+  --color-lat-subtext1: #5c5f77;
+  --color-lat-subtext0: #6c6f85;
+
+  /* Surfaces & Overlays */
+  --color-lat-surface0: #ccd0da;
+  --color-lat-surface1: #bcc0cc;
+  --color-lat-surface2: #acb0be;
+  --color-lat-overlay0: #9ca0b0;
+  --color-lat-overlay1: #8c8fa1;
+  --color-lat-overlay2: #7c7f93;
+
+  /* Accents */
+  --color-lat-rosewater: #dc8a78;
+  --color-lat-flamingo: #dd7878;
+  --color-lat-pink: #ea76cb;
+  --color-lat-mauve: #8839ef;
+  --color-lat-red: #d20f39;
+  --color-lat-maroon: #e64553;
+  --color-lat-peach: #fe640b;
+  --color-lat-yellow: #df8e1d;
+  --color-lat-green: #40a02b;
+  --color-lat-teal: #179299;
+  --color-lat-sky: #04a5e5;
+  --color-lat-sapphire: #209fb5;
+  --color-lat-blue: #1e66f5;
+  --color-lat-lavender: #7287fd;
+
+/* --- Dark Theme: Mocha (Deepest Dark) --- */
+  /* Backgrounds */
+  --color-moc-base: #1e1e2e;
+  --color-moc-mantle: #181825;
+  --color-moc-crust: #11111b;
+
+  /* Text Colors */
+  --color-moc-text: #cdd6f4;
+  --color-moc-subtext1: #bac2de;
+  --color-moc-subtext0: #a6adc8;
+
+  /* Surfaces & Overlays */
+  --color-moc-surface0: #313244;
+  --color-moc-surface1: #45475a;
+  --color-moc-surface2: #585b70;
+  --color-moc-overlay0: #6c7086;
+  --color-moc-overlay1: #7f849c;
+  --color-moc-overlay2: #9399b2;
+
+  /* Accents */
+  --color-moc-rosewater: #f5e0dc;
+  --color-moc-flamingo: #f2cdcd;
+  --color-moc-pink: #f5c2e7;
+  --color-moc-mauve: #cba6f7;
+  --color-moc-red: #f38ba8;
+  --color-moc-maroon: #eba0ac;
+  --color-moc-peach: #fab387;
+  --color-moc-yellow: #f9e2af;
+  --color-moc-green: #a6e3a1;
+  --color-moc-teal: #94e2d5;
+  --color-moc-sky: #89dceb;
+  --color-moc-sapphire: #74c7ec;
+  --color-moc-blue: #89b4fa;
+  --color-moc-lavender: #b4befe;
 }
