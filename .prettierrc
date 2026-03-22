@@ -1,0 +1,22 @@
+{
+    "plugins": [
+        "prettier-plugin-tera"
+    ],
+    "overrides": [
+        {
+            "files": [
+                "**/*.tera",
+                "**/*.jinja",
+                "**/*.jinja2",
+                "**/*.j2",
+                "**/*.html"
+            ],
+            "options": {
+                "parser": "tera-template",
+                "teraExpressionSpacing": true,
+                "teraBlockIndentation": 2,
+                "preserveTeraWhitespace": false
+            }
+        }
+    ]
+}

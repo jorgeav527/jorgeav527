@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}{{ config.title }}{% endblock title %}</title>
+
+  <link rel="icon" href="{{ get_url(path='icon.svg') }}" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="{{ get_url(path='icon.svg') }}" />
+  <link rel="stylesheet" href="{{ get_url(path='style.css') }}" />
+
+  <script>
+    if (localStorage.getItem("theme") === "light") {
+      document.documentElement.setAttribute("data-theme", "light");
+    } else {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  </script>
+  {% block extra_head %}{% endblock extra_head %}
+</head>
+
+<body class="selection:bg-accent/30 selection:text-accent min-h-screen">
+  {% include "partials/base/navbar.html" %}
+
+  {% block content %} {% endblock content %}
+
+  {% include "partials/base/footer.html" %}
+
+  <script>
+    const btn = document.getElementById("theme-toggle");
+    if (btn) {
+      btn.addEventListener("click", () => {
+        const html = document.documentElement;
+        const isDark = html.getAttribute("data-theme") === "dark";
+        const newTheme = isDark ? "light" : "dark";
+        html.setAttribute("data-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+      });
+    }
+
+    const menuBtn = document.getElementById("menu-btn");
+    const navMenu = document.getElementById("nav-menu");
+    if (menuBtn && navMenu) {
+      menuBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("hidden");
+        navMenu.classList.toggle("flex");
+      });
+    }
+  </script>
+</body>
+
+</html>

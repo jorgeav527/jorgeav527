@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }} | {{ config.title }}{% endblock title %}
+
+{% block content %}
+<article class="mx-auto max-w-3xl px-6 pt-20 pb-32">
+  <header class="mb-8">
+    <h1 class="text-4xl font-black text-primary mb-2">{{ page.title }}</h1>
+    <time class="text-secondary/50 font-mono">{{ page.date | date(format="%B %e, %Y") }}</time>
+  </header>
+
+  <div class="prose prose-catppuccin max-w-none">
+    {{ page.content | safe }}
+  </div>
+</article>
+{% endblock content %}
