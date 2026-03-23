@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="mb-6">
+  <h1 class="text-4xl font-black text-accent mb-2">{{ section.title }}</h1>
+  <p class="text-secondary font-mono text-sm">Total entries: {{ section.pages | length }}</p>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+  {% for post in section.pages %}
+  <a href="{{ post.permalink }}"
+    class="group block p-6 rounded-2xl bg-entry border border-border/50 hover:border-accent/50 transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl">
+    <time class="text-xs font-mono text-accent mb-2 block">
+      {{ post.date | date(format="%b %d, %Y") }}
+    </time>
+    <h2 class="text-xl font-bold text-primary group-hover:text-accent transition-colors mb-3">
+      {{ post.title }}
+    </h2>
+    <p class="text-secondary text-sm line-clamp-2 leading-relaxed">
+      {{ post.summary | default(value="Click to read more about this entry...") | safe }}
+    </p>
+    <div
+      class="mt-4 flex items-center text-xs font-bold text-accent opacity-0 group-hover:opacity-100 transition-opacity">
+      READ MORE <span>&nbsp;→</span>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+{% endblock content %}

@@ -23,7 +23,9 @@
 <body class="selection:bg-accent/30 selection:text-accent min-h-screen">
   {% include "partials/base/navbar.html" %}
 
-  {% block content %} {% endblock content %}
+  <main class="mx-auto max-w-5xl px-6 py-15 md:pt-15">
+    {% block content %} {% endblock content %}
+  </main>
 
   {% include "partials/base/footer.html" %}
 

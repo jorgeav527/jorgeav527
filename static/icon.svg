@@ -1,29 +1,10 @@
-<svg
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 500 500"
-  fill="none"
-  class="w-full h-full"
->
-  <g
-    stroke="currentColor"
-    stroke-width="10"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  >
-    <path
-      d="M250 40 290 135 395 150 318 215 340 310 250 255 160 310 182 215 105 150 210 135 Z"
-    />
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" fill="none" class="w-full h-full">
+  <g stroke="#cad3f5" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M250 40 290 135 395 150 318 215 340 310 250 255 160 310 182 215 105 150 210 135 Z" />
     <path d="M180 190 225 145 250 170 275 145 320 190" />
   </g>
-  <text
-    x="250"
-    y="225"
-    font-family="var(--font-sans)"
-    font-size="20"
-    text-anchor="middle"
-    fill="currentColor"
-    font-weight="600"
-  >
+  <text x="250" y="225" font-family="var(--font-sans)" font-size="20" text-anchor="middle" fill="#cad3f5"
+    font-weight="600">
     CordStart
   </text>
 </svg>

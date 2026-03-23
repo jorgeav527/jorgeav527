@@ -1,5 +1,5 @@
 +++
-title = "My first Hello World"
+title = "First Blog"
 date = 2018-10-10
 +++
 

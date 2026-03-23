@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}Blog | {{ config.title }}{% endblock title %}
+
+{% block content %}
+<div class="mb-6">
+  <h1 class="text-4xl font-black text-accent mb-2">{{ section.title }}</h1>
+  <p class="text-secondary font-mono text-sm">Total entries: {{ section.pages | length }}</p>
+</div>
+
+<div class="space-y-24 md:space-y-32">
+  {% for post in section.pages %}
+  {# Check if index is even (0, 2, 4...) #}
+  {% set is_even = loop.index0 is even %}
+
+  <article
+    class="group flex flex-col {% if is_even %}md:flex-row{% else %}md:flex-row-reverse{% endif %} gap-8 md:gap-16 items-center">
+
+    {# Column 1: The Image #}
+    <div class="w-full md:w-1/2 shrink-0">
+      <a href="{{ post.permalink }}"
+        class="block overflow-hidden rounded-3xl bg-entry border border-border/30 shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
+        {# If you have a specific image in frontmatter, use it. Otherwise, use a placeholder or me_01.png #}
+        <img src="{{ post.extra.image | default(value=get_url(path='me_01.png')) }}" alt="{{ post.title }}"
+          class="w-full h-64 md:h-80 object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500">
+      </a>
+    </div>
+
+    {# Column 2: The Text #}
+    <div class="w-full md:w-1/2 flex flex-col {% if is_even %}items-start{% else %}items-end text-right{% endif %}">
+      <time class="text-xs font-mono text-accent mb-3 uppercase tracking-tighter">
+        {{ post.date | date(format="%B %d, %Y") }}
+      </time>
+
+      <a href="{{ post.permalink }}">
+        <h2 class="text-3xl font-black text-primary mb-4 group-hover:text-accent transition-colors leading-tight">
+          {{ post.title }}
+        </h2>
+      </a>
+
+      <div class="text-secondary/80 leading-relaxed mb-6 {% if not is_even %}md:pl-12{% else %}md:pr-12{% endif %}">
+        {% if post.summary %}
+        {{ post.summary | safe }}
+        {% else %}
+        <p>Explore this entry to learn more about the implementation, challenges, and solutions found during this
+          development cycle.</p>
+        {% endif %}
+      </div>
+
+      <a href="{{ post.permalink }}"
+        class="px-6 py-2 rounded-full border border-accent/30 text-accent text-sm font-bold hover:bg-accent hover:text-theme transition-all duration-300">
+        Read Entry
+      </a>
+    </div>
+
+  </article>
+  {% endfor %}
+</div>
+{% endblock content %}

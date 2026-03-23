@@ -1,29 +1,27 @@
 {% extends "base.html" %}
 
 {% block content %}
-<main class="mx-auto max-w-5xl px-6 pt-16 md:pt-32 pb-20">
-  <div class="flex justify-center w-full">
-    <header class="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16 mb-24 max-w-fit">
-      <div class="shrink-0 relative group/photo">
-        <img src="{{ get_url(path='me_01.png') }}" alt="Jorge Alarcón"
-          class="w-32 h-42 md:w-48 md:h-58 rounded-2xl object-cover shadow-2xl ring-3 ring-entry transition-all duration-300 hover:scale-105" />
+<div class="flex justify-center w-full py-5 md:pt-15">
+  <header class="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16 mb-24 max-w-fit">
+    <div class="shrink-0 relative group/photo">
+      <img src="{{ get_url(path='me_01.png') }}" alt="Jorge Alarcón"
+        class="w-32 h-42 md:w-48 md:h-58 rounded-2xl object-cover shadow-2xl ring-3 ring-entry transition-all duration-300 hover:scale-105" />
 
-        <div
-          class="absolute -bottom-12 -left-8 w-24 h-24 md:w-32 md:h-32 drop-shadow-md transition-all duration-300 group-hover/photo:scale-110 group-hover/photo:-rotate-12">
-          {% include "partials/icon.html" %}
-        </div>
+      <div
+        class="absolute -bottom-12 -left-8 w-24 h-24 md:w-32 md:h-32 drop-shadow-md transition-all duration-300 group-hover/photo:scale-110 group-hover/photo:-rotate-12">
+        {% include "partials/icon.html" %}
       </div>
+    </div>
 
-      <div class="text-center md:text-left max-w-xl">
-        <h1 class="text-3xl md:text-4xl font-black text-primary mb-4">
-          Jorge Alarcón Vargas
-        </h1>
-        <div class="prose-catppuccin text-base">
-          {{ section.content | safe }}
-        </div>
-        {% include "partials/social_links.html" %}
+    <div class="text-center md:text-left max-w-xl">
+      <h1 class="text-3xl md:text-4xl font-black text-accent mb-4">
+        Jorge Alarcón Vargas
+      </h1>
+      <div class="prose-catppuccin text-base">
+        {{ section.content | safe }}
       </div>
-    </header>
-  </div>
-</main>
+      {% include "partials/social_links.html" %}
+    </div>
+  </header>
+</div>
 {% endblock content %}

@@ -1,5 +1,5 @@
 base_url = "https://jorgeav527.github.io"
-title = "Docs CordStart"
+title = "Docs:CordStart"
 description = "Building something cool."
 output_dir = "public"
 compile_sass = false # Tailwind v4 handles CSS
