@@ -3,6 +3,13 @@ title = "Docs:CordStart"
 description = "Building something cool."
 output_dir = "docs"
 compile_sass = false # Tailwind v4 handles CSS
+minify_html = true
+generate_feeds = false
+build_search_index = false
+hard_link_static = true
+
+[markdown]
+lazy_async_image = true
 
 [extra]
 project_gh = "https://docs.cordstart.com"
