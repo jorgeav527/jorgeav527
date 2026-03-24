@@ -1,7 +1,7 @@
 base_url = "https://docs.cordstart.com"
 title = "Docs:CordStart"
 description = "Building something cool."
-output_dir = "public"
+output_dir = "docs"
 compile_sass = false # Tailwind v4 handles CSS
 
 [extra]
