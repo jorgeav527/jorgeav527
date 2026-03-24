@@ -1,4 +1,4 @@
-base_url = "https://jorgeav527.github.io"
+base_url = "https://docs.cordstart.com"
 title = "Docs:CordStart"
 description = "Building something cool."
 output_dir = "public"
