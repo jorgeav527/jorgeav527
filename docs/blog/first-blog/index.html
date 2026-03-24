@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>First Blog | Docs:CordStart</title>
+
+  <link rel="icon" href="https://docs.cordstart.com/icon.png" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="https://docs.cordstart.com/icon.png" />
+  <link rel="stylesheet" href="https://docs.cordstart.com/style.css" />
+
+  <script>
+    if (localStorage.getItem("theme") === "light") {
+      document.documentElement.setAttribute("data-theme", "light");
+    } else {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  </script>
+  
+</head>
+
+<body class="selection:bg-accent/30 selection:text-accent min-h-screen">
+  <nav class="mx-auto max-w-5xl px-6 h-15 flex items-center justify-between border-b-3 relative">
+  <div class="flex items-center gap-2">
+    <a href="/"
+      class="px-3 py-1.5 hover:bg-entry rounded-xl active:scale-95 border border-transparent hover:border-border/50 text-2xl font-bold text-accent group">
+      <span>Docs</span>
+    </a>
+    <button id="theme-toggle"
+  class="p-2.5 hover:bg-entry rounded-xl active:scale-95 border border-transparent hover:border-border/50"
+  aria-label="Toggle Theme">
+  <svg id="sun" class="w-5 h-5 hidden in-data-[theme='dark']:block" fill="none" stroke="currentColor" stroke-width="2"
+    viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="5"></circle>
+    <path
+      d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42">
+    </path>
+  </svg>
+
+  <svg id="moon" class="w-5 h-5 hidden in-data-[theme='light']:block" fill="none" stroke="currentColor" stroke-width="2"
+    viewBox="0 0 24 24">
+    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+  </svg>
+</button>
+
+  </div>
+
+  <button id="menu-btn"
+    class="md:hidden p-2.5 hover:bg-entry rounded-xl active:scale-95 border border-transparent hover:border-border/50 text-secondary">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path d="M4 6h16M4 12h16m-7 6h7" stroke-width="2" stroke-linecap="round"></path>
+    </svg>
+  </button>
+
+  <div id="nav-menu"
+    class="hidden absolute top-15 left-0 w-full border-b md:border-none md:static md:flex md:w-auto z-50"
+    style="background-color: var(--ui-theme)">
+    <ul
+      class="flex flex-col md:flex-row items-end md:items-center gap-1 px-6 py-1 md:p-0 text-sm font-bold uppercase text-secondary">
+      <li class="w-full md:w-auto">
+        <a href="/posts"
+          class="block text-right md:text-left px-4 py-2 hover:bg-entry rounded-xl active:scale-95 border border-transparent hover:border-border/50 hover:text-accent">
+          Posts
+        </a>
+      </li>
+      <li class="w-full md:w-auto">
+        <a href="/projects"
+          class="block text-right md:text-left px-4 py-2 hover:bg-entry rounded-xl active:scale-95 border border-transparent hover:border-border/50 hover:text-accent">
+          Projects
+        </a>
+      </li>
+      <li class="w-full md:w-auto">
+        <a href="/blog"
+          class="block text-right md:text-left px-4 py-2 hover:bg-entry rounded-xl active:scale-95 border border-transparent hover:border-border/50 hover:text-accent">
+          Blog
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+  <main class="mx-auto max-w-5xl px-6 py-15 md:pt-15">
+    
+<article class="mx-auto max-w-3xl px-6">
+  <header class="mb-8">
+    <h1 class="text-4xl font-black text-primary mb-2">First Blog</h1>
+    <time class="text-secondary font-mono">October 10, 2018</time>
+  </header>
+
+  <div class="prose-catppuccin text-base">
+    <p>This is my first post!</p>
+
+  </div>
+</article>
+
+  </main>
+
+  <footer class="text-center py-auto text-xs text-secondary/40 font-mono">
+  &copy; 2026-Mar by CordStart
+</footer>
+
+
+  <script>
+    const btn = document.getElementById("theme-toggle");
+    if (btn) {
+      btn.addEventListener("click", () => {
+        const html = document.documentElement;
+        const isDark = html.getAttribute("data-theme") === "dark";
+        const newTheme = isDark ? "light" : "dark";
+        html.setAttribute("data-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+      });
+    }
+
+    const menuBtn = document.getElementById("menu-btn");
+    const navMenu = document.getElementById("nav-menu");
+    if (menuBtn && navMenu) {
+      menuBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("hidden");
+        navMenu.classList.toggle("flex");
+      });
+    }
+  </script>
+</body>
+
+</html>
