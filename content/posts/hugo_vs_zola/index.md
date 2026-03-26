@@ -1,24 +1,26 @@
 +++
 title = "Hugo vs Zola"
 date = 2026-03-10
-description = "Building a portfolio with Hugo or Zola represents the 'modern classic' approach to using Static Site Generators (SSGs) to create simple but powerful applications. This allows us to achieve incredible speed and developer control. We are going to explore the architecture, features, simplicity, and the results that can be achieved."
+description = "So… I’ve been on a small adventure trying to build my webblog, and I started with Hugo and endedup with Zola. Let me be honest about Hugo and I had beef."
 +++
 
-1. Hugo: The Powerhouse of Golang
-- Hugo is built in Go and is famous for being the fastest SSG in existence. It is ideal for large portfolios or sites that might eventually grow into hundreds of pages.
+## Hugo: The Powerhouse of Golang
 
-- Strengths: Massive theme ecosystem, extremely fast build times, and advanced features like Image Processing (resizing/optimizing images automatically).
+- Hugo’s **architecture** is simple on paper, but once you add themes and features, it feels like assembling a furniture with a hugeee! manual.
+- It has a huge ecosystem and **crazy powerful features** that make you think, “Wow, this is too much power for a simple weblog.”
+- To customize anything, **you must spiritually merge with the docs** and accept that you have to use Go Teml for everything witch is not bat but not to good.
+- The final site looked good with the Terminal theme, but it never felt like my style, more like Hugo saying, **“You get what I give you.”**
 
-- Complexity: The learning curve is steeper due to "Hugo Pipes" and its unique templating syntax.
+{{ my_a(link="https://github.com/jorgeav527/jorgeav527_old_hugo", text="Check the Repo!") }}
+{{ my_img(src="hugo_home.png", alt="hugo home") }}
 
-![Hugo Home](hugo_home.png)
+## Zola: The Rust Elegant Alternative
 
-2. Zola: The Rust Elegant Alternative
+- Zola is **beautifully minimal: a single binary**, clean folders, and the feeling of “Ah yes, this finally makes sense.”
+- It’s simple, intuitive, and if you’ve used Django or Jinja, the Tera templates feel like **meeting an old friend**.
+- Almost none — **you don’t touch Rust** at all, and everything else feels like Zola whispering, “Don’t worry, I got you.”
+- The final site is exactly what I imagined: clean, elegant, Tailwind-powered, and **finally a weblog that I want to useee!**.
 
-- Zola is a "single-binary" generator written in Rust. It is often preferred by developers who want everything built-in without managing external plugins.
+{{ my_img(src="zola_home.png", alt="zola home") }}
+{{ my_a(link="https://github.com/jorgeav527/jorgeav527", text="Check the Repo!") }}
 
-- Strengths: It includes Sass compilation, Image processing, and Search indexing out of the box. The Tera templating engine is very similar to Jinja2 or Twig, making it intuitive for Python or PHP developers.
-
-- Simplicity: It uses a flat, easy-to-understand directory structure.
-
-![Zola Home](zola_home.png)

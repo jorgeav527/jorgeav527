@@ -1,4 +1,4 @@
 {% set image_path = page.path ~ "/" ~ src %}
 
 <img src="{{ get_url(path=image_path) }}" alt="{{ alt | default(value="") }}"
-  class="rounded-xl shadow-lg mx-auto my-6 {{ class | default(value="") }}" loading="lazy" />
+  class="rounded-xl shadow-xl/30 mx-auto my-6 {{ class | default(value="") }}" loading="lazy" />
