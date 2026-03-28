@@ -1,24 +1,20 @@
 <!-- Header -->
-<div align="center">
-    <h1>
-      <strong>
-          <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=900&size=25&pause=1000&color=3F8114&vCenter=true&width=625&height=55&lines=Hi+there%2C+I'm+Jorge%2C+a+Software+Developer." alt="Typing SVG" />
-      </strong>
-    </h1>
+<div style="font-size: 2em; font-weight: bold;">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=900&size=25&pause=1000&color=3F8114&vCenter=true&width=625&height=55&lines=Hi+there%2C+I'm+Jorge%2C+a+Software+Developer." alt="Typing SVG" />
+    <!-- Social Media Links -->
+    <p align="center">
+      <a href="https://www.linkedin.com/in/jorgeav527">
+        <img src="https://img.shields.io/badge/LinkedIn-blue?" height="27.5" />
+      </a>
+      <a href="https://www.youtube.com/channel/UCM0iDBNz_jSvap50m1yboyQ">
+        <img src="https://img.shields.io/badge/YouTube-red?" height="27.5" />
+      </a>
+      <a href="https://docs.cordstart.com/">
+        <img src="https://img.shields.io/badge/Weblog-3b82f6" height="27.5" />
+      </a>
+    </p>
+    <!-- End -->
 </div>
-<!-- End -->
-<!-- Social Media Links -->
-<p align="center">
-  <a href="https://www.linkedin.com/in/jorgeav527">
-    <img src="https://img.shields.io/badge/LinkedIn-blue?" height="25" />
-  </a>
-  <a href="https://www.youtube.com/channel/UCM0iDBNz_jSvap50m1yboyQ">
-    <img src="https://img.shields.io/badge/YouTube-red?" height="25" />
-  </a>
-  <a href="https://docs.cordstart.com/">
-    <img src="https://img.shields.io/badge/Weblog-3b82f6" height="25" />
-  </a>
-</p>
 <!-- End -->
 <!-- Intro -->
 <div align="justify">
