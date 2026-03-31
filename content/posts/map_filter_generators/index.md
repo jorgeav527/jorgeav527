@@ -8,6 +8,8 @@ description = "Learn how to use map() and filter() like a pro. Spoiler: They are
 
 So, you’re still using `for` loops to transform or select every single element in your list? That’s so 2010. Let’s talk about `map()` and `filter()`, the high-order functions that are basically the ‘efficient friends’ who only do work when absolutely necessary.
 
+{{ my_img(src="meme_1.png", alt="hugo home") }}
+
 ## PART 1: THE MAP()
 
 The `map()` function is used to apply a function to each element of an iterable, producing a new transformed sequence.
