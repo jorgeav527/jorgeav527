@@ -3,7 +3,7 @@
 {% block content %}
 {% set basic = load_data(path="data/resume/2026/basic.yml") %}
 
-{% set current_lang = page.extra.display_lang | default(value=section.extra.display_lang) | default(value="en") %}
+{% set current_lang = lang | default(value="en") %}
 
 {% if current_lang == "es" %}
 {% set data = load_data(path="data/resume/2026/spanish.yml") %}
@@ -12,6 +12,7 @@
 {% else %}
 {% set data = load_data(path="data/resume/2026/english.yml") %}
 {% endif %}
+
 <div class="flex flex-col space-y-8">
     <header class="border-b-2 border-red-600 pb-6">
         {% include "resume/2026/header.html" %}

@@ -7,6 +7,13 @@ minify_html = true
 generate_feeds = false
 build_search_index = false
 hard_link_static = true
+default_language = "en"
+
+# Authorize Spanish
+[languages.es]
+
+# Authorize Portuguese
+[languages.pt]
 
 [markdown]
 lazy_async_image = true

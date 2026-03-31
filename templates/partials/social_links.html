@@ -41,7 +41,7 @@
 
 
   <div class="relative group flex items-center">
-    <a href="/resume_en.pdf" target="_blank"
+    <a href="{{ get_url(path='@/resume/_index.md') }}" target="_blank"
       class="flex items-center text-secondary hover:text-accent transition-colors cursor-pointer"
       title="Download English Resume (Hover for ES/PT)">
       <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -57,9 +57,11 @@
     <div
       class="absolute left-full ml-3 flex items-center bg-entry border border-border/40 rounded-full px-4 py-1.5 shadow-sm opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-x-2.5 group-hover:translate-x-0">
       <div class="flex items-center gap-4 text-[11px] font-bold tracking-tighter uppercase">
-        <a href="/resume_es.pdf" target="_blank" class="hover:text-accent transition-colors">es</a>
+        <a href="{{ get_url(path='@/resume/_index.md', lang='es') }}" target="_blank"
+          class="hover:text-accent transition-colors">es</a>
         <span class="w-px h-3 bg-border/30"></span>
-        <a href="/resume_pt.pdf" target="_blank" class="hover:text-accent transition-colors">pt</a>
+        <a href="{{ get_url(path='@/resume/_index.md', lang='pt') }}" target="_blank"
+          class="hover:text-accent transition-colors">pt</a>
       </div>
       <div class="absolute right-full top-1/2 -translate-y-1/2 border-4 border-transparent border-r-border/40"></div>
     </div>
