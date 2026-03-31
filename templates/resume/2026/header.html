@@ -1,0 +1,49 @@
+<header class="border-b-2 border-red-600 pb-4 mb-6">
+    <div class="flex flex-col md:flex-row justify-between items-start mb-2">
+        <div class="flex-1">
+            <h1 class="text-2xl font-extrabold text-slate-900 tracking-tighter uppercase leading-none">
+                {{ basic.NAME }}
+            </h1>
+            <div class="flex items-center gap-2 mt-2">
+                <span class="text-[10px] font-bold bg-red-600 text-white px-2 py-0.5 rounded uppercase">
+                    {{ basic.SELF_THOUGHT }}
+                </span>
+                <span
+                    class="text-[10px] font-bold border border-slate-300 text-slate-600 px-2 py-0.5 rounded uppercase">
+                    {{ basic.BOOTCAMP }}
+                </span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-x-4 gap-y-1 mt-4 md:mt-0 text-right">
+            <a href="mailto:{{ basic.GMAIL }}"
+                class="flex items-center justify-end gap-2 text-[10px] font-semibold text-slate-600 hover:text-red-600">
+                {{ basic.GMAIL }} <i class="bi bi-envelope text-red-600"></i>
+            </a>
+            <a href="https://{{ basic.GITHUB }}"
+                class="flex items-center justify-end gap-2 text-[10px] font-semibold text-slate-600 hover:text-red-600">
+                {{ basic.GITHUB }} <i class="bi bi-github text-red-600"></i>
+            </a>
+            <a href="https://wa.me/{{ basic.PHONE }}"
+                class="flex items-center justify-end gap-2 text-[10px] font-semibold text-slate-600 hover:text-red-600">
+                {{ basic.PHONE }} <i class="bi bi-telephone text-red-600"></i>
+            </a>
+            <a href="https://www.{{ basic.LINKEDIN }}"
+                class="flex items-center justify-end gap-2 text-[10px] font-semibold text-slate-600 hover:text-red-600">
+                {{ basic.LINKEDIN }} <i class="bi bi-linkedin text-red-600"></i>
+            </a>
+            <div class="col-span-2">
+                <a href="https://{{ basic.WEBLOG }}"
+                    class="flex items-center justify-end gap-2 text-[10px] font-semibold text-slate-600 hover:text-red-600">
+                    {{ basic.WEBLOG }} <i class="bi bi-globe text-red-600"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-[11px] text-slate-700 leading-normal text-justify border-t border-slate-200 pt-1">
+        {% for p in data.ABOUT_DESCRIPTION %}
+        <p class="mb-1 italic">{{ p }}</p>
+        {% endfor %}
+    </div>
+</header>
