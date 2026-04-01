@@ -11,13 +11,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Source+Code+Pro&display=swap"
     rel="stylesheet">
 
+
   <style>
-    /* Print-specific optimizations */
     @media print {
       @page {
-        margin: 0;
+        /* This defines the actual white space on the paper */
+        margin: 15mm;
         size: A4;
-        /* or letter */
       }
 
       body {
@@ -28,27 +28,24 @@
       .no-print {
         display: none !important;
       }
+
+      .resume-page {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-shadow: none !important;
+      }
     }
 
-    /* Standard Resume dimensions for screen preview */
+    /* Screen Preview Only */
     .resume-page {
       background: white;
       width: 210mm;
-      /* A4 Width */
       min-height: 297mm;
-      /* A4 Height */
-      margin: 0 auto;
-      padding: 15mm 20mm;
+      margin: 20px auto;
+      padding: 15mm;
+      /* This mimics the @page margin on your screen */
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-
-    @media print {
-      .resume-page {
-        width: 100%;
-        margin: 0;
-        padding: 10mm 15mm;
-        box-shadow: none;
-      }
     }
   </style>
 </head>
