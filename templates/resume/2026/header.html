@@ -4,7 +4,7 @@
             <h1 class="text-2xl font-extrabold text-slate-900 tracking-tighter uppercase leading-none">
                 {{ basic.NAME }}
             </h1>
-            <div class="flex items-center gap-2 mt-2 text-[15px] font-bold uppercase tracking-tight text-blue-600">
+            <div class="flex items-center gap-2 mt-2 text-[15px] font-bold uppercase tracking-tight text-slate-600">
                 <span>{{ basic.SELF_THOUGHT }}</span>
                 <span class="text-slate-400">|</span>
                 <span>{{ basic.BOOTCAMP }}</span>
@@ -13,32 +13,32 @@
         <div class="grid grid-cols-2 gap-x-4 gap-y-1 mt-0 text-right min-w-70">
             <a href="mailto:{{ basic.GMAIL }}"
                 class="flex items-center justify-end gap-2 text-[10px] font-semibold text-slate-600 hover:text-blue-600 whitespace-nowrap">
-                {{ basic.GMAIL }} <i class="bi bi-envelope text-blue-600"></i>
+                {{ basic.GMAIL }} <i class="bi bi-envelope text-slate-600"></i>
             </a>
             <a href="https://{{ basic.GITHUB }}"
                 class="flex items-center justify-end gap-2 text-[10px] font-semibold text-slate-600 hover:text-blue-600 whitespace-nowrap">
-                {{ basic.GITHUB }} <i class="bi bi-github text-blue-600"></i>
+                {{ basic.GITHUB }} <i class="bi bi-github text-slate-600"></i>
             </a>
             <a href="https://wa.me/{{ basic.PHONE }}"
                 class="flex items-center justify-end gap-2 text-[10px] font-semibold text-slate-600 hover:text-blue-600 whitespace-nowrap">
-                {{ basic.PHONE }} <i class="bi bi-telephone text-blue-600"></i>
+                {{ basic.PHONE }} <i class="bi bi-telephone text-slate-600"></i>
             </a>
             <a href="https://www.{{ basic.LINKEDIN }}"
                 class="flex items-center justify-end gap-2 text-[10px] font-semibold text-slate-600 hover:text-blue-600 whitespace-nowrap">
-                {{ basic.LINKEDIN }} <i class="bi bi-linkedin text-blue-600"></i>
+                {{ basic.LINKEDIN }} <i class="bi bi-linkedin text-slate-600"></i>
             </a>
             <div class="col-span-2">
                 <a href="https://{{ basic.WEBLOG }}"
                     class="flex items-center justify-end gap-2 text-[10px] font-semibold text-slate-600 hover:text-blue-600 whitespace-nowrap">
-                    {{ basic.WEBLOG }} <i class="bi bi-globe text-blue-600"></i>
+                    {{ basic.WEBLOG }} <i class="bi bi-globe text-slate-600"></i>
                 </a>
             </div>
         </div>
     </div>
 
-    <div class="text-[11px] text-slate-700 leading-normal text-justify border-t border-slate-400 pt-1">
+    <div class="text-[11px] text-slate-800 leading-normal text-justify border-t border-slate-400 pt-1">
         {% for p in data.ABOUT_DESCRIPTION %}
-        <p class="italic">{{ p }}</p>
+        <p>{{ p }}</p>
         {% endfor %}
     </div>
 </header>

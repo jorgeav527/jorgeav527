@@ -9,7 +9,7 @@ VOLUNTER: "volunteering"
 ABOUT: "about me"
 
 ABOUT_DESCRIPTION:
-  - Since 2018, Jorge Alarcón is a Full Stack DevOps and Data Engineer with over seven years of professional experience in software development and data engineering. Specialized in Linux, Python, Go and Rust, he has strong expertise in building and automating systems, developing robust applications, and optimizing engineering processes through modern DevOps and data-driven practices. He began his career as a Civil Engineer in Peru and Brazil, focusing on process automation, before transitioning into technology.
+  - Since 2018, Jorge Alarcón is a Full Stack DevOps and Data Engineer with over seven years of professional experience in software development and data engineering. Specialized in Linux, Python and Rust, he has strong expertise in building and automating systems, developing robust applications, and optimizing engineering processes through modern DevOps and data-driven practices. He began his career as a Civil Engineer in Peru and Brazil, focusing on process automation, before transitioning into technology.
 
 LANGUAGES:
   - "Spanish: Native"
@@ -176,7 +176,7 @@ SOFTWARE_EXPERIENCES:
       - "Grafana"
 
   - company: "Cibertec"
-    title: "Python Instructor - API Development, Data Science and ML Fundamentals"
+    title: "Data Science Instructor"
     location: "Lima, Peru"
     type: "Remote, Full-time"
     start: "Oct 2023"
@@ -195,7 +195,7 @@ SOFTWARE_EXPERIENCES:
       - "WebSockets"
 
   - company: "Grupo RPG SAC"
-    title: "Full Stack Developer - Civil Engineering Soils Lab"
+    title: "Full Stack Developer"
     location: "Tiabaya, Arequipa, Perú"
     type: "Full-time"
     start: "Jul 2021"
@@ -215,7 +215,7 @@ SOFTWARE_EXPERIENCES:
       - "AWS (EC2, RDS, S3)"
 
   - company: "UCSM - EPIC Labs"
-    title: "Full Stack Developer - Civil Engineering EPIC Lab"
+    title: "Full Stack Developer"
     location: "Yanahuara, Arequipa, Perú"
     type: "Full-time"
     start: "Dec 2019"

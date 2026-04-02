@@ -1,0 +1,43 @@
+<div class="">
+  <h2 class="text-xl font-bold text-slate-900 border-b border-slate-400 uppercase tracking-wide pt-2">
+    {{ data.PROJECTS }}
+  </h2>
+
+  <div class="space-y-2 mt-2">
+    {% for project in data.PROJECT_LIST %}
+    <div class="break-inside-avoid">
+      <div class="flex justify-between items-baseline">
+        <h4 class="text-[16px] font-bold text-slate-900 uppercase tracking-tight">
+          {% if project.LINK %}
+          <a href="{{ project.LINK }}" target="_blank" class="hover:text-blue-600">
+            {{ project.TITLE }} <i class="bi bi-link-45deg"></i>
+          </a>
+          {% else %}
+          {{ project.TITLE }}
+          {% endif %}
+        </h4>
+        <span class="text-[11px] font-bold text-slate-600 uppercase">
+          {{ project.DATE }}
+        </span>
+      </div>
+
+      <div class="flex justify-between items-center mb-2">
+        <div class="text-[13px] font-semibold text-slate-700">
+          {{ project.ROLE }}
+        </div>
+        <div class="text-[11px] text-slate-600 italic">
+          {{ project.LOCATION }}
+        </div>
+      </div>
+
+      <ul class="list-disc ml-4">
+        {% for detail in project.DESCRIPTIONS %}
+        <li class="text-[11.5px] text-slate-700 leading-snug text-justify pl-1">
+          {{ detail }}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</div>

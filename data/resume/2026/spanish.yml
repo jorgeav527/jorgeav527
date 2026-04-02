@@ -7,52 +7,257 @@ SKILL: "habilidades"
 FEATURE: "destacados"
 VOLUNTER: "voluntariado"
 ABOUT: "sobre mí"
-PROJECT: "proyectos"
+
 ABOUT_DESCRIPTION:
-  - Desde 2018, Jorge Alarcón se desempeña como Full Stack DevOps y Data Engineer, con más de 7 años de experiencia profesional en Desarrollo de Software y Data Engineering. Inició su carrera como Ingeniero Civil en Perú y Brasil, enfocado en la automatización de procesos, antes de hacer la transición al sector tecnológico.
-  - Especializado en Linux, Python y Rust, cuenta con experiencia práctica en el desarrollo de pipelines de CI/CD, pipelines de datos y arquitecturas de API utilizando Test-Driven Development (TDD) y clean architecture para garantizar eficiencia y confiabilidad. Su experiencia incluye el despliegue y la orquestación de servicios en la nube con AWS (ECS, EKS) mediante Infrastructure as Code (IaC) para entornos escalables y seguros.
+  - Desde 2018, Jorge Alarcón es un Ingeniero Full Stack DevOps y de Datos con más de siete años de experiencia profesional en desarrollo de software e ingeniería de datos. Especializado en Linux, Python y Rust, cuenta con una sólida experiencia en la construcción y automatización de sistemas, desarrollo de aplicaciones robustas y optimización de procesos de ingeniería mediante prácticas modernas de DevOps y orientadas a datos. Comenzó su carrera como Ingeniero Civil en Perú y Brasil, enfocándose en la automatización de procesos, antes de realizar su transición al sector tecnológico.
 
-SKILLS:
-  Idiomas:
-    - "Español: Nativo"
-    - "Portugués: Avanzado C2"
-    - "Inglés: Avanzado C1"
+LANGUAGES:
+  - "Español: Nativo"
+  - "Portugués: Avanzado C2"
+  - "Inglés: Avanzado C1"
 
-  Ingeniería de Datos:
-    - Apache Spark
-    - Apache Airflow
-    - Apache Kafka
-    - RedPanda
-    - Cassandra
-    - Neo4j
-    - Pandas
-    - Streamlit
-    - Dash Plotly
-    - Snowflake
-    - PostgreSQL
-    - Redis
-    - MongoDB
+VOLUNTEER:
+  - organization: "AIESEC en Colombia"
+    description: "9000xBogotá es una iniciativa de AIESEC que demuestra a los ciudadanos de Bogotá que jóvenes de diversas nacionalidades pueden sentir empatía y respeto por la ciudad que se convierte en su hogar temporal, al mismo tiempo que genera conciencia social e informa sobre la importancia del calentamiento global."
+    name: "Universidad de los Andes, Colombia: 7000xBogotá"
+    start: "Dic 2010"
+    end: "Mar 2011"
+    location: "Bogotá, Colombia"
 
-  DevOps y Arquitectura Cloud:
-    - Linux
-    - Bash
-    - Docker
-    - Jenkins
-    - GitHub Actions
-    - Terraform
-    - Ansible
-    - Kubernetes
-    - AWS (ECS & EKS)
-    - Linode
-    - Git & GitHub
-    - NetData
-    - Grafana
-    - Prometheus
+FEATURES:
+  - name: "Arquitectura DevOps para aplicación Startup Nodejs"
+    title: "Automatización de Pipeline CI/CD en AWS para Tech Fastrip (Startup FinTech)"
+    location: "Brasil"
+    start: "Mayo 2025"
+    end: "Presente"
+    link: "https://github.com/viajefacil"
 
-  Full-Stack:
-    - Svelte
-    - HTMX
-    - Leptos
-    - Django
-    - FastAPI
-    - Axum
+  - name: "Consultor de Arquitectura DevOps para Microservicios Spring Boot"
+    title: "Automatización de Pipeline CI/CD en AWS para Tech Cifras (FinTech Española)"
+    location: "España"
+    start: "Nov 2024"
+    end: "Dic 2024"
+    link: "https://github.com/username/project"
+
+  - name: "II CONGRESO INTERNACIONAL DE INGENIERÍA CIVIL II CIDEIC UCSM 2021"
+    title: 'PONENTE "Desarrollo Web para Ingenieros Civiles"'
+    location: "Arequipa, Arequipa, Perú"
+    start: "Nov 2021"
+    end: "Nov 2021"
+    link: "https://github.com/username/project"
+
+PROJECTS_BACK:
+  "RPG Labs - Grupo RPG SAC":
+    title: "Aplicación Web para Servicios de Ensayo en un Laboratorio de Suelos de Ingeniería Civil"
+    link: "https://github.com/jorgeav527/rpg_labs_repo.git"
+    start: "Dic 2021"
+    end: "Mar 2022"
+    techstack:
+      - "OS Linux, Git & GitHub (GitHub Flow), HTML, CSS-BootstrapMade, Django, HTMX, Nginx, Bash, Docker, Html2pdf, PostgreSQL, AWS (EC2 & RDS & S3)."
+
+  "EPIC Labs - Tesis de Grado Profesional":
+    title: "Tesis: Automatización y Sistematización de un Laboratorio de Ingeniería Civil"
+    location: "Arequipa, Arequipa, Perú"
+    link: "https://github.com/jorgeav527/epiclabs.git"
+    start: "Dic 2019"
+    end: "Dic 2020"
+    techstack:
+      - "OS Linux, Git & GitHub, HTML, CSS-Bootstrap, Django, Matplotlib & Bokeh, WeasyPrint, SQLite, PythonAnywhere."
+
+  "Proyecto Final para el Bootcamp de Data Science de Henry":
+    title: "Esperanza de Vida - ETL & EDA & ML"
+    link: "https://github.com/jorgeav527/life-expectancy.git"
+    start: "Sep 2022"
+    end: "Oct 2022"
+    techstack:
+      - "OS Linux, Git & GitHub & Git LFS, Jupyter (Numpy & Pandas & Scikit-Learn, Matplotlib), Heroku, MongoDB, ElephantSQL, FastAPI, Streamlit, Apache Airflow, Docker, Linode (EC2 & RDS & S3)."
+
+  "Especialización en Machine Learning":
+    title: "Datathon - Aplicación de Modelado ML"
+    link: "https://github.com/jorgeav527/Datathon.git"
+    start: "Sep 2022"
+    end: "Presente"
+    techstack:
+      - "Jupyter (Numpy & Pandas & Scikit-Learn & Plotly)."
+
+CIVIL_EXPERIENCES:
+  - company: "Municipalidad Distrital de Majes"
+    title: "Ingeniero Civil"
+    location: "Majes, Arequipa, Perú"
+    type: "Presencial, Tiempo completo"
+    start: "May 2021"
+    end: "Ago 2021"
+    time: "4 meses"
+    responsibilities:
+      - "Asistencia en el reporte y revisión de liquidaciones técnico-financieras..."
+      - "Revisión e informe sobre adicionales, deductivos y ampliaciones de inversión..."
+      - "Revisión mensual de residuos generados..."
+      - "Monitoreo y actualización de la gestión..."
+
+  - company: "Juares Arquitectos & Ingenieros SAC"
+    title: "Ingeniero Civil"
+    location: "Arequipa, Arequipa, Perú"
+    type: "Presencial, Freelance"
+    start: "Nov 2018"
+    end: "Nov 2019"
+    time: "1 año"
+    responsibilities:
+      - "Apoyo profesional en detalles técnicos y estructurales..."
+      - "Control del cronograma de obra mediante MS Project..."
+      - "Reporte de valorizaciones mensuales de obra..."
+      - "Previsión de mano de obra adicional e incremento de costos."
+
+  - company: "FourC Bilingual Academy"
+    title: "Ingeniero de Mantenimiento de Edificaciones"
+    location: "Bauru, São Paulo, Brasil"
+    type: "Presencial, Pasantía"
+    start: "Jun 2016"
+    end: "Dic 2017"
+    time: "1 año 6 meses"
+    responsibilities:
+      - "Resolución de defectos de construcción con previsiones y múltiples soluciones."
+      - "Control eficiente del cronograma del equipo de mantenimiento con MS Project."
+      - "Reducción del consumo de agua en un 30% y de electricidad en un 11%."
+
+SOFTWARE_EXPERIENCES:
+  - company: "Roadr"
+    title: "Full Stack DevOps"
+    location: "Los Ángeles, California, Estados Unidos"
+    type: "Remoto, Tiempo completo"
+    start: "Feb 2023"
+    end: "Junio 2025"
+    time: "2 años 6 meses"
+    responsibilities:
+      - "Trabajé con diversos stacks tecnológicos en backend y frontend con bases de datos SQL/NoSQL."
+      - "Contenerización de frameworks con Docker y coordinación de respuesta a incidentes en contenedores."
+      - "Implementación de pipelines CI/CD para el despliegue de aplicaciones en entornos de staging y producción."
+      - "Implementación y despliegue de APIs REST, gRPC, WebSockets, GraphQL y arquitecturas orientadas a eventos."
+      - "Identificación de fugas de memoria y cuellos de botella de rendimiento mediante monitoreo de infraestructura."
+      - "Reducción de costos de infraestructura en la nube en un 20% mediante la migración de cargas de trabajo de Kubernetes a ECS en AWS."
+    tools:
+      - "Python (FastAPI, Airflow)"
+      - "Rust (Actix Web, Leptos)"
+      - "JavaScript (Express)"
+      - "Docker (DockerHub)"
+      - "AWS (ECS, Load Balancer, Route 53, CloudFront, S3, ASG, CloudMap, CloudWatch, CloudTrail, RDS)"
+      - "CI/CD (Jenkins, GitHub Actions)"
+      - "Terraform"
+      - "Ansible"
+      - "Kubernetes"
+      - "SQL (PostgreSQL)"
+      - "NoSQL (MongoDB)"
+      - "Redis (Pub/Sub)"
+      - "Kafka"
+      - "Monitoring (Grafana, Prometheus)"
+
+  - company: "Roadr"
+    title: "Ingeniero de Datos"
+    location: "Los Ángeles, California, Estados Unidos"
+    type: "Remoto, Tiempo completo"
+    start: "Feb 2023"
+    end: "Junio 2025"
+    time: "2 años 6 meses"
+    responsibilities:
+      - "Construcción y despliegue de backends escalables en FastAPI y Echo con Arquitectura Limpia y TDD, integrando Redis, GraphQL y WebSockets."
+      - "Diseño de pipelines ETL para centralizar datos de múltiples fuentes y dar soporte a analítica e informes orientados a eventos."
+      - "Uso de PySpark en AWS EMR para transformar y optimizar datos crudos antes de cargarlos en Redshift."
+      - "Implementación del backend de un bot conversacional (Maia) usando FastAPI con la API de OpenAI."
+      - "Migración de MongoDB a PostgreSQL y transición de dashboards a Grafana para reportes en tiempo real con eficiencia de costos."
+    tools:
+      - "Python (FastAPI, Airflow, Pyspark)"
+      - "Golang (Fiber, Echo)"
+      - "Docker"
+      - "AWS (Lambda, EMR, S3, Redshift, Step Functions)"
+      - "Warehousing (Snowflake, Amazon Redshift, Cassandra)"
+      - "SQL (PostgreSQL)"
+      - "CI/CD (Jenkins, GitHub Actions)"
+      - "NoSQL (MongoDB)"
+      - "Event Streaming (Redis Pub/Sub, Kafka)"
+      - "Grafana"
+
+  - company: "Cibertec"
+    title: "Instructor de Ciencia de Datos"
+    location: "Lima, Perú"
+    type: "Remoto, Tiempo completo"
+    start: "Oct 2023"
+    end: "Presente"
+    time: "2 años 4 meses"
+    responsibilities:
+      - "Enseñanza de Python para Ciencia de Datos, desde fundamentos hasta avanzado (generadores, POO, automatización)."
+      - "Guía a estudiantes en el Desarrollo de APIs, explicando diseño REST tanto CSR como SSR."
+      - "Demostración de conceptos de Ingeniería de Datos mediante la construcción de pipelines ETL orientados a lotes con datasets reales en Python + SQL."
+      - "Instrucción en fundamentos de Machine Learning, cubriendo algoritmos principales, evaluación de modelos y casos de uso aplicados."
+    tools:
+      - "Python (FastAPI, Flask, Pandas, NumPy, Jupyter notebook)"
+      - "Bash"
+      - "SQL (SQLite3)"
+      - "NoSQL (MongoDB)"
+      - "WebSockets"
+
+  - company: "Grupo RPG SAC"
+    title: "Desarrollador Full Stack"
+    location: "Tiabaya, Arequipa, Perú"
+    type: "Tiempo completo"
+    start: "Jul 2021"
+    end: "Dic 2022"
+    time: "1 año 6 meses"
+    responsibilities:
+      - "Diseño, desarrollo y despliegue de una herramienta web que cumplió con los requerimientos del laboratorio."
+      - "Construcción de una aplicación web moderna en Django contenerizada con Docker lista para producción en servidores AWS."
+      - "Desarrollo de un módulo para registro de clientes, cotizaciones de ensayos, órdenes de servicio y hojas de liquidación."
+      - "Desarrollo de dashboards internos automatizados y reportes en PDF proporcionando métricas e insights precisos."
+    tools:
+      - "CI/CD"
+      - "Python (Django)"
+      - "HTMX"
+      - "SQL (PostgreSQL)"
+      - "Docker"
+      - "AWS (EC2, RDS, S3)"
+
+  - company: "UCSM - EPIC Labs"
+    title: "Desarrollador Full Stack"
+    location: "Yanahuara, Arequipa, Perú"
+    type: "Tiempo completo"
+    start: "Dic 2019"
+    end: "Ene 2021"
+    time: "1 año 2 meses"
+    responsibilities:
+      - "Diseño, desarrollo y despliegue de una herramienta web piloto que cumplió con los requerimientos del laboratorio."
+      - "Realización de modelado de datos y diseño de esquemas para definir la estructura y relaciones de la base de datos."
+      - "Implementación de un flujo de proceso de planificación para estudiantes, investigadores y clientes usando una arquitectura estilo SaaS."
+    tools:
+      - "Python (Django)"
+      - "HTML"
+      - "CSS (Bootstrap)"
+      - "SQL (PostgreSQL)"
+      - "PythonAnywhere"
+
+PROJECTS: "Proyectos"
+PROJECT_LIST:
+  - TITLE: "Plataforma ERP Kroma Dental"
+    ROLE: "Desarrollador Full Stack e Ingeniero DevOps"
+    DATE: "Oct 2025 – Presente"
+    LOCATION: "Perú"
+    LINK: "https://kromacompany.com"
+    DESCRIPTIONS:
+      - "Construcción de microservicios para una plataforma ERP dental usando Go (Echo) y frontend en Vue."
+      - "Diseño de arquitectura contenerizada con orquestación mediante AWS ECS."
+      - "Implementación de pipelines CI/CD, integración con AWS S3 y PostgreSQL."
+
+  - TITLE: "Viaje Fácil - Startup Brasil"
+    ROLE: "Ingeniero DevOps"
+    DATE: "Mayo 2025"
+    LOCATION: "Brasil"
+    LINK: "https://www.staging.fastrip.com.br/login"
+    DESCRIPTIONS:
+      - "Configuración de AWS Amplify para hosting de frontend y despliegue de un backend ligero de API en Docker con Express."
+      - "Enfoque en arquitectura de nube costo-eficiente para la validación temprana del producto y crecimiento."
+
+  - TITLE: "Cifras – Startup España"
+    ROLE: "Consultor DevOps"
+    DATE: "Dic 2024"
+    LOCATION: "España"
+    DESCRIPTIONS:
+      - "Consultoría sobre infraestructura en la nube y mejores prácticas de DevOps para una plataforma financiera basada en microservicios."
+      - "Construcción y contenerización de APIs de backend (Spring Boot) usando Docker y despliegue de servicios en AWS ECS."
+      - "Implementación de automatización CI/CD, monitoreo y orquestación para soportar operaciones escalables."
