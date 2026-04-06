@@ -3,6 +3,7 @@ node_modules/
 
 # Zola build output
 public/
+docs/
 
 # Tailwind temporary files (if any)
 .tailwind-cache/
