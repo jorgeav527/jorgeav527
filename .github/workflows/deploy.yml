@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  ci_cd:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -35,10 +35,10 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add docs/
+          git add -f docs/
 
           if git diff --staged --quiet; then
-            echo "No changes in docs/ - skipping commit."
+            echo "No changes - skipping commit."
           else
             git commit -m "chore: update docs build [skip ci]"
             git push origin main
