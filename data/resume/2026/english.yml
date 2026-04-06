@@ -248,7 +248,7 @@ PROJECT_LIST:
     ROLE: "DevOps Engineer"
     DATE: "May 2025"
     LOCATION: "Brazil"
-    LINK: "https://www.staging.fastrip.com.br/login"
+    LINK: "https://github.com/viajefacil"
     DESCRIPTIONS:
       - "Set up AWS Amplify for frontend hosting and deployed a lightweight Docker Express API backend."
       - "Focused on cost-effective cloud architecture for early product validation and growth."
