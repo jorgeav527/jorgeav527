@@ -1,0 +1,71 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@import "./catppuccin.css";
+
+@theme {
+  /* Define the tokens so Tailwind generates utility classes */
+  --font-sans: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  --color-theme: var(--ui-theme);
+  --color-entry: var(--ui-entry);
+  --color-primary: var(--ui-primary);
+  --color-secondary: var(--ui-secondary);
+  --color-tertiary: var(--ui-tertiary);
+  --color-accent: var(--ui-accent);
+  --color-border: var(--ui-border);
+  --color-code-bg: var(--ui-code-bg);
+}
+
+@layer base {
+  :root[data-theme="dark"] {
+    --ui-theme: var(--color-mac-base);
+    --ui-entry: var(--color-mac-mantle);
+    --ui-primary: var(--color-mac-text);
+    --ui-secondary: var(--color-mac-subtext1);
+    --ui-tertiary: var(--color-mac-subtext0);
+    --ui-accent: var(--color-mac-blue);
+    --ui-border: var(--color-mac-crust);
+    --ui-code-bg: var(--color-mac-surface0);
+  }
+
+  :root[data-theme="light"] {
+    --ui-theme: var(--color-lat-base);
+    --ui-entry: var(--color-lat-mantle);
+    --ui-primary: var(--color-lat-text);
+    --ui-secondary: var(--color-lat-subtext1);
+    --ui-tertiary: var(--color-lat-subtext0);
+    --ui-accent: var(--color-lat-blue);
+    --ui-border: var(--color-lat-crust);
+    --ui-code-bg: var(--color-lat-surface0);
+  }
+
+  body {
+    background-color: var(--color-theme);
+    color: var(--color-primary);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    @apply antialiased transition-colors duration-300;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .prose-catppuccin {
+    @apply prose max-w-none;
+    --tw-prose-body: var(--color-secondary);
+    --tw-prose-headings: var(--color-primary);
+    --tw-prose-links: var(--color-accent);
+    --tw-prose-bold: var(--color-primary);
+    --tw-prose-counters: var(--color-accent);
+    --tw-prose-bullets: var(--color-tertiary);
+    --tw-prose-hr: var(--color-border);
+    --tw-prose-quotes: var(--color-primary);
+    --tw-prose-quote-borders: var(--color-accent);
+    --tw-prose-captions: var(--color-secondary);
+    --tw-prose-code: var(--color-accent);
+    --tw-prose-pre-code: var(--color-primary);
+    --tw-prose-pre-bg: var(--color-code-bg);
+  }
+}
