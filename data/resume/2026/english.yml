@@ -120,6 +120,25 @@ CIVIL_EXPERIENCES:
       - "Reduced water consumption by 30% and electricity by 11%."
 
 SOFTWARE_EXPERIENCES:
+  - company: "Cibertec"
+    title: "Data Science Instructor"
+    location: "Lima, Peru"
+    type: "Remote, Full-time"
+    start: "Oct 2023"
+    end: "Present"
+    time: "2 yr, 4 mos"
+    responsibilities:
+      - "Teach Python for Data Science, from fundamentals to advanced (generators, OOP, automation)."
+      - "Guide students in API Development, explaining REST design both CSR and SSR."
+      - "Demonstrate Data Engineering concepts by building batch-oriented ETL pipelines with real-world datasets on Python + SQL."
+      - "Instruct on Machine Learning fundamentals, covering core algorithms, model evaluation, and applied use cases."
+    tools:
+      - "Python (FastAPI, Flask, Pandas, NumPy, Jupyter notebook)"
+      - "Bash"
+      - "SQL (SQLite3)"
+      - "NoSQL (MongoDB)"
+      - "WebSockets"
+
   - company: "Roadr"
     title: "Full Stack DevOps"
     location: "Los Angeles, California, United States"
@@ -175,25 +194,6 @@ SOFTWARE_EXPERIENCES:
       - "Event Streaming (Redis Pub/Sub, Kafka)"
       - "Grafana"
 
-  - company: "Cibertec"
-    title: "Data Science Instructor"
-    location: "Lima, Peru"
-    type: "Remote, Full-time"
-    start: "Oct 2023"
-    end: "Present"
-    time: "2 yr, 4 mos"
-    responsibilities:
-      - "Teach Python for Data Science, from fundamentals to advanced (generators, OOP, automation)."
-      - "Guide students in API Development, explaining REST design both CSR and SSR."
-      - "Demonstrate Data Engineering concepts by building batch-oriented ETL pipelines with real-world datasets on Python + SQL."
-      - "Instruct on Machine Learning fundamentals, covering core algorithms, model evaluation, and applied use cases."
-    tools:
-      - "Python (FastAPI, Flask, Pandas, NumPy, Jupyter notebook)"
-      - "Bash"
-      - "SQL (SQLite3)"
-      - "NoSQL (MongoDB)"
-      - "WebSockets"
-
   - company: "Grupo RPG SAC"
     title: "Full Stack Developer"
     location: "Tiabaya, Arequipa, Perú"
@@ -234,15 +234,17 @@ SOFTWARE_EXPERIENCES:
 
 PROJECTS: "Projects"
 PROJECT_LIST:
-  - TITLE: "Kroma Dental ERP Platform"
+  - TITLE: "Kroma Company Platform"
     ROLE: "Full Stack Developer & DevOps Engineer"
     DATE: "Oct 2025 – Present"
     LOCATION: "Peru"
     LINK: "https://kromacompany.com"
     DESCRIPTIONS:
-      - "Built microservices for a dental ERP platform using Go (Echo) and Vue frontend."
-      - "Designed containerized architecture with orchestration via AWS ECS."
-      - "Implementing CI/CD pipelines, AWS S3 integration, and PostgreSQL."
+      - "Built a fully serverless architecture on AWS using S3, API Gateway, and DynamoDB."
+      - "Developed a Vue frontend with global content delivery via CloudFront."
+      - "Implemented a containerized FastAPI, deployed on AWS Lambda."
+      - "Multi-purpose platform: academic resources, dental clinic management, and e-commerce."
+      - "HTMX admin dashboard for e-commerce, powered by DynamoDB."
 
   - TITLE: "Viaje Fácil - Brazil Startup"
     ROLE: "DevOps Engineer"
