@@ -1,0 +1,118 @@
+<!doctype html><html lang=en><head><meta charset=UTF-8><meta content="width=device-width,initial-scale=1.0" name=viewport><title>Python's map() and filter(): The generators you didn't know you needed. | Docs:CordStart</title><link href=https://docs.cordstart.com/icon.png rel=icon type=image/svg+xml><link href=https://docs.cordstart.com/icon.png rel=apple-touch-icon><link href=https://docs.cordstart.com/style.css rel=stylesheet><script>if (localStorage.getItem("theme") === "light") {
+      document.documentElement.setAttribute("data-theme", "light");
+    } else {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }</script><body class="selection:bg-accent/50 selection:text-accent min-h-screen"><nav class="mx-auto max-w-5xl px-6 h-15 flex items-center justify-between border-b-3 relative"><div class="flex items-center gap-2"><a class="px-3 py-1.5 hover:bg-entry rounded-xl active:scale-95 border border-transparent hover:border-border/50 text-2xl font-bold text-accent group" href=/> <span>Docs</span> </a><button aria-label="Toggle Theme" class="p-2.5 hover:bg-entry rounded-xl active:scale-95 border border-transparent hover:border-border/50" id=theme-toggle><svg class="w-5 h-5 hidden in-data-[theme='dark']:block" viewbox="0 0 24 24" fill=none id=sun stroke=currentColor stroke-width=2><circle cx=12 cy=12 r=5></circle><path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg> <svg class="w-5 h-5 hidden in-data-[theme='light']:block" viewbox="0 0 24 24" fill=none id=moon stroke=currentColor stroke-width=2><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg></button></div><button class="md:hidden p-2.5 hover:bg-entry rounded-xl active:scale-95 border border-transparent hover:border-border/50 text-secondary" id=menu-btn><svg class="w-6 h-6" viewbox="0 0 24 24" fill=none stroke=currentColor><path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap=round stroke-width=2></path></svg></button><div class="hidden absolute top-15 left-0 w-full border-b md:border-none md:static md:flex md:w-auto z-50" id=nav-menu style=background-color:var(--ui-theme)><ul class="flex flex-col md:flex-row items-end md:items-center gap-1 px-6 py-1 md:p-0 text-sm font-bold uppercase text-secondary"><li class="w-full md:w-auto"><a class="block text-right md:text-left px-4 py-2 hover:bg-entry rounded-xl active:scale-95 border border-transparent hover:border-border/50 hover:text-accent" href=/posts> Posts </a><li class="w-full md:w-auto"><a class="block text-right md:text-left px-4 py-2 hover:bg-entry rounded-xl active:scale-95 border border-transparent hover:border-border/50 hover:text-accent" href=/projects> Projects </a><li class="w-full md:w-auto"><a class="block text-right md:text-left px-4 py-2 hover:bg-entry rounded-xl active:scale-95 border border-transparent hover:border-border/50 hover:text-accent" href=/blog> Blog </a></ul></div></nav><main class="mx-auto max-w-5xl px-6 py-15 md:pt-15"><article class="mx-auto max-w-3xl px-6"><header class=mb-8><h1 class="text-4xl font-black text-accent mb-2">Python's map() and filter(): The generators you didn't know you needed.</h1><time class="text-secondary font-mono">March 25, 2024</time></header><div class="prose-catppuccin text-base"><h2 id=why-are-we-still-looping-manually>WHY ARE WE STILL LOOPING MANUALLY?</h2><p>So, you’re still using <code>for</code> loops to transform or select every single element in your list? That’s so 2010. Let’s talk about <code>map()</code> and <code>filter()</code>, the high-order functions that are basically the ‘efficient friends’ who only do work when absolutely necessary.</p><img alt="hugo home" class="rounded-xl shadow-xl/30 mx-auto my-6" loading=lazy src=https://docs.cordstart.com/posts/map-filter-generators//meme_1.png><h2 id=part-1-the-map>PART 1: THE MAP()</h2><p>The <code>map()</code> function is used to apply a function to each element of an iterable, producing a new transformed sequence.<h3 id=the-old-school-way-i-have-too-much-time-on-my-hands>The old-school way (I have too much time on my hands)</h3><pre><code data-lang=python>my_pets = ['alfred', 'tabitha', 'william', 'arla']
+
+uppered_pets = []
+for pet in my_pets:
+    pet_ = pet.upper()
+    uppered_pets.append(pet_)
+
+print(uppered_pets)
+# Output: ['ALFRED', 'TABITHA', 'WILLIAM', 'ARLA']
+</code></pre><h3 id=the-functional-way-to-reuse-the-logic>The functional way (To reuse the logic "")</h3><pre><code data-lang=python>def upper_pets(pet_list):
+    uppered_pets = []
+    for pet in pet_list:
+        pet_ = pet.upper()
+        uppered_pets.append(pet_)
+    return uppered_pets
+
+my_pets = ['alfred', 'tabitha', 'william', 'arla']
+
+result = upper_pets(my_pets)
+print(result)
+# Output: ['ALFRED', 'TABITHA', 'WILLIAM', 'ARLA']
+</code></pre><h3 id=the-fancy-pythonista-way-list-comprehension>The "fancy" pythonista way (List Comprehension)</h3><pre><code data-lang=python>my_pets = ['alfred', 'tabitha', 'william', 'arla']
+
+uppered_pets = [pet.upper() for pet in my_pets]
+print(upper_pets)
+# Output: ['ALFRED', 'TABITHA', 'WILLIAM', 'ARLA']
+</code></pre><h3 id=the-map-way-work-smarter-not-harder>The map() way (Work Smarter, not harder)</h3><pre><code data-lang=python>def upper_pet(pet):
+    return pet.upper()
+
+my_pets = ['alfred', 'tabitha', 'william', 'arla']
+
+uppered_pets = list(map(upper_pet, my_pets))
+
+print(uppered_pets)
+# Output: ['ALFRED', 'TABITHA', 'WILLIAM', 'ARLA']
+</code></pre><h3 id=the-map-way-with-a-lambda-work-smarter-not-harder>The map() way (with a lambda — work smarter, not harder)</h3><pre><code data-lang=python>my_pets = ['alfred', 'tabitha', 'william', 'arla']
+
+uppered_pets = list(map(lambda pet: pet.upper(), my_pets))
+
+print(uppered_pets)
+# Output: ['ALFRED', 'TABITHA', 'WILLIAM', 'ARLA']
+</code></pre><h3 id=the-pythonista-way-to-create-a-generator-comprehension>The pythonista way to create a (Generator Comprehension)</h3><pre><code data-lang=python>my_pets = ['alfred', 'tabitha', 'william', 'arla']
+
+uppered_pets = (pet.upper() for pet in my_pets)
+uppered_pets = list(uppered_pets)
+print(uppered_pets)
+# Output: ['ALFRED', 'TABITHA', 'WILLIAM', 'ARLA']
+</code></pre><p>⚡ <strong>Reminder: map() is a generator-like iterator.</strong> In Python 3, it returns a lazy iterator. It computes values only when needed and can be consumed only once!<hr><h2 id=part-2-the-filter>PART 2: THE FILTER()</h2><p>While <code>map()</code> transforms everyone, <code>filter()</code> is the picky bouncer at the club. It selects elements from an iterable based on a specific condition and only lets the ones that satisfy it through.<h3 id=the-old-school-way-i-have-too-much-time-on-my-hands-1>The old-school way (I have too much time on my hands)</h3><pre><code data-lang=python>scores = [66, 90, 68, 59, 76, 60, 88, 74, 81, 65]
+
+over_75 = []
+for score in scores:
+    if score > 75:
+        over_75.append(score)
+
+print(over_75)
+# Output: [90, 76, 88, 81]
+</code></pre><h3 id=the-functional-way-to-reuse-the-logic-1>The functional way (To reuse the logic "")</h3><pre><code data-lang=python>def filter_scores(score_list):
+    filtered_scores = []
+    for score in score_list:
+        if score > 75:
+            filtered_scores.append(score)
+    return filtered_scores
+
+scores = [66, 90, 68, 59, 76, 60, 88, 74, 81, 65]
+over_75 = filter_scores(scores)
+print(over_75)
+# Output: [90, 76, 88, 81]
+</code></pre><h3 id=the-fancy-pythonista-way-list-comprehension-1>The "fancy" pythonista way (List Comprehension)</h3><pre><code data-lang=python>scores = [66, 90, 68, 59, 76, 60, 88, 74, 81, 65]
+
+over_75 = [score for score in scores if score > 75]
+
+print(over_75)
+# Output: [90, 76, 88, 81]
+</code></pre><h3 id=the-filter-way-work-smarter-not-harder>The filter() way (Work Smarter, not harder)</h3><pre><code data-lang=python>def is_over_75(score):
+    return score > 75
+
+scores = [66, 90, 68, 59, 76, 60, 88, 74, 81, 65]
+
+over_75 = list(filter(is_over_75, scores))
+
+print(over_75)
+# Output: [90, 76, 88, 81]
+</code></pre><h3 id=the-filter-way-with-a-lambda-work-smarter-not-harder>The filter() way (with a lambda — work smarter, not harder)</h3><pre><code data-lang=python>scores = [66, 90, 68, 59, 76, 60, 88, 74, 81, 65]
+
+over_75 = list(filter(lambda score: score > 75, scores))
+
+print(over_75)
+# Output: [90, 76, 88, 81]
+</code></pre><h3 id=the-pythonista-way-to-create-a-generator-comprehension-1>The pythonista way to create a (Generator Comprehension)</h3><pre><code data-lang=python>scores = [66, 90, 68, 59, 76, 60, 88, 74, 81, 65]
+
+over_75 = (score for score in scores if score > 75)
+over_75 = list(over_75)
+
+print(over_75)
+# Output: [90, 76, 88, 81]
+</code></pre><p>⚡ <strong>Reminder: filter() is ALSO a generator-like iterator.</strong> Just like <code>map()</code>, calling <code>filter(lambda x: x > 10, numbers)</code> does not return a list. It returns a lazy filter object that evaluates items only when needed.<hr><h2 id=the-big-reveal-why-are-they-so-lazy>THE BIG REVEAL: WHY ARE THEY SO LAZY?</h2><p>In Python 3, both <code>map()</code> and <code>filter()</code> return <strong>Iterators</strong>. This makes them incredibly similar to <strong>Generators</strong>:<ol><li><strong>Memory Efficiency:</strong> They don't store the whole result in memory. Great for processing millions of items without melting your RAM.<li><strong>Lazy Evaluation:</strong> They only calculate the "next" item when you actually ask for it (e.g., when you loop over them or convert them to a list).<li><strong>One-Hit Wonders:</strong> Once you've iterated through a map or filter object, it's empty. You can't reuse it.</ol><hr><h2 id=summary>SUMMARY</h2><ul><li><strong>map()</strong> = Applies a function to every element.<li><strong>filter()</strong> = Keeps only the elements that meet a condition.<li><strong>Lazy Objects:</strong> Both return lazy iterators, not lists. Wrap them in <code>list()</code> if you need the full result immediately.<li><strong>Efficiency:</strong> They are the secret weapon for handling large datasets efficiently.</ul><p>Stop being eager. Be lazy. Be a Python Pro.</div></article></main><footer class="text-center py-auto text-xs text-secondary/40 font-mono">© 2026-Apr by CordStart</footer><script>const btn = document.getElementById("theme-toggle");
+    if (btn) {
+      btn.addEventListener("click", () => {
+        const html = document.documentElement;
+        const isDark = html.getAttribute("data-theme") === "dark";
+        const newTheme = isDark ? "light" : "dark";
+        html.setAttribute("data-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+      });
+    }
+
+    const menuBtn = document.getElementById("menu-btn");
+    const navMenu = document.getElementById("nav-menu");
+    if (menuBtn && navMenu) {
+      menuBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("hidden");
+        navMenu.classList.toggle("flex");
+      });
+    }</script>
