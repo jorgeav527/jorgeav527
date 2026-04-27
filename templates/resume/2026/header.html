@@ -9,34 +9,35 @@
                 <span class="text-slate-400">|</span>
                 <span>{{ basic.BOOTCAMP }}</span>
             </div>
-        </div>
-        <div class="grid grid-cols-2 gap-x-4 gap-y-1 mt-0 text-right min-w-70">
-            <a href="mailto:{{ basic.GMAIL }}"
-                class="flex items-center justify-end gap-2 text-[10px] font-semibold text-slate-600 hover:text-blue-600 whitespace-nowrap">
-                {{ basic.GMAIL }} <i class="bi bi-envelope-arrow-down text-slate-600"></i>
-            </a>
-            <a href="https://{{ basic.GITHUB }}"
-                class="flex items-center justify-end gap-2 text-[10px] font-semibold text-slate-600 hover:text-blue-600 whitespace-nowrap">
-                {{ basic.GITHUB }} <i class="bi bi-github text-slate-600"></i>
-            </a>
-            <a href="https://wa.me/{{ basic.PHONE }}"
-                class="flex items-center justify-end gap-2 text-[10px] font-semibold text-slate-600 hover:text-blue-600 whitespace-nowrap">
-                {{ basic.PHONE }} <i class="bi bi-whatsapp text-slate-600"></i>
-            </a>
-            <a href="https://www.{{ basic.LINKEDIN }}"
-                class="flex items-center justify-end gap-2 text-[10px] font-semibold text-slate-600 hover:text-blue-600 whitespace-nowrap">
-                {{ basic.LINKEDIN }} <i class="bi bi-linkedin text-slate-600"></i>
-            </a>
-            <div class="col-span-2">
-                <a href="https://{{ basic.WEBLOG }}"
-                    class="flex items-center justify-end gap-2 text-[10px] font-semibold text-slate-600 hover:text-blue-600 whitespace-nowrap">
-                    {{ basic.WEBLOG }} <i class="bi bi-globe text-slate-600"></i>
+            <div class="flex flex-wrap items-center text-[10px]">
+                <a href="mailto:{{ basic.GMAIL }}" class="text-slate-700 whitespace-nowrap">
+                    {{ basic.GMAIL }}
+                </a>
+                <span class="text-slate-700 mx-2">|</span>
+
+                <a href="https://wa.me/{{ basic.PHONE }}" class="text-slate-700 whitespace-nowrap">
+                    {{ basic.PHONE }}
+                </a>
+                <span class="text-slate-700 mx-2">|</span>
+
+                <a href="https://{{ basic.GITHUB }}" class="text-slate-700 whitespace-nowrap">
+                    {{ basic.GITHUB }}
+                </a>
+                <span class="text-slate-700 mx-2">|</span>
+
+                <a href="https://www.{{ basic.LINKEDIN }}" class="text-slate-700 whitespace-nowrap">
+                    {{ basic.LINKEDIN }}
+                </a>
+                <span class="text-slate-700 mx-2">|</span>
+
+                <a href="https://{{ basic.WEBLOG }}" class="text-slate-700 whitespace-nowrap">
+                    {{ basic.WEBLOG }}
                 </a>
             </div>
         </div>
     </div>
 
-    <div class="text-[11px] text-slate-800 leading-normal text-justify border-t border-slate-400 pt-1">
+    <div class="text-[11px] text-slate-800 leading-normal text-justify border-t border-slate-400 pt-1 mt-2">
         {% for p in data.ABOUT_DESCRIPTION %}
         <p>{{ p }}</p>
         {% endfor %}
