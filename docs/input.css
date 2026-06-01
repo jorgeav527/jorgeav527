@@ -15,6 +15,7 @@
   --color-accent: var(--ui-accent);
   --color-border: var(--ui-border);
   --color-code-bg: var(--ui-code-bg);
+
 }
 
 @layer base {
@@ -27,6 +28,7 @@
     --ui-accent: var(--color-mac-blue);
     --ui-border: var(--color-mac-crust);
     --ui-code-bg: var(--color-mac-surface0);
+
   }
 
   :root[data-theme="light"] {
@@ -38,6 +40,7 @@
     --ui-accent: var(--color-lat-blue);
     --ui-border: var(--color-lat-crust);
     --ui-code-bg: var(--color-lat-surface0);
+
   }
 
   body {

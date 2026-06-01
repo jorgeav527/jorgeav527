@@ -1,10 +1,12 @@
 +++
-title = "My First “Hello World”… on an HP 50G"
-date = 2016-12-10
-description = "A fun throwback to the moment I passed my last university course thanks to an HP 50G calculator, a tiny “Hello World” program, and a bit of stubborn determination. This story marks the unexpected beginning of my journey into programming."
+title = "Tmux setup"
+date = 2016-12-11
+description = "A fun throwback to the moment I passed my last university course thanks to an HP 50G calculator, a tiny “Hello World” program, and a bit of stubborn           determination. This story marks the unexpected beginning of my journey into programming."
+[extra]
+tags = ["linux", "terminal"]
 +++
 
-## 1. THIRD TIME FAILURE? 
+## 1. THIRD TIME FAILURE?
 
 Back in university, I had this legendary course called "Programación de Obras" — or whatever heroic name you’d give a class where diagrams must be so exact that even NASA would say: “bro, relax.”
 

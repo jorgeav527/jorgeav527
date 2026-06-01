@@ -2,6 +2,8 @@
 title = "Hugo vs Zola"
 date = 2026-03-10
 description = "So… I’ve been on a small adventure trying to build my webblog, and I started with Hugo and endedup with Zola. Let me be honest about Hugo and I had beef."
+[extra]
+tags = ["programming"]
 +++
 
 ## Hugo: The Powerhouse of Golang

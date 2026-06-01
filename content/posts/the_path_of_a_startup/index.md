@@ -2,15 +2,17 @@
 title = "The Path of a Startup"
 date = 2022-01-01
 description = "A three-part reflection on the evolution, struggles, and final decisions behind a startup I helped build."
+[extra]
+tags = ["devops"]
 +++
 
-# The Path of a Startup  
+# The Path of a Startup
 *A three-part series on how a small idea became a full technical journey.*
 
 ---
 
-## Part 1 — The Test Phase  
-In the beginning, everything started with experiments.  
+## Part 1 — The Test Phase
+In the beginning, everything started with experiments.
 We wanted to build a web application as fast as possible, so we used **JavaScript** for the frontend and even for backend prototypes. Some pieces were written in **Python**, but nothing was fully stable.
 
 This phase was chaotic but necessary:
@@ -18,12 +20,12 @@ This phase was chaotic but necessary:
 - We built features fast.
 - We discovered the limitations of “move fast” development.
 
-This was also the moment when the architecture started showing signs of trouble.  
+This was also the moment when the architecture started showing signs of trouble.
 It worked… but only because the scale was tiny.
 
 ---
 
-## Part 2 — The Intermediate Phase  
+## Part 2 — The Intermediate Phase
 Once the project grew, the technical flaws became impossible to ignore.
 
 We tried:
