@@ -3,83 +3,175 @@
 {% block title %}Blog | {{ config.title }}{% endblock title %}
 
 {% block content %}
-<div class="mb-6">
-  <h1 class="text-4xl font-black text-accent mb-2">{{ section.title }}</h1>
-  <p class="text-secondary font-mono text-sm">Total entries: {{ paginator.total_pages }}</p>
-</div>
+{% set_global unique_tags = [] %}
+{% set blog_section = get_section(path="blog/_index.md") %}
+{% for post in blog_section.pages %}
+  {% if post.extra.tags %}
+    {% for tag in post.extra.tags %}
+      {% if tag not in unique_tags %}
+        {% set_global unique_tags = unique_tags | concat(with=[tag]) %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+{% endfor %}
 
-<div class="space-y-24 md:space-y-12">
-  {% for post in paginator.pages %}
-  {# Check if index is even (0, 2, 4...) #}
-  {% set is_even = loop.index0 is even %}
+<div x-data="{ activeTag: '' }">
+  <div class="mb-6">
+    <h1 class="text-4xl font-black text-accent mb-2">{{ section.title }}</h1>
+    <p class="text-secondary font-mono text-sm">
+      Total entries: {{ blog_section.pages | length }}
+    </p>
 
-  <article
-    class="group flex flex-col {% if is_even %}md:flex-row{% else %}md:flex-row-reverse{% endif %} gap-8 md:gap-16 items-center">
+    {% if unique_tags %}
+    <div class="flex flex-wrap gap-2 mt-4">
+      <button @click.prevent="activeTag = ''"
+              class="text-xs px-3 py-1 rounded-full border transition-colors cursor-pointer"
+              :class="activeTag === '' ? 'bg-accent text-theme border-accent' : 'bg-entry text-secondary border-border/40 hover:bg-accent/10 hover:text-accent'">
+        All
+      </button>
+      {% for tag in unique_tags | sort %}
+      <button @click.prevent="activeTag = '{{ tag }}'"
+              class="text-xs px-3 py-1 rounded-full border transition-colors cursor-pointer"
+              :class="activeTag === '{{ tag }}' ? 'bg-accent text-theme border-accent' : 'bg-entry text-secondary border-border/40 hover:bg-accent/10 hover:text-accent'">
+        #{{ tag }}
+      </button>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
 
-    {# Column 1: The Image #}
-    <div class="w-full md:w-1/2 shrink-0">
-      <a href="{{ post.permalink }}"
-        class="block overflow-hidden rounded-3xl bg-entry border border-border/30 shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
-        {% if post.extra.image %}
-            {% set image_src = post.permalink ~ post.extra.image %}
-        {% else %}
-            {% set image_src = get_url(path='me_01.png') %}
-        {% endif %}
-        <img src="{{ image_src }}" alt="{{ post.title }}"
-          class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500">
-      </a>
+  {# -- Paginated view (All) -- #}
+  <div x-show="activeTag === ''">
+    <div class="space-y-24 md:space-y-12">
+      {% for post in paginator.pages %}
+      {% set is_even = loop.index0 is even %}
+      <article
+        class="group flex flex-col {% if is_even %}md:flex-row{% else %}md:flex-row-reverse{% endif %} gap-8 md:gap-16 items-center"
+        data-tags='{{ post.extra.tags | default(value=[]) | json_encode | safe }}'>
+
+        {# Column 1: The Image #}
+        <div class="w-full md:w-1/2 shrink-0">
+          <a href="{{ post.permalink }}"
+            class="block overflow-hidden rounded-3xl bg-entry border border-border/30 shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
+            {% if post.extra.image %}
+                {% set image_src = post.permalink ~ post.extra.image %}
+            {% else %}
+                {% set image_src = get_url(path='me_01.png') %}
+            {% endif %}
+            <img src="{{ image_src }}" alt="{{ post.title }}"
+              class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500">
+          </a>
+        </div>
+
+        {# Column 2: The Text #}
+        <div class="w-full md:w-1/2 flex flex-col {% if is_even %}items-start{% else %}items-end text-right{% endif %}">
+          <time class="text-xs font-mono text-accent mb-3 uppercase tracking-tighter">
+            {{ post.date | date(format="%B %d, %Y") }}
+          </time>
+
+          <a href="{{ post.permalink }}">
+            <h2 class="text-3xl font-black text-primary mb-4 group-hover:text-accent transition-colors leading-tight">
+              {{ post.title }}
+            </h2>
+          </a>
+
+          <div class="text-secondary/80 leading-relaxed mb-6 {% if not is_even %}md:pl-12{% else %}md:pr-12{% endif %}">
+            {% if post.summary %}
+            {{ post.summary | safe }}
+            {% else %}
+            <p>Explore this entry to learn more about the implementation, challenges, and solutions found during this
+              development cycle.</p>
+            {% endif %}
+          </div>
+
+          <a href="{{ post.permalink }}"
+            class="px-6 py-2 rounded-full border border-accent/30 text-accent text-sm font-bold hover:bg-accent hover:text-theme transition-all duration-300">
+            Read Entry
+          </a>
+        </div>
+
+      </article>
+      {% endfor %}
     </div>
 
-    {# Column 2: The Text #}
-    <div class="w-full md:w-1/2 flex flex-col {% if is_even %}items-start{% else %}items-end text-right{% endif %}">
-      <time class="text-xs font-mono text-accent mb-3 uppercase tracking-tighter">
-        {{ post.date | date(format="%B %d, %Y") }}
-      </time>
-
-      <a href="{{ post.permalink }}">
-        <h2 class="text-3xl font-black text-primary mb-4 group-hover:text-accent transition-colors leading-tight">
-          {{ post.title }}
-        </h2>
+    {% if paginator.number_pagers > 1 %}
+    <nav class="flex items-center justify-center gap-4 mt-16 pb-15">
+      {% if paginator.previous %}
+      <a href="{{ paginator.previous }}"
+         class="px-4 py-2 rounded-xl border border-border/40 text-sm font-semibold text-secondary hover:text-accent hover:border-accent/50 transition-colors">
+        ← Previous
       </a>
+      {% endif %}
 
-      <div class="text-secondary/80 leading-relaxed mb-6 {% if not is_even %}md:pl-12{% else %}md:pr-12{% endif %}">
-        {% if post.summary %}
-        {{ post.summary | safe }}
-        {% else %}
-        <p>Explore this entry to learn more about the implementation, challenges, and solutions found during this
-          development cycle.</p>
-        {% endif %}
-      </div>
+      <span class="text-xs font-mono text-secondary/60">
+        Page {{ paginator.current_index }} of {{ paginator.number_pagers }}
+      </span>
 
-      <a href="{{ post.permalink }}"
-        class="px-6 py-2 rounded-full border border-accent/30 text-accent text-sm font-bold hover:bg-accent hover:text-theme transition-all duration-300">
-        Read Entry
+      {% if paginator.next %}
+      <a href="{{ paginator.next }}"
+         class="px-4 py-2 rounded-xl border border-border/40 text-sm font-semibold text-secondary hover:text-accent hover:border-accent/50 transition-colors">
+        Next →
       </a>
+      {% endif %}
+    </nav>
+    {% endif %}
+  </div>
+
+  {# -- Filtered view (tag selected) -- #}
+  <div x-show="activeTag !== ''" x-cloak>
+    <div class="space-y-24 md:space-y-12">
+      {% for post in blog_section.pages %}
+      {% set is_even = loop.index0 is even %}
+      <article
+        class="group flex flex-col {% if is_even %}md:flex-row{% else %}md:flex-row-reverse{% endif %} gap-8 md:gap-16 items-center"
+        x-show="JSON.parse($el.dataset.tags).includes(activeTag)"
+        x-transition:enter.duration.200ms
+        data-tags='{{ post.extra.tags | default(value=[]) | json_encode | safe }}'>
+
+        {# Column 1: The Image #}
+        <div class="w-full md:w-1/2 shrink-0">
+          <a href="{{ post.permalink }}"
+            class="block overflow-hidden rounded-3xl bg-entry border border-border/30 shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
+            {% if post.extra.image %}
+                {% set image_src = post.permalink ~ post.extra.image %}
+            {% else %}
+                {% set image_src = get_url(path='me_01.png') %}
+            {% endif %}
+            <img src="{{ image_src }}" alt="{{ post.title }}"
+              class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500">
+          </a>
+        </div>
+
+        {# Column 2: The Text #}
+        <div class="w-full md:w-1/2 flex flex-col {% if is_even %}items-start{% else %}items-end text-right{% endif %}">
+          <time class="text-xs font-mono text-accent mb-3 uppercase tracking-tighter">
+            {{ post.date | date(format="%B %d, %Y") }}
+          </time>
+
+          <a href="{{ post.permalink }}">
+            <h2 class="text-3xl font-black text-primary mb-4 group-hover:text-accent transition-colors leading-tight">
+              {{ post.title }}
+            </h2>
+          </a>
+
+          <div class="text-secondary/80 leading-relaxed mb-6 {% if not is_even %}md:pl-12{% else %}md:pr-12{% endif %}">
+            {% if post.summary %}
+            {{ post.summary | safe }}
+            {% else %}
+            <p>Explore this entry to learn more about the implementation, challenges, and solutions found during this
+              development cycle.</p>
+            {% endif %}
+          </div>
+
+          <a href="{{ post.permalink }}"
+            class="px-6 py-2 rounded-full border border-accent/30 text-accent text-sm font-bold hover:bg-accent hover:text-theme transition-all duration-300">
+            Read Entry
+          </a>
+        </div>
+
+      </article>
+      {% endfor %}
     </div>
-
-  </article>
-  {% endfor %}
+  </div>
 </div>
-
-{% if paginator.number_pagers > 1 %}
-<nav class="flex items-center justify-center gap-4 mt-16 pb-15">
-  {% if paginator.previous %}
-  <a href="{{ paginator.previous }}"
-     class="px-4 py-2 rounded-xl border border-border/40 text-sm font-semibold text-secondary hover:text-accent hover:border-accent/50 transition-colors">
-    ← Previous
-  </a>
-  {% endif %}
-
-  <span class="text-xs font-mono text-secondary/60">
-    Page {{ paginator.current_index }} of {{ paginator.number_pagers }}
-  </span>
-
-  {% if paginator.next %}
-  <a href="{{ paginator.next }}"
-     class="px-4 py-2 rounded-xl border border-border/40 text-sm font-semibold text-secondary hover:text-accent hover:border-accent/50 transition-colors">
-    Next →
-  </a>
-  {% endif %}
-</nav>
-{% endif %}
 {% endblock content %}
