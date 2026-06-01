@@ -1,5 +1,5 @@
 +++
-title = "Code Projects"
+title = "Projects"
 render = true
 template = "projects/list.html"
 page_template = "projects/single.html"

@@ -8,7 +8,7 @@
   <p class="text-secondary font-mono text-sm">Total entries: {{ section.pages | length }}</p>
 </div>
 
-<div class="space-y-24 md:space-y-32">
+<div class="space-y-24 md:space-y-12">
   {% for post in section.pages %}
   {# Check if index is even (0, 2, 4...) #}
   {% set is_even = loop.index0 is even %}
@@ -20,9 +20,13 @@
     <div class="w-full md:w-1/2 shrink-0">
       <a href="{{ post.permalink }}"
         class="block overflow-hidden rounded-3xl bg-entry border border-border/30 shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
-        {# If you have a specific image in frontmatter, use it. Otherwise, use a placeholder or me_01.png #}
-        <img src="{{ post.extra.image | default(value=get_url(path='me_01.png')) }}" alt="{{ post.title }}"
-          class="w-full h-64 md:h-80 object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500">
+        {% if post.extra.image %}
+            {% set image_src = post.permalink ~ post.extra.image %}
+        {% else %}
+            {% set image_src = get_url(path='me_01.png') %}
+        {% endif %}
+        <img src="{{ image_src }}" alt="{{ post.title }}"
+          class="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500">
       </a>
     </div>
 
