@@ -2,6 +2,8 @@
 title = "Python's map() and filter(): The generators you didn't know you needed."
 date = 2024-03-25
 description = "Learn how to use map() and filter() like a pro. Spoiler: They aren't lists, they are secretly lazy generators that save your RAM from melting."
+[extra]
+tags = ["python", "programming"]
 +++
 
 ## WHY ARE WE STILL LOOPING MANUALLY?

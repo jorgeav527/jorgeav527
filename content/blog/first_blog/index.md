@@ -1,6 +1,8 @@
 +++
-title = "How to Start with AI and Gemini on Linux"
-date = 2024-05-15
+title = "How I use AI on Linux"
+date = 2026-05-15
+[extra]
+image = "meme_1.png"
 +++
 
 Starting your journey with AI on Linux is straightforward and powerful. Here's a simple, step-by-step guide to getting up and running with Google's Gemini.
