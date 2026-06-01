@@ -5,10 +5,10 @@
 {% block content %}
 <div class="mb-6">
   <h1 class="text-4xl font-black text-accent mb-2">{{ section.title }}</h1>
-  <p class="text-secondary font-mono text-sm">Total entries: {{ section.pages | length }}</p>
+  <p class="text-secondary font-mono text-sm">Total entries: {{ paginator.total_pages }}</p>
 </div>
 <ul class="space-y-4">
-  {% for post in section.pages %}
+  {% for post in paginator.pages %}
   <li class="group">
     <a href="{{ post.permalink }}" class="flex flex-col p-5 rounded-2xl 
           bg-entry border border-border/40 
@@ -44,4 +44,26 @@
   </li>
   {% endfor %}
 </ul>
+
+{% if paginator.number_pagers > 1 %}
+<nav class="flex items-center justify-center gap-4 mt-16 pb-15">
+  {% if paginator.previous %}
+  <a href="{{ paginator.previous }}"
+     class="px-4 py-2 rounded-xl border border-border/40 text-sm font-semibold text-secondary hover:text-accent hover:border-accent/50 transition-colors">
+    ← Previous
+  </a>
+  {% endif %}
+
+  <span class="text-xs font-mono text-secondary/60">
+    Page {{ paginator.current_index }} of {{ paginator.number_pagers }}
+  </span>
+
+  {% if paginator.next %}
+  <a href="{{ paginator.next }}"
+     class="px-4 py-2 rounded-xl border border-border/40 text-sm font-semibold text-secondary hover:text-accent hover:border-accent/50 transition-colors">
+    Next →
+  </a>
+  {% endif %}
+</nav>
+{% endif %}
 {% endblock content %}
