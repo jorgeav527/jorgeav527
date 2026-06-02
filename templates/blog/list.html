@@ -53,8 +53,8 @@
         <div class="w-full md:w-1/2 shrink-0">
           <a href="{{ post.permalink }}"
             class="block overflow-hidden rounded-3xl bg-entry border border-border/30 shadow-2xl transition-transform duration-500 group-hover:scale-[1.02]">
-            {% if post.extra.image %}
-                {% set image_src = post.permalink ~ post.extra.image %}
+            {% if post.extra.thumbnail %}
+                {% set image_src = post.permalink ~ post.extra.thumbnail %}
             {% else %}
                 {% set image_src = get_url(path='me_01.png') %}
             {% endif %}
@@ -76,8 +76,8 @@
           </a>
 
           <div class="text-secondary/80 leading-relaxed mb-6 {% if not is_even %}md:pl-12{% else %}md:pr-12{% endif %}">
-            {% if post.summary %}
-            {{ post.summary | safe }}
+            {% if post.description %}
+            {{ post.description | safe }}
             {% else %}
             <p>Explore this entry to learn more about the implementation, challenges, and solutions found during this
               development cycle.</p>

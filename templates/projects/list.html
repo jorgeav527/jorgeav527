@@ -3,9 +3,9 @@
 {% block content %}
 {% set_global unique_tags = [] %}
 {% set projects_section = get_section(path="projects/_index.md") %}
-{% for post in projects_section.pages %}
-  {% if post.extra.tags %}
-    {% for tag in post.extra.tags %}
+{% for project in projects_section.pages %}
+  {% if project.extra.tags %}
+    {% for tag in project.extra.tags %}
       {% if tag not in unique_tags %}
         {% set_global unique_tags = unique_tags | concat(with=[tag]) %}
       {% endif %}
@@ -13,7 +13,8 @@
   {% endif %}
 {% endfor %}
 
-<div x-data="{ activeTag: '' }">
+<div x-data="{ activeTag: '', filteredCount: 0 }"
+     x-effect="filteredCount = activeTag === '' ? 0 : Array.from($el.querySelectorAll('[data-tags]')).filter(el => el.offsetParent !== null).length">
   <div class="mb-6">
     <h1 class="text-4xl font-black text-accent mb-2">{{ section.title }}</h1>
     <p class="text-secondary font-mono text-sm">
@@ -41,29 +42,10 @@
   {# -- Paginated view (All) -- #}
   <div x-show="activeTag === ''">
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      {% for post in paginator.pages %}
-      <a href="{{ post.permalink }}"
-        class="group block p-6 rounded-2xl bg-entry border border-border/50 hover:border-accent/50 transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl"
-        data-tags='{{ post.extra.tags | default(value=[]) | json_encode | safe }}'>
-        <time class="text-xs font-mono text-accent mb-2 block">
-          {{ post.date | date(format="%b %d, %Y") }}
-        </time>
-        <h2 class="text-xl font-bold text-primary group-hover:text-accent transition-colors mb-3">
-          {{ post.title }}
-        </h2>
-        {% if post.description %}
-        <p class="text-sm text-secondary line-clamp-1 transition-all duration-500 delay-500 group-hover:line-clamp-none">
-          {{ post.description | striptags }}
-        </p>
-        {% else %}
-        <p class="text-secondary text-sm line-clamp-2 leading-relaxed">
-          Click to read more about this entry...
-        </p>
-        {% endif %}
-        <div class="mt-4 flex items-center text-xs font-bold text-accent">
-          READ MORE <span>&nbsp;→</span>
-        </div>
-      </a>
+      {% for project in paginator.pages %}
+      <div data-tags='{{ project.extra.tags | default(value=[]) | json_encode | safe }}'>
+        {% include "partials/projects/list_item.html" %}
+      </div>
       {% endfor %}
     </div>
 
@@ -75,11 +57,9 @@
         ← Previous
       </a>
       {% endif %}
-
       <span class="text-xs font-mono text-secondary/60">
         Page {{ paginator.current_index }} of {{ paginator.number_pagers }}
       </span>
-
       {% if paginator.next %}
       <a href="{{ paginator.next }}"
          class="px-4 py-2 rounded-xl border border-border/40 text-sm font-semibold text-secondary hover:text-accent hover:border-accent/50 transition-colors">
@@ -92,32 +72,14 @@
 
   {# -- Filtered view (tag selected) -- #}
   <div x-show="activeTag !== ''" x-cloak>
+    <p class="text-secondary font-mono text-sm mb-4" x-text="filteredCount + ' matching entries'"></p>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-      {% for post in projects_section.pages %}
-      <a href="{{ post.permalink }}"
-         class="group block p-6 rounded-2xl bg-entry border border-border/50 hover:border-accent/50 transition-all duration-300 hover:-translate-y-1 shadow-sm hover:shadow-xl"
-         x-show="JSON.parse($el.dataset.tags).includes(activeTag)"
-         x-transition:enter.duration.200ms
-         data-tags='{{ post.extra.tags | default(value=[]) | json_encode | safe }}'>
-        <time class="text-xs font-mono text-accent mb-2 block">
-          {{ post.date | date(format="%b %d, %Y") }}
-        </time>
-        <h2 class="text-xl font-bold text-primary group-hover:text-accent transition-colors mb-3">
-          {{ post.title }}
-        </h2>
-        {% if post.description %}
-        <p class="text-sm text-secondary line-clamp-1 transition-all duration-500 delay-500 group-hover:line-clamp-none">
-          {{ post.description | striptags }}
-        </p>
-        {% else %}
-        <p class="text-secondary text-sm line-clamp-2 leading-relaxed">
-          Click to read more about this entry...
-        </p>
-        {% endif %}
-        <div class="mt-4 flex items-center text-xs font-bold text-accent">
-          READ MORE <span>&nbsp;→</span>
-        </div>
-      </a>
+      {% for project in projects_section.pages %}
+      <div x-show="JSON.parse($el.dataset.tags).includes(activeTag)"
+           x-transition:enter.duration.200ms
+           data-tags='{{ project.extra.tags | default(value=[]) | json_encode | safe }}'>
+        {% include "partials/projects/list_item.html" %}
+      </div>
       {% endfor %}
     </div>
   </div>

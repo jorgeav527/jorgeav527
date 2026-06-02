@@ -1,9 +1,15 @@
 +++
 title = "Life Expentancy"
-date = 2019-06-01
+date = 2021-12-01
+description = "Cloud-native ETL platform built with Airflow, object storage, Parquet, Docker, PostgreSQL, Power BI, and Streamlit. Features automated data ingestion, multi-stage data lake processing (raw, processed, and curated), data warehousing, and interactive analytics dashboards."
 [extra]
+thumbnail = "thumbnail.png"
 tags = ["python", "data-engineering"]
 +++
 
-- What it is? 💡 To generate insights about Life Expectancy, we created a complete data pipeline — from ETL to a data warehouse — using APIs from the World Bank, World Healthi Organization, and United Nations. With this clean dataset, we built insightful dashboards and machine learning models for prediction.
-- Why did I build this project? 💡 This was the final project for Henry’s Data Science Bootcamp, focused on applying end-to-end data engineering and analytics skills.
+> **Documentation?**
+>
+> *"I'll do it after the next update."*
+>
+> — Every developer since 1970
+
