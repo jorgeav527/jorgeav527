@@ -1,0 +1,36 @@
+{
+  "title": "N8N Production Architecture",
+  "layout": "layered",
+  "animations": {
+    "messageFlow": { "enabled": true, "speed": 2500 },
+    "pulseNodes": { "enabled": true, "interval": 3000, "nodes": ["traefik", "n8n-main", "n8n-replica", "postgres"] }
+  },
+  "nodes": [
+    { "id": "internet",   "label": "Internet",        "layer": 0, "type": "cloud",     "description": "External HTTPS traffic" },
+    { "id": "vpn",        "label": "WireGuard\nVPN",  "layer": 1, "type": "security",  "description": "Encrypted tunnel for admin & webhook access" },
+    { "id": "traefik",    "label": "Traefik\nReverse Proxy", "layer": 2, "type": "proxy", "description": "TLS termination, load balancing, rate limiting" },
+    { "id": "n8n-main",   "label": "N8N\nMain Instance", "layer": 3, "type": "service", "description": "Primary workflow runtime. Handles webhooks, scheduling, and execution." },
+    { "id": "n8n-replica","label": "N8N\nReplica",     "layer": 3, "type": "service",  "description": "Standby replica for high availability. Takes over if primary fails." },
+    { "id": "redis",      "label": "Redis\nQueue + Bus","layer": 4, "type": "cache",   "description": "In-memory queue for workflow distribution and inter-instance broadcast." },
+    { "id": "postgres",   "label": "PostgreSQL\nClustered","layer": 4, "type": "database","description": "Primary data store — workflows, credentials, execution history." },
+    { "id": "backup",     "label": "Automated\nBackups","layer": 4, "type": "storage",  "description": "Daily pg_dump to encrypted S3-compatible storage." },
+    { "id": "prometheus", "label": "Prometheus\nMetrics","layer": 5, "type": "monitoring","description": "Collects metrics from N8N instances and system resources." },
+    { "id": "grafana",    "label": "Grafana\nDashboard","layer": 5, "type": "monitoring","description": "Visual dashboards for workflow health, performance, and business metrics." }
+  ],
+  "edges": [
+    { "source": "internet", "target": "vpn",        "label": "HTTPS :443",        "animated": true },
+    { "source": "vpn",      "target": "traefik",    "label": "Internal :8080",    "animated": true },
+    { "source": "traefik",  "target": "n8n-main",   "label": "workflow.n8n.local","animated": true },
+    { "source": "traefik",  "target": "n8n-replica","label": "workflow.n8n.local","animated": true },
+    { "source": "n8n-main", "target": "redis",      "label": "Queue :6379",       "animated": true },
+    { "source": "n8n-replica","target": "redis",    "label": "Queue :6379" },
+    { "source": "n8n-main", "target": "postgres",   "label": "Persist :5432",     "animated": true },
+    { "source": "n8n-replica","target": "postgres", "label": "Persist :5432" },
+    { "source": "redis",    "target": "n8n-main",   "label": "Events",            "style": "dashed" },
+    { "source": "redis",    "target": "n8n-replica","label": "Events",            "style": "dashed" },
+    { "source": "postgres", "target": "backup",     "label": "pg_dump",           "style": "dashed" },
+    { "source": "n8n-main", "target": "prometheus", "label": "Metrics /metrics",  "style": "dotted" },
+    { "source": "n8n-replica","target": "prometheus","label": "Metrics /metrics", "style": "dotted" },
+    { "source": "prometheus","target": "grafana",   "label": "Data source",       "animated": true }
+  ]
+}

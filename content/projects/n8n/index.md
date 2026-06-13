@@ -7,10 +7,16 @@ thumbnail = "thumbnail.png"
 tags = ["devops", "cloud"]
 +++
 
-> **Documentation?**
->
-> *"I'll do it after the next update."*
->
-> — Every developer since 1970
+## Architecture
 
+{{ d3_architecture(id="n8n-v2") }}
 
+## Design decisions
+
+**High availability.** Two N8N instances behind Traefik, sharing Redis for queue distribution and PostgreSQL for persistent state. If the primary fails, the replica seamlessly takes over.
+
+**Security-first.** All traffic enters through WireGuard VPN. Traefik terminates TLS and handles rate limiting. The entire deployment lives in a private network — no exposed ports beyond the VPN endpoint.
+
+**Observability built in.** Prometheus scrapes metrics from both N8N instances. Grafana provides dashboards for workflow health, execution latency, queue depth, and resource utilization.
+
+**Automated resilience.** Redis handles workflow queuing and inter-instance broadcast. PostgreSQL is clustered for data durability. Daily automated backups ensure recovery capability.
