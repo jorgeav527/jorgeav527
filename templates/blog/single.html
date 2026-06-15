@@ -3,14 +3,61 @@
 {% block title %}{{ page.title }} | {{ config.title }}{% endblock title %}
 
 {% block content %}
-<article class="mx-auto max-w-3xl px-6">
-  <header class="mb-8">
-    <h1 class="text-4xl font-black text-primary mb-2">{{ page.title }}</h1>
-    <time class="text-secondary font-mono">{{ page.date | date(format="%B %e, %Y") }}</time>
-  </header>
+<div class="lg:flex lg:gap-12 lg:items-start">
+  {% if page.toc %}
+  <nav class="hidden lg:block lg:sticky lg:top-15 lg:w-56 lg:shrink-0 lg:pt-2" aria-label="Table of contents">
+    <p class="text-xs font-semibold uppercase tracking-wider text-secondary mb-4">On this page</p>
+    <ul class="space-y-2 border-l-2 border-border/40">
+      {% for h2 in page.toc %}
+      <li>
+        <a href="{{ h2.permalink | safe }}"
+           class="block pl-4 -ml-px border-l-2 border-transparent hover:border-accent hover:text-accent text-sm text-secondary transition-colors toc-link">
+          {{ h2.title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+  {% endif %}
 
-  <div class="prose-catppuccin text-base">
-    {{ page.content | safe }}
-  </div>
-</article>
+  <article class="min-w-0 flex-1 max-w-3xl mx-auto px-6 lg:mx-0">
+    <header class="mb-8">
+      <h1 class="text-4xl font-black text-primary mb-2">{{ page.title }}</h1>
+      <time class="text-secondary font-mono">{{ page.date | date(format="%B %e, %Y") }}</time>
+    </header>
+
+    <div class="prose-catppuccin text-base">
+      {{ page.content | safe }}
+    </div>
+  </article>
+</div>
+
+{% if page.toc %}
+<script>
+  (function() {
+    var links = document.querySelectorAll('.toc-link');
+    if (!links.length) return;
+    var headings = Array.from(links).map(function(a) {
+      var id = a.getAttribute('href').slice(1);
+      return document.getElementById(id);
+    }).filter(Boolean);
+    if (!headings.length || !('IntersectionObserver' in window)) return;
+
+    var observer = new IntersectionObserver(function(entries) {
+      var active = '';
+      for (var i = 0; i < entries.length; i++) {
+        if (entries[i].isIntersecting) { active = entries[i].target.id; break; }
+      }
+      for (var j = 0; j < links.length; j++) {
+        var link = links[j];
+        var isActive = link.getAttribute('href') === '#' + active;
+        link.classList.toggle('border-accent', isActive);
+        link.classList.toggle('text-accent', isActive);
+      }
+    }, { rootMargin: '-80px 0px -60% 0px' });
+
+    headings.forEach(function(h) { observer.observe(h); });
+  })();
+</script>
+{% endif %}
 {% endblock content %}
