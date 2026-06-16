@@ -1,0 +1,65 @@
+{
+  "title": "Kroma App — AWS Serverless",
+  "layout": "fixed",
+  "containers": [
+    {
+      "id": "networking",
+      "label": "Networking & CDN",
+      "x": 250, "y": 100, "w": 600, "h": 90,
+      "type": "vpc"
+    },
+    {
+      "id": "auth-frontend",
+      "label": "Auth & Frontend",
+      "x": 250, "y": 220, "w": 250, "h": 140,
+      "type": "app"
+    },
+    {
+      "id": "compute",
+      "label": "Compute Layer",
+      "x": 530, "y": 220, "w": 320, "h": 140,
+      "type": "app"
+    },
+    {
+      "id": "storage",
+      "label": "Data & Storage",
+      "x": 250, "y": 390, "w": 600, "h": 140,
+      "type": "data"
+    },
+    {
+      "id": "observability",
+      "label": "Observability",
+      "x": 880, "y": 220, "w": 200, "h": 200,
+      "type": "obs"
+    }
+  ],
+  "nodes": [
+    { "id": "route53",     "label": "Route53",          "x": 280, "y": 120, "w": 130, "h": 46, "type": "vpc" },
+    { "id": "cloudfront",  "label": "CloudFront",        "x": 440, "y": 120, "w": 140, "h": 46, "type": "vpc" },
+    { "id": "s3-static",   "label": "S3\n(Vue.js)",      "x": 620, "y": 120, "w": 140, "h": 52, "type": "vpc" },
+    { "id": "cognito",     "label": "Cognito",           "x": 270, "y": 245, "w": 130, "h": 46, "type": "app" },
+    { "id": "s3-auth",     "label": "S3\n(Hosting)",     "x": 420, "y": 245, "w": 130, "h": 52, "type": "app" },
+    { "id": "api-gateway", "label": "API\nGateway",      "x": 560, "y": 245, "w": 130, "h": 52, "type": "app" },
+    { "id": "lambda",      "label": "Lambda\n(FastAPI)", "x": 700, "y": 245, "w": 130, "h": 52, "type": "app" },
+    { "id": "dynamodb",    "label": "DynamoDB",          "x": 280, "y": 415, "w": 150, "h": 46, "type": "data" },
+    { "id": "rds",         "label": "RDS\n(PostgreSQL)", "x": 460, "y": 415, "w": 140, "h": 52, "type": "data" },
+    { "id": "s3-files",    "label": "S3\n(Assets)",      "x": 630, "y": 415, "w": 140, "h": 52, "type": "data" },
+    { "id": "ses",         "label": "SES",               "x": 800, "y": 415, "w": 110, "h": 46, "type": "data" },
+    { "id": "cloudwatch",  "label": "CloudWatch",        "x": 900, "y": 245, "w": 160, "h": 46, "type": "obs" },
+    { "id": "xray",        "label": "X-Ray",             "x": 900, "y": 320, "w": 160, "h": 46, "type": "obs" }
+  ],
+  "links": [
+    { "source": "route53",    "target": "cloudfront", "animated": true },
+    { "source": "cloudfront", "target": "s3-static",  "animated": true },
+    { "source": "cloudfront", "target": "api-gateway","animated": true },
+    { "source": "cognito",    "target": "api-gateway","style": "dashed", "label": "Auth" },
+    { "source": "s3-auth",    "target": "cognito",    "style": "dashed" },
+    { "source": "api-gateway","target": "lambda",     "animated": true, "label": "Invoke" },
+    { "source": "lambda",     "target": "dynamodb",   "animated": true, "label": "CRUD" },
+    { "source": "lambda",     "target": "rds",        "animated": true, "label": "Queries" },
+    { "source": "lambda",     "target": "s3-files",   "animated": true, "label": "Store" },
+    { "source": "lambda",     "target": "ses",        "style": "dashed", "label": "Email" },
+    { "source": "lambda",     "target": "cloudwatch", "style": "dashed", "label": "Logs" },
+    { "source": "lambda",     "target": "xray",       "style": "dashed", "label": "Trace" }
+  ]
+}

@@ -1,0 +1,30 @@
+{% set json_path = "data/architectures/" ~ id ~ ".json" %}
+{% set data = load_data(path=json_path) %}
+{% set layout = data.layout | default(value="fixed") %}
+
+<div class="d3-architecture not-prose my-8 relative rounded-xl overflow-hidden border border-surface2/30"
+     data-arch-id="{{ id }}"
+     style="aspect-ratio: 16/9; min-height: 480px;">
+
+  <svg class="arch-svg w-full h-full" aria-label="Architecture diagram: {{ data.title | default(value=id) }}"></svg>
+
+  <script type="application/architecture+json">
+    {{ data | json_encode | safe }}
+  </script>
+
+  <div class="arch-loading absolute inset-0 flex items-center justify-center bg-base text-secondary text-sm font-mono">
+    Loading diagram…
+  </div>
+
+  <noscript>
+    <div class="absolute inset-0 flex items-center justify-center bg-base px-6">
+      <p class="text-secondary text-center">
+        Enable JavaScript to view the interactive architecture diagram.
+      </p>
+    </div>
+  </noscript>
+</div>
+
+<link rel="stylesheet" href="{{ get_url(path='css/diagrams/architecture.css') }}">
+<script src="{{ get_url(path='js/diagrams/d3.min.js') }}" defer></script>
+<script src="{{ get_url(path='js/diagrams/d3-architecture.js') }}" defer></script>

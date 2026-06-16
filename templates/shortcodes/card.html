@@ -1,0 +1,42 @@
+{% set chip_list = chips | default(value="") | split(pat=",") %}
+{% set color = color | default(value="blue") %}
+
+<div class="card-root" data-color="{{ color }}"
+     style="border-left: 4px solid var(--card-color);
+            background: var(--color-entry);
+            border-radius: 0.75rem;
+            padding: 0;
+            margin: 1.5rem 0;">
+
+  <style>
+    .card-root { --card-color: var(--color-accent); }
+    .card-root[data-color="red"]    { --card-color: var(--color-mac-red); }
+    .card-root[data-color="yellow"] { --card-color: var(--color-mac-yellow); }
+    .card-root[data-color="green"]  { --card-color: var(--color-mac-green); }
+    .card-root[data-color="mauve"]  { --card-color: var(--color-mac-mauve); }
+    .card-root[data-color="blue"]   { --card-color: var(--color-accent); }
+    [data-theme="light"] .card-root[data-color="red"]    { --card-color: var(--color-lat-red); }
+    [data-theme="light"] .card-root[data-color="yellow"] { --card-color: var(--color-lat-yellow); }
+    [data-theme="light"] .card-root[data-color="green"]  { --card-color: var(--color-lat-green); }
+    [data-theme="light"] .card-root[data-color="mauve"]  { --card-color: var(--color-lat-mauve); }
+  </style>
+
+  <div style="display: flex; align-items: center; gap: 0.5rem; padding: 1rem 1.25rem 0 1.25rem;">
+    <span style="width: 10px; height: 10px; border-radius: 50%; background: var(--card-color); flex-shrink: 0;"></span>
+    <span style="font-weight: 700; font-size: 1rem; color: var(--card-color);">{{ title }}</span>
+  </div>
+
+  <div style="padding: 0.5rem 1.25rem 0.75rem 1.25rem; color: var(--color-primary); font-size: 0.95rem; line-height: 1.65;">
+    {{ body | markdown | safe }}
+  </div>
+
+  {% if chip_list | length > 0 and chip_list[0] != "" %}
+  <div style="display: flex; flex-wrap: wrap; gap: 0.375rem; padding: 0 1.25rem 1rem 1.25rem;">
+    {% for chip in chip_list %}
+    <span style="display: inline-flex; align-items: center; padding: 0.2rem 0.65rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 500; background: color-mix(in oklab, var(--card-color) 18%, transparent); color: var(--card-color);">
+      {{ chip | trim }}
+    </span>
+    {% endfor %}
+  </div>
+  {% endif %}
+</div>
