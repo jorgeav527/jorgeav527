@@ -639,194 +639,82 @@ These roles reward your ability to build systems, manage risk, and deliver resul
 
 **You are a pragmatic, data-driven leader whose greatest strengths are execution, reliability, and sound judgment; your biggest opportunity is acting with confidence before perfect certainty arrives.**
 
-## Ikigai + SMART Framework
-### 1. Ikigai: DevOps / SRE Professional
+## Ikigai
 
-#### ❤️ What You Love (Passion)
+{% language_card(title="❤️ What You Love (Passion)") %}
+<div lang="spa">
+Mi pasión es la libertad a través de la estructura y comprensión de la realidad. Ya sea en sistemas físicos (Ingeniería Civil) o digitales (Cloud, Linux, Arquitectura), me apasiona entender cómo encajan las piezas. No acepto herramientas solo porque sean el estándar; las cuestiono y las reemplazo por alternativas más eficientes cuando es necesario. Me mueve tener un control absoluto sobre mi entorno de desarrollo y producción, convirtiéndolo en una extensión directa de mi pensamiento y eliminando cualquier fricción innecesaria entre mi mente y el sistema.
+</div>
+<div lang="eng">
+My passion is freedom through the structure and understanding of reality. Whether in physical systems (Civil Engineering) or digital ones (Cloud, Linux, Architecture), I am driven by an urge to understand how the pieces fit together. I do not accept tools simply because they are the standard; I question them and replace them with more efficient alternatives when necessary. I am driven by the need for absolute control over my development and production environment, turning it into a direct extension of my thinking and eliminating any unnecessary friction between my mind and the system.
+</div>
+<div lang="por">
+Minha paixão é a liberdade através da estrutura e compreensão da realidade. Seja em sistemas físicos (Engenharia Civil) ou digitais (Cloud, Linux, Arquitetura), sou movido pela necessidade de entender como as peças se encaixam. Não aceito ferramentas apenas porque são o padrão; eu as questiono e substituo por alternativas mais eficientes quando necessário. Busco ter controle absoluto sobre meu ambiente de desenvolvimento e produção, tornando-o uma extensão direta do meu pensamento e eliminando qualquer atrito desnecessário entre minha mente e o sistema.
+</div>
+{% end %}
 
-- The satisfaction of a successful deployment pipeline
-- Building reliable and scalable infrastructure
-- Solving complex production incidents
-- Automating repetitive operational work
-- Creating systems that run smoothly with minimal intervention
-- You enjoy transforming complexity into stability.
+{% language_card(title="💪 What You Are Good At (Profession / Talent)") %}
+<div lang="spa">
+Mi superpoder es la capacidad de descomponer problemas complejos en modelos lógicos coherentes. Gracias a mi formación en ingeniería civil, analizo los flujos de datos y servicios en la nube con la misma precisión técnica con la que se calculan cargas y fuerzas. Como instructor, domino el arte de simplificar lo difícil. Cuando diseño una solución, soy implacable: no me detengo hasta que la arquitectura y el código reflejan esa lógica con precisión absoluta. Más allá de la excelencia técnica, aplico este mismo rigor para asegurar la viabilidad económica: mi objetivo es alcanzar el punto de equilibrio donde la máxima eficiencia técnica se traduce en rentabilidad real, creando sistemas robustos y financieramente atractivos.
+</div>
+<div lang="eng">
+My superpower is the ability to decompose complex problems into coherent logical models. Thanks to my background in civil engineering, I analyze data flows and cloud services with the same technical precision used to calculate loads and forces. As an instructor, I master the art of simplifying the difficult. When I design a solution, I am relentless: I do not stop until the architecture and code reflect that logic with absolute precision. Beyond technical excellence, I apply this same rigor to ensure economic viability: my goal is to reach the break-even point where maximum technical efficiency translates into real profitability, creating robust and financially attractive systems.
+</div>
+<div lang="por">
+Meu superpoder é a capacidade de decompor problemas complexos em modelos lógicos coerentes. Graças à minha formação em engenharia civil, analiso fluxos de dados e serviços em nuvem com a mesma precisão técnica com que se calculam cargas e forças. Como instrutor, domino a arte de simplificar o difícil. Quando projeto uma solução, sou implacável: não paro até que a arquitetura e o código reflitam essa lógica com precisão absoluta. Além da excelência técnica, aplico esse mesmo rigor para garantir a viabilidade econômica: meu objetivo é atingir o ponto de equilíbrio onde a máxima eficiência técnica se traduz em rentabilidade real, criando sistemas robustos e financeiramente atrativos.
+</div>
+{% end %}
 
-#### 💪 What You Are Good At (Profession / Talent)
+{% language_card(title="🌍 What the World Needs (Mission)") %}
+<div lang="spa">
+El ecosistema digital actual sufre de un exceso de complejidad innecesaria y deuda técnica acumulada. El mundo necesita arquitectos que piensen como dueños: profesionales capaces de construir sistemas que no solo escalen, sino que sean responsables con los recursos. El mercado demanda una ingeniería que priorice la calidad, el mantenimiento y la documentación clara como pilares de sostenibilidad. Mi misión es transformar infraestructuras vulnerables o ineficientes en estructuras sólidas, preparadas para el crecimiento a largo plazo y la evolución constante.
+</div>
+<div lang="eng">
+The current digital ecosystem suffers from an excess of unnecessary complexity and accumulated technical debt. The world needs architects who think like owners: professionals capable of building systems that not only scale but are responsible with resources. The market demands engineering that prioritizes quality, maintenance, and clear documentation as pillars of sustainability. My mission is to transform vulnerable or inefficient infrastructures into solid structures, prepared for long-term growth and constant evolution.
+</div>
+<div lang="por">
+O ecossistema digital atual sofre com um excesso de complexidade desnecessária e dívida técnica acumulada. O mundo precisa de arquitetos que pensem como donos: profissionais capazes de construir sistemas que não apenas escalem, mas que sejam responsáveis com os recursos. O mercado exige uma engenharia que priorize qualidade, manutenção e documentação clara como pilares da sustentabilidade. Minha missão é transformar infraestruturas vulneráveis ou ineficientes em estruturas sólidas, preparadas para o crescimento a longo prazo e a evolução constante.
+</div>
+{% end %}
 
-- Designing CI/CD pipelines
-- Kubernetes administration and orchestration
-- Infrastructure as Code (Terraform, CloudFormation)
-- Monitoring and observability
-- Incident response and reliability engineering
-- Cloud architecture and platform engineering
-- You excel at building the systems that allow software teams to move faster and safer.
+{% language_card(title="💰 What You Can Be Paid For (Vocation)") %}
+<div lang="spa">
+Mi valor comercial radica en la intersección entre la excelencia técnica y la eficiencia operativa. Las empresas me buscan para convertir arquitecturas costosas y opacas en soluciones serverless ágiles, seguras y optimizadas. Me pagan por mi capacidad de eliminar desperdicios, optimizar costos operativos y entregar código impecable que permite a las organizaciones crecer sin cargas técnicas. Soy el punto de equilibrio donde una arquitectura elegante se encuentra con una operación financieramente inteligente, garantizando que cada inversión en tecnología se traduzca en rendimiento y rentabilidad real.
+</div>
+<div lang="eng">
+My commercial value lies at the intersection of technical excellence and operational efficiency. Companies seek me out to transform costly and opaque architectures into agile, secure, and optimized serverless solutions. They pay me for my ability to eliminate waste, optimize operational costs, and deliver impeccable code that allows organizations to grow without technical burdens. I am the equilibrium point where elegant architecture meets financially intelligent operations, ensuring that every investment in technology translates into performance and real profitability.
+</div>
+<div lang="por">
+Meu valor comercial está na interseção entre a excelência técnica e a eficiência operacional. As empresas me procuram para converter arquiteturas caras e opacas em soluções serverless ágeis, seguras e otimizadas. Pagam-me pela minha capacidade de eliminar desperdícios, otimizar custos operacionais e entregar código impecável que permite às organizações crescer sem cargas técnicas. Sou o ponto de equilíbrio onde uma arquitetura elegante encontra uma operação financeiramente inteligente, garantindo que cada investimento em tecnologia se traduza em desempenho e rentabilidade real.
+</div>
+{% end %}
 
-#### 🌍 What the World Needs (Mission)
+{% language_card(title="Your Ikigai Statement") %}
+<div lang="spa">
+1. Pasión: Libertad mediante el control técnico.
+2. Talento: Lógica, precisión y visión de negocio.
+3. Misión: Profesionalizar la sostenibilidad técnica.
+4. Valor: Rentabilidad a través de la arquitectura inteligente.
 
-- Reliable digital services
-- Highly available infrastructure
-- Secure and scalable platforms
-- Faster software delivery
-- Engineers who can bridge development and operations
-- Your work helps transform code into dependable services used by real people.
+> Transformo la complejidad técnica en infraestructuras escalables y automatizadas, logrando que los sistemas alcancen el máximo rendimiento posible con el costo operativo justo.
+</div>
+<div lang="eng">
+1. Passion: Freedom through technical control.
+2. Talent: Logic, precision, and business vision.
+3. Mission: Professionalize technical sustainability.
+4. Value: Profitability through intelligent architecture.
 
-#### 💰 What You Can Be Paid For (Vocation)
+> I transform technical complexity into scalable, automated infrastructures, achieving maximum system performance with the right operational cost.
+</div>
+<div lang="por">
+1. Paixão: Liberdade através do controle técnico.
+2. Talento: Lógica, precisão e visão de negócio.
+3. Missão: Profissionalizar a sustentabilidade técnica.
+4. Valor: Rentabilidade através da arquitetura inteligente.
 
-- DevOps Engineering
-- Site Reliability Engineering (SRE)
-- Platform Engineering
-- Cloud Architecture
-- Infrastructure Automation
-- Incident Management Leadership
-- Cloud Cost Optimization (FinOps)
-- Technical Consulting
-
-### Your Ikigai Statement
-
-> I help organizations build reliable, scalable, and automated platforms that enable teams to deliver software faster, safer, and with greater confidence.
-
-### 2. SMART Framework: Turning Reliability into Results
-
-#### S — Specific
-
-- Implement automated canary deployments in Kubernetes
-- Introduce auto-rollback mechanisms based on service health metrics
-- Standardize observability across all production services
-
-#### M — Measurable
-
-- Reduce MTTR from 45 minutes to under 15 minutes
-- Increase deployment frequency by 50%
-- Achieve 99.95% service availability
-- Reduce failed deployments by 30%
-
-#### A — Achievable
-
-- Use ArgoCD for deployment automation
-- Use Grafana and Prometheus for monitoring
-- Build upon existing Kubernetes infrastructure
-- Reuse established CI/CD workflows
-
-#### R — Relevant
-
-- Reduce customer downtime
-- Improve engineering productivity
-- Increase platform reliability
-- Lower operational burden and burnout
-- Accelerate software delivery
-
-#### T — Time-Bound
-
-- Deploy automated canary releases by October 31, 2026
-- Complete observability rollout within 90 days
-- Reach reliability targets by the end of the quarter
-
-### Connecting Ikigai and SMART
-
-#### Strategic Vision (Ikigai)
-
-> Become the engineer who enables organizations to deliver software reliably at scale through automation, resilience, and operational excellence.
-
-#### Tactical Execution (SMART)
-
-**Goal:**
-
-Within the next 90 days, implement automated canary deployments, service-level monitoring, and auto-remediation workflows that reduce critical incident recovery time by 65%.
-
-### 1.FinOps-Focused Cloud Architect
-
-#### ❤️ What You Love (Passion)
-
-- Finding the optimal balance between performance and cost
-- Designing efficient cloud architectures
-- Eliminating waste without sacrificing reliability
-- Turning cloud spending into a strategic advantage
-- Helping organizations scale sustainably
-
-You enjoy maximizing business value from every cloud dollar spent.
-
-#### 💪 What You Are Good At (Profession / Talent)
-
-- Designing cost-efficient cloud architectures
-- Cloud financial management (FinOps)
-- Multi-cloud cost optimization
-- Resource governance and tagging strategies
-- Capacity planning and forecasting
-- Bridging engineering and financial objectives
-
-You excel at aligning technical decisions with business outcomes.
-
-#### 🌍 What the World Needs (Mission)
-
-- Sustainable cloud growth
-- Financial accountability in engineering
-- Cost transparency and governance
-- Efficient cloud operations
-- Leaders who understand both technology and business economics
-- Your work helps organizations innovate without losing control of cloud spending.
-
-#### 💰 What You Can Be Paid For (Vocation)
-
-- Cloud Architecture
-- FinOps Leadership
-- Cloud Cost Optimization
-- Cloud Governance
-- Strategic Consulting
-- Platform Engineering Leadership
-- Technical Advisory Services
-
-### Your Ikigai Statement
-
-> I help organizations build scalable, secure, and cost-efficient cloud platforms by combining architectural excellence with financial accountability.
-
-### 2. SMART Framework: Turning Cloud Efficiency into Business Value
-
-#### S — Specific
-
-- Implement lifecycle policies for unused cloud resources
-- Optimize underutilized compute workloads
-- Standardize resource tagging across all cloud accounts
-- Improve cost allocation and chargeback visibility
-
-#### M — Measurable
-
-- Reduce cloud spending by 12%
-- Achieve 100% tagging compliance
-- Reduce idle resource costs by 25%
-- Improve cost attribution accuracy to 100%
-
-#### A — Achievable
-
-- Use AWS Cost Explorer, CloudHealth, or Azure Cost Management
-- Implement automated governance policies
-- Work with existing engineering teams and cloud platforms
-- Utilize current monitoring and reporting capabilities
-
-#### R — Relevant
-
-- Improve profitability
-- Reduce operational waste
-- Increase financial accountability
-- Support sustainable growth
-- Strengthen executive confidence in cloud investments
-
-#### T — Time-Bound
-
-- Complete the cloud cost audit within 30 days
-- Deploy governance policies by August 30, 2026
-- Achieve target savings within one quarter
-
-### Connecting Ikigai and SMART
-
-#### Strategic Vision (Ikigai)
-
-> Become the architect who transforms cloud infrastructure from a cost center into a strategic business asset.
-
-#### Tactical Execution (SMART)
-
-**Goal:**
-
-Within the next 60 days, implement a tagging, reporting, and chargeback framework that enables 100% visibility into cloud spending across business units and identifies optimization opportunities capable of reducing costs by at least 12%.
+> Transformo a complexidade técnica em infraestruturas escaláveis e automatizadas, fazendo com que os sistemas atinjam o máximo desempenho possível com o custo operacional justo.
+</div>
+{% end %}
 
 ---
 
@@ -834,38 +722,24 @@ Within the next 60 days, implement a tagging, reporting, and chargeback framewor
 
 ### 1. T-Shaped Skills Profile
 
-*   **The Horizontal (Broad):** Your breadth covers the **full-lifecycle of application delivery**. You have deployed across the spectrum: from monoliths (Django) and containers (ECS/Spring Boot) to modern Serverless (Lambda/Amplify) and Automation (n8n). You understand the "how" of deployment across almost any architecture.
-*   **The Vertical (The "Spike"):** Your spike is **Observability and Automated Pipeline Reliability**. By managing your own n8n server with Prometheus/Grafana, you have moved beyond "deploying" to "maintaining operational health." This is a high-value skill for companies dealing with complex distributed systems.
-
-*   **The Horizontal (Breadth):** You have moved through the entire stack (Django monoliths → JS microservices → Java/Spring Boot → AWS Serverless → n8n/Observability) in just 5 years. This demonstrates high learning velocity and the ability to see how different architectures fail and succeed in real-time.
-*   **The Vertical (The "Spike"):** Your spike is **Infrastructure Reliability**. Because you have managed the full deploy/monitor cycle for diverse tech stacks, your expertise lies in operational patterns, not just specific languages.
+* **The Horizontal (Breadth):** You have moved through the entire stack (Django monoliths → JS microservices → Java/Spring Boot → AWS Serverless → n8n/Observability). This demonstrates high learning velocity and the ability to see how different architectures fail and succeed in real-time.
+* **The Vertical (The "Spike"):** Your spike is **Infrastructure Reliability, Observability and Automated Pipeline Reliability**. By managing your own n8n server with Prometheus/Grafana, you have moved beyond "deploying" to "maintaining operational health." This is a high-value skill for companies dealing with complex distributed systems.
 
 ### 2. Customer-Back Perspective
 
-Your "customers" are the Engineering and Product teams at potential future employers.
-
-*   **Gap Analysis:** Since you have mastered ECS and Serverless, identify what high-growth companies struggle with most: **Cost optimization and Developer Experience (DevEx)**.
-*   **Strategy:** Position yourself as the engineer who optimizes the observability layer so that developers can troubleshoot their own microservices independently.
-*   **Strategy:** Position yourself as the engineer who can walk into a messy startup environment, diagnose infrastructure bottlenecks, and remediate them. Your ideal "customer" is the company that needs a stabilization expert to secure their cloud footprint rapidly.
+* **Gap Analysis:** Since you have mastered ECS and Serverless, identify what high-growth companies struggle with most: **Cost optimization and Developer Experience (DevEx)**.
+* **Strategy:** Position yourself as the engineer who can walk into a messy startup environment, diagnose infrastructure bottlenecks, and remediate them. Your ideal "customer" is the company that needs a stabilization expert to secure their cloud footprint rapidly.
 
 ### 3. Learning on Demand (Just-In-Time or JIT)
 
-Use your current work with n8n and ECS to master the next tier of DevOps.
-
-*   **Strategy:** Don't study tools like Kubernetes in a vacuum. Identify a limitation in your current n8n/ECS setup (e.g., service discovery or scaling issues). When you hit that pain point, dive into the documentation (Terraform, OpenTelemetry, etc.) specifically to solve that problem. Your learning will be tied to a **tangible production-level challenge**, which is what senior-level hiring managers want to se
-*   **Strategy:** Lean into this in interviews. Shift the narrative from "what I studied" to "what I solved under pressure." Use examples like: *"I had to scale an ECS cluster for a Spring Boot app with zero downtime; I mastered the internals of AWS networking over a weekend to solve it."* This demonstrates "Class Size of 1" learning—knowledge gained and immediately applied to solve high-stakes challenges.e.
+* **Strategy:** Don't study tools like Kubernetes in a vacuum. Identify a limitation in your current n8n/ECS setup (e.g., service discovery or scaling issues). When you hit that pain point, dive into the documentation (Terraform, OpenTelemetry, etc.) specifically to solve that problem. Your learning will be tied to a **tangible production-level challenge**, which is what senior-level hiring managers want to se
+* **Strategy:** Lean into this in interviews. Shift the narrative from "what I studied" to "what I solved under pressure." Use examples like: *"I had to scale an ECS cluster for a Spring Boot app with zero downtime; I mastered the internals of AWS networking over a weekend to solve it."* This demonstrates "Class Size of 1" learning—knowledge gained and immediately applied to solve high-stakes challenges.e.
 
 ### 4. Diverse Delivery Formats
 
-Your background in teaching is an "unfair advantage."
-
-*   **Strategy:** Don't just do the work—model it.
-    *   **The "Architect's Log":** Write 1-page "Architecture Teardowns." Take the Java/Spring Boot/ECS application you managed, and write a concise technical breakdown of how you handled networking, scaling, and monitoring.
-    *   **The Result:** When sent to a hiring manager, this acts as a "Class Size of 1" resource, proving exactly how you think and solve technical problems.
-
 You have delivered results across multiple operational domains:
-*   **Code-Centric:** Django/Spring Boot.
-*   **Infrastructure-Centric:** ECS/Amplify.
+*   **Code-Centric:** Django/Spring Boot/FastAPI/Dioxus.
+*   **Infrastructure-Centric:** EC2/ECS/Amplify/Lambda etc.
 *   **Observability-Centric:** Prometheus/Grafana.
 *   **Automation-Centric:** n8n.
 
@@ -877,8 +751,5 @@ You sit at the intersection of **AWS (Cloud Architect)**, **Data Science (Python
 
 *   **Strategy:** Most Data Science teams lack mature DevOps practices. Become the bridge.
 *   **Ecosystem move:** Participate in CNCF or Serverless community channels. Provide comments on the operational trade-offs of using Lambda vs. ECS. This establishes you as a thought leader in the exact field you are targeting.
-
-While others spent 5 years becoming a "Java dev" or a "Python dev," you spent 5 years becoming a **Cloud Architect.**
-
 *   **Strategy:** Your competitive advantage is your **Polyglot background**. You have the unique ability to act as the technical translator between JS, Java, and Data Science teams. Emphasize your role as the architect who ensures disparate systems interoperate seamlessly within the AWS ecosystem.
 

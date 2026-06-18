@@ -1,0 +1,86 @@
+{% set default = default | default(value="eng") %}
+
+<div class="language-card" data-default="{{ default }}" style="border-left: 4px solid var(--color-accent);
+            background: var(--color-entry);
+            border-radius: 0.75rem;
+            padding: 0;
+            margin: 1.5rem 0;">
+
+  <style>
+    .language-card {
+      --card-color: var(--color-accent);
+    }
+
+    .language-tabs {
+      display: flex;
+      gap: 0.25rem;
+      padding: 0.75rem 1.25rem 0 1.25rem;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .language-tab {
+      all: unset;
+      cursor: pointer;
+      padding: 0.375rem 0.75rem;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      color: var(--color-secondary);
+      border-bottom: 2px solid transparent;
+      transition: color 0.15s, border-color 0.15s;
+      user-select: none;
+    }
+
+    .language-tab:hover {
+      color: var(--color-primary);
+    }
+
+    .language-tab.active {
+      color: var(--color-accent);
+      border-bottom-color: var(--color-accent);
+    }
+  </style>
+
+  <div style="display: flex; align-items: center; gap: 0.5rem; padding: 1rem 1.25rem 0 1.25rem;">
+    <span style="font-weight: 700; font-size: 1rem; color: var(--color-primary);">{{ title }}</span>
+  </div>
+
+  <div class="language-tabs">
+    <button class="language-tab active" data-lang="eng">ENG</button>
+    <button class="language-tab" data-lang="spa">SPA</button>
+    <button class="language-tab" data-lang="por">POR</button>
+  </div>
+
+  <div class="language-body"
+    style="padding: 1rem 1.25rem; color: var(--color-primary); font-size: 0.95rem; line-height: 1.65;">
+    {{ body | markdown | safe }}
+  </div>
+
+  <script>
+    (function () {
+      var root = document.currentScript.parentElement;
+      var defaultLang = root.getAttribute('data-default') || 'eng';
+      var tabs = root.querySelectorAll('.language-tab');
+      var body = root.querySelector('.language-body');
+
+      if (!body) return;
+
+      var langDivs = body.querySelectorAll('div[lang]');
+      langDivs.forEach(function (el) {
+        if (el.getAttribute('lang') !== defaultLang) {
+          el.style.display = 'none';
+        }
+      });
+
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          var lang = this.getAttribute('data-lang');
+          tabs.forEach(function (t) {t.classList.remove('active');});
+          this.classList.add('active');
+          langDivs.forEach(function (el) {
+            el.style.display = el.getAttribute('lang') === lang ? '' : 'none';
+          });
+        });
+      });
+    })();
+  </script>
+</div>
