@@ -4,11 +4,63 @@
     </h2>
 
     <div class="space-y-2 mt-2">
+        {% set_global seen = [] %}
         {% for job in data.SOFTWARE_EXPERIENCES %}
+        {% if seen is not containing(job.company) %}
+        {% set_global seen = seen | concat(with=[job.company]) %}
+        {% set_global company_jobs = [] %}
+        {% for j in data.SOFTWARE_EXPERIENCES %}
+        {% if j.company == job.company %}
+        {% set_global company_jobs = company_jobs | concat(with=[j]) %}
+        {% endif %}
+        {% endfor %}
+        {% if company_jobs | length >= 2 %}
+        <div class="break-inside-avoid">
+            <h3 class="text-[16px] font-bold text-slate-900 uppercase tracking-tight">
+                 {{ job.company }}
+            </h3>
+            {% for j in company_jobs %}
+            <div class="ml-4 mt-1">
+                <div class="flex justify-between items-baseline">
+                    <h4 class="text-[16px] font-bold text-slate-900 uppercase tracking-tight">
+                         — {{ j.title }}
+                    </h4>
+                    <span class="text-[11px] font-bold text-slate-600 uppercase">
+                        {{ j.start }} — {{ j.end }}
+                    </span>
+                </div>
+                <div class="flex justify-between items-center mb-2">
+                    <div class="text-[13px] font-semibold text-slate-700">
+                        {{ j.type }}
+                    </div>
+                    <div class="text-[11px] text-slate-600 italic">
+                        {{ j.location }}
+                    </div>
+                </div>
+                <ul class="list-disc ml-4">
+                    {% for bullet in j.responsibilities %}
+                    <li class="text-[11.5px] text-slate-700 leading-snug text-justify pl-1">
+                        {{ bullet }}
+                    </li>
+                    {% endfor %}
+                </ul>
+                <div class="flex flex-wrap items-center mt-2 text-[10px]">
+                    <span class="font-bold text-slate-700 uppercase tracking-wider mr-2">Stack:</span>
+                    {% for tool in j.tools %}
+                    <span class="text-slate-700 whitespace-nowrap">{{ tool }}</span>
+                    {% if not loop.last %}
+                    <span class="text-slate-700 mx-2">|</span>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% else %}
         <div class="break-inside-avoid">
             <div class="flex justify-between items-baseline">
                 <h4 class="text-[16px] font-bold text-slate-900 uppercase tracking-tight">
-                    {{ job.title }}
+                    {{ job.company }} — {{ job.title }}
                 </h4>
                 <span class="text-[11px] font-bold text-slate-600 uppercase">
                     {{ job.start }} — {{ job.end }}
@@ -17,9 +69,7 @@
 
             <div class="flex justify-between items-center mb-2">
                 <div class="text-[13px] font-semibold text-slate-700">
-                    {{ job.company }}
-                    <span class="text-slate-700 mx-1">|</span>
-                    <span class="text-slate-700">{{ job.type }}</span>
+                    {{ job.type }}
                 </div>
                 <div class="text-[11px] text-slate-600 italic">
                     {{ job.location }}
@@ -44,6 +94,8 @@
                 {% endfor %}
             </div>
         </div>
+        {% endif %}
+        {% endif %}
         {% endfor %}
     </div>
 </div>

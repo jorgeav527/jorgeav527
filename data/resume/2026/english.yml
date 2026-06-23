@@ -120,10 +120,45 @@ CIVIL_EXPERIENCES:
       - "Reduced water consumption by 30% and electricity by 11%."
 
 SOFTWARE_EXPERIENCES:
+  - company: "Kroma"
+    title: "CloudOps Engineer"
+    location: "Arequipa, Peru"
+    type: "Remote, Full-time"
+    start: "Feb 2026"
+    end: "Present"
+    time: "5 mos"
+    responsibilities:
+      - "Provisioned serverless AWS infrastructure using Terraform and Terragrunt across isolated dev and production environments at a monthly cost of $0.63 USD."
+      - "Built CI/CD pipelines with GitHub Actions to automate deployments across dev and production."
+      - "Configured frontend delivery stack with S3, CloudFront, ACM, and Route 53 for performance, security, and DNS management."
+      - "Secured backend access using Amazon Cognito and API Gateway with role-based authentication."
+    tools:
+      - "AWS (CloudFront, Route 53, Cognito, API Gateway)"
+      - "CI/CD (GitHub Actions)"
+      - "Terraform"
+
+  - company: "Kroma"
+    title: "Flull-Stack Developer"
+    location: "Arequipa, Peru"
+    type: "Remote, Full-time"
+    start: "Feb 2026"
+    end: "Present"
+    time: "5 mos"
+    responsibilities:
+      - "Built a multi-purpose platform for consulting, courses, video content, and e-commerce using Nuxt.js."
+      - "Developed a serverless backend with FastAPI on AWS Lambda via Docker handling 30-40 endpoints through API Gateway."
+      - "Built an admin dashboard with role-based access control on isolated DNS using the same Nuxt.js codebase."
+      - "Accelerated delivery using spec-driven development and AI-assisted workflows via OpenCode."
+    tools:
+      - "Python (FastAPI)"
+      - "JavaScript (Nuxt)"
+      - "NoSQL (DynamoDB)"
+      - "Docker"
+
   - company: "Cibertec"
     title: "Data Science Instructor"
     location: "Lima, Peru"
-    type: "Remote, Full-time"
+    type: "Remote, Part-time"
     start: "Oct 2023"
     end: "Present"
     time: "2 yr, 4 mos"
@@ -138,6 +173,35 @@ SOFTWARE_EXPERIENCES:
       - "SQL (SQLite3)"
       - "NoSQL (MongoDB)"
       - "WebSockets"
+
+  - company: "Cifras"
+    title: "DevOps Engineer"
+    location: "Argentina"
+    type: "Remote, Full-time"
+    start: "Jul 2025"
+    end: "Oct 2025"
+    time: "4 mos"
+    responsibilities:
+      - "Consulted on cloud infrastructure and DevOps best practices for a microservices-based financial platform."
+      - "Built and containerized backend (Spring Boot) APIs using Docker and deployed services on AWS ECS."
+      - "Implemented CI/CD automation, monitoring, and orchestration to support scalable operations."
+    tools:
+      - "AWS (ECS, EKS)"
+      - "Terraform"
+      - "CI/CD (GitHub Actions)"
+      - "Docker"
+
+  - company: "Roadr"
+    title: "Infrastructure Engineer"
+    location: "Los Angeles, California, United States"
+    type: "Remote, Full-time"
+    start: "Feb 2023"
+    end: "June 2025"
+    time: "6 mos"
+    responsibilities:
+      - "Built and deployed scalable FastAPI and Echo backends with Clean Architecture and TDD, integrating Redis, GraphQL, and WebSockets."
+    tools:
+      - "Grafana"
 
   - company: "Roadr"
     title: "Full Stack DevOps"
@@ -194,25 +258,24 @@ SOFTWARE_EXPERIENCES:
       - "Event Streaming (Redis Pub/Sub, Kafka)"
       - "Grafana"
 
-  - company: "Grupo RPG SAC"
-    title: "Full Stack Developer"
-    location: "Tiabaya, Arequipa, Perú"
+  - company: "Viaje Facil S.A.C"
+    title: "DevOps Engineer"
+    location: "Floripa, Brazil"
     type: "Full-time"
-    start: "Jul 2021"
+    start: "Oct 2022"
     end: "Dec 2022"
-    time: "1 yr 6 mos"
+    time: "3 mos"
     responsibilities:
-      - "Designed, developed, and deployed a web tool that met laboratory requirements."
-      - "Built a modern Dockerized Django web application ready for production on AWS servers."
-      - "Developed a module for customer registration, test quotations, service orders, and settlement sheets."
-      - "Developed automated internal dashboards and PDF reports providing accurate metrics and insights."
+      - "Designed and provisioned a cost-optimized AWS infrastructure using Terraform."
+      - "Configured isolated dev and production environments for frontend (Amplify) and backend (EC2) to support safe iteration and fast time to production"
+      - "Built dual CI/CD pipelines using GitHub Actions."
+      - "Set up observability stack with CloudWatch Alarms and log management using S3 + Athena for ad-hoc analytics"
+      - "Set up observability and log management using CloudWatch Alarms, S3,  and Athena with retention policies to control storage costs."
     tools:
-      - "CI/CD"
-      - "Python (Django)"
-      - "HTMX"
-      - "SQL (PostgreSQL)"
+      - "AWS (Amplify, EC2, RDS, IAM, CloudWatch, S3, Athena)"
+      - "CI/CD (GitHub Actions)"
       - "Docker"
-      - "AWS (EC2, RDS, S3)"
+      - "Terraform"
 
   - company: "UCSM - EPIC Labs"
     title: "Full Stack Developer"
@@ -226,40 +289,19 @@ SOFTWARE_EXPERIENCES:
       - "Performed data modeling and schema design to define database structure and relationships."
       - "Implemented a planning process flow for students, researchers, and clients using a SaaS-style architecture."
     tools:
-      - "Python (Django)"
-      - "HTML"
-      - "CSS (Bootstrap)"
-      - "SQL (PostgreSQL)"
-      - "PythonAnywhere"
+      - "AWS (Amplify, RDS, IAM, CloudWatch, S3, Athena)"
+      - "GitHub Actions"
+      - "Docker"
+      - "Terraform"
 
 PROJECTS: "Projects"
 PROJECT_LIST:
-  - TITLE: "Kroma Company Platform"
-    ROLE: "Full Stack Developer & DevOps Engineer"
+  - TITLE: "Startup Mexico n8n"
+    ROLE: "DevOps Engineer"
     DATE: "Oct 2025 – Present"
     LOCATION: "Peru"
-    LINK: "https://kromacompany.com"
+    LINK: "https://n8n.cordstart.com"
     DESCRIPTIONS:
-      - "Built a fully serverless architecture on AWS using S3, API Gateway, and DynamoDB."
-      - "Developed a Vue frontend with global content delivery via CloudFront."
-      - "Implemented a containerized FastAPI, deployed on AWS Lambda."
-      - "Multi-purpose platform: academic resources, dental clinic management, and e-commerce."
-      - "HTMX admin dashboard for e-commerce, powered by DynamoDB."
-
-  - TITLE: "Viaje Fácil - Brazil Startup"
-    ROLE: "DevOps Engineer"
-    DATE: "May 2025"
-    LOCATION: "Brazil"
-    LINK: "https://github.com/viajefacil"
-    DESCRIPTIONS:
-      - "Set up AWS Amplify for frontend hosting and deployed a lightweight Docker Express API backend."
-      - "Focused on cost-effective cloud architecture for early product validation and growth."
-
-  - TITLE: "Cifras – Spain Startup"
-    ROLE: "DevOps Consultant"
-    DATE: "Dec 2024"
-    LOCATION: "Spain"
-    DESCRIPTIONS:
-      - "Consulted on cloud infrastructure and DevOps best practices for a microservices-based financial platform."
-      - "Built and containerized backend (Spring Boot) APIs using Docker and deployed services on AWS ECS."
-      - "Implemented CI/CD automation, monitoring, and orchestration to support scalable operations."
+      - Deployed a self-hosted n8n platform on-premises using Docker in queue mode (1 master, 2 workers), PostgreSQL, and dual Redis instances supporting 10 req/sec
+      - Secured infrastructure with OpenVPN, Caddy reverse proxy with SSL termination, and Ngrok for webhook handling in dev
+      - Implemented observability with Prometheus and Grafana for real-time monitoring and alerting across all services

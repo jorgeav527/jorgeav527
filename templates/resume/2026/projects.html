@@ -4,30 +4,56 @@
   </h2>
 
   <div class="space-y-2 mt-2">
+    {% set_global seen_titles = [] %}
     {% for project in data.PROJECT_LIST %}
+    {% if seen_titles is not containing(project.TITLE) %}
+    {% set_global seen_titles = seen_titles | concat(with=[project.TITLE]) %}
+    {% set_global same_title_projects = [] %}
+    {% for p in data.PROJECT_LIST %}
+    {% if p.TITLE == project.TITLE %}
+    {% set_global same_title_projects = same_title_projects | concat(with=[p]) %}
+    {% endif %}
+    {% endfor %}
+    {% if same_title_projects | length >= 2 %}
+    <div class="break-inside-avoid">
+      <h3 class="text-[16px] font-bold text-slate-900 uppercase tracking-tight">
+        {{ project.TITLE }}
+      </h3>
+      {% for p in same_title_projects %}
+      <div class="ml-4 mt-2">
+        <div class="flex justify-between items-baseline">
+          <h4 class="text-[16px] font-bold text-slate-900 uppercase tracking-tight">
+            {{ p.ROLE }}
+          </h4>
+          <span class="text-[11px] font-bold text-slate-600 uppercase">
+            {{ p.DATE }}
+          </span>
+        </div>
+        <ul class="list-disc ml-4">
+          {% for detail in p.DESCRIPTIONS %}
+          <li class="text-[11.5px] text-slate-700 leading-snug text-justify pl-1">
+            {{ detail }}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+    {% else %}
     <div class="break-inside-avoid">
       <div class="flex justify-between items-baseline">
         <h4 class="text-[16px] font-bold text-slate-900 uppercase tracking-tight">
           {% if project.LINK %}
           <a href="{{ project.LINK }}" target="_blank" class="hover:text-blue-600">
-            {{ project.TITLE }} <i class="bi bi-link-45deg"></i>
+            {{ project.TITLE }} — {{ project.ROLE }} <i class="bi bi-link-45deg"></i>
           </a>
           {% else %}
-          {{ project.TITLE }}
+          {{ project.TITLE }} — {{ project.ROLE }}
           {% endif %}
         </h4>
         <span class="text-[11px] font-bold text-slate-600 uppercase">
           {{ project.DATE }}
         </span>
-      </div>
-
-      <div class="flex justify-between items-center mb-2">
-        <div class="text-[13px] font-semibold text-slate-700">
-          {{ project.ROLE }}
-        </div>
-        <div class="text-[11px] text-slate-600 italic">
-          {{ project.LOCATION }}
-        </div>
       </div>
 
       <ul class="list-disc ml-4">
@@ -38,6 +64,8 @@
         {% endfor %}
       </ul>
     </div>
+    {% endif %}
+    {% endif %}
     {% endfor %}
   </div>
 </div>
