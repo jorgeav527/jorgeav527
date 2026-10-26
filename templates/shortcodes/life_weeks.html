@@ -1,0 +1,193 @@
+<div class="life-weeks-container not-prose my-12">
+  <div class="text-center mb-6">
+    <h2 class="text-2xl md:text-3xl font-semibold tracking-tight text-accent mb-2">Your Life in Weeks</h2>
+    <p class="text-secondary text-sm md:text-base">Assuming you live to 70 years old</p>
+    <div class="life-weeks-stats mt-4 text-sm md:text-base text-primary font-medium"></div>
+  </div>
+  
+  <div class="life-weeks-grid" data-birth="{{ birth | default(value="1990-12-30") }}" data-max-age="{{ max_age | default(value=70) }}"></div>
+  
+  <div class="life-weeks-legend mt-6 flex items-center justify-center gap-6 text-xs text-secondary">
+    <div class="flex items-center gap-2">
+      <div class="w-3 h-3 rounded-sm bg-accent/80"></div>
+      <span>Lived</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="w-3 h-3 rounded-sm border-2 border-accent"></div>
+      <span>Current week</span>
+    </div>
+    <div class="flex items-center gap-2">
+      <div class="w-3 h-3 rounded-sm bg-entry border border-border"></div>
+      <span>Remaining</span>
+    </div>
+  </div>
+</div>
+
+<style>
+  .life-weeks-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .life-year-row {
+    display: grid;
+    grid-template-columns: 1.75rem repeat(52, minmax(0, 1fr));
+    gap: 2px;
+    align-items: center;
+  }
+  
+  .life-year-label {
+    font-size: 0.6rem;
+    line-height: 1;
+    text-align: right;
+    padding-right: 0.35rem;
+    color: var(--color-secondary);
+    font-variant-numeric: tabular-nums;
+    user-select: none;
+  }
+  
+  .life-year-label.major {
+    color: var(--color-accent);
+    font-weight: 600;
+  }
+  
+  .life-week {
+    aspect-ratio: 1;
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    transition: all 0.15s ease;
+    cursor: default;
+  }
+  
+  .life-week.lived {
+    background-color: color-mix(in srgb, var(--color-accent) 70%, transparent);
+  }
+  
+  .life-week.current {
+    background-color: color-mix(in srgb, var(--color-accent) 70%, transparent);
+    box-shadow: 0 0 0 2px var(--color-accent);
+    animation: pulse 2s ease-in-out infinite;
+  }
+  
+  .life-week.remaining {
+    background-color: var(--color-entry);
+    border: 1px solid var(--color-border);
+  }
+  
+  .life-week:hover {
+    transform: scale(1.4);
+    z-index: 10;
+    position: relative;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.6;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .life-weeks-grid {
+      gap: 1.5px;
+      padding: 0 0.5rem;
+    }
+    
+    .life-year-row {
+      grid-template-columns: 1.35rem repeat(52, minmax(0, 1fr));
+      gap: 1.5px;
+    }
+    
+    .life-year-label {
+      font-size: 0.5rem;
+      padding-right: 0.2rem;
+    }
+    
+    .life-week:hover {
+      transform: scale(1.8);
+    }
+  }
+</style>
+
+<script>
+  (function() {
+    const container = document.querySelector('.life-weeks-grid');
+    if (!container) return;
+    
+    const birthStr = container.dataset.birth || '1989-12-30';
+    const maxAge = parseInt(container.dataset.maxAge || '70');
+    
+    const birthDate = new Date(birthStr + 'T00:00:00');
+    const now = new Date();
+    
+    const msPerWeek = 7 * 24 * 60 * 60 * 1000;
+    const totalWeeks = maxAge * 52;
+    
+    const msLived = now.getTime() - birthDate.getTime();
+    const weeksLived = Math.floor(msLived / msPerWeek);
+    
+    const weeksLeft = Math.max(0, totalWeeks - weeksLived);
+    
+    // Calculate years and months left
+    const msLeft = weeksLeft * msPerWeek;
+    const yearsLeft = Math.floor(msLeft / (365.25 * 24 * 60 * 60 * 1000));
+    const remainingMs = msLeft - (yearsLeft * 365.25 * 24 * 60 * 60 * 1000);
+    const monthsLeft = Math.floor(remainingMs / (30.44 * 24 * 60 * 60 * 1000));
+    
+    // Update stats
+    const statsEl = document.querySelector('.life-weeks-stats');
+    if (statsEl) {
+      statsEl.innerHTML = `
+        Lived: <span class="text-accent">${weeksLived.toLocaleString()}</span> weeks 
+        • Left: <span class="text-accent">${weeksLeft.toLocaleString()}</span> weeks 
+        • ~${yearsLeft} years, ${monthsLeft} months left
+      `;
+    }
+    
+    // Render grid: one row per year (52 weeks), with a year label column
+    container.innerHTML = '';
+    
+    for (let year = 0; year < maxAge; year++) {
+      const rowEl = document.createElement('div');
+      rowEl.className = 'life-year-row';
+      
+      const labelEl = document.createElement('div');
+      // Show a label every 5 years (and year 0); leave the rest empty
+      if (year === 0 || year % 5 === 0) {
+        labelEl.className = 'life-year-label' + (year % 10 === 0 ? ' major' : '');
+        labelEl.textContent = year;
+      } else {
+        labelEl.className = 'life-year-label';
+      }
+      rowEl.appendChild(labelEl);
+      
+      for (let week = 0; week < 52; week++) {
+        const i = year * 52 + week;
+        const weekEl = document.createElement('div');
+        weekEl.className = 'life-week';
+        
+        if (i < weeksLived) {
+          weekEl.classList.add('lived');
+          weekEl.title = `Age ${year}, week ${week + 1} - Lived`;
+        } else if (i === weeksLived) {
+          weekEl.classList.add('current');
+          weekEl.title = `Age ${year}, week ${week + 1} - Current week`;
+        } else {
+          weekEl.classList.add('remaining');
+          weekEl.title = `Age ${year}, week ${week + 1} - Remaining`;
+        }
+        
+        rowEl.appendChild(weekEl);
+      }
+      
+      container.appendChild(rowEl);
+    }
+  })();
+</script>
