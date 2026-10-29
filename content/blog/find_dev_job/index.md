@@ -750,6 +750,5 @@ You have delivered results across multiple operational domains:
 You sit at the intersection of **AWS (Cloud Architect)**, **Data Science (Python/Instructor)**, and **Automation (n8n/DevOps)**.
 
 *   **Strategy:** Most Data Science teams lack mature DevOps practices. Become the bridge.
-*   **Ecosystem move:** Participate in CNCF or Serverless community channels. Provide comments on the operational trade-offs of using Lambda vs. ECS. This establishes you as a thought leader in the exact field you are targeting.
-*   **Strategy:** Your competitive advantage is your **Polyglot background**. You have the unique ability to act as the technical translator between JS, Java, and Data Science teams. Emphasize your role as the architect who ensures disparate systems interoperate seamlessly within the AWS ecosystem.
+*   **Ecosystem move:** Participate in CNCF or Serverless community channels. Provide comments on the operational trade-offs of using Lambda vs. ECS. This establishes you as a thought leader in the exact field you are targeting.*   **Strategy:** Your competitive advantage is your **Polyglot background**. You have the unique ability to act as the technical translator between JS, Java, and Data Science teams. Emphasize your role as the architect who ensures disparate systems interoperate seamlessly within the AWS ecosystem.
 

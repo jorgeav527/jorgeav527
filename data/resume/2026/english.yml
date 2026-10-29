@@ -124,7 +124,7 @@ SOFTWARE_EXPERIENCES:
     title: "CloudOps & Full-Stack Engineer"
     location: "Arequipa, Peru"
     type: "Remote, Full-time"
-    start: "Feb 2026"
+    start: "Jul 2026"
     end: "Present"
     time: "5 mos"
     responsibilities:
@@ -137,6 +137,27 @@ SOFTWARE_EXPERIENCES:
       - "CI/CD (GitHub Actions)"
       - "Terraform"
       - "Python (FastAPI)"
+      - "JavaScript (Nuxt)"
+      - "NoSQL (DynamoDB)"
+      - "Docker"
+
+  - company: "Practiplus"
+    title: "CloudOps & Full-Stack Engineer"
+    location: "Arequipa, Peru"
+    type: "Remote, Full-time"
+    start: "Feb 2026"
+    end: "Jun 2026"
+    time: "5 mos"
+    responsibilities:
+      - Architected a hybrid AWS infrastructure for stateful messaging workloads e-commerce landing page.
+      - Integrated self-hosted n8n, Chatwoot, and Dify via WhatsApp to automate customer support, and AI workflows.
+      - Isolated Chatwoot, n8n, and Dify on dedicated micro-instances, offloading heavy LLM tasks to Dify Spot workers.
+      - Engineered a 2 AM–6 AM sleep-wake schedule with webhook queue buffering, lowering idle compute costs <60%.
+    tools:
+      - "AWS (CloudFront, Route 53, Cognito, API Gateway, Lambda, EC2)"
+      - "Automation & AI (n8n, Chatwoot, Dify)"
+      - "CI/CD (GitHub Actions)"
+      - "IaC (Terraform, Pulumi)"
       - "JavaScript (Nuxt)"
       - "NoSQL (DynamoDB)"
       - "Docker"
@@ -284,12 +305,13 @@ SOFTWARE_EXPERIENCES:
 
 PROJECTS: "Projects"
 PROJECT_LIST:
-  - TITLE: "Startup Mexico n8n"
+  - TITLE: "Startup Mexico n8n+chatwoot+dify"
     ROLE: "DevOps Engineer"
     DATE: "Oct 2025 – Present"
     LOCATION: "Peru"
     LINK: "https://n8n.cordstart.com"
     DESCRIPTIONS:
-      - Deployed a self-hosted n8n platform on-premises using Docker in queue mode (1 master, 2 workers), PostgreSQL, and dual Redis instances supporting 10 req/sec
-      - Secured infrastructure with OpenVPN, Caddy reverse proxy with SSL termination, and Ngrok for webhook handling in dev
-      - Implemented observability with Prometheus and Grafana for real-time monitoring and alerting across all services
+      - Deployed a self-hosted n8n platform on-premises using Docker in queue mode (1 master, 2 workers), PostgreSQL, and dual Redis instances supporting 10 req/sec.
+      - Integrated Chatwoot and Dify in both development and production environments via the WhatsApp Meta API, powering automated, LLM-driven customer interactions for enterprise clients.
+      - Secured infrastructure with OpenVPN, Caddy reverse proxy with SSL termination, and Ngrok for webhook handling in dev.
+      - Implemented observability with Prometheus and Grafana for real-time monitoring and alerting across all services.
